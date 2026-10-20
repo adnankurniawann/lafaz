@@ -92,6 +92,10 @@ Sisa yang belum bisa ditutup agen:
 
 ## Backlog
 - Sebelum deploy portofolio: kredit sumber audio dan teks di dalam app, disclaimer prototype (`docs/PRD.md` §6), deploy ke Vercel.
+- Sebelum deploy portofolio: percepat Cek Suara. Diukur 20 Okt 2026 di laptop 8 inti, model sudah dimuat: 1 kata 3,2 detik, 1 ayat 3,3 detik, cek pertama 4,4 detik. Whisper selalu memproses jendela 30 detik, WASM jalan 1 thread (`crossOriginIsolated` false), GPU tidak dipakai. Rencana:
+  - A. Pemanasan model sekali setelah diunduh (cek pertama 4,4 → ±3,2 detik).
+  - B. WebGPU dengan cadangan WASM. Perlu konversi ulang encoder fp16/fp32, naikkan `MODEL_VERSION`, uji di Safari.
+  - Ditunda: banyak thread lewat header COOP/COEP (bisa memblokir audio qari dari CDN, terutama di Safari) dan whisper-tiny (lebih sering salah dengar).
 - Sebelum produk publik: izin audio dari Quran Foundation dan everyayah.
 - Identitas visual sendiri menggantikan gaya sementara (`docs/DESIGN.md`).
 - Kartu Pamer dengan rekaman suara Pelajar.

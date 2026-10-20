@@ -32,23 +32,52 @@ function getWorker() {
     } else if (m.id !== undefined) {
       pending.get(m.id)?.reject(new Error(m.message));
       pending.delete(m.id);
-    } else useSpeech.setState({ status: "error" });
+    } else {
+      console.error("Cek Suara:", m.message);
+      useSpeech.setState({ status: "error" });
+    }
+  };
+  // A crash inside the worker (e.g. the browser cannot run the model) never posts a message.
+  worker.onerror = (e) => {
+    console.error("Cek Suara worker:", e.message);
+    for (const p of pending.values()) p.reject(new Error(e.message));
+    pending.clear();
+    useSpeech.setState({ status: "error" });
   };
   return worker;
+}
+
+// Bump whenever scripts/convert-speech-model.py produces a new model. Browsers keep
+// model files in Cache Storage and would otherwise run the old ones forever.
+const MODEL_VERSION = "2026-10-20b";
+const VERSION_KEY = "lafaz-speech-model";
+
+async function dropStaleModel() {
+  try {
+    if (localStorage.getItem(VERSION_KEY) === MODEL_VERSION) return;
+    await caches.delete("transformers-cache");
+    localStorage.setItem(VERSION_KEY, MODEL_VERSION);
+  } catch {
+    // No Cache Storage (private window): nothing cached to drop.
+  }
 }
 
 /** Starts the download once. Safe to call on every page. */
 export function preloadSpeech() {
   if (typeof Worker === "undefined" || useSpeech.getState().status !== "idle") return;
   useSpeech.setState({ status: "loading" });
-  getWorker().postMessage({ type: "load" });
+  void dropStaleModel().then(() => getWorker().postMessage({ type: "load" }));
 }
 
-/** The model hears 16 kHz mono. */
+/** The model hears 16 kHz mono. A quiet recording is raised so its loudest point is near full scale. */
 async function toSamples(blob: Blob) {
   const ctx = new AudioContext({ sampleRate: 16000 });
   try {
-    return (await ctx.decodeAudioData(await blob.arrayBuffer())).getChannelData(0);
+    const samples = (await ctx.decodeAudioData(await blob.arrayBuffer())).getChannelData(0);
+    let peak = 0;
+    for (const s of samples) peak = Math.max(peak, Math.abs(s));
+    if (peak > 0.001 && peak < 0.9) for (let i = 0; i < samples.length; i++) samples[i] *= 0.9 / peak;
+    return samples;
   } finally {
     void ctx.close();
   }

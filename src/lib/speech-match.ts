@@ -30,9 +30,17 @@ function distance(a: string, b: string) {
   return row[b.length];
 }
 
-/** Close enough: one letter off is allowed for longer words, since the model also slips. */
-function same(a: string, b: string) {
-  return a === b || (Math.max(a.length, b.length) >= 4 && distance(a, b) <= 1);
+/**
+ * Close enough: one letter off for longer words, since the model also slips. On a
+ * short clip the model also likes to add an ending (the qari's own مَٰلِكِ comes
+ * back as مالكين), so a heard word that starts with the expected one counts too.
+ */
+function same(expected: string, heard: string) {
+  return (
+    expected === heard ||
+    (expected.length >= 2 && heard.startsWith(expected)) ||
+    (Math.max(expected.length, heard.length) >= 4 && distance(expected, heard) <= 1)
+  );
 }
 
 /** For each expected word, whether it shows up in the transcript, in order. */

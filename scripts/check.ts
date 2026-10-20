@@ -63,6 +63,8 @@ assert.equal(level(fatihahWords[1]), "u17", "Allah: alif washal and silent lam")
 assert.deepEqual(matchWords(["بِسْمِ", "ٱللَّهِ", "ٱلرَّحْمَٰنِ", "ٱلرَّحِيمِ"], "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ"), [true, true, true, true]);
 assert.deepEqual(matchWords(["مَـٰلِكِ", "يَوْمِ", "ٱلدِّينِ"], "مالك يوم"), [true, true, false], "a missing word is marked");
 assert.deepEqual(matchWords(["قُلْ", "هُوَ"], ""), [false, false]);
+assert.deepEqual(matchWords(["مَـٰلِكِ"], "مَالِكِينَ"), [true], "the model adds an ending to a short clip of the qari");
+assert.deepEqual(matchWords(["لَكَ"], "مَعَ"), [false], "a different word still fails");
 
 // Latihan Ulang terjadwal: right moves up a box, wrong goes back to box 1.
 let reviews = updateReviews({}, [{ key: "ba", correct: true }], "2026-10-20");

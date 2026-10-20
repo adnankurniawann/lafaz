@@ -20,6 +20,7 @@ tarteel-ai/whisper-base-ar-quran (Apache 2.0) only ships PyTorch weights.
 Run once:  uv run scripts/convert-speech-model.py
 Output:    public/models/tarteel-ai/whisper-base-ar-quran/  (git-ignored)
 For production, upload that folder to a Hugging Face model repo.
+After a new conversion, bump MODEL_VERSION in src/lib/speech.ts so browsers drop the cached old model.
 
 Ends by transcribing Al-Fatihah 1:1 from the qari audio with the exported
 model, so a broken export shows up here and not in the app.

@@ -511,28 +511,30 @@ export function WordListenExercise({ exercise, state, onSelect }: ChoiceProps<"w
 }
 
 /**
- * Momen Bisa Baca: read a real word or ayah yourself, record it, let Cek Suara
- * mark each word, then hear the qari. Cek Suara is a help, never a verdict.
+ * Momen Bisa Baca: read a real word or ayah yourself and record it. Cek Suara
+ * checks it right away: every word heard means "bisa", a red word offers a retry.
+ * Without the model it falls back to Nilai Sendiri. Never locks the learner out.
  */
 export function ReadExercise({ exercise, onDone }: { exercise: Extract<Exercise, { kind: "read" }>; onDone: (read: boolean) => void }) {
   const isAyah = exercise.ref.split(":").length === 2;
-  const recorder = useRecorder(isAyah ? 30000 : 6000);
   const speech = useSpeech();
   const questEvent = useGame((s) => s.questEvent);
   const [heard, setHeard] = useState<boolean[] | null>(null);
   const [checking, setChecking] = useState(false);
   const [checkFailed, setCheckFailed] = useState(false);
+  const [finished, setFinished] = useState(false);
 
-  useEffect(() => {
-    if (recorder.state === "done") questEvent("record");
-  }, [recorder.state, questEvent]);
+  const finish = (read: boolean) => {
+    setFinished(true);
+    onDone(read);
+  };
 
-  const check = async () => {
-    if (!recorder.blob) return;
+  const check = async (blob: Blob) => {
     setChecking(true);
-    setCheckFailed(false);
     try {
-      setHeard(matchWords(exercise.words, await transcribe(recorder.blob)));
+      const result = matchWords(exercise.words, await transcribe(blob));
+      setHeard(result);
+      if (result.every(Boolean)) finish(true);
     } catch (err) {
       console.error("Cek Suara:", err);
       setCheckFailed(true);
@@ -540,7 +542,24 @@ export function ReadExercise({ exercise, onDone }: { exercise: Extract<Exercise,
     setChecking(false);
   };
 
+  // Check as soon as the recording is in.
+  const recorder = useRecorder(isAyah ? 30000 : 6000, undefined, (blob) => {
+    if (useSpeech.getState().status === "ready") void check(blob);
+  });
+
+  useEffect(() => {
+    if (recorder.state === "done") questEvent("record");
+  }, [recorder.state, questEvent]);
+
+  const retry = () => {
+    setHeard(null);
+    setCheckFailed(false);
+    recorder.reset();
+  };
+
   const matched = heard?.filter(Boolean).length ?? 0;
+  const allHeard = !!heard && matched === exercise.words.length;
+  const selfAssess = speech.status !== "ready" || checkFailed;
   const [surah, ayah] = exercise.ref.split(":").map(Number);
 
   return (
@@ -588,36 +607,41 @@ export function ReadExercise({ exercise, onDone }: { exercise: Extract<Exercise,
               Qari
             </div>
           </div>
-          {heard ? (
+          {checking ? (
+            <p className="animate-pulse text-center font-bold text-blue">Cek Suara sedang mendengarkan...</p>
+          ) : allHeard ? (
+            <p className="rounded-xl bg-green/10 p-3 text-sm font-bold text-green-dark">Bacaanmu cocok! Semua kata terdengar jelas.</p>
+          ) : heard ? (
             <p className="rounded-xl bg-blue/10 p-3 text-sm">
-              Cek Suara mendengar <b>{matched} dari {exercise.words.length} kata</b> cocok.{" "}
-              {matched < exercise.words.length ? "Kata merah mungkin belum jelas, coba dengarkan qari lalu ulangi." : "Semua terdengar jelas!"} Ini bantuan, bukan penilaian.
+              Cek Suara mendengar <b>{matched} dari {exercise.words.length} kata</b>. Kata merah mungkin belum jelas: dengarkan qari, lalu coba lagi. Ini bantuan, bukan penilaian.
             </p>
-          ) : speech.status === "ready" ? (
-            <>
-              <Button color="blue" disabled={checking} onClick={() => void check()}>
-                {checking ? "Mendengarkan..." : "Cek Suara"}
-              </Button>
-              {checkFailed && <p className="text-center text-xs text-muted">Cek Suara belum bisa mendengar rekaman ini. Coba rekam ulang, atau bandingkan sendiri dengan qari.</p>}
-            </>
           ) : (
-            <p className="text-center text-xs text-muted">
-              {speech.status === "loading" ? `Cek Suara sedang disiapkan (${Math.round(speech.progress)}%).` : "Cek Suara belum tersedia di perangkat ini."} Bandingkan sendiri dengan bacaan qari.
-            </p>
+            selfAssess && (
+              <p className="text-center text-xs text-muted">
+                {checkFailed
+                  ? "Cek Suara belum bisa mendengar rekaman ini."
+                  : speech.status === "loading"
+                    ? `Cek Suara sedang disiapkan (${Math.round(speech.progress)}%).`
+                    : "Cek Suara belum tersedia di perangkat ini."}{" "}
+                Bandingkan sendiri dengan bacaan qari.
+              </p>
+            )
           )}
-          {isAyah && <ShareCardButton surah={surah} ayah={ayah} text={exercise.words.join(" ")} />}
-          <div className="grid grid-cols-2 gap-3">
-            <Button
-              color="white"
-              onClick={() => {
-                setHeard(null);
-                recorder.reset();
-              }}
-            >
-              Ulangi
-            </Button>
-            <Button onClick={() => onDone(true)}>Sudah bisa</Button>
-          </div>
+          {isAyah && (allHeard || selfAssess) && <ShareCardButton surah={surah} ayah={ayah} text={exercise.words.join(" ")} />}
+          {!finished && !checking && (heard || selfAssess) && (
+            <div className="grid grid-cols-2 gap-3">
+              <Button color={heard ? "green" : "white"} onClick={retry}>
+                Ulangi
+              </Button>
+              {heard ? (
+                <Button color="white" onClick={() => finish(false)}>
+                  Lanjut dulu
+                </Button>
+              ) : (
+                <Button onClick={() => finish(true)}>Sudah bisa</Button>
+              )}
+            </div>
+          )}
         </div>
       )}
     </div>

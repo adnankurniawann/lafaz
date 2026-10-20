@@ -1,0 +1,130 @@
+{
+  "_note": "Pemetaan kode markup edisi quran-tajweed (api.alquran.cloud) ke nama hukum. Kode dan deskripsi asli diambil dari library alquran/tools (Tajweed.php). Field 'review' menandai pemetaan yang belum yakin.",
+  "rules": [
+    {
+      "code": "h",
+      "id": "hamzah-washal",
+      "name": "Hamzah washal",
+      "source": "Hamzat ul Wasl",
+      "color": "#9a9a9a"
+    },
+    {
+      "code": "s",
+      "id": "huruf-mati",
+      "name": "Huruf tidak dibaca",
+      "source": "Silent",
+      "color": "#9a9a9a"
+    },
+    {
+      "code": "l",
+      "id": "lam-syamsiyah",
+      "name": "Alif lam syamsiyah",
+      "source": "Lam Shamsiyyah",
+      "color": "#9a9a9a"
+    },
+    {
+      "code": "n",
+      "id": "mad-thabii",
+      "name": "Mad thabi'i",
+      "source": "Normal Prolongation: 2 Vowels",
+      "color": "#3b6fe0",
+      "review": "perlu cek ustadz: kode ini juga dipakai untuk mad shilah qashirah (contoh لَهُۥ di 112:4) dan mungkin mad 2 harakat lain, jadi tidak selalu mad thabi'i murni"
+    },
+    {
+      "code": "p",
+      "id": "mad-aridh",
+      "name": "Mad 'aridh lissukun",
+      "source": "Permissible Prolongation: 2, 4, 6 Vowels",
+      "color": "#3341d6",
+      "review": "perlu cek ustadz: di data juz 30 kode ini dipakai untuk mad di akhir ayat (contoh نَسْتَعِينُ 1:5) dan juga mad lin saat waqaf (قُرَيْشٍ 106:1). Situs alquran.cloud menyebutnya مد جائز, tapi contoh di data tidak cocok dengan mad jaiz munfashil"
+    },
+    {
+      "code": "m",
+      "id": "mad-lazim",
+      "name": "Mad lazim",
+      "source": "Necessary Prolongation: 6 Vowels",
+      "color": "#1a237e",
+      "review": "Situs alquran.cloud menyebutnya مد واجب, tapi deskripsi library (6 harakat) dan contoh di data (ٱلضَّآلِّينَ 1:7) menunjukkan mad lazim"
+    },
+    {
+      "code": "o",
+      "id": "mad-wajib-jaiz",
+      "name": "Mad wajib muttashil / jaiz munfashil",
+      "source": "Obligatory Prolongation: 4-5 Vowels",
+      "color": "#2144c1",
+      "review": "perlu cek ustadz: data tidak membedakan keduanya. Contoh muttashil جَآءَ (110:1), contoh munfashil إِنَّآ أَعْطَيْنَٰكَ (108:1). Situs alquran.cloud menyebutnya مد لازم, tapi deskripsi library (4-5 harakat) dan contoh di data menunjukkan mad wajib/jaiz"
+    },
+    {
+      "code": "q",
+      "id": "qalqalah",
+      "name": "Qalqalah",
+      "source": "Qalaqah",
+      "color": "#d0021b",
+      "review": "perlu cek ustadz: data tidak membedakan sughra dan kubra"
+    },
+    {
+      "code": "c",
+      "id": "ikhfa-syafawi",
+      "name": "Ikhfa syafawi",
+      "source": "Ikhafa' Shafawi - With Meem",
+      "color": "#c2009f"
+    },
+    {
+      "code": "f",
+      "id": "ikhfa-haqiqi",
+      "name": "Ikhfa haqiqi",
+      "source": "Ikhafa'",
+      "color": "#8a00a3"
+    },
+    {
+      "code": "w",
+      "id": "idgham-mimi",
+      "name": "Idgham mimi",
+      "source": "Idgham Shafawi - With Meem",
+      "color": "#4e9a00"
+    },
+    {
+      "code": "i",
+      "id": "iqlab",
+      "name": "Iqlab",
+      "source": "Iqlab",
+      "color": "#0a9bd6"
+    },
+    {
+      "code": "a",
+      "id": "idgham-bighunnah",
+      "name": "Idgham bighunnah",
+      "source": "Idgham - With Ghunnah",
+      "color": "#13876a"
+    },
+    {
+      "code": "u",
+      "id": "idgham-bilaghunnah",
+      "name": "Idgham bilaghunnah",
+      "source": "Idgham - Without Ghunnah",
+      "color": "#2f7d00"
+    },
+    {
+      "code": "d",
+      "id": "idgham-mutajanisain",
+      "name": "Idgham mutajanisain",
+      "source": "Idgham - Mutajanisayn",
+      "color": "#808080"
+    },
+    {
+      "code": "b",
+      "id": "idgham-mutaqaribain",
+      "name": "Idgham mutaqaribain",
+      "source": "Idgham - Mutaqaribayn",
+      "color": "#808080"
+    },
+    {
+      "code": "g",
+      "id": "ghunnah",
+      "name": "Ghunnah",
+      "source": "Ghunnah: 2 Vowels",
+      "color": "#e8680c",
+      "review": "perlu cek ustadz: kemungkinan mencakup nun dan mim bertasydid (ghunnah musyaddadah)"
+    }
+  ]
+}

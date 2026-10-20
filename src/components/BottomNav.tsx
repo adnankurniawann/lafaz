@@ -3,12 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useGame } from "@/lib/store";
-import { HomeIcon, LettersIcon, ShieldIcon, TargetIcon, UserIcon } from "./icons";
+import { HomeIcon, LettersIcon, MapIcon, TargetIcon, UserIcon } from "./icons";
 
 const TABS = [
   { href: "/", label: "Belajar", Icon: HomeIcon },
   { href: "/huruf", label: "Huruf", Icon: LettersIcon },
-  { href: "/liga", label: "Liga", Icon: ShieldIcon },
+  { href: "/peta", label: "Peta", Icon: MapIcon },
   { href: "/misi", label: "Misi", Icon: TargetIcon },
   { href: "/profil", label: "Profil", Icon: UserIcon },
 ];

@@ -11,16 +11,6 @@ export function FlameIcon({ className = "size-6", lit = true }: IconProps & { li
   );
 }
 
-export function GemIcon({ className = "size-6" }: IconProps) {
-  return (
-    <svg viewBox="0 0 24 24" className={className} aria-hidden>
-      <path d="M6 4h12l4 5-10 12L2 9z" fill="#2b9ae6" />
-      <path d="M6 4h12l4 5H2z" fill="#6cc0ff" />
-      <path d="M9 9l3 12 3-12z" fill="#1f7cc0" opacity="0.5" />
-    </svg>
-  );
-}
-
 export function HeartIcon({ className = "size-6", empty = false }: IconProps & { empty?: boolean }) {
   return (
     <svg viewBox="0 0 24 24" className={className} aria-hidden>
@@ -131,10 +121,11 @@ export function LettersIcon({ className = "size-7" }: IconProps) {
   );
 }
 
-export function ShieldIcon({ className = "size-7" }: IconProps) {
+export function MapIcon({ className = "size-7" }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" className={className} aria-hidden>
-      <path d="M12 2l8 3v6c0 5-3.4 9.3-8 11-4.6-1.7-8-6-8-11V5z" fill="currentColor" />
+      <path d="M2 5.5l6.5-2.5 7 2.5L22 3v15.5L15.5 21l-7-2.5L2 21z" fill="currentColor" />
+      <path d="M8.5 3v15.5M15.5 5.5V21" stroke="#fff" strokeWidth="1.4" opacity="0.6" />
     </svg>
   );
 }

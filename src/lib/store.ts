@@ -4,12 +4,17 @@ import { useSyncExternalStore } from "react";
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import { addDays, dayKey, daysBetween, weekKey } from "./dates";
+import type { BadgeId } from "./badges";
+import { HARAKAT_UNITS, lessonNodes, pathNodes, unitOf } from "./course";
+import { letters } from "./letters";
 import { questsForDay, type Quest, type QuestKind } from "./quests";
+import { updateReviews, type Reviews } from "./review";
+import { updateTrouble, type TroubleLetters } from "./trouble";
 
-export const MAX_HEARTS = 5;
-export const HEART_REFILL_MS = 4 * 60 * 60 * 1000;
-export const HEART_REFILL_COST = 100;
-export const STARTING_GEMS = 100;
+const FATIHAH_AYAHS = Array.from({ length: 7 }, (_, i) => `1:${i + 1}`);
+
+/** Mastery at which a letter counts as dikuasai. */
+export const MASTERED = 0.8;
 
 export const DAILY_GOALS = [
   { xp: 10, label: "Santai", minutes: "5 menit / hari" },
@@ -17,8 +22,6 @@ export const DAILY_GOALS = [
   { xp: 30, label: "Serius", minutes: "15 menit / hari" },
   { xp: 50, label: "Intens", minutes: "20 menit / hari" },
 ];
-
-type Hearts = { count: number; since: number };
 
 type Streak = {
   count: number;
@@ -35,6 +38,12 @@ export type LessonResult = {
   practice: boolean;
   maxCombo: number;
   letterResults: { letter: string; correct: boolean }[];
+  /** Letters and syllables answered, for Latihan Ulang terjadwal. */
+  itemResults: { key: string; correct: boolean }[];
+  /** Ayat read in a Momen Bisa Baca, as "surah:ayah". */
+  readAyahs: string[];
+  /** Unit id when this was a passed Mode Tantangan. */
+  challenge?: string;
 };
 
 export type LessonSummary = {
@@ -47,7 +56,9 @@ export type LessonSummary = {
   dailyGoal: number;
   quests: Quest[];
   questsBefore: Quest[];
-  heartGained: boolean;
+  troubleAdded: string[];
+  troubleCleared: string[];
+  newBadges: BadgeId[];
 };
 
 type GameState = {
@@ -60,21 +71,27 @@ type GameState = {
   totalXp: number;
   xpByDay: Record<string, number>;
   streak: Streak;
-  hearts: Hearts;
-  gems: number;
-  lessons: Record<string, { times: number; perfect: boolean; lastAt: number }>;
+  /** `skipped`: passed over by Tes Matrikulasi, counts as done but earned nothing (ADR-0010). */
+  lessons: Record<string, { times: number; perfect: boolean; lastAt: number; skipped?: boolean }>;
   chests: string[];
   mastery: Record<string, number>;
+  troubleLetters: TroubleLetters;
+  reviews: Reviews;
+  /** Ayat the learner has read in a Momen Bisa Baca: "surah:ayah" -> day. */
+  readAyahs: Record<string, string>;
+  badges: Partial<Record<BadgeId, string>>;
+  /** Units whose Mode Tantangan has been passed. */
+  challenges: string[];
   quests: { day: string; items: Quest[] } | null;
   stats: { lessons: number; perfectLessons: number; bestCombo: number; recordings: number };
 
   finishOnboarding: (input: { motivation: string; experience: string; dailyGoal: number }) => void;
   setDailyGoal: (xp: number) => void;
   setSoundEffects: (on: boolean) => void;
-  loseHeart: () => void;
-  buyHeartRefill: () => boolean;
   completeLesson: (result: LessonResult) => LessonSummary;
-  openChest: (id: string, gems: number) => void;
+  /** Tes Matrikulasi: mark every lesson before the unit as skipped. */
+  skipTo: (unitId: string) => void;
+  openChest: (id: string, xp: number) => void;
   ensureDay: () => void;
   questEvent: (kind: QuestKind, amount?: number) => void;
   claimQuest: (id: string) => number;
@@ -90,23 +107,17 @@ const initialState = {
   totalXp: 0,
   xpByDay: {},
   streak: { count: 0, lastDay: null, freezes: 1, freezeWeek: null, frozenDays: [] },
-  hearts: { count: MAX_HEARTS, since: 0 },
-  gems: STARTING_GEMS,
   lessons: {},
   chests: [],
   mastery: {},
+  troubleLetters: {},
+  reviews: {},
+  readAyahs: {},
+  badges: {},
+  challenges: [],
   quests: null,
   stats: { lessons: 0, perfectLessons: 0, bestCombo: 0, recordings: 0 },
 };
-
-/** Hearts come back one at a time, every HEART_REFILL_MS. */
-export function heartsAt(hearts: Hearts, now: number): Hearts {
-  if (hearts.count >= MAX_HEARTS) return { count: MAX_HEARTS, since: now };
-  const gained = Math.floor((now - hearts.since) / HEART_REFILL_MS);
-  if (gained <= 0) return hearts;
-  const count = Math.min(MAX_HEARTS, hearts.count + gained);
-  return { count, since: count >= MAX_HEARTS ? now : hearts.since + gained * HEART_REFILL_MS };
-}
 
 /** Streak as shown today. A missed day breaks it unless freezes cover the gap. */
 export function streakToday(streak: Streak, today = dayKey()): number {
@@ -118,6 +129,12 @@ export function streakToday(streak: Streak, today = dayKey()): number {
 
 function freshQuests(state: Pick<GameState, "quests" | "dailyGoal">, today: string) {
   return state.quests?.day === today ? state.quests : { day: today, items: questsForDay(today, state.dailyGoal) };
+}
+
+/** XP outside a lesson (chests, quests) also counts toward the daily goal. */
+function addXp(s: Pick<GameState, "totalXp" | "xpByDay">, xp: number) {
+  const today = dayKey();
+  return { totalXp: s.totalXp + xp, xpByDay: { ...s.xpByDay, [today]: (s.xpByDay[today] ?? 0) + xp } };
 }
 
 function bumpQuests(items: Quest[], kind: QuestKind, amount: number, mode: "add" | "max" = "add") {
@@ -137,20 +154,6 @@ export const useGame = create<GameState>()(
       setDailyGoal: (xp) => set({ dailyGoal: xp }),
 
       setSoundEffects: (on) => set({ soundEffects: on }),
-
-      loseHeart: () => {
-        const now = Date.now();
-        const hearts = heartsAt(get().hearts, now);
-        const count = Math.max(0, hearts.count - 1);
-        // Start the refill clock when dropping below full.
-        set({ hearts: { count, since: hearts.count >= MAX_HEARTS ? now : hearts.since } });
-      },
-
-      buyHeartRefill: () => {
-        if (get().gems < HEART_REFILL_COST) return false;
-        set((s) => ({ gems: s.gems - HEART_REFILL_COST, hearts: { count: MAX_HEARTS, since: Date.now() } }));
-        return true;
-      },
 
       completeLesson: (result) => {
         const s = get();
@@ -176,11 +179,6 @@ export const useGame = create<GameState>()(
           } else count = 1;
         }
 
-        // Hearts: practice gives one back.
-        let hearts = heartsAt(s.hearts, now);
-        const heartGained = result.practice && hearts.count < MAX_HEARTS;
-        if (heartGained) hearts = { count: hearts.count + 1, since: hearts.count + 1 >= MAX_HEARTS ? now : hearts.since };
-
         // Mastery: each correct answer moves a letter up, a mistake moves it down a little.
         const mastery = { ...s.mastery };
         for (const { letter, correct } of result.letterResults) {
@@ -188,12 +186,9 @@ export const useGame = create<GameState>()(
           mastery[letter] = Math.max(0, Math.min(1, value + (correct ? 0.08 : -0.05)));
         }
 
-        // Quests
-        const quests = freshQuests(s, today);
-        let items = bumpQuests(quests.items, "xp", result.xp);
-        items = bumpQuests(items, "lessons", 1);
-        items = bumpQuests(items, "combo", result.maxCombo, "max");
-        if (result.perfect) items = bumpQuests(items, "perfect", 1);
+        const trouble = updateTrouble(s.troubleLetters, result.letterResults);
+        const challenges = result.challenge && !s.challenges.includes(result.challenge) ? [...s.challenges, result.challenge] : s.challenges;
+        const readAyahs = { ...Object.fromEntries(result.readAyahs.map((r) => [r, today])), ...s.readAyahs };
 
         const goalBefore = s.xpByDay[today] ?? 0;
         const lessons = result.practice
@@ -207,12 +202,35 @@ export const useGame = create<GameState>()(
               },
             };
 
+        // Badges count only lessons actually played, never ones skipped by Tes Matrikulasi.
+        const played = (unitId: string) => lessonNodes.filter((l) => unitOf(l.id).id === unitId).every((l) => (lessons[l.id]?.times ?? 0) > 0);
+        const earned: BadgeId[] = [];
+        if (letters.every((l) => (mastery[l.id] ?? 0) >= MASTERED)) earned.push("kenal-huruf");
+        if (HARAKAT_UNITS.every(played)) earned.push("lancar-harakat");
+        if (Object.keys(readAyahs).length) earned.push("ayat-pertama");
+        if (FATIHAH_AYAHS.every((r) => readAyahs[r])) earned.push("bisa-fatihah");
+        if (trouble.cleared.length && !Object.keys(trouble.trouble).length) earned.push("penakluk-bandel");
+        if (count >= 7) earned.push("streak-7");
+        if (challenges.length) earned.push("juara-tantangan");
+        const newBadges = earned.filter((b) => !s.badges[b]);
+
+        // Quests
+        const quests = freshQuests(s, today);
+        let items = bumpQuests(quests.items, "xp", result.xp);
+        items = bumpQuests(items, "lessons", 1);
+        items = bumpQuests(items, "combo", result.maxCombo, "max");
+        if (result.perfect) items = bumpQuests(items, "perfect", 1);
+
         set({
           totalXp: s.totalXp + result.xp,
           xpByDay: { ...s.xpByDay, [today]: goalBefore + result.xp },
           streak: { ...s.streak, count, lastDay: today, freezes, frozenDays },
-          hearts,
           mastery,
+          troubleLetters: trouble.trouble,
+          reviews: updateReviews(s.reviews, result.itemResults, today),
+          readAyahs,
+          badges: { ...s.badges, ...Object.fromEntries(newBadges.map((b) => [b, today])) },
+          challenges,
           lessons,
           quests: { day: today, items },
           stats: {
@@ -233,22 +251,35 @@ export const useGame = create<GameState>()(
           dailyGoal: s.dailyGoal,
           quests: items,
           questsBefore: quests.items,
-          heartGained,
+          troubleAdded: trouble.added,
+          troubleCleared: trouble.cleared,
+          newBadges,
         };
       },
 
-      openChest: (id, gems) => {
-        if (get().chests.includes(id)) return;
-        set((s) => ({ chests: [...s.chests, id], gems: s.gems + gems }));
+      skipTo: (unitId) => {
+        const s = get();
+        const lessons = { ...s.lessons };
+        const now = Date.now();
+        for (const node of pathNodes) {
+          if (unitOf(node.id).id === unitId) break;
+          if (node.kind === "lesson" && !lessons[node.id]) lessons[node.id] = { times: 0, perfect: false, lastAt: now, skipped: true };
+        }
+        set({ lessons });
       },
 
-      // Runs on app start: refill hearts, grant the weekly freeze, roll quests.
+      openChest: (id, xp) => {
+        if (get().chests.includes(id)) return;
+        set((s) => ({ chests: [...s.chests, id], ...addXp(s, xp) }));
+      },
+
+      // Runs on app start: grant the weekly freeze, roll quests.
       ensureDay: () => {
         const s = get();
         const today = dayKey();
         const week = weekKey(today);
         const streak = s.streak.freezeWeek === week ? s.streak : { ...s.streak, freezes: Math.max(s.streak.freezes, 1), freezeWeek: week };
-        set({ hearts: heartsAt(s.hearts, Date.now()), streak, quests: freshQuests(s, today) });
+        set({ streak, quests: freshQuests(s, today) });
       },
 
       questEvent: (kind, amount = 1) => {
@@ -265,28 +296,30 @@ export const useGame = create<GameState>()(
         const quest = s.quests?.items.find((q) => q.id === id);
         if (!quest || quest.claimed || quest.progress < quest.target) return 0;
         set({
-          gems: s.gems + quest.gems,
+          ...addXp(s, quest.xp),
           quests: { ...s.quests!, items: s.quests!.items.map((q) => (q.id === id ? { ...q, claimed: true } : q)) },
         });
-        return quest.gems;
+        return quest.xp;
       },
 
       resetProgress: () => set({ ...initialState }),
     }),
-    { name: "lafaz-game", version: 1 },
+    {
+      name: "lafaz-game",
+      version: 2,
+      // v2 drops hearts and gems (ADR-0004, 0006); today's quests are rolled again with XP rewards.
+      migrate: (persisted, version) => {
+        const state = { ...(persisted as Record<string, unknown>) };
+        if (version < 2) {
+          delete state.hearts;
+          delete state.gems;
+          state.quests = null;
+        }
+        return state as GameState;
+      },
+    },
   ),
 );
-
-/** Hearts right now, for event handlers. */
-export function currentHearts() {
-  return heartsAt(useGame.getState().hearts, Date.now()).count;
-}
-
-/** Hearts for rendering, refreshed every minute. */
-export function useHearts() {
-  const now = useNow();
-  return heartsAt(useGame((s) => s.hearts), now);
-}
 
 /** False during server render and until localStorage has been read. */
 export function useHydrated() {
@@ -297,7 +330,7 @@ export function useHydrated() {
   );
 }
 
-/** Re-renders every minute so heart refills and the day change show up. */
+/** Re-renders every minute so the day change shows up. */
 export function useNow(intervalMs = 60_000) {
   return useSyncExternalStore(
     (cb) => {

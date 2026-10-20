@@ -1,6 +1,8 @@
 {
   "_note": "Materi huruf hijaiyah urutan Iqro jilid 1. Transliterasi mengikuti cara baca Iqro (huruf tebal dibaca 'o', misalnya kho, ro, sho). Nama, transliterasi, dan makhraj masih perlu dicek ustadz.",
   "review": "perlu cek ustadz",
+  "_variantsNote": "Bentuk lain di Teks Utsmani yang dihitung sebagai huruf dasarnya, untuk Peta Ayat dan sorot huruf. Perlu cek ustadz.",
+  "variants": { "ٱ": "alif", "أ": "alif", "إ": "alif", "ؤ": "hamzah", "ئ": "hamzah", "ة": "ta", "ى": "ya" },
   "letters": [
     { "id": "alif", "char": "ا", "fathah": "اَ", "name": "Alif", "latin": "a", "makhraj": "Pangkal tenggorokan, bagian paling dalam. Alif berharakat dibaca seperti hamzah.", "similar": ["hamzah", "ain"] },
     { "id": "ba", "char": "ب", "fathah": "بَ", "name": "Ba", "latin": "ba", "makhraj": "Dua bibir dirapatkan lalu dilepas.", "similar": ["ta", "tsa"] },

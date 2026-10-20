@@ -1,0 +1,14 @@
+{
+  "_note": "Materi Bagian Membaca (Iqro lanjutan). Contoh suku kata dibuat oleh kode dari huruf dan tandanya, bukan teks Al-Qur'an. Cara baca latin: konsonan huruf + bunyi tanda (a/i/u, an/in/un), huruf bertasydid dibaca dobel, huruf mad memanjangkan bunyi sebelumnya. Huruf tebal dengan fathah tetap dibaca 'o' gaya Iqro (kho, ro). Huruf mad ditulis tanpa sukun seperti Teks Utsmani. Semua penjelasan perlu dicek ustadz.",
+  "review": "perlu cek ustadz",
+  "marks": [
+    { "id": "kasrah", "name": "Kasrah", "explain": "Garis miring kecil di bawah huruf. Huruf dibaca dengan bunyi i." },
+    { "id": "dhammah", "name": "Dhammah", "explain": "Tanda seperti wau kecil di atas huruf. Huruf dibaca dengan bunyi u." },
+    { "id": "tanwin", "name": "Tanwin", "explain": "Harakat yang ditulis dua kali. Dibaca dengan tambahan bunyi n di akhir: an, in, un. Tanwin fathah biasanya diikuti alif yang tidak dibaca panjang." },
+    { "id": "sukun", "name": "Sukun", "explain": "Lingkaran kecil di atas huruf. Huruf itu mati, tanpa vokal, dan menempel ke bunyi huruf sebelumnya." },
+    { "id": "tasydid", "name": "Tasydid", "explain": "Tanda seperti huruf w kecil di atas huruf. Huruf itu dibaca dobel dan ditekan, seolah ada dua huruf: yang pertama mati, yang kedua berharakat." },
+    { "id": "mad", "name": "Mad", "explain": "Bacaan panjang, kira-kira dua ketukan. Fathah diikuti alif, kasrah diikuti ya, dan dhammah diikuti wau dibaca panjang." },
+    { "id": "sambung", "name": "Huruf sambung", "explain": "Di Al-Qur'an huruf ditulis bersambung, jadi bentuknya berubah di awal, tengah, dan akhir kata. Huruf alif, dal, dzal, ro, zai, dan wau tidak menyambung ke huruf sesudahnya." },
+    { "id": "khusus", "name": "Tanda khusus Al-Fatihah", "explain": "Tiga hal yang sering muncul: alif washal (alif dengan tanda kecil di atasnya) tidak dibaca saat menyambung, alif kecil di atas huruf dibaca panjang seperti mad, dan lam yang tidak bertanda sebelum huruf bertasydid tidak dibaca (lam syamsiyah)." }
+  ]
+}

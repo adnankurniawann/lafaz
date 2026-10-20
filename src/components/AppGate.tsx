@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useEffect, type ReactNode } from "react";
 import { useLetterAudio } from "@/lib/recordings";
+import { preloadSpeech } from "@/lib/speech";
 import { useGame, useHydrated } from "@/lib/store";
 import { Mascot } from "./Mascot";
 
@@ -21,6 +22,8 @@ export function AppGate({ children, requireOnboarding = true }: { children: Reac
     if (!hydrated) return;
     ensureDay();
     void loadAudio();
+    // Cek Suara downloads in the background once onboarding is done (ADR-0008).
+    if (onboarded) preloadSpeech();
     if (requireOnboarding && !onboarded) router.replace("/onboarding");
   }, [hydrated, onboarded, requireOnboarding, ensureDay, loadAudio, router]);
 

@@ -56,15 +56,15 @@ Status: ✅ ada, 🔧 ada tapi perlu diubah, ⏳ belum ada.
 - Banner unit berwarna dengan tombol Panduan. Peti di tengah unit, piala (Uji Unit) di akhir.
 - Lesson berikutnya terbuka setelah lesson sebelumnya selesai.
 
-### FR-2 — Onboarding 🔧
+### FR-2 — Onboarding ✅
 - Sambutan, tujuan, kemampuan awal, Target Harian, pengingat talaqqi, lalu langsung lesson pertama. ✅
-- Teks diganti ke nada inklusif dan talaqqi sebagai ajakan (ADR-0009). ⏳
+- Teks diganti ke nada inklusif dan talaqqi sebagai ajakan (ADR-0009). ✅
 
-### FR-3 — Mesin Lesson 🔧
+### FR-3 — Mesin Lesson ✅
 - Tombol keluar dengan konfirmasi, progress bar, satu soal per layar, tombol PERIKSA lalu LANJUT. ✅
 - Panel umpan balik hijau atau merah dengan jawaban yang benar, efek suara Web Audio, getar halus, combo. ✅
 - Soal salah diulang di akhir lesson. ✅
-- Hati dihapus (ADR-0004). ⏳
+- Hati dihapus (ADR-0004). ✅
 
 ### FR-4 — Jenis Soal Bagian Huruf Hijaiyah ✅
 Kenalan huruf, dengar dan pilih huruf, huruf awal dari kata, pilih bunyi, pilih nama, pasangkan, baca rangkaian gaya Iqro, ucapkan (Nilai Sendiri). 9 unit, 44 lesson, 9 peti. Unit 9 membedakan Huruf Mirip.
@@ -72,12 +72,12 @@ Kenalan huruf, dengar dan pilih huruf, huruf awal dari kata, pilih bunyi, pilih 
 ### FR-5 — Setelah Lesson ✅
 Berurutan: hasil (XP, akurasi, waktu), streak, Target Harian, Misi Harian, peti kalau ada.
 
-### FR-6 — Motivasi Harian 🔧
+### FR-6 — Motivasi Harian ✅
 - XP: 10 per lesson, +5 tanpa salah, +1 sampai +5 bonus combo. ✅
-- Streak harian dengan 1 Pembeku Streak gratis per minggu. Tetap harian, tidak diganti target mingguan. ✅ Perayaan hari ke-7, 30, 100. ⏳
+- Streak harian dengan 1 Pembeku Streak gratis per minggu. Tetap harian, tidak diganti target mingguan. ✅ Perayaan hari ke-7, 30, 100. ✅
 - Target Harian: Santai 10, Biasa 20, Serius 30, Intens 50. ✅
-- 3 Misi Harian. ✅ Hadiahnya diganti karena gems dihapus (§8). ⏳
-- Gems dan isi ulang hati dihapus (ADR-0006). ⏳
+- 3 Misi Harian. ✅ Hadiahnya XP bonus, begitu juga Peti (§8). ✅
+- Gems dan isi ulang hati dihapus (ADR-0006). ✅
 
 ### FR-7 — Tab Huruf ✅
 Grid 29 huruf dengan bar Penguasaan Huruf, kartu penjelasan (makhraj dan Contoh Kata), ketuk untuk mendengar, dan latihan huruf. Transliterasi latin tetap seperti sekarang.
@@ -85,11 +85,13 @@ Grid 29 huruf dengan bar Penguasaan Huruf, kartu penjelasan (makhraj dan Contoh 
 ### FR-8 — Studio ✅
 `/studio`: ustadz merekam tiap huruf dengan fathah, kasrah, dan dhammah, lalu mengekspor zip untuk `public/audio/huruf/`.
 
-### FR-9 — Huruf Bandel ⏳
+### FR-9 — Huruf Bandel ✅
 - Huruf yang sering salah masuk koleksi Huruf Bandel. Pelajar bisa berlatih khusus huruf itu.
 - Huruf keluar dari koleksi setelah dijawab benar beberapa kali berturut-turut. Koleksi kosong memberi badge.
 
-### FR-10 — Badge ⏳
+### FR-10 — Badge 🔧
+Sudah ada: semua badge Level Iqro (Kenal semua huruf, Lancar harakat, Ayat pertama, Bisa baca Al-Fatihah, Penakluk huruf bandel), plus Streak 7 hari dan Juara tantangan. Badge Tajwid dan Hafalan menyusul bersama levelnya.
+
 
 | Level Iqro | Level Tajwid | Level Hafalan |
 |---|---|---|
@@ -101,22 +103,22 @@ Grid 29 huruf dengan bar Penguasaan Huruf, kartu penjelasan (makhraj dan Contoh 
 
 Lintas level: **Juara tantangan** (Mode Tantangan pertama) dan **Streak 7 hari**.
 
-### FR-11 — Mode Tantangan ⏳
-- Terbuka setelah sebuah unit selesai. 3 nyawa, timer per soal, XP 2x, badge "Tantangan unit X".
+### FR-11 — Mode Tantangan ✅
+- Terbuka setelah sebuah unit selesai. 3 nyawa, 15 detik per soal, XP 2x, badge "Tantangan unit X" (tampil di badge Juara tantangan).
 - Satu-satunya tempat ada nyawa (ADR-0004). Menggantikan "mode legendaris".
 
-### FR-12 — Momen Bisa Baca & Peta Ayat ⏳
-- Sejak unit 1: ayat asli tampil, huruf yang sudah dikenal menyala, "kamu sudah kenal X dari Y huruf di ayat ini" (ADR-0007).
+### FR-12 — Momen Bisa Baca & Peta Ayat ✅
+- Sejak unit 1: ayat asli tampil, huruf yang sudah dikenal menyala, "kamu sudah kenal X dari Y huruf di ayat ini" (ADR-0007). ✅
 - Setelah Iqro lanjutan: Pelajar membaca kata atau ayat asli, Cek Suara menandai per kata, lalu qari membacakannya.
-- Peta Ayat di tab bekas Liga: tiap ayat punya tiga tanda (hurufnya dikenal, bisa dibaca, sudah hafal).
+- Peta Ayat di tab bekas Liga: tiap ayat punya tiga tanda (hurufnya dikenal, bisa dibaca, sudah hafal). Tanda pertama dan kedua ✅, "sudah hafal" menunggu Level Hafalan.
 
-### FR-13 — Kartu Pamer ⏳
+### FR-13 — Kartu Pamer ✅
 Dari Momen Bisa Baca: gambar berisi ayat, nama surah dan nomor ayat, dan "Aku sekarang bisa baca ini". Dibagikan lewat Web Share atau disimpan. Hanya gambar dulu.
 
-### FR-14 — Cek Suara ⏳
+### FR-14 — Cek Suara ✅
 Model Tarteel ONNX di browser, diunduh otomatis di latar belakang setelah onboarding (ADR-0008). Bacaan dibandingkan per kata, hijau atau merah. Tidak pernah mengurangi apa pun. Huruf tunggal tetap Nilai Sendiri.
 
-### FR-15 — Iqro Lanjutan ⏳
+### FR-15 — Iqro Lanjutan ✅
 Harakat kasrah dan dhammah, tanwin, sukun, tasydid, mad dasar, bentuk huruf sambung. Latihan Ulang terjadwal gaya Leitner. Berakhir dengan Pelajar membaca Al-Fatihah.
 
 ### FR-16 — Tajwid Lewat Dengar ⏳
@@ -124,6 +126,14 @@ Harakat kasrah dan dhammah, tanwin, sukun, tasydid, mad dasar, bentuk huruf samb
 - Urutan unit: nun mati dan tanwin (izhar, idgham bighunnah, idgham bilaghunnah, iqlab, ikhfa), mim mati, qalqalah, mad.
 - Pola lesson per hukum: kenali bunyinya, dengar dan bandingkan, tebak dari Potongan Ayat, tebak dari suara (teks muncul setelah menjawab), cari di ayat, ucapkan potongan.
 - Izhar dideteksi otomatis dari Teks Utsmani dan ditandai perlu cek ustadz. Qalqalah sughra dan kubra dibedakan dari posisinya, juga ditandai perlu cek.
+
+### FR-18 — Level, Tes Matrikulasi & Rank 🔧
+Sudah ada: Tes Matrikulasi di Iqro, Rank. Menyusul di Blok 4: pertanyaan "Mau mulai dari mana?", pemilih Level, tes naik Level.
+- Onboarding: "Mau mulai dari mana?" (Iqro, Tajwid, Hafalan, atau tes dulu). Pilihan dipercaya tanpa tes (ADR-0010).
+- Tes Matrikulasi ≤15 soal, bertahap, menaruh Pelajar di Bagian. Materi sebelumnya dihitung dilewati: membuka lesson dan Peta Ayat, tanpa XP dan badge.
+- Setelah Iqro, Tajwid dan Hafalan sejajar. Naik memakai ujian akhir Level di bawahnya. Gagal tes hanya memberi saran, ada "tetap masuk". Turun bebas, progres per Level disimpan.
+- Pemilih Level di bar atas tab Belajar, muncul setelah ada lebih dari satu Level.
+- Rank: gelar pribadi dari total XP, tidak pernah turun.
 
 ### FR-17 — Hafalan Juz Amma ⏳
 Al-Fatihah dulu, lalu juz amma dari surah terpendek: An-Nas, Al-Falaq, Al-Ikhlas, dan seterusnya mundur ke An-Naba'. Pola tikrar (mengulang per ayat lalu menyambung), tes hafalan, dan tanda "sudah hafal" di Peta Ayat.
@@ -150,8 +160,13 @@ Sebelum jadi produk publik: minta izin pemakaian audio ke Quran Foundation dan e
 - Bahasa antarmuka dan docs Indonesia, kode Inggris.
 
 ## 8. Pertanyaan Terbuka
-- **Isi Peti dan hadiah Misi Harian** setelah gems dihapus: XP, Pembeku Streak tambahan, atau peti dibuang dari path?
-- **Detail Mode Tantangan**: berapa detik timer per soal, dan apa yang terjadi kalau nyawa habis (ulang dari awal, atau selesai tanpa XP 2x)?
+
+Sudah diputuskan (20 Okt 2026):
+- Penentuan Level, Tes Matrikulasi, naik Level lewat tes, dan Rank pribadi dari XP: ADR-0010.
+- Model Cek Suara dikonversi sendiri (repo Tarteel tidak punya ONNX) dan disimpan di repo Hugging Face milik pemilik, ±102 MB.
+- Peti dan Misi Harian memberi XP bonus, ikut dihitung ke Target Harian.
+- Mode Tantangan: 15 detik per soal. Nyawa habis berarti tantangan gagal, tanpa XP dan tanpa badge, dengan tombol "Coba lagi".
+
+Masih terbuka:
 - **Momen Bisa Baca pertama yang nyata**: kata atau ayat mana yang pertama bisa dibaca setelah harakat dan sukun? Dipilih oleh script dari data, lalu dicek ustadz.
-- **Hosting model Cek Suara**: dari CDN Hugging Face atau disimpan di repo/Vercel? Perlu dicek ukuran dan izin CORS.
 - **Ustadz pemeriksa**: siapa yang memeriksa konten dan merekam Rekaman Huruf.

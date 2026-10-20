@@ -2,16 +2,19 @@
 
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Button } from "@/components/Button";
-import { ChestIcon, CheckIcon, GemIcon, HeartIcon, LockIcon, StarIcon, TrophyIcon, BookIcon } from "@/components/icons";
+import harakat from "../../../data/content/harakat.json";
+import { Button, ButtonLink } from "@/components/Button";
+import { ChestIcon, CheckIcon, BoltIcon, HeartIcon, LockIcon, StarIcon, TrophyIcon, BookIcon } from "@/components/icons";
 import { LetterGuide } from "@/components/LetterGuide";
 import { Mascot } from "@/components/Mascot";
 import { Dialog, Sheet } from "@/components/Sheet";
-import { nodeStates, sections, type NodeState, type PathNode, type Unit } from "@/lib/course";
+import { PLACEMENT_ID, challengeId, nodeStates, sections, unitDone, type ChestNode, type NodeState, type PathNode, type Unit } from "@/lib/course";
 import { getLetter } from "@/lib/letters";
 import { sfx } from "@/lib/sfx";
-import { currentHearts, useGame } from "@/lib/store";
+import { useGame } from "@/lib/store";
 import { UNIT_COLORS } from "./unitColors";
+
+const MARKS = harakat.marks as { id: string; explain: string }[];
 
 // Horizontal offsets that make the zig-zag, repeated along each unit.
 const OFFSETS = [0, 52, 78, 52, 0, -52, -78, -52];
@@ -22,7 +25,9 @@ export function LearnPath() {
   const states = useMemo(() => nodeStates(lessons, chests), [lessons, chests]);
   const [selected, setSelected] = useState<string | null>(null);
   const [guide, setGuide] = useState<Unit | null>(null);
-  const [chest, setChest] = useState<{ id: string; gems: number } | null>(null);
+  const [chest, setChest] = useState<ChestNode | null>(null);
+  const [challenge, setChallenge] = useState<Unit | null>(null);
+  const challenges = useGame((s) => s.challenges);
   const currentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -38,6 +43,15 @@ export function LearnPath() {
           <p className="px-4 pt-4 text-center text-xs font-extrabold uppercase tracking-widest text-muted">
             Bagian {section.number} · {section.title}
           </p>
+          {section.id === "membaca" && !lessons["u10-1"] && (
+            <div className="mx-4 mt-3 rounded-2xl border-2 border-purple/40 bg-purple/5 p-4 text-center">
+              <p className="font-extrabold">Sudah kenal huruf hijaiyah?</p>
+              <p className="mt-1 text-sm text-muted">Tes Matrikulasi singkat, paling banyak 15 soal, untuk melompat ke bagian yang pas.</p>
+              <ButtonLink href={`/lesson/${PLACEMENT_ID}`} color="purple" className="mt-3">
+                Tes lompat
+              </ButtonLink>
+            </div>
+          )}
           {section.units.map((unit) => (
             <div key={unit.id}>
               <UnitBanner unit={unit} onGuide={() => setGuide(unit)} />
@@ -61,11 +75,21 @@ export function LearnPath() {
                       }}
                     />
                     {selected === node.id && node.kind === "lesson" && (
-                      <LessonPopover node={node} unit={unit} state={states.get(node.id)!} onClose={() => setSelected(null)} />
+                      <LessonPopover node={node} unit={unit} state={states.get(node.id)!} />
                     )}
                     {i === 2 && <Mascot size={84} mood="happy" className="absolute right-[calc(100%+48px)] top-0" />}
                   </div>
                 ))}
+                {unitDone(unit, lessons) && (
+                  <button
+                    type="button"
+                    onClick={() => setChallenge(unit)}
+                    className="flex items-center gap-1.5 rounded-full border-2 border-b-4 border-orange bg-white px-4 py-2 text-sm font-extrabold uppercase text-orange"
+                  >
+                    <BoltIcon className="size-5" />
+                    {challenges.includes(unit.id) ? "Tantangan lulus · ulangi" : "Mode Tantangan"}
+                  </button>
+                )}
               </div>
             </div>
           ))}
@@ -77,6 +101,7 @@ export function LearnPath() {
       {guide && (
         <Sheet title={`Panduan Unit ${guide.number}`} onClose={() => setGuide(null)}>
           <p className="mb-3 text-sm text-muted">{guide.description}. Baca dari kanan ke kiri.</p>
+          {guide.topic && <p className="rounded-2xl border-2 border-line p-4 leading-relaxed">{MARKS.find((m) => m.id === guide.topic)?.explain ?? "Baca ayat demi ayat. Dengarkan qari, lalu baca sendiri dan rekam."}</p>}
           <div className="space-y-3">
             {(guide.number === 9 ? [] : guide.letters).map((id) => (
               <LetterGuide key={id} id={id} />
@@ -87,6 +112,7 @@ export function LearnPath() {
       )}
 
       {chest && <ChestDialog chest={chest} onClose={() => setChest(null)} />}
+      {challenge && <ChallengeDialog unit={challenge} onClose={() => setChallenge(null)} />}
     </div>
   );
 }
@@ -143,55 +169,44 @@ function PathNodeButton({ node, unit, state, isCurrentLesson, onClick }: { node:
   );
 }
 
-function LessonPopover({ node, unit, state, onClose }: { node: Extract<PathNode, { kind: "lesson" }>; unit: Unit; state: NodeState; onClose: () => void }) {
+function LessonPopover({ node, unit, state }: { node: Extract<PathNode, { kind: "lesson" }>; unit: Unit; state: NodeState }) {
   const router = useRouter();
   const color = UNIT_COLORS[unit.color];
   const lessonNumber = unit.nodes.filter((n) => n.kind === "lesson").indexOf(node) + 1;
   const total = unit.nodes.filter((n) => n.kind === "lesson").length;
-  const [noHearts, setNoHearts] = useState(false);
-
-  const start = () => {
-    if (currentHearts() <= 0) setNoHearts(true);
-    else router.push(`/lesson/${node.id}`);
-  };
 
   return (
-    <>
-      <div className={`absolute top-[84px] z-10 w-64 rounded-2xl p-4 animate-pop-in ${state === "locked" ? "border-2 border-line bg-[#f7f7f7]" : `${color.bg} text-white`}`}>
-        <p className="font-extrabold">{node.title}</p>
-        <p className={`text-sm ${state === "locked" ? "text-muted" : "opacity-90"}`}>
-          {state === "locked" ? "Selesaikan semua level sebelumnya untuk membuka ini." : `Lesson ${lessonNumber} dari ${total}`}
-        </p>
-        {state !== "locked" && (
-          <Button color="white" className={`mt-3 ${color.text}`} onClick={start}>
-            {state === "done" ? "Ulangi +10 XP" : "Mulai +10 XP"}
-          </Button>
-        )}
-      </div>
-      {noHearts && <NoHeartsDialog onClose={() => { setNoHearts(false); onClose(); }} />}
-    </>
+    <div className={`absolute top-[84px] z-10 w-64 rounded-2xl p-4 animate-pop-in ${state === "locked" ? "border-2 border-line bg-[#f7f7f7]" : `${color.bg} text-white`}`}>
+      <p className="font-extrabold">{node.title}</p>
+      <p className={`text-sm ${state === "locked" ? "text-muted" : "opacity-90"}`}>
+        {state === "locked" ? "Selesaikan semua level sebelumnya untuk membuka ini." : `Lesson ${lessonNumber} dari ${total}`}
+      </p>
+      {state !== "locked" && (
+        <Button color="white" className={`mt-3 ${color.text}`} onClick={() => router.push(`/lesson/${node.id}`)}>
+          {state === "done" ? "Ulangi +10 XP" : "Mulai +10 XP"}
+        </Button>
+      )}
+    </div>
   );
 }
 
-export function NoHeartsDialog({ onClose }: { onClose: () => void }) {
+function ChallengeDialog({ unit, onClose }: { unit: Unit; onClose: () => void }) {
   const router = useRouter();
-  const gems = useGame((s) => s.gems);
-  const buy = useGame((s) => s.buyHeartRefill);
   return (
     <Dialog onClose={onClose}>
-      <div className="flex justify-center gap-1">
-        {Array.from({ length: 5 }, (_, i) => (
-          <HeartIcon key={i} className="size-8" empty />
-        ))}
-      </div>
-      <h2 className="mt-3 text-xl font-extrabold">Hatimu habis</h2>
-      <p className="mt-1 text-muted">Hati terisi lagi 1 tiap 4 jam. Atau dapatkan hati dengan latihan ulang huruf.</p>
+      <BoltIcon className="mx-auto size-16" />
+      <h2 className="mt-2 text-xl font-extrabold">Mode Tantangan · Unit {unit.number}</h2>
+      <ul className="mt-3 space-y-1 text-left text-muted">
+        <li className="flex items-center gap-2">
+          <HeartIcon className="size-5" /> 3 nyawa, salah mengurangi satu
+        </li>
+        <li>⏱️ 15 detik per soal</li>
+        <li>⚡ XP 2x dan badge kalau lulus</li>
+      </ul>
+      <p className="mt-3 text-sm text-muted">Opsional. Lesson biasa tetap tanpa nyawa.</p>
       <div className="mt-5 space-y-3">
-        <Button color="blue" onClick={() => router.push("/lesson/latihan")}>
-          Latihan, dapat +1 hati
-        </Button>
-        <Button color="white" disabled={gems < 100} onClick={() => buy() && onClose()}>
-          Isi penuh · <GemIcon className="size-5" /> 100
+        <Button color="gold" onClick={() => router.push(`/lesson/${challengeId(unit)}`)}>
+          Mulai tantangan
         </Button>
         <Button color="ghost" onClick={onClose}>
           Nanti saja
@@ -201,7 +216,7 @@ export function NoHeartsDialog({ onClose }: { onClose: () => void }) {
   );
 }
 
-function ChestDialog({ chest, onClose }: { chest: { id: string; gems: number }; onClose: () => void }) {
+function ChestDialog({ chest, onClose }: { chest: ChestNode; onClose: () => void }) {
   const openChest = useGame((s) => s.openChest);
   const [opened, setOpened] = useState(false);
   return (
@@ -209,10 +224,10 @@ function ChestDialog({ chest, onClose }: { chest: { id: string; gems: number }; 
       <ChestIcon className={`mx-auto size-28 ${opened ? "animate-pop-in" : "animate-bounce-soft"}`} open={opened} />
       {opened ? (
         <>
-          <p className="mt-3 flex items-center justify-center gap-2 text-2xl font-extrabold text-blue">
-            +{chest.gems} <GemIcon className="size-7" />
+          <p className="mt-3 flex items-center justify-center gap-2 text-2xl font-extrabold text-gold">
+            +{chest.xp} <BoltIcon className="size-7" />
           </p>
-          <p className="text-muted">Gems bisa dipakai untuk mengisi hati.</p>
+          <p className="text-muted">XP bonus, ikut dihitung ke target harian.</p>
           <Button className="mt-5" onClick={onClose}>
             Lanjut
           </Button>
@@ -223,7 +238,7 @@ function ChestDialog({ chest, onClose }: { chest: { id: string; gems: number }; 
           <Button
             className="mt-5"
             onClick={() => {
-              openChest(chest.id, chest.gems);
+              openChest(chest.id, chest.xp);
               sfx.chest();
               setOpened(true);
             }}

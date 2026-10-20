@@ -26,7 +26,6 @@ const WORD_AUDIO = "https://audio.qurancdn.com/wbw";
 // word inside its own Alafasy verse recording (recitation 7).
 const QURAN_COM = "https://api.quran.com/api/v4/verses/by_chapter";
 const QURAN_COM_AUDIO = "https://verses.quran.com";
-const QURAN_COM_WORD_AUDIO = "https://audio.qurancdn.com";
 
 const OUT_DIR = path.join(process.cwd(), "data/quran");
 
@@ -117,7 +116,10 @@ async function fetchWords(surah: number): Promise<Map<number, { words: Word[]; t
       .filter((w) => w.char_type_name === "word")
       .map((w) => {
         if (!w.audio_url || !w.text_uthmani) throw new Error(`${key}: kata ${w.position} tanpa teks atau audio`);
-        return { position: w.position, text: w.text_uthmani, audio: `${QURAN_COM_WORD_AUDIO}/${w.audio_url}` };
+        // The CDN numbers word files by word position. quran.com's audio_url is off by one
+        // after a waqf mark inside the ayah (78:38 gives 015 for the 14th word, a 404).
+        const file = [surah, v.verse_number, w.position].map((n) => String(n).padStart(3, "0")).join("_");
+        return { position: w.position, text: w.text_uthmani, audio: `${WORD_AUDIO}/${file}.mp3` };
       });
     words.forEach((w, i) => {
       if (w.position !== i + 1) throw new Error(`${key}: urutan kata salah`);
@@ -214,7 +216,7 @@ async function main() {
 
     // Check the first and last ayah audio of every surah actually resolves.
     for (const a of [ayahs[0], ayahs[ayahs.length - 1]]) {
-      for (const url of [a.audio, a.timing.audio, a.words[0].audio]) {
+      for (const url of [a.audio, a.timing.audio, a.words[0].audio, a.words.at(-1)!.audio]) {
         if (!(await urlWorks(url))) throw new Error(`Audio tidak bisa diakses: ${url}`);
       }
     }

@@ -58,17 +58,21 @@ Kode, nama file, dan variabel memakai bahasa Inggris. Teks tampilan dan docs mem
 | Soal | `Exercise` |
 | Penguasaan Huruf | `mastery` |
 | Huruf Mirip | `SIMILAR_GROUPS` |
-| Huruf Bandel | `troubleLetters` (belum ada) |
+| Huruf Bandel | `troubleLetters` |
 | Contoh Kata | `letterExamples`, `WordExample` |
 | Rekaman Huruf | `recordings` |
 | Potongan Ayat | `clip` (belum ada) |
-| Cek Suara | `speechCheck` (belum ada) |
-| Peta Ayat | `ayahMap` (belum ada) |
-| Momen Bisa Baca | `readMoment` (belum ada) |
-| Kartu Pamer | `shareCard` (belum ada) |
-| Mode Tantangan | `challenge` (belum ada) |
+| Cek Suara | `speech`, `matchWords` |
+| Peta Ayat | `AyahMapScreen`, `ayahLetters` |
+| Momen Bisa Baca | soal `read`, `readAyahs` |
+| Kartu Pamer | `ShareCardButton` |
+| Mode Tantangan | `challenge` |
 | Misi Harian | `quests` |
 | Peti | `ChestNode` |
+| Tes Matrikulasi | `placement`, `PLACEMENT_ID` |
+| Rank | `rankFor` |
+| Latihan Ulang terjadwal | `reviews` (Leitner) |
+| Suku kata latihan | token di `syllables.ts` |
 
 ## 6. Memverifikasi Pekerjaan
 - Jalankan `npm run lint` dan `npx tsc --noEmit`. Error memblokir tugas.

@@ -23,7 +23,7 @@ _Hindari_: setoran wajib, ujian guru
 ## Struktur Belajar
 
 **Level**:
-Tiga tahap besar Lafaz: **Level Iqro** (huruf sampai bisa membaca ayat), **Level Tajwid** (hukum bacaan lewat mendengar), **Level Hafalan** (juz amma). Belum ada di kode.
+Tiga tahap besar Lafaz: **Level Iqro** (huruf sampai bisa membaca ayat), **Level Tajwid** (hukum bacaan lewat mendengar), **Level Hafalan** (juz amma). Setelah Iqro, Tajwid dan Hafalan sejajar. Naik Level lewat tes, turun bebas (ADR-0010). Belum ada di kode.
 _Hindari_: tingkat, tahap, course
 
 **Bagian**:
@@ -33,6 +33,10 @@ _Hindari_: section, modul, bab
 **Unit**:
 Kelompok lesson tentang satu set huruf atau satu hukum, dengan banner, panduan, peti, dan uji unit di akhir.
 _Hindari_: pelajaran (terlalu umum), topik
+
+**Tes Matrikulasi**:
+Tes pendek dan bertahap untuk Pelajar yang belum tahu harus mulai dari mana. Hasilnya menaruh Pelajar di sebuah Bagian. Materi sebelumnya dihitung "dilewati" (ADR-0010).
+_Hindari_: placement test, tes penempatan, pretest
 
 **Lesson**:
 Satu sesi 2 sampai 4 menit berisi 8 sampai 14 Soal.
@@ -148,8 +152,12 @@ _Hindari_: hard mode, mode legendaris, ujian
 Tanda pencapaian. Tiap Level punya 5 badge, ditambah badge lintas level.
 _Hindari_: medali, trofi, achievement
 
+**Rank**:
+Gelar pribadi dari total XP. Tidak pernah turun dan tidak dibandingkan dengan Pelajar lain (ADR-0010).
+_Hindari_: peringkat, liga, tier
+
 **Peti**:
-Hadiah di tengah path unit. Isinya setelah gems dihapus masih pertanyaan terbuka (`docs/PRD.md` §8).
+Hadiah di tengah path unit. Isinya XP bonus yang ikut dihitung ke Target Harian.
 _Hindari_: chest, kotak hadiah
 
 ## Dihapus

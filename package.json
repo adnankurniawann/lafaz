@@ -7,10 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "check": "tsx scripts/check.ts",
     "fetch-quran": "NODE_OPTIONS=--network-family-autoselection-attempt-timeout=3000 tsx scripts/fetch-quran.ts",
+    "build-reading-data": "tsx scripts/build-reading-data.ts",
     "build-letter-examples": "NODE_OPTIONS=--network-family-autoselection-attempt-timeout=3000 tsx scripts/build-letter-examples.ts"
   },
   "dependencies": {
+    "@huggingface/transformers": "^4.3.1",
     "jszip": "^3.10.2",
     "next": "16.4.2",
     "react": "19.3.0",

@@ -5,6 +5,7 @@ import { useState } from "react";
 import { AppGate } from "@/components/AppGate";
 import { Button } from "@/components/Button";
 import { Mascot, SpeechBubble } from "@/components/Mascot";
+import { PLACEMENT_ID } from "@/lib/course";
 import { DAILY_GOALS, useGame } from "@/lib/store";
 
 const MOTIVATIONS = [
@@ -12,6 +13,7 @@ const MOTIVATIONS = [
   { id: "tajwid", icon: "🎧", label: "Memperbaiki bacaan dan tajwid" },
   { id: "hafalan", icon: "🧠", label: "Persiapan menghafal" },
   { id: "anak", icon: "👨‍👧", label: "Belajar bersama anak" },
+  { id: "penasaran", icon: "🔍", label: "Penasaran dengan huruf Arab" },
 ];
 
 const EXPERIENCE = [
@@ -44,8 +46,10 @@ function Onboarding() {
   const next = () => {
     if (step + 1 < STEPS.length) return setStep(step + 1);
     finish({ motivation: motivation!, experience: experience!, dailyGoal: goal });
-    router.replace("/lesson/u1-1");
+    // Learners who already know some letters take Tes Matrikulasi instead (ADR-0010).
+    router.replace(takesTest ? `/lesson/${PLACEMENT_ID}` : "/lesson/u1-1");
   };
+  const takesTest = experience === "sebagian" || experience === "lancar";
 
   return (
     <div className="flex min-h-dvh flex-col px-5 pb-6 pt-4">
@@ -91,7 +95,9 @@ function Onboarding() {
                 </span>
               </Choice>
             ))}
-            {experience === "lancar" && <p className="text-sm text-muted">Bagian tajwid sedang disiapkan. Untuk sekarang, mulai dari huruf dulu ya, sambil menguatkan makhraj.</p>}
+            {(experience === "sebagian" || experience === "lancar") && (
+              <p className="text-sm text-muted">Nanti ada tes singkat, paling banyak 15 soal, supaya kamu bisa melompat ke bagian yang pas.</p>
+            )}
           </Question>
         )}
 
@@ -111,16 +117,19 @@ function Onboarding() {
         {current === "talaqqi" && (
           <div className="flex flex-1 flex-col items-center justify-center text-center">
             <Mascot mood="think" size={140} />
-            <h1 className="mt-5 text-2xl font-extrabold">Satu pesan penting</h1>
+            <h1 className="mt-5 text-2xl font-extrabold">Belajar di sini, kapan saja</h1>
             <p className="mt-3 text-lg leading-relaxed text-muted">
-              Lafaz adalah teman latihan. Bacaan Al-Qur&apos;an tetap paling baik dipelajari langsung dari guru (talaqqi). Tunjukkan bacaanmu ke ustadz atau ustadzah secara rutin, ya.
+              Tidak perlu pernah mengaji sebelumnya. Salah juga tidak apa-apa, di sini tidak ada yang menghukum.
+            </p>
+            <p className="mt-3 leading-relaxed text-muted">
+              Mau makin mantap? Coba perdengarkan bacaanmu ke guru atau teman yang lancar. Belajar langsung seperti ini disebut talaqqi.
             </p>
           </div>
         )}
       </div>
 
       <Button disabled={!canContinue} onClick={next}>
-        {current === "sambutan" ? "Mulai" : current === "talaqqi" ? "Mulai lesson pertama" : "Lanjut"}
+        {current === "sambutan" ? "Mulai" : current === "talaqqi" ? (takesTest ? "Mulai tes singkat" : "Mulai lesson pertama") : "Lanjut"}
       </Button>
     </div>
   );

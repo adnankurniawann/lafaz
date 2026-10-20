@@ -32,32 +32,48 @@ Sisa yang belum bisa ditutup agen:
 - [ ] Pemilik: cari ustadz untuk merekam huruf lewat Studio. `public/audio/huruf/manifest.json` masih kosong.
 - [ ] Ustadz: cek konten di `docs/DATA.md` §5.
 
-## BERIKUTNYA — Blok 2: Pembeda di Bagian Huruf
+## DONE — Blok 2: Pembeda di Bagian Huruf
 Tujuan: pembeda dari `docs/PRD.md` §3 sudah terasa di konten yang ada, sebelum menambah materi baru.
 
-- [ ] Hapus hati: `MAX_HEARTS`, isi ulang, angka di bar atas, layar hati habis, +1 hati dari Latihan Ulang (ADR-0004).
-- [ ] Hapus gems dan isi ulang hati berbayar (ADR-0006). Putuskan dulu isi Peti dan hadiah Misi Harian bersama pemilik (`docs/PRD.md` §8).
-- [ ] Ganti teks onboarding dan Profil ke nada inklusif dan talaqqi sebagai ajakan (ADR-0009).
-- [ ] Huruf Bandel: koleksi dari jawaban salah, lesson "Taklukkan", keluar setelah benar berturut-turut (FR-9).
-- [ ] Badge: tampil di Profil. Mulai dengan Kenal semua huruf, Penakluk huruf bandel, Streak 7 hari, Juara tantangan (FR-10).
-- [ ] Mode Tantangan per unit: 3 nyawa, timer, XP 2x, badge (FR-11). Putuskan detail timer bersama pemilik.
-- [ ] Peta Ayat di tab bekas Liga dengan tanda "hurufnya dikenal" dan momen sorot huruf setelah unit selesai (FR-12, ADR-0007).
-- [ ] Perayaan streak hari ke-7, 30, 100.
+- [x] Hapus hati: `MAX_HEARTS`, isi ulang, angka di bar atas, layar hati habis, +1 hati dari Latihan Ulang (ADR-0004).
+- [x] Hapus gems dan isi ulang hati berbayar (ADR-0006). Peti dan Misi Harian sekarang memberi XP bonus (keputusan pemilik, `docs/PRD.md` §8). State lama dimigrasi ke versi 2.
+- [x] Ganti teks onboarding dan Profil ke nada inklusif dan talaqqi sebagai ajakan (ADR-0009).
+- [x] Huruf Bandel: masuk saat dijawab salah, lesson "Taklukkan" di tab Huruf, keluar setelah benar 3 kali berturut-turut (FR-9).
+- [x] Badge di Profil: Kenal semua huruf, Penakluk huruf bandel, Streak 7 hari, Juara tantangan (FR-10). Badge baru tampil di layar akhir lesson.
+- [x] Mode Tantangan per unit: 3 nyawa, 15 detik per soal, XP 2x, badge. Nyawa habis = gagal, tombol "Coba lagi" (FR-11).
+- [x] Peta Ayat di `/peta` (tab bekas Liga) dengan tanda "hurufnya dikenal", dan sorot huruf di ayat Al-Fatihah setelah Uji unit pertama kali lulus (FR-12, ADR-0007).
+- [x] Perayaan streak hari ke-7, 30, 100.
 
-**Checkpoint:** di 375×812, selesaikan unit 1 tanpa hati, lihat sorot huruf di ayat, lihat ayat menyala di Peta Ayat, dan salah satu huruf masuk Huruf Bandel.
+**Checkpoint:** di 375×812, selesaikan unit 1 tanpa hati, lihat sorot huruf di ayat, lihat ayat menyala di Peta Ayat, dan salah satu huruf masuk Huruf Bandel. ✅ 20 Okt 2026.
 
-## Blok 3: Iqro Lanjutan → Bisa Baca Al-Fatihah
-- [ ] Bagian harakat: kasrah dan dhammah, lalu tanwin, sukun, tasydid, mad dasar, huruf sambung (FR-15). Rekaman Huruf kasrah dan dhammah sudah didukung Studio.
-- [ ] Script memilih kata dan ayat untuk Momen Bisa Baca dari data, ditandai perlu cek ustadz.
-- [ ] Cek Suara: transformers.js + model Tarteel ONNX, unduh di latar belakang setelah onboarding, cocokkan per kata (FR-14, ADR-0008).
-- [ ] Momen Bisa Baca lengkap: baca, Cek Suara, qari, tanda "bisa dibaca" di Peta Ayat.
-- [ ] Kartu Pamer gambar (FR-13).
-- [ ] Latihan Ulang terjadwal gaya Leitner.
-- [ ] Badge Lancar harakat, Ayat pertama, Bisa baca Al-Fatihah.
+Cek logika: `npm run check` (Huruf Bandel, huruf per ayat, pemilihan ayat sorot).
 
-**Checkpoint:** Pelajar baru bisa sampai membaca 1:1 sendiri, Cek Suara menandai per kata, dan Kartu Pamer bisa disimpan.
+Sisa yang belum bisa ditutup agen:
+- [ ] Ustadz: cek pemetaan bentuk huruf di `data/content/hijaiyah.json` (`variants`: ٱ أ إ → alif, ؤ ئ → hamzah, ة → ta, ى → ya).
+
+## DONE — Blok 3: Iqro Lanjutan → Bisa Baca Al-Fatihah
+Keputusan pemilik (20 Okt 2026): satu blok utuh, model Cek Suara dikonversi sendiri ke ONNX, Rank bertema cahaya.
+
+- [x] Bagian 2 Membaca, urutan Iqro: u10 huruf sambung, u11 kasrah, u12 dhammah, u13 tanwin, u14 sukun, u15 tasydid, u16 mad, u17 tanda khusus (alif washal, alif kecil, lam syamsiyah), u18 Al-Fatihah (FR-15). Suku kata latihan dibuat kode dari huruf + tanda (`syllables.ts`), materi di `data/content/harakat.json`.
+- [x] `npm run build-reading-data` memilih kata qari per suku kata, kata dan ayat Momen Bisa Baca per unit (ayat utuh pertama: 94:1 setelah sukun), dan kata bertanda khusus. Ditandai perlu cek ustadz.
+- [x] Cek Suara: model Tarteel dikonversi ke ONNX q8 (±102 MB), jalan di Web Worker, diunduh di latar setelah onboarding, cocok per kata dengan ejaan Utsmani (FR-14, ADR-0008).
+- [x] Momen Bisa Baca: baca sendiri, rekam, Cek Suara, dengar qari, tanda "bisa dibaca" di Peta Ayat.
+- [x] Kartu Pamer gambar PNG lewat Web Share atau unduh (FR-13).
+- [x] Latihan Ulang terjadwal gaya Leitner (1, 2, 4, 8, 16 hari) untuk huruf dan suku kata.
+- [x] Badge Lancar harakat, Ayat pertama, Bisa baca Al-Fatihah.
+- [x] Tes Matrikulasi di Iqro (≤15 soal, 3 tahap), dari onboarding ("Kenal sebagian" / "Sudah bisa membaca") dan dari header Bagian Membaca. Lesson yang dilewati tanpa XP dan badge (ADR-0010).
+- [x] Rank dari total XP di Profil dan layar akhir lesson: Percikan 0, Nyala 100, Pelita 300, Lentera 700, Suar 1500, Cahaya 3000 XP.
+
+**Checkpoint:** Pelajar baru bisa sampai membaca 1:1 sendiri, Cek Suara menandai per kata, dan Kartu Pamer bisa disimpan. ✅ 20 Okt 2026, diuji dengan audio qari sebagai pengganti mikrofon (browser pane tidak punya mikrofon): 1:1 terbaca 4 dari 4 kata hijau.
+
+Sisa yang belum bisa ditutup agen:
+- [ ] Pemilik: coba Momen Bisa Baca dengan suara sendiri di HP (mikrofon asli belum diuji).
+- [ ] Pemilik: sebelum deploy, upload `public/models/tarteel-ai/whisper-base-ar-quran/` ke repo Hugging Face dan isi `NEXT_PUBLIC_SPEECH_MODEL`. Tanpa itu Cek Suara di produksi jatuh ke Nilai Sendiri.
+- [ ] Ustadz: cek `data/content/harakat.json`, `data/content/reading.json`, dan cara baca latin suku kata (huruf tebal "o", tasydid dobel, mad tanpa sukun).
+- [ ] Rekaman Huruf kasrah/dhammah lewat Studio. Sampai ada, 9 huruf berkasrah belum punya contoh suara qari.
 
 ## Blok 4: Level Tajwid
+- [ ] Level di kode: onboarding "Mau mulai dari mana?", pemilih Level di bar atas tab Belajar, tes naik Level dari ujian akhir Iqro dengan "tetap masuk" (ADR-0010).
 - [ ] Pemutar Potongan Ayat dari `timing` (FR-16).
 - [ ] Deteksi izhar dari Teks Utsmani, ditandai perlu cek ustadz.
 - [ ] Unit nun mati dan tanwin dengan 6 jenis soal.

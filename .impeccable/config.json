@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "bounce-easing",
+        "value": "animate-bounce",
+        "createdAt": "2026-10-20T14:42:53.439Z",
+        "reason": "agent: loading mascot animate-bounce-soft predates this session (in HEAD); AGENTS.md §4 forbids redesign until the visual identity task opens"
+      }
+    ]
+  }
+}

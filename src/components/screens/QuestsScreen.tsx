@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/Button";
-import { ChestIcon, GemIcon } from "@/components/icons";
+import { BoltIcon, ChestIcon } from "@/components/icons";
 import { Mascot } from "@/components/Mascot";
 import { Dialog } from "@/components/Sheet";
 import { dayKey } from "@/lib/dates";
@@ -24,7 +24,7 @@ export function QuestsScreen() {
       <div className="flex items-center gap-4 rounded-2xl bg-purple p-4 text-white">
         <div className="flex-1">
           <h1 className="text-2xl font-extrabold">Misi harian</h1>
-          <p className="opacity-90">Selesaikan misi untuk membuka peti gems. Berganti dalam {hoursLeft} jam.</p>
+          <p className="opacity-90">Selesaikan misi untuk dapat XP bonus. Berganti dalam {hoursLeft} jam.</p>
         </div>
         <Mascot size={80} mood="cheer" />
       </div>
@@ -66,10 +66,10 @@ export function QuestsScreen() {
                   className="animate-bounce-soft"
                   aria-label="Buka peti"
                   onClick={() => {
-                    const gems = claim(q.id);
-                    if (gems) {
+                    const xp = claim(q.id);
+                    if (xp) {
                       sfx.chest();
-                      setReward(gems);
+                      setReward(xp);
                     }
                   }}
                 >
@@ -86,9 +86,10 @@ export function QuestsScreen() {
       {reward !== null && (
         <Dialog onClose={() => setReward(null)}>
           <ChestIcon className="mx-auto size-28 animate-pop-in" open />
-          <p className="mt-3 flex items-center justify-center gap-2 text-2xl font-extrabold text-blue">
-            +{reward} <GemIcon className="size-7" />
+          <p className="mt-3 flex items-center justify-center gap-2 text-2xl font-extrabold text-gold">
+            +{reward} <BoltIcon className="size-7" />
           </p>
+          <p className="text-muted">XP bonus, ikut dihitung ke target harian.</p>
           <Button className="mt-5" onClick={() => setReward(null)}>
             Mantap
           </Button>

@@ -20,7 +20,7 @@ Tidak ada server dan database (ADR-0001). Data Qur'an diambil sekali oleh script
 - zustand 5 dengan `persist` untuk state game.
 - jszip untuk ekspor Rekaman Huruf dari Studio.
 - tsx untuk menjalankan script.
-- Rencana: transformers.js untuk Cek Suara (ADR-0008). Tanya pemilik sebelum menambah dependensi lain.
+- transformers.js untuk Cek Suara (ADR-0008). Tanya pemilik sebelum menambah dependensi lain.
 
 ## 3. Susunan Folder
 
@@ -38,7 +38,7 @@ lafaz/
 │   └── build-letter-examples.ts
 └── src/
     ├── app/
-    │   ├── (tabs)/         # Belajar (/), Huruf, Liga (→ Peta Ayat), Misi, Profil
+    │   ├── (tabs)/         # Belajar (/), Huruf, Peta Ayat (/peta), Misi, Profil
     │   ├── onboarding/
     │   ├── lesson/[id]/
     │   ├── studio/
@@ -53,6 +53,14 @@ lafaz/
         ├── exercises.ts    # tipe tiap jenis soal + penyusun soal per jenis lesson
         ├── store.ts        # state game, persist ke localStorage
         ├── quests.ts       # Misi Harian
+        ├── trouble.ts      # Huruf Bandel: masuk saat salah, keluar setelah benar beruntun
+        ├── badges.ts       # daftar badge
+        ├── ayah-letters.ts # huruf di tiap ayat, untuk Peta Ayat dan sorot huruf
+        ├── syllables.ts    # token suku kata Bagian Membaca: tulisan Arab dan bacaan latin dari huruf + tanda
+        ├── review.ts       # Latihan Ulang terjadwal (Leitner, kotak 1-16 hari)
+        ├── rank.ts         # Rank dari total XP
+        ├── speech.ts, speech-worker.ts  # Cek Suara: transformers.js di Web Worker
+        ├── speech-match.ts # cocokkan transkrip dengan kata Utsmani per kata
         ├── letters.ts      # materi huruf dari JSON
         ├── quran.ts        # baca data surah
         ├── tajweed.ts      # parser markup + projectTajweed
@@ -68,16 +76,17 @@ lafaz/
 1. `course.ts` mendefinisikan path. Tiap unit huruf punya node: Kenalan, Dengar dan pilih, peti, Pasangkan dan baca, Ucapkan, Uji unit. Unit 9 punya Bentuk mirip, Bunyi mirip, peti, Ucapkan, Uji akhir huruf.
 2. `exercises.ts` menyusun soal dari `lessonKind` dan huruf lesson. Jenis soal: `intro`, `listen-pick`, `word-initial`, `sound-pick`, `name-pick`, `match`, `sequence`, `speak`. Yang dinilai app (`GRADED`): `listen-pick`, `word-initial`, `sound-pick`, `name-pick`, `sequence`.
 3. `LessonPlayer` memutar soal satu per satu, mengulang soal salah di akhir, lalu memanggil `store.completeLesson` dengan `LessonResult`.
-4. `LessonEnd` menampilkan rangkaian layar akhir dari `LessonSummary`.
+4. `LessonEnd` menampilkan rangkaian layar akhir dari `LessonSummary`: hasil, sorot huruf di ayat (hanya Uji unit pertama kali), badge baru, streak, Target Harian, Misi Harian.
+5. Id lesson khusus: `latihan` (Latihan Ulang), `taklukkan` (khusus Huruf Bandel), `tantangan-u1` dst. (Mode Tantangan, memakai soal Uji unit dengan 3 nyawa dan timer).
 
 ## 5. State & Penyimpanan
 
 | Data | Di mana | Catatan |
 |---|---|---|
-| Progres (onboarding, XP per hari, streak, Penguasaan Huruf, lesson selesai, misi) | localStorage, zustand `persist` | Hati dan gems akan dihapus (ADR-0004, 0006) |
+| Progres (onboarding, XP per hari, streak, Penguasaan Huruf, Huruf Bandel, badge, tantangan, lesson selesai, misi) | localStorage, zustand `persist` | Versi 2: hati dan gems dihapus lewat `migrate` (ADR-0004, 0006) |
 | Rekaman Huruf dari Studio | IndexedDB | Tidak pernah dikirim ke mana pun |
 | Rekaman Pelajar di soal ucapkan | Memori saja, hilang setelah lesson | `src/lib/use-recorder.ts` |
-| Model Cek Suara | Cache browser (rencana) | ±75 MB, diunduh di latar belakang |
+| Model Cek Suara | Cache browser | ±102 MB (encoder 23 + decoder 79), diunduh di latar belakang setelah onboarding, jalan di Web Worker |
 | Data Qur'an | `data/quran/` di repo, di-bundle saat build | |
 
 Halaman di `(tabs)` memakai `export const instant = false` supaya dirender di klien setelah progres tersimpan terbaca.
@@ -100,5 +109,8 @@ Belum dideploy. Rencananya Vercel: push repo ke GitHub, import di vercel.com. HT
 | `npm run build` | Build produksi |
 | `npm run lint` | ESLint |
 | `npx tsc --noEmit` | Cek tipe |
+| `npm run check` | Cek kecil logika bercabang (`scripts/check.ts`) |
 | `npm run fetch-quran` | Unduh ulang data Qur'an ke `data/quran/` |
 | `npm run build-letter-examples` | Pilih ulang Contoh Kata dari `data/quran/` |
+| `npm run build-reading-data` | Pilih kata qari per suku kata, kata dan ayat Momen Bisa Baca per unit, dan kata bertanda khusus (`data/content/reading.json`) |
+| `uv run scripts/convert-speech-model.py` | Ubah model Tarteel ke ONNX untuk Cek Suara, hasil di `public/models/` (tidak di-commit) |

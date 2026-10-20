@@ -29,8 +29,8 @@ Warna hukum tajwid diatur terpisah di `TajweedText` dan tidak ikut redesign tanp
 - Teks Latin: font sistem dengan bobot tebal untuk judul dan tombol.
 
 ## 4. Komponen (sementara)
-- Bar atas: sekarang streak, gems, dan hati. Setelah Blok 2 tinggal streak, karena hati dan gems dihapus (ADR-0004, 0006).
-- Tab bawah: Belajar, Huruf, Peta Ayat (bekas Liga), Misi, Profil.
+- Bar atas: hanya streak. Hati dan gems dihapus (ADR-0004, 0006).
+- Tab bawah: Belajar, Huruf, Peta (Peta Ayat, bekas Liga), Misi, Profil. Labelnya "Peta" supaya muat satu baris di 375 px.
 - Tombol utama dengan bayangan bawah tebal. PERIKSA berubah jadi LANJUT.
 - Panel umpan balik naik dari bawah: hijau "Benar!", merah "Belum tepat" dengan jawaban yang benar.
 - Maskot Lafaz sendiri (`Mascot.tsx`), bukan burung hantu.

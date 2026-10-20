@@ -14,7 +14,7 @@ Semua teks ayat diambil lewat `scripts/fetch-quran.ts`, tidak ada yang diketik m
 | Audio per kata | `https://audio.qurancdn.com/wbw/{sss}_{aaa}_{www}.mp3` | App, langsung dari CDN |
 | Audio per ayat (Mishary Alafasy) | `https://everyayah.com/data/Alafasy_128kbps/{SSS}{AAA}.mp3` | App, langsung dari CDN |
 | Font Arab | [Amiri Quran](https://fonts.google.com/specimen/Amiri+Quran), Google Fonts | App |
-| Model Cek Suara (rencana) | `tarteel-ai/whisper-base-ar-quran` versi ONNX, ±75 MB | App, diunduh sekali |
+| Model Cek Suara | `tarteel-ai/whisper-base-ar-quran`, dikonversi ke ONNX q8 oleh `scripts/convert-speech-model.py` (repo resmi hanya punya bobot PyTorch), ±102 MB | App, diunduh sekali. Lokal dari `public/models/`; untuk produksi upload ke repo Hugging Face lalu isi `NEXT_PUBLIC_SPEECH_MODEL` |
 
 Surah yang diambil: Al-Fatihah (1) dan seluruh juz 30 (78 sampai 114), 38 surah, 602 ayat. Juz 30 diambil utuh supaya contoh tajwid dan hafalan bisa dari surah mana saja tanpa mengunduh ulang.
 
@@ -38,6 +38,8 @@ Audio tidak disimpan di repo. File `data/quran/*.json` hanya menyimpan URL, jadi
 - `data/quran/index.json`: daftar surah, URL sumber, waktu pengambilan, dan basmalah.
 - `data/quran/text-notes.txt`: catatan perbedaan teks yang ditemukan script.
 - `data/content/letter-examples.json`: Contoh Kata per huruf, dipilih oleh `scripts/build-letter-examples.ts`. Aturannya: kata diawali huruf itu, diutamakan yang berharakat fathah, tanpa tanda khusus mushaf, pendek, dan dari surah yang dikenal. Untuk ص ق ن juga disimpan rekaman qari menyebut nama hurufnya (38:1, 50:1, 68:1).
+
+**Nomor file audio per kata** mengikuti posisi kata (`www` = `position`). Jangan pakai `audio_url` dari API quran.com: di ayat yang punya tanda waqaf di tengah (misalnya ۖ di 78:38), nomornya meleset +1 per tanda, sehingga kata memutar suara kata sesudahnya dan kata terakhir 404. Ditemukan 20 Okt 2026, 73 kata di 15 ayat.
 
 **Penting soal audio per kata**: tiap kata dibaca terpisah, jadi hukum tajwid antar kata (ikhfa, idgham, iqlab) tidak terdengar. Untuk Potongan Ayat, audionya diputar dari audio ayat penuh, dipotong dengan `timing`.
 

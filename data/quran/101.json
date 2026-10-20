@@ -15,7 +15,24 @@
    "text": "ٱلْقَارِعَةُ",
    "translation": "Hari Kiamat,",
    "tajweed": "ٱلْقَارِعَةُ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/101001.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/101001.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "ٱلْقَارِعَةُ",
+     "audio": "https://audio.qurancdn.com/wbw/101_001_001.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/101001.mp3",
+    "segments": [
+     [
+      1,
+      150,
+      1700
+     ]
+    ]
+   }
   },
   {
    "number": 2,
@@ -25,7 +42,34 @@
    "text": "مَا ٱلْقَارِعَةُ",
    "translation": "apakah hari Kiamat itu?",
    "tajweed": "مَا [h:14619[ٱ]لْقَارِعَةُ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/101002.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/101002.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "مَا",
+     "audio": "https://audio.qurancdn.com/wbw/101_002_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱلْقَارِعَةُ",
+     "audio": "https://audio.qurancdn.com/wbw/101_002_002.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/101002.mp3",
+    "segments": [
+     [
+      1,
+      40,
+      240
+     ],
+     [
+      2,
+      250,
+      1640
+     ]
+    ]
+   }
   },
   {
    "number": 3,
@@ -35,7 +79,54 @@
    "text": "وَمَآ أَدْرَىٰكَ مَا ٱلْقَارِعَةُ",
    "translation": "Tahukah kamu apakah hari Kiamat itu?",
    "tajweed": "وَم[o[َآ] أَ[q:13858[دْ]رَ[n[ٮٰ]كَ مَا [h:14619[ٱ]لْقَارِعَةُ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/101003.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/101003.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَمَآ",
+     "audio": "https://audio.qurancdn.com/wbw/101_003_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "أَدْرَىٰكَ",
+     "audio": "https://audio.qurancdn.com/wbw/101_003_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "مَا",
+     "audio": "https://audio.qurancdn.com/wbw/101_003_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "ٱلْقَارِعَةُ",
+     "audio": "https://audio.qurancdn.com/wbw/101_003_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/101003.mp3",
+    "segments": [
+     [
+      1,
+      40,
+      330
+     ],
+     [
+      2,
+      340,
+      3590
+     ],
+     [
+      3,
+      3600,
+      3730
+     ],
+     [
+      4,
+      3740,
+      4910
+     ]
+    ]
+   }
   },
   {
    "number": 4,
@@ -45,7 +136,64 @@
    "text": "يَوْمَ يَكُونُ ٱلنَّاسُ كَٱلْفَرَاشِ ٱلْمَبْثُوثِ",
    "translation": "Pada hari itu manusia adalah seperti anai-anai yang bertebaran,",
    "tajweed": "يَوْمَ يَكُونُ [h:14620[ٱ][l[ل][g[نّ]َاسُ كَ[h:14621[ٱ]لْفَرَاشِ [h:14622[ٱ]لْمَ[q:14623[بْ]ث[p[ُو]ثِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/101004.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/101004.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "يَوْمَ",
+     "audio": "https://audio.qurancdn.com/wbw/101_004_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "يَكُونُ",
+     "audio": "https://audio.qurancdn.com/wbw/101_004_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "ٱلنَّاسُ",
+     "audio": "https://audio.qurancdn.com/wbw/101_004_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "كَٱلْفَرَاشِ",
+     "audio": "https://audio.qurancdn.com/wbw/101_004_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "ٱلْمَبْثُوثِ",
+     "audio": "https://audio.qurancdn.com/wbw/101_004_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/101004.mp3",
+    "segments": [
+     [
+      1,
+      90,
+      610
+     ],
+     [
+      2,
+      620,
+      1530
+     ],
+     [
+      3,
+      1540,
+      3040
+     ],
+     [
+      4,
+      3050,
+      4410
+     ],
+     [
+      5,
+      4420,
+      7300
+     ]
+    ]
+   }
   },
   {
    "number": 5,
@@ -55,7 +203,54 @@
    "text": "وَتَكُونُ ٱلْجِبَالُ كَٱلْعِهْنِ ٱلْمَنفُوشِ",
    "translation": "dan gunung-gunung adalah seperti bulu yang dihambur-hamburkan.",
    "tajweed": "وَتَكُونُ [h:13919[ٱ]لْجِبَالُ كَ[h:13920[ٱ]لْعِهْنِ [h:14624[ٱ]لْمَ[f:14625[نف][p[ُو]شِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/101005.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/101005.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَتَكُونُ",
+     "audio": "https://audio.qurancdn.com/wbw/101_005_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱلْجِبَالُ",
+     "audio": "https://audio.qurancdn.com/wbw/101_005_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "كَٱلْعِهْنِ",
+     "audio": "https://audio.qurancdn.com/wbw/101_005_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "ٱلْمَنفُوشِ",
+     "audio": "https://audio.qurancdn.com/wbw/101_005_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/101005.mp3",
+    "segments": [
+     [
+      1,
+      80,
+      1100
+     ],
+     [
+      2,
+      1110,
+      2190
+     ],
+     [
+      3,
+      2200,
+      3330
+     ],
+     [
+      4,
+      3340,
+      7210
+     ]
+    ]
+   }
   },
   {
    "number": 6,
@@ -65,7 +260,54 @@
    "text": "فَأَمَّا مَن ثَقُلَتْ مَوَٰزِينُهُۥ",
    "translation": "Dan adapun orang-orang yang berat timbangan (kebaikan)nya,",
    "tajweed": "فَأَ[g[مّ]َا مَ[f:14626[ن ث]َقُلَتْ مَو[n[َٲ]زِينُهُۥ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/101006.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/101006.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "فَأَمَّا",
+     "audio": "https://audio.qurancdn.com/wbw/101_006_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "مَن",
+     "audio": "https://audio.qurancdn.com/wbw/101_006_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "ثَقُلَتْ",
+     "audio": "https://audio.qurancdn.com/wbw/101_006_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "مَوَٰزِينُهُۥ",
+     "audio": "https://audio.qurancdn.com/wbw/101_006_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/101006.mp3",
+    "segments": [
+     [
+      1,
+      50,
+      1960
+     ],
+     [
+      2,
+      1970,
+      2950
+     ],
+     [
+      3,
+      2960,
+      3820
+     ],
+     [
+      4,
+      3830,
+      5230
+     ]
+    ]
+   }
   },
   {
    "number": 7,
@@ -75,7 +317,54 @@
    "text": "فَهُوَ فِى عِيشَةٍۢ رَّاضِيَةٍۢ",
    "translation": "maka dia berada dalam kehidupan yang memuaskan.",
    "tajweed": "فَهُوَ فِى عِيشَ[u:13890[ةٍ ر]َّاضِيَةٍ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/101007.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/101007.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "فَهُوَ",
+     "audio": "https://audio.qurancdn.com/wbw/101_007_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "فِى",
+     "audio": "https://audio.qurancdn.com/wbw/101_007_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "عِيشَةٍۢ",
+     "audio": "https://audio.qurancdn.com/wbw/101_007_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "رَّاضِيَةٍۢ",
+     "audio": "https://audio.qurancdn.com/wbw/101_007_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/101007.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      620
+     ],
+     [
+      2,
+      630,
+      1050
+     ],
+     [
+      3,
+      1060,
+      1940
+     ],
+     [
+      4,
+      1950,
+      3290
+     ]
+    ]
+   }
   },
   {
    "number": 8,
@@ -85,7 +374,54 @@
    "text": "وَأَمَّا مَنْ خَفَّتْ مَوَٰزِينُهُۥ",
    "translation": "Dan adapun orang-orang yang ringan timbangan (kebaikan)nya,",
    "tajweed": "وَأَ[g[مّ]َا مَنْ خَفَّتْ مَو[n[َٲ]زِينُهُۥ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/101008.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/101008.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَأَمَّا",
+     "audio": "https://audio.qurancdn.com/wbw/101_008_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "مَنْ",
+     "audio": "https://audio.qurancdn.com/wbw/101_008_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "خَفَّتْ",
+     "audio": "https://audio.qurancdn.com/wbw/101_008_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "مَوَٰزِينُهُۥ",
+     "audio": "https://audio.qurancdn.com/wbw/101_008_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/101008.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1850
+     ],
+     [
+      2,
+      1860,
+      2210
+     ],
+     [
+      3,
+      2220,
+      3100
+     ],
+     [
+      4,
+      3110,
+      4520
+     ]
+    ]
+   }
   },
   {
    "number": 9,
@@ -95,7 +431,34 @@
    "text": "فَأُمُّهُۥ هَاوِيَةٌۭ",
    "translation": "maka tempat kembalinya adalah neraka Hawiyah.",
    "tajweed": "فَأُ[g[مّ]ُهُ[n[ۥ] هَاوِيَةٌ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/101009.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/101009.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "فَأُمُّهُۥ",
+     "audio": "https://audio.qurancdn.com/wbw/101_009_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "هَاوِيَةٌۭ",
+     "audio": "https://audio.qurancdn.com/wbw/101_009_002.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/101009.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1910
+     ],
+     [
+      2,
+      1920,
+      2990
+     ]
+    ]
+   }
   },
   {
    "number": 10,
@@ -105,7 +468,54 @@
    "text": "وَمَآ أَدْرَىٰكَ مَا هِيَهْ",
    "translation": "Tahukah kamu apakah neraka Hawiyah itu?",
    "tajweed": "وَم[o[َآ] أَ[q:13858[دْ]رَ[n[ٮٰ]كَ مَا هِيَهْ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/101010.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/101010.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَمَآ",
+     "audio": "https://audio.qurancdn.com/wbw/101_010_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "أَدْرَىٰكَ",
+     "audio": "https://audio.qurancdn.com/wbw/101_010_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "مَا",
+     "audio": "https://audio.qurancdn.com/wbw/101_010_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "هِيَهْ",
+     "audio": "https://audio.qurancdn.com/wbw/101_010_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/101010.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1950
+     ],
+     [
+      2,
+      1960,
+      3070
+     ],
+     [
+      3,
+      3080,
+      3480
+     ],
+     [
+      4,
+      3490,
+      4040
+     ]
+    ]
+   }
   },
   {
    "number": 11,
@@ -115,7 +525,34 @@
    "text": "نَارٌ حَامِيَةٌۢ",
    "translation": "(Yaitu) api yang sangat panas.",
    "tajweed": "نَارٌ حَامِيَةُۢ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/101011.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/101011.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "نَارٌ",
+     "audio": "https://audio.qurancdn.com/wbw/101_011_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "حَامِيَةٌۢ",
+     "audio": "https://audio.qurancdn.com/wbw/101_011_002.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/101011.mp3",
+    "segments": [
+     [
+      1,
+      100,
+      900
+     ],
+     [
+      2,
+      910,
+      2100
+     ]
+    ]
+   }
   }
  ]
 }

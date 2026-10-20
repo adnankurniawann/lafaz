@@ -15,7 +15,34 @@
    "text": "أَلْهَىٰكُمُ ٱلتَّكَاثُرُ",
    "translation": "Bermegah-megahan telah melalaikan kamu,",
    "tajweed": "أَلْهَ[n[ـٰ]كُمُ [h:14627[ٱ][l[ل]تَّكَاثُرُ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/102001.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/102001.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "أَلْهَىٰكُمُ",
+     "audio": "https://audio.qurancdn.com/wbw/102_001_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱلتَّكَاثُرُ",
+     "audio": "https://audio.qurancdn.com/wbw/102_001_002.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/102001.mp3",
+    "segments": [
+     [
+      1,
+      150,
+      1320
+     ],
+     [
+      2,
+      1330,
+      2690
+     ]
+    ]
+   }
   },
   {
    "number": 2,
@@ -25,7 +52,44 @@
    "text": "حَتَّىٰ زُرْتُمُ ٱلْمَقَابِرَ",
    "translation": "sampai kamu masuk ke dalam kubur.",
    "tajweed": "حَتَّىٰ زُرْتُمُ [h:14628[ٱ]لْمَقَابِرَ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/102002.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/102002.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "حَتَّىٰ",
+     "audio": "https://audio.qurancdn.com/wbw/102_002_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "زُرْتُمُ",
+     "audio": "https://audio.qurancdn.com/wbw/102_002_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "ٱلْمَقَابِرَ",
+     "audio": "https://audio.qurancdn.com/wbw/102_002_003.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/102002.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      870
+     ],
+     [
+      2,
+      880,
+      1770
+     ],
+     [
+      3,
+      1780,
+      3330
+     ]
+    ]
+   }
   },
   {
    "number": 3,
@@ -35,7 +99,44 @@
    "text": "كَلَّا سَوْفَ تَعْلَمُونَ",
    "translation": "Janganlah begitu, kelak kamu akan mengetahui (akibat perbuatanmu itu),",
    "tajweed": "كَلَّا سَوْفَ تَعْلَم[p[ُو]نَ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/102003.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/102003.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "كَلَّا",
+     "audio": "https://audio.qurancdn.com/wbw/102_003_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "سَوْفَ",
+     "audio": "https://audio.qurancdn.com/wbw/102_003_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "تَعْلَمُونَ",
+     "audio": "https://audio.qurancdn.com/wbw/102_003_003.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/102003.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      810
+     ],
+     [
+      2,
+      820,
+      1530
+     ],
+     [
+      3,
+      1540,
+      4720
+     ]
+    ]
+   }
   },
   {
    "number": 4,
@@ -45,7 +146,54 @@
    "text": "ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ",
    "translation": "dan janganlah begitu, kelak kamu akan mengetahui.",
    "tajweed": "ثُ[g[مّ]َ كَلَّا سَوْفَ تَعْلَم[p[ُو]نَ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/102004.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/102004.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "ثُمَّ",
+     "audio": "https://audio.qurancdn.com/wbw/102_004_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "كَلَّا",
+     "audio": "https://audio.qurancdn.com/wbw/102_004_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "سَوْفَ",
+     "audio": "https://audio.qurancdn.com/wbw/102_004_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "تَعْلَمُونَ",
+     "audio": "https://audio.qurancdn.com/wbw/102_004_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/102004.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1650
+     ],
+     [
+      2,
+      1660,
+      2510
+     ],
+     [
+      3,
+      2520,
+      3190
+     ],
+     [
+      4,
+      3200,
+      6000
+     ]
+    ]
+   }
   },
   {
    "number": 5,
@@ -55,7 +203,64 @@
    "text": "كَلَّا لَوْ تَعْلَمُونَ عِلْمَ ٱلْيَقِينِ",
    "translation": "Janganlah begitu, jika kamu mengetahui dengan pengetahuan yang yakin,",
    "tajweed": "كَلَّا لَوْ تَعْلَمُونَ عِلْمَ [h:14629[ٱ]لْيَق[p[ِي]نِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/102005.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/102005.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "كَلَّا",
+     "audio": "https://audio.qurancdn.com/wbw/102_005_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "لَوْ",
+     "audio": "https://audio.qurancdn.com/wbw/102_005_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "تَعْلَمُونَ",
+     "audio": "https://audio.qurancdn.com/wbw/102_005_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "عِلْمَ",
+     "audio": "https://audio.qurancdn.com/wbw/102_005_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "ٱلْيَقِينِ",
+     "audio": "https://audio.qurancdn.com/wbw/102_005_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/102005.mp3",
+    "segments": [
+     [
+      1,
+      50,
+      900
+     ],
+     [
+      2,
+      910,
+      1270
+     ],
+     [
+      3,
+      1280,
+      2570
+     ],
+     [
+      4,
+      2580,
+      3180
+     ],
+     [
+      5,
+      3190,
+      5910
+     ]
+    ]
+   }
   },
   {
    "number": 6,
@@ -65,7 +270,34 @@
    "text": "لَتَرَوُنَّ ٱلْجَحِيمَ",
    "translation": "niscaya kamu benar-benar akan melihat neraka Jahiim,",
    "tajweed": "لَتَرَوُ[g[نّ]َ [h:14630[ٱ]لْجَح[p[ِي]مَ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/102006.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/102006.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "لَتَرَوُنَّ",
+     "audio": "https://audio.qurancdn.com/wbw/102_006_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱلْجَحِيمَ",
+     "audio": "https://audio.qurancdn.com/wbw/102_006_002.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/102006.mp3",
+    "segments": [
+     [
+      1,
+      150,
+      2250
+     ],
+     [
+      2,
+      2260,
+      5240
+     ]
+    ]
+   }
   },
   {
    "number": 7,
@@ -75,7 +307,54 @@
    "text": "ثُمَّ لَتَرَوُنَّهَا عَيْنَ ٱلْيَقِينِ",
    "translation": "dan sesungguhnya kamu benar-benar akan melihatnya dengan 'ainul yaqin.",
    "tajweed": "ثُ[g[مّ]َ لَتَرَوُ[g[نّ]َهَا عَيْنَ [h:14631[ٱ]لْيَق[p[ِي]نِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/102007.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/102007.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "ثُمَّ",
+     "audio": "https://audio.qurancdn.com/wbw/102_007_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "لَتَرَوُنَّهَا",
+     "audio": "https://audio.qurancdn.com/wbw/102_007_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "عَيْنَ",
+     "audio": "https://audio.qurancdn.com/wbw/102_007_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "ٱلْيَقِينِ",
+     "audio": "https://audio.qurancdn.com/wbw/102_007_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/102007.mp3",
+    "segments": [
+     [
+      1,
+      40,
+      1170
+     ],
+     [
+      2,
+      1180,
+      3800
+     ],
+     [
+      3,
+      3810,
+      4470
+     ],
+     [
+      4,
+      4480,
+      7470
+     ]
+    ]
+   }
   },
   {
    "number": 8,
@@ -85,7 +364,64 @@
    "text": "ثُمَّ لَتُسْـَٔلُنَّ يَوْمَئِذٍ عَنِ ٱلنَّعِيمِ",
    "translation": "kemudian kamu pasti akan ditanyai pada hari itu tentang kenikmatan (yang kamu megah-megahkan di dunia itu).",
    "tajweed": "ثُ[g[مّ]َ لَتُسْــَٔلُ[g[نّ]َ يَوْمَئِذٍ عَنِ [h:14632[ٱ][l[ل][g[نّ]َع[p[ِي]مِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/102008.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/102008.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "ثُمَّ",
+     "audio": "https://audio.qurancdn.com/wbw/102_008_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "لَتُسْـَٔلُنَّ",
+     "audio": "https://audio.qurancdn.com/wbw/102_008_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "يَوْمَئِذٍ",
+     "audio": "https://audio.qurancdn.com/wbw/102_008_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "عَنِ",
+     "audio": "https://audio.qurancdn.com/wbw/102_008_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "ٱلنَّعِيمِ",
+     "audio": "https://audio.qurancdn.com/wbw/102_008_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/102008.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1650
+     ],
+     [
+      2,
+      1660,
+      3850
+     ],
+     [
+      3,
+      3860,
+      5120
+     ],
+     [
+      4,
+      5130,
+      5660
+     ],
+     [
+      5,
+      5670,
+      9930
+     ]
+    ]
+   }
   }
  ]
 }

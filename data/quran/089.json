@@ -15,7 +15,24 @@
    "text": "وَٱلْفَجْرِ",
    "translation": "Demi fajar,",
    "tajweed": "وَ[h:9999[ٱ]لْفَ[q:14468[جْ]رِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089001.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089001.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَٱلْفَجْرِ",
+     "audio": "https://audio.qurancdn.com/wbw/089_001_001.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089001.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      790
+     ]
+    ]
+   }
   },
   {
    "number": 2,
@@ -25,7 +42,34 @@
    "text": "وَلَيَالٍ عَشْرٍۢ",
    "translation": "dan malam yang sepuluh,",
    "tajweed": "وَلَيَالٍ عَشْرٍ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089002.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089002.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَلَيَالٍ",
+     "audio": "https://audio.qurancdn.com/wbw/089_002_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "عَشْرٍۢ",
+     "audio": "https://audio.qurancdn.com/wbw/089_002_002.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089002.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1230
+     ],
+     [
+      2,
+      1240,
+      1850
+     ]
+    ]
+   }
   },
   {
    "number": 3,
@@ -35,7 +79,34 @@
    "text": "وَٱلشَّفْعِ وَٱلْوَتْرِ",
    "translation": "dan yang genap dan yang ganjil,",
    "tajweed": "وَ[h:9999[ٱ][l[ل]شَّفْعِ وَ[h:14469[ٱ]لْوَتْرِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089003.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089003.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَٱلشَّفْعِ",
+     "audio": "https://audio.qurancdn.com/wbw/089_003_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "وَٱلْوَتْرِ",
+     "audio": "https://audio.qurancdn.com/wbw/089_003_002.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089003.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1040
+     ],
+     [
+      2,
+      1050,
+      1810
+     ]
+    ]
+   }
   },
   {
    "number": 4,
@@ -45,7 +116,44 @@
    "text": "وَٱلَّيْلِ إِذَا يَسْرِ",
    "translation": "dan malam bila berlalu.",
    "tajweed": "وَ[h:9999[ٱ]لَّيْلِ إِذَا يَسْرِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089004.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089004.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَٱلَّيْلِ",
+     "audio": "https://audio.qurancdn.com/wbw/089_004_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "إِذَا",
+     "audio": "https://audio.qurancdn.com/wbw/089_004_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "يَسْرِ",
+     "audio": "https://audio.qurancdn.com/wbw/089_004_003.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089004.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1080
+     ],
+     [
+      2,
+      1090,
+      1690
+     ],
+     [
+      3,
+      1700,
+      2270
+     ]
+    ]
+   }
   },
   {
    "number": 5,
@@ -55,7 +163,74 @@
    "text": "هَلْ فِى ذَٰلِكَ قَسَمٌۭ لِّذِى حِجْرٍ",
    "translation": "Pada yang demikian itu terdapat sumpah (yang dapat diterima) oleh orang-orang yang berakal.",
    "tajweed": "هَلْ فِى ذ[n[َٲ]لِكَ قَسَ[u:14470[مٌ ل]ِّذِى حِ[q:14471[جْ]رٍ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089005.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089005.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "هَلْ",
+     "audio": "https://audio.qurancdn.com/wbw/089_005_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "فِى",
+     "audio": "https://audio.qurancdn.com/wbw/089_005_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "ذَٰلِكَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_005_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "قَسَمٌۭ",
+     "audio": "https://audio.qurancdn.com/wbw/089_005_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "لِّذِى",
+     "audio": "https://audio.qurancdn.com/wbw/089_005_005.mp3"
+    },
+    {
+     "position": 6,
+     "text": "حِجْرٍ",
+     "audio": "https://audio.qurancdn.com/wbw/089_005_006.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089005.mp3",
+    "segments": [
+     [
+      1,
+      100,
+      390
+     ],
+     [
+      2,
+      400,
+      890
+     ],
+     [
+      3,
+      900,
+      1700
+     ],
+     [
+      4,
+      1710,
+      2660
+     ],
+     [
+      5,
+      2670,
+      3190
+     ],
+     [
+      6,
+      3200,
+      3690
+     ]
+    ]
+   }
   },
   {
    "number": 6,
@@ -65,7 +240,74 @@
    "text": "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِعَادٍ",
    "translation": "Apakah kamu tidak memperhatikan bagaimana Tuhanmu berbuat terhadap kaum 'Aad?",
    "tajweed": "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِع[p[َا][q[د]ٍ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089006.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089006.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "أَلَمْ",
+     "audio": "https://audio.qurancdn.com/wbw/089_006_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "تَرَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_006_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "كَيْفَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_006_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "فَعَلَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_006_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "رَبُّكَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_006_005.mp3"
+    },
+    {
+     "position": 6,
+     "text": "بِعَادٍ",
+     "audio": "https://audio.qurancdn.com/wbw/089_006_006.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089006.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      530
+     ],
+     [
+      2,
+      540,
+      960
+     ],
+     [
+      3,
+      970,
+      1600
+     ],
+     [
+      4,
+      1610,
+      2290
+     ],
+     [
+      5,
+      2300,
+      3130
+     ],
+     [
+      6,
+      3140,
+      5330
+     ]
+    ]
+   }
   },
   {
    "number": 7,
@@ -75,7 +317,44 @@
    "text": "إِرَمَ ذَاتِ ٱلْعِمَادِ",
    "translation": "(yaitu) penduduk Iram yang mempunyai bangunan-bangunan yang tinggi,",
    "tajweed": "إِرَمَ ذَاتِ [h:14472[ٱ]لْعِم[p[َا][q[د]ِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089007.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089007.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "إِرَمَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_007_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ذَاتِ",
+     "audio": "https://audio.qurancdn.com/wbw/089_007_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "ٱلْعِمَادِ",
+     "audio": "https://audio.qurancdn.com/wbw/089_007_003.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089007.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      540
+     ],
+     [
+      2,
+      550,
+      1240
+     ],
+     [
+      3,
+      1250,
+      1900
+     ]
+    ]
+   }
   },
   {
    "number": 8,
@@ -85,7 +364,74 @@
    "text": "ٱلَّتِى لَمْ يُخْلَقْ مِثْلُهَا فِى ٱلْبِلَٰدِ",
    "translation": "yang belum pernah dibangun (suatu kota) seperti itu, di negeri-negeri lain,",
    "tajweed": "ٱلَّتِى لَمْ يُخْلَ[q:14473[قْ] مِثْلُهَا فِى [h:2519[ٱ]لْبِلَ[p[ـٰ][q[د]ِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089008.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089008.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "ٱلَّتِى",
+     "audio": "https://audio.qurancdn.com/wbw/089_008_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "لَمْ",
+     "audio": "https://audio.qurancdn.com/wbw/089_008_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "يُخْلَقْ",
+     "audio": "https://audio.qurancdn.com/wbw/089_008_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "مِثْلُهَا",
+     "audio": "https://audio.qurancdn.com/wbw/089_008_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "فِى",
+     "audio": "https://audio.qurancdn.com/wbw/089_008_005.mp3"
+    },
+    {
+     "position": 6,
+     "text": "ٱلْبِلَـٰدِ",
+     "audio": "https://audio.qurancdn.com/wbw/089_008_006.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089008.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1060
+     ],
+     [
+      2,
+      1070,
+      1470
+     ],
+     [
+      3,
+      1480,
+      2390
+     ],
+     [
+      4,
+      2400,
+      3370
+     ],
+     [
+      5,
+      3380,
+      3630
+     ],
+     [
+      6,
+      3640,
+      6130
+     ]
+    ]
+   }
   },
   {
    "number": 9,
@@ -95,7 +441,64 @@
    "text": "وَثَمُودَ ٱلَّذِينَ جَابُوا۟ ٱلصَّخْرَ بِٱلْوَادِ",
    "translation": "dan kaum Tsamud yang memotong batu-batu besar di lembah,",
    "tajweed": "وَثَمُودَ [h:14474[ٱ]لَّذِينَ جَابُو[s[اْ] [h:14475[ٱ][l[ل]صَّخْرَ بِ[h:8451[ٱ]لْو[p[َا][q[د]ِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089009.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089009.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَثَمُودَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_009_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱلَّذِينَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_009_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "جَابُوا۟",
+     "audio": "https://audio.qurancdn.com/wbw/089_009_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "ٱلصَّخْرَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_009_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "بِٱلْوَادِ",
+     "audio": "https://audio.qurancdn.com/wbw/089_009_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089009.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1050
+     ],
+     [
+      2,
+      1060,
+      2170
+     ],
+     [
+      3,
+      2180,
+      2810
+     ],
+     [
+      4,
+      2820,
+      3680
+     ],
+     [
+      5,
+      3690,
+      4860
+     ]
+    ]
+   }
   },
   {
    "number": 10,
@@ -105,7 +508,44 @@
    "text": "وَفِرْعَوْنَ ذِى ٱلْأَوْتَادِ",
    "translation": "dan kaum Fir'aun yang mempunyai pasak-pasak (tentara yang banyak),",
    "tajweed": "وَفِرْعَوْنَ ذِى [h:14476[ٱ]لْأَوْت[p[َا][q[د]ِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089010.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089010.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَفِرْعَوْنَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_010_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ذِى",
+     "audio": "https://audio.qurancdn.com/wbw/089_010_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "ٱلْأَوْتَادِ",
+     "audio": "https://audio.qurancdn.com/wbw/089_010_003.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089010.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1200
+     ],
+     [
+      2,
+      1210,
+      1470
+     ],
+     [
+      3,
+      1480,
+      2450
+     ]
+    ]
+   }
   },
   {
    "number": 11,
@@ -115,7 +555,54 @@
    "text": "ٱلَّذِينَ طَغَوْا۟ فِى ٱلْبِلَٰدِ",
    "translation": "yang berbuat sewenang-wenang dalam negeri,",
    "tajweed": "ٱلَّذِينَ طَغَوْ[s[اْ] فِى [h:2519[ٱ]لْبِلَ[p[ـٰ][q[د]ِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089011.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089011.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "ٱلَّذِينَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_011_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "طَغَوْا۟",
+     "audio": "https://audio.qurancdn.com/wbw/089_011_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "فِى",
+     "audio": "https://audio.qurancdn.com/wbw/089_011_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "ٱلْبِلَـٰدِ",
+     "audio": "https://audio.qurancdn.com/wbw/089_011_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089011.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1130
+     ],
+     [
+      2,
+      1140,
+      1760
+     ],
+     [
+      3,
+      1770,
+      2290
+     ],
+     [
+      4,
+      2300,
+      4860
+     ]
+    ]
+   }
   },
   {
    "number": 12,
@@ -125,7 +612,44 @@
    "text": "فَأَكْثَرُوا۟ فِيهَا ٱلْفَسَادَ",
    "translation": "lalu mereka berbuat banyak kerusakan dalam negeri itu,",
    "tajweed": "فَأَكْثَرُو[s[اْ] فِيهَا [h:14477[ٱ]لْفَس[p[َا][q[د]َ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089012.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089012.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "فَأَكْثَرُوا۟",
+     "audio": "https://audio.qurancdn.com/wbw/089_012_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "فِيهَا",
+     "audio": "https://audio.qurancdn.com/wbw/089_012_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "ٱلْفَسَادَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_012_003.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089012.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1190
+     ],
+     [
+      2,
+      1200,
+      1820
+     ],
+     [
+      3,
+      1830,
+      2450
+     ]
+    ]
+   }
   },
   {
    "number": 13,
@@ -135,7 +659,64 @@
    "text": "فَصَبَّ عَلَيْهِمْ رَبُّكَ سَوْطَ عَذَابٍ",
    "translation": "karena itu Tuhanmu menimpakan kepada mereka cemeti azab,",
    "tajweed": "فَصَبَّ عَلَيْهِمْ رَبُّكَ سَوْطَ عَذ[p[َا][q[ب]ٍ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089013.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089013.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "فَصَبَّ",
+     "audio": "https://audio.qurancdn.com/wbw/089_013_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "عَلَيْهِمْ",
+     "audio": "https://audio.qurancdn.com/wbw/089_013_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "رَبُّكَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_013_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "سَوْطَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_013_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "عَذَابٍ",
+     "audio": "https://audio.qurancdn.com/wbw/089_013_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089013.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      820
+     ],
+     [
+      2,
+      830,
+      1840
+     ],
+     [
+      3,
+      1850,
+      2690
+     ],
+     [
+      4,
+      2700,
+      3360
+     ],
+     [
+      5,
+      3370,
+      6030
+     ]
+    ]
+   }
   },
   {
    "number": 14,
@@ -145,7 +726,44 @@
    "text": "إِنَّ رَبَّكَ لَبِٱلْمِرْصَادِ",
    "translation": "sesungguhnya Tuhanmu benar-benar mengawasi.",
    "tajweed": "إِ[g[نّ]َ رَبَّكَ لَبِ[h:14478[ٱ]لْمِرْص[p[َا][q[د]ِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089014.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089014.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "إِنَّ",
+     "audio": "https://audio.qurancdn.com/wbw/089_014_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "رَبَّكَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_014_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "لَبِٱلْمِرْصَادِ",
+     "audio": "https://audio.qurancdn.com/wbw/089_014_003.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089014.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1250
+     ],
+     [
+      2,
+      1260,
+      2130
+     ],
+     [
+      3,
+      2140,
+      3430
+     ]
+    ]
+   }
   },
   {
    "number": 15,
@@ -155,7 +773,124 @@
    "text": "فَأَمَّا ٱلْإِنسَٰنُ إِذَا مَا ٱبْتَلَىٰهُ رَبُّهُۥ فَأَكْرَمَهُۥ وَنَعَّمَهُۥ فَيَقُولُ رَبِّىٓ أَكْرَمَنِ",
    "translation": "Adapun manusia apabila Tuhannya mengujinya lalu dia dimuliakan-Nya dan diberi-Nya kesenangan, maka dia akan berkata: \"Tuhanku telah memuliakanku\".",
    "tajweed": "فَأَ[g[مّ]َا [h:14479[ٱ]لْإِ[f:2732[نس]َ[n[ـٰ]نُ إِذَا مَا [h:14480[ٱ][q:14481[بْ]تَلَ[n[ـٰ]هُ رَبُّهُ[n[ۥ] فَأَكْرَمَهُ[n[ۥ] وَنَعَّمَهُ[n[ۥ] فَيَقُولُ رَبّ[o[ِىٓ] أَكْرَمَنِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089015.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089015.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "فَأَمَّا",
+     "audio": "https://audio.qurancdn.com/wbw/089_015_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱلْإِنسَـٰنُ",
+     "audio": "https://audio.qurancdn.com/wbw/089_015_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "إِذَا",
+     "audio": "https://audio.qurancdn.com/wbw/089_015_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "مَا",
+     "audio": "https://audio.qurancdn.com/wbw/089_015_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "ٱبْتَلَىٰهُ",
+     "audio": "https://audio.qurancdn.com/wbw/089_015_005.mp3"
+    },
+    {
+     "position": 6,
+     "text": "رَبُّهُۥ",
+     "audio": "https://audio.qurancdn.com/wbw/089_015_006.mp3"
+    },
+    {
+     "position": 7,
+     "text": "فَأَكْرَمَهُۥ",
+     "audio": "https://audio.qurancdn.com/wbw/089_015_007.mp3"
+    },
+    {
+     "position": 8,
+     "text": "وَنَعَّمَهُۥ",
+     "audio": "https://audio.qurancdn.com/wbw/089_015_008.mp3"
+    },
+    {
+     "position": 9,
+     "text": "فَيَقُولُ",
+     "audio": "https://audio.qurancdn.com/wbw/089_015_009.mp3"
+    },
+    {
+     "position": 10,
+     "text": "رَبِّىٓ",
+     "audio": "https://audio.qurancdn.com/wbw/089_015_010.mp3"
+    },
+    {
+     "position": 11,
+     "text": "أَكْرَمَنِ",
+     "audio": "https://audio.qurancdn.com/wbw/089_015_011.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089015.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1550
+     ],
+     [
+      2,
+      1560,
+      3570
+     ],
+     [
+      3,
+      3580,
+      4230
+     ],
+     [
+      4,
+      4240,
+      4370
+     ],
+     [
+      5,
+      4380,
+      5540
+     ],
+     [
+      6,
+      5550,
+      6530
+     ],
+     [
+      7,
+      6540,
+      8060
+     ],
+     [
+      8,
+      8070,
+      9500
+     ],
+     [
+      9,
+      9510,
+      10640
+     ],
+     [
+      10,
+      10650,
+      13200
+     ],
+     [
+      11,
+      13210,
+      14230
+     ]
+    ]
+   }
   },
   {
    "number": 16,
@@ -165,7 +900,114 @@
    "text": "وَأَمَّآ إِذَا مَا ٱبْتَلَىٰهُ فَقَدَرَ عَلَيْهِ رِزْقَهُۥ فَيَقُولُ رَبِّىٓ أَهَٰنَنِ",
    "translation": "Adapun bila Tuhannya mengujinya lalu membatasi rezekinya maka dia berkata: \"Tuhanku menghinakanku\".",
    "tajweed": "وَأَ[g[مّ][o[َآ] إِذَا مَا [h:14480[ٱ][q:14481[بْ]تَلَ[n[ـٰ]هُ فَقَدَرَ عَلَيْهِ رِزْقَهُ[n[ۥ] فَيَقُولُ رَبّ[o[ِىٓ] أَهَ[n[ـٰ]نَنِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089016.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089016.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَأَمَّآ",
+     "audio": "https://audio.qurancdn.com/wbw/089_016_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "إِذَا",
+     "audio": "https://audio.qurancdn.com/wbw/089_016_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "مَا",
+     "audio": "https://audio.qurancdn.com/wbw/089_016_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "ٱبْتَلَىٰهُ",
+     "audio": "https://audio.qurancdn.com/wbw/089_016_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "فَقَدَرَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_016_005.mp3"
+    },
+    {
+     "position": 6,
+     "text": "عَلَيْهِ",
+     "audio": "https://audio.qurancdn.com/wbw/089_016_006.mp3"
+    },
+    {
+     "position": 7,
+     "text": "رِزْقَهُۥ",
+     "audio": "https://audio.qurancdn.com/wbw/089_016_007.mp3"
+    },
+    {
+     "position": 8,
+     "text": "فَيَقُولُ",
+     "audio": "https://audio.qurancdn.com/wbw/089_016_008.mp3"
+    },
+    {
+     "position": 9,
+     "text": "رَبِّىٓ",
+     "audio": "https://audio.qurancdn.com/wbw/089_016_009.mp3"
+    },
+    {
+     "position": 10,
+     "text": "أَهَـٰنَنِ",
+     "audio": "https://audio.qurancdn.com/wbw/089_016_010.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089016.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1550
+     ],
+     [
+      2,
+      1560,
+      3740
+     ],
+     [
+      3,
+      3750,
+      3880
+     ],
+     [
+      4,
+      3890,
+      4970
+     ],
+     [
+      5,
+      4980,
+      5870
+     ],
+     [
+      6,
+      5880,
+      6740
+     ],
+     [
+      7,
+      6750,
+      7770
+     ],
+     [
+      8,
+      7780,
+      8880
+     ],
+     [
+      9,
+      8890,
+      11030
+     ],
+     [
+      10,
+      11040,
+      12080
+     ]
+    ]
+   }
   },
   {
    "number": 17,
@@ -175,7 +1017,64 @@
    "text": "كَلَّا ۖ بَل لَّا تُكْرِمُونَ ٱلْيَتِيمَ",
    "translation": "Sekali-kali tidak (demikian), sebenarnya kamu tidak memuliakan anak yatim,",
    "tajweed": "كَلَّا‌ۖ بَل لَّا تُكْرِمُونَ [h:14482[ٱ]لْيَت[p[ِي]مَ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089017.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089017.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "كَلَّا ۖ",
+     "audio": "https://audio.qurancdn.com/wbw/089_017_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "بَل",
+     "audio": "https://audio.qurancdn.com/wbw/089_017_003.mp3"
+    },
+    {
+     "position": 3,
+     "text": "لَّا",
+     "audio": "https://audio.qurancdn.com/wbw/089_017_004.mp3"
+    },
+    {
+     "position": 4,
+     "text": "تُكْرِمُونَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_017_005.mp3"
+    },
+    {
+     "position": 5,
+     "text": "ٱلْيَتِيمَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_017_006.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089017.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1240
+     ],
+     [
+      2,
+      1250,
+      1730
+     ],
+     [
+      3,
+      1740,
+      2010
+     ],
+     [
+      4,
+      2020,
+      3350
+     ],
+     [
+      5,
+      3360,
+      6510
+     ]
+    ]
+   }
   },
   {
    "number": 18,
@@ -185,7 +1084,64 @@
    "text": "وَلَا تَحَٰٓضُّونَ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ",
    "translation": "dan kamu tidak saling mengajak memberi makan orang miskin,",
    "tajweed": "وَلَا تَحَ[m[ـٰٓ]ضُّونَ عَلَىٰ طَعَامِ [h:13901[ٱ]لْمِسْك[p[ِي]نِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089018.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089018.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَلَا",
+     "audio": "https://audio.qurancdn.com/wbw/089_018_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "تَحَـٰٓضُّونَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_018_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "عَلَىٰ",
+     "audio": "https://audio.qurancdn.com/wbw/089_018_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "طَعَامِ",
+     "audio": "https://audio.qurancdn.com/wbw/089_018_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "ٱلْمِسْكِينِ",
+     "audio": "https://audio.qurancdn.com/wbw/089_018_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089018.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      590
+     ],
+     [
+      2,
+      600,
+      4260
+     ],
+     [
+      3,
+      4270,
+      4950
+     ],
+     [
+      4,
+      4960,
+      5840
+     ],
+     [
+      5,
+      5850,
+      9050
+     ]
+    ]
+   }
   },
   {
    "number": 19,
@@ -195,7 +1151,54 @@
    "text": "وَتَأْكُلُونَ ٱلتُّرَاثَ أَكْلًۭا لَّمًّۭا",
    "translation": "dan kamu memakan harta pusaka dengan cara mencampur baurkan (yang halal dan yang bathil),",
    "tajweed": "وَتَأْكُلُونَ [h:14483[ٱ][l[ل]تُّرَاثَ أَكْل[u:14484[اً ل]َّ[g[مّ]ًا",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089019.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089019.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَتَأْكُلُونَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_019_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱلتُّرَاثَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_019_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "أَكْلًۭا",
+     "audio": "https://audio.qurancdn.com/wbw/089_019_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "لَّمًّۭا",
+     "audio": "https://audio.qurancdn.com/wbw/089_019_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089019.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1420
+     ],
+     [
+      2,
+      1430,
+      2460
+     ],
+     [
+      3,
+      2470,
+      2880
+     ],
+     [
+      4,
+      2890,
+      5100
+     ]
+    ]
+   }
   },
   {
    "number": 20,
@@ -205,7 +1208,54 @@
    "text": "وَتُحِبُّونَ ٱلْمَالَ حُبًّۭا جَمًّۭا",
    "translation": "dan kamu mencintai harta benda dengan kecintaan yang berlebihan.",
    "tajweed": "وَتُحِبُّونَ [h:14485[ٱ]لْمَالَ حُب[f:14486[ًّا ج]َ[g[مّ]ًا",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089020.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089020.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَتُحِبُّونَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_020_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱلْمَالَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_020_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "حُبًّۭا",
+     "audio": "https://audio.qurancdn.com/wbw/089_020_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "جَمًّۭا",
+     "audio": "https://audio.qurancdn.com/wbw/089_020_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089020.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1400
+     ],
+     [
+      2,
+      1410,
+      2240
+     ],
+     [
+      3,
+      2250,
+      2980
+     ],
+     [
+      4,
+      2990,
+      4120
+     ]
+    ]
+   }
   },
   {
    "number": 21,
@@ -215,7 +1265,74 @@
    "text": "كَلَّآ إِذَا دُكَّتِ ٱلْأَرْضُ دَكًّۭا دَكًّۭا",
    "translation": "Jangan (berbuat demikian). Apabila bumi digoncangkan berturut-turut,",
    "tajweed": "كَلّ[o[َآ] إِذَا دُكَّتِ [h:14487[ٱ]لْأَرْضُ دَك[f:14488[ًّا د]َكًّا",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089021.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089021.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "كَلَّآ",
+     "audio": "https://audio.qurancdn.com/wbw/089_021_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "إِذَا",
+     "audio": "https://audio.qurancdn.com/wbw/089_021_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "دُكَّتِ",
+     "audio": "https://audio.qurancdn.com/wbw/089_021_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "ٱلْأَرْضُ",
+     "audio": "https://audio.qurancdn.com/wbw/089_021_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "دَكًّۭا",
+     "audio": "https://audio.qurancdn.com/wbw/089_021_005.mp3"
+    },
+    {
+     "position": 6,
+     "text": "دَكًّۭا",
+     "audio": "https://audio.qurancdn.com/wbw/089_021_006.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089021.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1420
+     ],
+     [
+      2,
+      1430,
+      1940
+     ],
+     [
+      3,
+      1950,
+      2810
+     ],
+     [
+      4,
+      2820,
+      3640
+     ],
+     [
+      5,
+      3650,
+      5340
+     ],
+     [
+      6,
+      5350,
+      6400
+     ]
+    ]
+   }
   },
   {
    "number": 22,
@@ -225,7 +1342,64 @@
    "text": "وَجَآءَ رَبُّكَ وَٱلْمَلَكُ صَفًّۭا صَفًّۭا",
    "translation": "dan datanglah Tuhanmu; sedang malaikat berbaris-baris.",
    "tajweed": "وَج[o[َا]ٓءَ رَبُّكَ وَ[h:14489[ٱ]لْمَلَكُ صَف[f:14490[ًّا ص]َفًّا",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089022.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089022.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَجَآءَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_022_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "رَبُّكَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_022_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "وَٱلْمَلَكُ",
+     "audio": "https://audio.qurancdn.com/wbw/089_022_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "صَفًّۭا",
+     "audio": "https://audio.qurancdn.com/wbw/089_022_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "صَفًّۭا",
+     "audio": "https://audio.qurancdn.com/wbw/089_022_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089022.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      2200
+     ],
+     [
+      2,
+      2210,
+      3170
+     ],
+     [
+      3,
+      3180,
+      4200
+     ],
+     [
+      4,
+      4210,
+      5880
+     ],
+     [
+      5,
+      5890,
+      6930
+     ]
+    ]
+   }
   },
   {
    "number": 23,
@@ -235,7 +1409,104 @@
    "text": "وَجِا۟ىٓءَ يَوْمَئِذٍۭ بِجَهَنَّمَ ۚ يَوْمَئِذٍۢ يَتَذَكَّرُ ٱلْإِنسَٰنُ وَأَنَّىٰ لَهُ ٱلذِّكْرَىٰ",
    "translation": "Dan pada hari itu diperlihatkan neraka Jahannam; dan pada hari itu ingatlah manusia, akan tetapi tidak berguna lagi mengingat itu baginya.",
    "tajweed": "وَجِ[s[اْ][o[ىٓ]ءَ يَوْمَئِ[i:14491[ذِۭ ب]ِجَهَ[g[نّ]َمَ‌ۚ يَوْمَئِ[a:14492[ذٍ ي]َتَذَكَّرُ [h:14286[ٱ]لْإِ[f:2732[نس]َ[n[ـٰ]نُ وَأَ[g[نّ]َىٰ لَهُ [h:14493[ٱ][l[ل]ذِّكْرَىٰ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089023.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089023.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَجِا۟ىٓءَ",
+     "audio": "https://audio.qurancdn.com/wbw/089_023_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "يَوْمَئِذٍۭ",
+     "audio": "https://audio.qurancdn.com/wbw/089_023_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "بِجَهَنَّمَ ۚ",
+     "audio": "https://audio.qurancdn.com/wbw/089_023_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "يَوْمَئِذٍۢ",
+     "audio": "https://audio.qurancdn.com/wbw/089_023_005.mp3"
+    },
+    {
+     "position": 5,
+     "text": "يَتَذَكَّرُ",
+     "audio": "https://audio.qurancdn.com/wbw/089_023_006.mp3"
+    },
+    {
+     "position": 6,
+     "text": "ٱلْإِنسَـٰنُ",
+     "audio": "https://audio.qurancdn.com/wbw/089_023_007.mp3"
+    },
+    {
+     "position": 7,
+     "text": "وَأَنَّىٰ",
+     "audio": "https://audio.qurancdn.com/wbw/089_023_008.mp3"
+    },
+    {
+     "position": 8,
+     "text": "لَهُ",
+     "audio": "https://audio.qurancdn.com/wbw/089_023_009.mp3"
+    },
+    {
+     "position": 9,
+     "text": "ٱلذِّكْرَىٰ",
+     "audio": "https://audio.qurancdn.com/wbw/089_023_010.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089023.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      2330
+     ],
+     [
+      2,
+      2340,
+      4400
+     ],
+     [
+      3,
+      4410,
+      7370
+     ],
+     [
+      4,
+      7380,
+      9300
+     ],
+     [
+      5,
+      9310,
+      10510
+     ],
+     [
+      6,
+      10520,
+      12640
+     ],
+     [
+      7,
+      12650,
+      14430
+     ],
+     [
+      8,
+      14440,
+      14880
+     ],
+     [
+      9,
+      14890,
+      16260
+     ]
+    ]
+   }
   },
   {
    "number": 24,
@@ -245,7 +1516,54 @@
    "text": "يَقُولُ يَٰلَيْتَنِى قَدَّمْتُ لِحَيَاتِى",
    "translation": "Dia mengatakan: \"Alangkah baiknya kiranya aku dahulu mengerjakan (amal saleh) untuk hidupku ini\".",
    "tajweed": "يَقُولُ يَ[n[ـٰ]لَيْتَنِى قَدَّمْتُ لِحَيَاتِى",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089024.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089024.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "يَقُولُ",
+     "audio": "https://audio.qurancdn.com/wbw/089_024_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "يَـٰلَيْتَنِى",
+     "audio": "https://audio.qurancdn.com/wbw/089_024_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "قَدَّمْتُ",
+     "audio": "https://audio.qurancdn.com/wbw/089_024_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "لِحَيَاتِى",
+     "audio": "https://audio.qurancdn.com/wbw/089_024_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089024.mp3",
+    "segments": [
+     [
+      1,
+      60,
+      900
+     ],
+     [
+      2,
+      910,
+      2400
+     ],
+     [
+      3,
+      2410,
+      3470
+     ],
+     [
+      4,
+      3480,
+      4930
+     ]
+    ]
+   }
   },
   {
    "number": 25,
@@ -255,7 +1573,64 @@
    "text": "فَيَوْمَئِذٍۢ لَّا يُعَذِّبُ عَذَابَهُۥٓ أَحَدٌۭ",
    "translation": "Maka pada hari itu tiada seorangpun yang menyiksa seperti siksa-Nya.",
    "tajweed": "فَيَوْمَئِ[u:10538[ذٍ ل]َّا يُعَذِّبُ عَذَابَهُ[o[ۥٓ] أَحَ[q[د]ٌ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089025.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089025.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "فَيَوْمَئِذٍۢ",
+     "audio": "https://audio.qurancdn.com/wbw/089_025_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "لَّا",
+     "audio": "https://audio.qurancdn.com/wbw/089_025_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "يُعَذِّبُ",
+     "audio": "https://audio.qurancdn.com/wbw/089_025_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "عَذَابَهُۥٓ",
+     "audio": "https://audio.qurancdn.com/wbw/089_025_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "أَحَدٌۭ",
+     "audio": "https://audio.qurancdn.com/wbw/089_025_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089025.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1310
+     ],
+     [
+      2,
+      1320,
+      1850
+     ],
+     [
+      3,
+      1860,
+      2920
+     ],
+     [
+      4,
+      2930,
+      5850
+     ],
+     [
+      5,
+      5860,
+      6480
+     ]
+    ]
+   }
   },
   {
    "number": 26,
@@ -265,7 +1640,54 @@
    "text": "وَلَا يُوثِقُ وَثَاقَهُۥٓ أَحَدٌۭ",
    "translation": "dan tiada seorangpun yang mengikat seperti ikatan-Nya.",
    "tajweed": "وَلَا يُوثِقُ وَثَاقَهُ[o[ۥٓ] أَحَ[q[د]ٌ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089026.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089026.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَلَا",
+     "audio": "https://audio.qurancdn.com/wbw/089_026_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "يُوثِقُ",
+     "audio": "https://audio.qurancdn.com/wbw/089_026_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "وَثَاقَهُۥٓ",
+     "audio": "https://audio.qurancdn.com/wbw/089_026_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "أَحَدٌۭ",
+     "audio": "https://audio.qurancdn.com/wbw/089_026_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089026.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      590
+     ],
+     [
+      2,
+      600,
+      1510
+     ],
+     [
+      3,
+      1520,
+      4180
+     ],
+     [
+      4,
+      4190,
+      4790
+     ]
+    ]
+   }
   },
   {
    "number": 27,
@@ -275,7 +1697,44 @@
    "text": "يَٰٓأَيَّتُهَا ٱلنَّفْسُ ٱلْمُطْمَئِنَّةُ",
    "translation": "Hai jiwa yang tenang.",
    "tajweed": "يَ[o[ـٰٓ]أَيَّتُهَا [h:14494[ٱ][l[ل][g[نّ]َفْسُ [h:14495[ٱ]لْمُ[q:14496[طْ]مَئِ[g[نّ]َةُ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089027.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089027.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "يَـٰٓأَيَّتُهَا",
+     "audio": "https://audio.qurancdn.com/wbw/089_027_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱلنَّفْسُ",
+     "audio": "https://audio.qurancdn.com/wbw/089_027_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "ٱلْمُطْمَئِنَّةُ",
+     "audio": "https://audio.qurancdn.com/wbw/089_027_003.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089027.mp3",
+    "segments": [
+     [
+      1,
+      40,
+      3080
+     ],
+     [
+      2,
+      3090,
+      4760
+     ],
+     [
+      3,
+      4770,
+      7410
+     ]
+    ]
+   }
   },
   {
    "number": 28,
@@ -285,7 +1744,64 @@
    "text": "ٱرْجِعِىٓ إِلَىٰ رَبِّكِ رَاضِيَةًۭ مَّرْضِيَّةًۭ",
    "translation": "Kembalilah kepada Tuhanmu dengan hati yang puas lagi diridhai-Nya.",
    "tajweed": "ٱرْجِع[o[ِىٓ] إِلَىٰ رَبِّكِ رَاضِيَ[a:14497[ةً م]َّرْضِيَّةً",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089028.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089028.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "ٱرْجِعِىٓ",
+     "audio": "https://audio.qurancdn.com/wbw/089_028_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "إِلَىٰ",
+     "audio": "https://audio.qurancdn.com/wbw/089_028_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "رَبِّكِ",
+     "audio": "https://audio.qurancdn.com/wbw/089_028_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "رَاضِيَةًۭ",
+     "audio": "https://audio.qurancdn.com/wbw/089_028_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "مَّرْضِيَّةًۭ",
+     "audio": "https://audio.qurancdn.com/wbw/089_028_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089028.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      2380
+     ],
+     [
+      2,
+      2390,
+      3020
+     ],
+     [
+      3,
+      3030,
+      3800
+     ],
+     [
+      4,
+      3810,
+      5880
+     ],
+     [
+      5,
+      5890,
+      7000
+     ]
+    ]
+   }
   },
   {
    "number": 29,
@@ -295,7 +1811,44 @@
    "text": "فَٱدْخُلِى فِى عِبَٰدِى",
    "translation": "Maka masuklah ke dalam jama'ah hamba-hamba-Ku,",
    "tajweed": "فَ[h:9999[ٱ][q:14498[دْ]خُلِى فِى عِبَ[n[ـٰ]دِى",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089029.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089029.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "فَٱدْخُلِى",
+     "audio": "https://audio.qurancdn.com/wbw/089_029_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "فِى",
+     "audio": "https://audio.qurancdn.com/wbw/089_029_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "عِبَـٰدِى",
+     "audio": "https://audio.qurancdn.com/wbw/089_029_003.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089029.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      970
+     ],
+     [
+      2,
+      980,
+      1440
+     ],
+     [
+      3,
+      1450,
+      2630
+     ]
+    ]
+   }
   },
   {
    "number": 30,
@@ -305,7 +1858,34 @@
    "text": "وَٱدْخُلِى جَنَّتِى",
    "translation": "masuklah ke dalam surga-Ku.",
    "tajweed": "وَ[h:9999[ٱ][q:14499[دْ]خُلِى جَ[g[نّ]َتِى",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/089030.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/089030.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَٱدْخُلِى",
+     "audio": "https://audio.qurancdn.com/wbw/089_030_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "جَنَّتِى",
+     "audio": "https://audio.qurancdn.com/wbw/089_030_002.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/089030.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1040
+     ],
+     [
+      2,
+      1050,
+      3260
+     ]
+    ]
+   }
   }
  ]
 }

@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "fetch-quran": "NODE_OPTIONS=--network-family-autoselection-attempt-timeout=3000 tsx scripts/fetch-quran.ts"
+    "fetch-quran": "NODE_OPTIONS=--network-family-autoselection-attempt-timeout=3000 tsx scripts/fetch-quran.ts",
+    "build-letter-examples": "NODE_OPTIONS=--network-family-autoselection-attempt-timeout=3000 tsx scripts/build-letter-examples.ts"
   },
   "dependencies": {
     "next": "16.4.2",

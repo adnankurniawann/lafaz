@@ -1,0 +1,656 @@
+{
+ "_note": "Dibuat otomatis oleh scripts/build-letter-examples.ts dari data/quran. Jangan diedit manual; ubah aturan di script lalu jalankan ulang.",
+ "review": "perlu cek ustadz: pastikan contoh kata cocok untuk mengenalkan huruf",
+ "examples": {
+  "alif": [
+   {
+    "text": "أَحَدٌ",
+    "audio": "https://audio.qurancdn.com/wbw/112_001_004.mp3",
+    "ref": "112:1:4"
+   },
+   {
+    "text": "أَبِى",
+    "audio": "https://audio.qurancdn.com/wbw/111_001_003.mp3",
+    "ref": "111:1:3"
+   },
+   {
+    "text": "أَنَا۠",
+    "audio": "https://audio.qurancdn.com/wbw/109_004_002.mp3",
+    "ref": "109:4:2"
+   },
+   {
+    "text": "أَلَمْ",
+    "audio": "https://audio.qurancdn.com/wbw/105_001_001.mp3",
+    "ref": "105:1:1"
+   }
+  ],
+  "ba": [
+   {
+    "text": "بَعْدَ",
+    "audio": "https://audio.qurancdn.com/wbw/079_030_002.mp3",
+    "ref": "79:30:2"
+   },
+   {
+    "text": "بَلْ",
+    "audio": "https://audio.qurancdn.com/wbw/082_009_002.mp3",
+    "ref": "82:9:2"
+   },
+   {
+    "text": "بَلَىٰٓ",
+    "audio": "https://audio.qurancdn.com/wbw/084_015_001.mp3",
+    "ref": "84:15:1"
+   },
+   {
+    "text": "بَطْشَ",
+    "audio": "https://audio.qurancdn.com/wbw/085_012_002.mp3",
+    "ref": "85:12:2"
+   }
+  ],
+  "ta": [
+   {
+    "text": "تَبَّتْ",
+    "audio": "https://audio.qurancdn.com/wbw/111_001_001.mp3",
+    "ref": "111:1:1"
+   },
+   {
+    "text": "تَرَ",
+    "audio": "https://audio.qurancdn.com/wbw/105_001_002.mp3",
+    "ref": "105:1:2"
+   },
+   {
+    "text": "تَرْجُفُ",
+    "audio": "https://audio.qurancdn.com/wbw/079_006_002.mp3",
+    "ref": "79:6:2"
+   },
+   {
+    "text": "تَزَكَّىٰ",
+    "audio": "https://audio.qurancdn.com/wbw/079_018_006.mp3",
+    "ref": "79:18:6"
+   }
+  ],
+  "tsa": [
+   {
+    "text": "ثَمَّ",
+    "audio": "https://audio.qurancdn.com/wbw/081_021_002.mp3",
+    "ref": "81:21:2"
+   },
+   {
+    "text": "ثَمُودُ",
+    "audio": "https://audio.qurancdn.com/wbw/091_011_002.mp3",
+    "ref": "91:11:2"
+   },
+   {
+    "text": "ثَقُلَتْ",
+    "audio": "https://audio.qurancdn.com/wbw/101_006_003.mp3",
+    "ref": "101:6:3"
+   },
+   {
+    "text": "ثَجَّاجًۭا",
+    "audio": "https://audio.qurancdn.com/wbw/078_014_005.mp3",
+    "ref": "78:14:5"
+   }
+  ],
+  "jim": [
+   {
+    "text": "جَآءَ",
+    "audio": "https://audio.qurancdn.com/wbw/110_001_002.mp3",
+    "ref": "110:1:2"
+   },
+   {
+    "text": "جَنَّةٍ",
+    "audio": "https://audio.qurancdn.com/wbw/088_010_002.mp3",
+    "ref": "88:10:2"
+   },
+   {
+    "text": "جَمًّۭا",
+    "audio": "https://audio.qurancdn.com/wbw/089_020_004.mp3",
+    "ref": "89:20:4"
+   },
+   {
+    "text": "جَمَعَ",
+    "audio": "https://audio.qurancdn.com/wbw/104_002_002.mp3",
+    "ref": "104:2:2"
+   }
+  ],
+  "hha": [
+   {
+    "text": "حَسَدَ",
+    "audio": "https://audio.qurancdn.com/wbw/113_005_005.mp3",
+    "ref": "113:5:5"
+   },
+   {
+    "text": "حَبْلٌۭ",
+    "audio": "https://audio.qurancdn.com/wbw/111_005_003.mp3",
+    "ref": "111:5:3"
+   },
+   {
+    "text": "حَبًّۭا",
+    "audio": "https://audio.qurancdn.com/wbw/078_015_003.mp3",
+    "ref": "78:15:3"
+   },
+   {
+    "text": "حَتَّىٰ",
+    "audio": "https://audio.qurancdn.com/wbw/097_005_003.mp3",
+    "ref": "97:5:3"
+   }
+  ],
+  "kha": [
+   {
+    "text": "خَلَقَ",
+    "audio": "https://audio.qurancdn.com/wbw/113_002_004.mp3",
+    "ref": "113:2:4"
+   },
+   {
+    "text": "خَوْفٍۭ",
+    "audio": "https://audio.qurancdn.com/wbw/106_004_007.mp3",
+    "ref": "106:4:7"
+   },
+   {
+    "text": "خَافَ",
+    "audio": "https://audio.qurancdn.com/wbw/079_040_003.mp3",
+    "ref": "79:40:3"
+   },
+   {
+    "text": "خَيْرٌۭ",
+    "audio": "https://audio.qurancdn.com/wbw/087_017_002.mp3",
+    "ref": "87:17:2"
+   }
+  ],
+  "dal": [
+   {
+    "text": "دَكًّۭا",
+    "audio": "https://audio.qurancdn.com/wbw/089_021_005.mp3",
+    "ref": "89:21:5"
+   },
+   {
+    "text": "دَافِقٍۢ",
+    "audio": "https://audio.qurancdn.com/wbw/086_006_004.mp3",
+    "ref": "86:6:4"
+   },
+   {
+    "text": "دَحَىٰهَآ",
+    "audio": "https://audio.qurancdn.com/wbw/079_030_004.mp3",
+    "ref": "79:30:4"
+   },
+   {
+    "text": "دَسَّىٰهَا",
+    "audio": "https://audio.qurancdn.com/wbw/091_010_004.mp3",
+    "ref": "91:10:4"
+   }
+  ],
+  "dzal": [
+   {
+    "text": "ذَاتَ",
+    "audio": "https://audio.qurancdn.com/wbw/111_003_003.mp3",
+    "ref": "111:3:3"
+   },
+   {
+    "text": "ذَٰلِكَ",
+    "audio": "https://audio.qurancdn.com/wbw/078_039_001.mp3",
+    "ref": "78:39:1"
+   },
+   {
+    "text": "ذَنۢبٍۢ",
+    "audio": "https://audio.qurancdn.com/wbw/081_009_002.mp3",
+    "ref": "81:9:2"
+   },
+   {
+    "text": "ذَا",
+    "audio": "https://audio.qurancdn.com/wbw/090_015_002.mp3",
+    "ref": "90:15:2"
+   }
+  ],
+  "ra": [
+   {
+    "text": "رَبِّ",
+    "audio": "https://audio.qurancdn.com/wbw/001_002_003.mp3",
+    "ref": "1:2:3"
+   },
+   {
+    "text": "رَبِّكَ",
+    "audio": "https://audio.qurancdn.com/wbw/110_003_003.mp3",
+    "ref": "110:3:3"
+   },
+   {
+    "text": "رَبِّهِۦ",
+    "audio": "https://audio.qurancdn.com/wbw/078_039_009.mp3",
+    "ref": "78:39:8"
+   },
+   {
+    "text": "رَفَعَ",
+    "audio": "https://audio.qurancdn.com/wbw/079_028_001.mp3",
+    "ref": "79:28:1"
+   }
+  ],
+  "zai": [
+   {
+    "text": "زَجْرَةٌۭ",
+    "audio": "https://audio.qurancdn.com/wbw/079_013_003.mp3",
+    "ref": "79:13:3"
+   },
+   {
+    "text": "زَكَّىٰهَا",
+    "audio": "https://audio.qurancdn.com/wbw/091_009_004.mp3",
+    "ref": "91:9:4"
+   },
+   {
+    "text": "زُوِّجَتْ",
+    "audio": "https://audio.qurancdn.com/wbw/081_007_003.mp3",
+    "ref": "81:7:3"
+   },
+   {
+    "text": "زُرْتُمُ",
+    "audio": "https://audio.qurancdn.com/wbw/102_002_002.mp3",
+    "ref": "102:2:2"
+   }
+  ],
+  "sin": [
+   {
+    "text": "سَعَىٰ",
+    "audio": "https://audio.qurancdn.com/wbw/079_035_005.mp3",
+    "ref": "79:35:5"
+   },
+   {
+    "text": "سَبِّحِ",
+    "audio": "https://audio.qurancdn.com/wbw/087_001_001.mp3",
+    "ref": "87:1:1"
+   },
+   {
+    "text": "سَوْطَ",
+    "audio": "https://audio.qurancdn.com/wbw/089_013_004.mp3",
+    "ref": "89:13:4"
+   },
+   {
+    "text": "سَجَىٰ",
+    "audio": "https://audio.qurancdn.com/wbw/093_002_003.mp3",
+    "ref": "93:2:3"
+   }
+  ],
+  "syin": [
+   {
+    "text": "شَرِّ",
+    "audio": "https://audio.qurancdn.com/wbw/113_002_002.mp3",
+    "ref": "113:2:2"
+   },
+   {
+    "text": "شَىْءٍ",
+    "audio": "https://audio.qurancdn.com/wbw/078_029_002.mp3",
+    "ref": "78:29:2"
+   },
+   {
+    "text": "شَآءَ",
+    "audio": "https://audio.qurancdn.com/wbw/078_039_006.mp3",
+    "ref": "78:39:5"
+   },
+   {
+    "text": "شَقًّۭا",
+    "audio": "https://audio.qurancdn.com/wbw/080_026_004.mp3",
+    "ref": "80:26:4"
+   }
+  ],
+  "shod": [
+   {
+    "text": "صَبًّۭا",
+    "audio": "https://audio.qurancdn.com/wbw/080_025_004.mp3",
+    "ref": "80:25:4"
+   },
+   {
+    "text": "صَفًّۭا",
+    "audio": "https://audio.qurancdn.com/wbw/089_022_004.mp3",
+    "ref": "89:22:4"
+   },
+   {
+    "text": "صَلَّىٰٓ",
+    "audio": "https://audio.qurancdn.com/wbw/096_010_003.mp3",
+    "ref": "96:10:3"
+   },
+   {
+    "text": "صَدْرَكَ",
+    "audio": "https://audio.qurancdn.com/wbw/094_001_004.mp3",
+    "ref": "94:1:4"
+   }
+  ],
+  "dhod": [
+   {
+    "text": "ضَرِيعٍۢ",
+    "audio": "https://audio.qurancdn.com/wbw/088_006_006.mp3",
+    "ref": "88:6:6"
+   },
+   {
+    "text": "ضَآلًّۭا",
+    "audio": "https://audio.qurancdn.com/wbw/093_007_002.mp3",
+    "ref": "93:7:2"
+   },
+   {
+    "text": "ضَبْحًۭا",
+    "audio": "https://audio.qurancdn.com/wbw/100_001_002.mp3",
+    "ref": "100:1:2"
+   },
+   {
+    "text": "ضَاحِكَةٌۭ",
+    "audio": "https://audio.qurancdn.com/wbw/080_039_001.mp3",
+    "ref": "80:39:1"
+   }
+  ],
+  "tho": [
+   {
+    "text": "طَغَىٰ",
+    "audio": "https://audio.qurancdn.com/wbw/079_017_005.mp3",
+    "ref": "79:17:5"
+   },
+   {
+    "text": "طَبَقٍۢ",
+    "audio": "https://audio.qurancdn.com/wbw/084_019_004.mp3",
+    "ref": "84:19:4"
+   },
+   {
+    "text": "طَعَامِ",
+    "audio": "https://audio.qurancdn.com/wbw/107_003_004.mp3",
+    "ref": "107:3:4"
+   },
+   {
+    "text": "طَيْرًا",
+    "audio": "https://audio.qurancdn.com/wbw/105_003_003.mp3",
+    "ref": "105:3:3"
+   }
+  ],
+  "zho": [
+   {
+    "text": "ظَنَّ",
+    "audio": "https://audio.qurancdn.com/wbw/084_014_002.mp3",
+    "ref": "84:14:2"
+   },
+   {
+    "text": "ظَهْرِهِۦ",
+    "audio": "https://audio.qurancdn.com/wbw/084_010_006.mp3",
+    "ref": "84:10:6"
+   },
+   {
+    "text": "ظَهْرَكَ",
+    "audio": "https://audio.qurancdn.com/wbw/094_003_003.mp3",
+    "ref": "94:3:3"
+   }
+  ],
+  "ain": [
+   {
+    "text": "عَنْهُ",
+    "audio": "https://audio.qurancdn.com/wbw/111_002_003.mp3",
+    "ref": "111:2:3"
+   },
+   {
+    "text": "عَلَىٰ",
+    "audio": "https://audio.qurancdn.com/wbw/107_003_003.mp3",
+    "ref": "107:3:3"
+   },
+   {
+    "text": "عَن",
+    "audio": "https://audio.qurancdn.com/wbw/107_005_003.mp3",
+    "ref": "107:5:3"
+   },
+   {
+    "text": "عَمَّ",
+    "audio": "https://audio.qurancdn.com/wbw/078_001_001.mp3",
+    "ref": "78:1:1"
+   }
+  ],
+  "ghoin": [
+   {
+    "text": "غَيْرِ",
+    "audio": "https://audio.qurancdn.com/wbw/001_007_005.mp3",
+    "ref": "1:7:5"
+   },
+   {
+    "text": "غَرَّكَ",
+    "audio": "https://audio.qurancdn.com/wbw/082_006_004.mp3",
+    "ref": "82:6:4"
+   },
+   {
+    "text": "غَاسِقٍ",
+    "audio": "https://audio.qurancdn.com/wbw/113_003_003.mp3",
+    "ref": "113:3:3"
+   },
+   {
+    "text": "غَرْقًۭا",
+    "audio": "https://audio.qurancdn.com/wbw/079_001_002.mp3",
+    "ref": "79:1:2"
+   }
+  ],
+  "fa": [
+   {
+    "text": "فَصَلِّ",
+    "audio": "https://audio.qurancdn.com/wbw/108_002_001.mp3",
+    "ref": "108:2:1"
+   },
+   {
+    "text": "فَعَلَ",
+    "audio": "https://audio.qurancdn.com/wbw/105_001_004.mp3",
+    "ref": "105:1:4"
+   },
+   {
+    "text": "فَلَن",
+    "audio": "https://audio.qurancdn.com/wbw/078_030_002.mp3",
+    "ref": "78:30:2"
+   },
+   {
+    "text": "فَمَن",
+    "audio": "https://audio.qurancdn.com/wbw/078_039_005.mp3",
+    "ref": "78:39:4"
+   }
+  ],
+  "qof": [
+   {
+    "text": "قَالَ",
+    "audio": "https://audio.qurancdn.com/wbw/083_013_005.mp3",
+    "ref": "83:13:5"
+   },
+   {
+    "text": "قَدَّرَ",
+    "audio": "https://audio.qurancdn.com/wbw/087_003_002.mp3",
+    "ref": "87:3:2"
+   },
+   {
+    "text": "قَدْ",
+    "audio": "https://audio.qurancdn.com/wbw/087_014_001.mp3",
+    "ref": "87:14:1"
+   },
+   {
+    "text": "قَسَمٌۭ",
+    "audio": "https://audio.qurancdn.com/wbw/089_005_004.mp3",
+    "ref": "89:5:4"
+   }
+  ],
+  "kaf": [
+   {
+    "text": "كَانَ",
+    "audio": "https://audio.qurancdn.com/wbw/110_003_007.mp3",
+    "ref": "110:3:6"
+   },
+   {
+    "text": "كَسَبَ",
+    "audio": "https://audio.qurancdn.com/wbw/111_002_006.mp3",
+    "ref": "111:2:6"
+   },
+   {
+    "text": "كَيْفَ",
+    "audio": "https://audio.qurancdn.com/wbw/105_001_003.mp3",
+    "ref": "105:1:3"
+   },
+   {
+    "text": "كَلَّا",
+    "audio": "https://audio.qurancdn.com/wbw/078_004_001.mp3",
+    "ref": "78:4:1"
+   }
+  ],
+  "lam": [
+   {
+    "text": "لَمْ",
+    "audio": "https://audio.qurancdn.com/wbw/112_003_001.mp3",
+    "ref": "112:3:1"
+   },
+   {
+    "text": "لَّهُۥ",
+    "audio": "https://audio.qurancdn.com/wbw/112_004_003.mp3",
+    "ref": "112:4:3"
+   },
+   {
+    "text": "لَفِى",
+    "audio": "https://audio.qurancdn.com/wbw/103_002_003.mp3",
+    "ref": "103:2:3"
+   },
+   {
+    "text": "لَهَبٍۢ",
+    "audio": "https://audio.qurancdn.com/wbw/111_001_004.mp3",
+    "ref": "111:1:4"
+   }
+  ],
+  "mim": [
+   {
+    "text": "مَا",
+    "audio": "https://audio.qurancdn.com/wbw/113_002_003.mp3",
+    "ref": "113:2:3"
+   },
+   {
+    "text": "مَلِكِ",
+    "audio": "https://audio.qurancdn.com/wbw/114_002_001.mp3",
+    "ref": "114:2:1"
+   },
+   {
+    "text": "مَّسَدٍۭ",
+    "audio": "https://audio.qurancdn.com/wbw/111_005_005.mp3",
+    "ref": "111:5:5"
+   },
+   {
+    "text": "مَآءًۭ",
+    "audio": "https://audio.qurancdn.com/wbw/078_014_004.mp3",
+    "ref": "78:14:4"
+   }
+  ],
+  "nun": [
+   {
+    "text": "نَصْرُ",
+    "audio": "https://audio.qurancdn.com/wbw/110_001_003.mp3",
+    "ref": "110:1:3"
+   },
+   {
+    "text": "نَفْسٌۭ",
+    "audio": "https://audio.qurancdn.com/wbw/081_014_002.mp3",
+    "ref": "81:14:2"
+   },
+   {
+    "text": "نَارٌۭ",
+    "audio": "https://audio.qurancdn.com/wbw/090_020_002.mp3",
+    "ref": "90:20:2"
+   },
+   {
+    "text": "نَعْبُدُ",
+    "audio": "https://audio.qurancdn.com/wbw/001_005_002.mp3",
+    "ref": "1:5:2"
+   }
+  ],
+  "wau": [
+   {
+    "text": "وَلَا",
+    "audio": "https://audio.qurancdn.com/wbw/001_007_008.mp3",
+    "ref": "1:7:8"
+   },
+   {
+    "text": "وَلَمْ",
+    "audio": "https://audio.qurancdn.com/wbw/112_003_003.mp3",
+    "ref": "112:3:3"
+   },
+   {
+    "text": "وَمِن",
+    "audio": "https://audio.qurancdn.com/wbw/113_003_001.mp3",
+    "ref": "113:3:1"
+   },
+   {
+    "text": "وَقَبَ",
+    "audio": "https://audio.qurancdn.com/wbw/113_003_005.mp3",
+    "ref": "113:3:5"
+   }
+  ],
+  "ha": [
+   {
+    "text": "هَلْ",
+    "audio": "https://audio.qurancdn.com/wbw/079_015_001.mp3",
+    "ref": "79:15:1"
+   },
+   {
+    "text": "هَـٰذَا",
+    "audio": "https://audio.qurancdn.com/wbw/106_003_003.mp3",
+    "ref": "106:3:3"
+   },
+   {
+    "text": "هَاوِيَةٌۭ",
+    "audio": "https://audio.qurancdn.com/wbw/101_009_002.mp3",
+    "ref": "101:9:2"
+   },
+   {
+    "text": "هَـٰٓؤُلَآءِ",
+    "audio": "https://audio.qurancdn.com/wbw/083_032_005.mp3",
+    "ref": "83:32:5"
+   }
+  ],
+  "hamzah": [
+   {
+    "text": "ءَأَنتُمْ",
+    "audio": "https://audio.qurancdn.com/wbw/079_027_001.mp3",
+    "ref": "79:27:1"
+   },
+   {
+    "text": "ءَانِيَةٍۢ",
+    "audio": "https://audio.qurancdn.com/wbw/088_005_004.mp3",
+    "ref": "88:5:4"
+   },
+   {
+    "text": "ءَامَنُوا۟",
+    "audio": "https://audio.qurancdn.com/wbw/103_003_003.mp3",
+    "ref": "103:3:3"
+   },
+   {
+    "text": "ءَايَـٰتُنَا",
+    "audio": "https://audio.qurancdn.com/wbw/083_013_004.mp3",
+    "ref": "83:13:4"
+   }
+  ],
+  "ya": [
+   {
+    "text": "يَوْمِ",
+    "audio": "https://audio.qurancdn.com/wbw/001_004_002.mp3",
+    "ref": "1:4:2"
+   },
+   {
+    "text": "يَلِدْ",
+    "audio": "https://audio.qurancdn.com/wbw/112_003_002.mp3",
+    "ref": "112:3:2"
+   },
+   {
+    "text": "يَكُن",
+    "audio": "https://audio.qurancdn.com/wbw/112_004_002.mp3",
+    "ref": "112:4:2"
+   },
+   {
+    "text": "يَدَآ",
+    "audio": "https://audio.qurancdn.com/wbw/111_001_002.mp3",
+    "ref": "111:1:2"
+   }
+  ]
+ },
+ "muqattaat": {
+  "shod": {
+   "text": "صٓ ۚ",
+   "audio": "https://audio.qurancdn.com/wbw/038_001_001.mp3",
+   "ref": "38:1:1"
+  },
+  "qof": {
+   "text": "قٓ ۚ",
+   "audio": "https://audio.qurancdn.com/wbw/050_001_001.mp3",
+   "ref": "50:1:1"
+  },
+  "nun": {
+   "text": "نٓ ۚ",
+   "audio": "https://audio.qurancdn.com/wbw/068_001_001.mp3",
+   "ref": "68:1:1"
+  }
+ }
+}

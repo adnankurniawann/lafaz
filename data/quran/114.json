@@ -15,7 +15,54 @@
    "text": "قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
    "translation": "Katakanlah: \"Aku berlindung kepada Tuhan (yang memelihara dan menguasai) manusia.",
    "tajweed": "قُلْ أَعُوذُ بِرَبِّ [h:14683[ٱ][l[ل][g[نّ][p[َا]سِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/114001.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/114001.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "قُلْ",
+     "audio": "https://audio.qurancdn.com/wbw/114_001_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "أَعُوذُ",
+     "audio": "https://audio.qurancdn.com/wbw/114_001_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "بِرَبِّ",
+     "audio": "https://audio.qurancdn.com/wbw/114_001_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "ٱلنَّاسِ",
+     "audio": "https://audio.qurancdn.com/wbw/114_001_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/114001.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      330
+     ],
+     [
+      2,
+      340,
+      1150
+     ],
+     [
+      3,
+      1160,
+      2050
+     ],
+     [
+      4,
+      2060,
+      5830
+     ]
+    ]
+   }
   },
   {
    "number": 2,
@@ -25,7 +72,34 @@
    "text": "مَلِكِ ٱلنَّاسِ",
    "translation": "Raja manusia.",
    "tajweed": "مَلِكِ [h:14684[ٱ][l[ل][g[نّ][p[َا]سِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/114002.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/114002.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "مَلِكِ",
+     "audio": "https://audio.qurancdn.com/wbw/114_002_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱلنَّاسِ",
+     "audio": "https://audio.qurancdn.com/wbw/114_002_002.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/114002.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      610
+     ],
+     [
+      2,
+      620,
+      4900
+     ]
+    ]
+   }
   },
   {
    "number": 3,
@@ -35,7 +109,34 @@
    "text": "إِلَٰهِ ٱلنَّاسِ",
    "translation": "Sembahan manusia.",
    "tajweed": "إِلَ[n[ـٰ]هِ [h:14685[ٱ][l[ل][g[نّ][p[َا]سِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/114003.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/114003.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "إِلَـٰهِ",
+     "audio": "https://audio.qurancdn.com/wbw/114_003_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱلنَّاسِ",
+     "audio": "https://audio.qurancdn.com/wbw/114_003_002.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/114003.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      840
+     ],
+     [
+      2,
+      850,
+      4990
+     ]
+    ]
+   }
   },
   {
    "number": 4,
@@ -45,7 +146,54 @@
    "text": "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ",
    "translation": "Dari kejahatan (bisikan) syaitan yang biasa bersembunyi,",
    "tajweed": "مِ[f:14679[ن ش]َرِّ [h:14686[ٱ]لْوَسْوَاسِ [h:14687[ٱ]لْخَ[g[نّ][p[َا]سِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/114004.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/114004.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "مِن",
+     "audio": "https://audio.qurancdn.com/wbw/114_004_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "شَرِّ",
+     "audio": "https://audio.qurancdn.com/wbw/114_004_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "ٱلْوَسْوَاسِ",
+     "audio": "https://audio.qurancdn.com/wbw/114_004_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "ٱلْخَنَّاسِ",
+     "audio": "https://audio.qurancdn.com/wbw/114_004_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/114004.mp3",
+    "segments": [
+     [
+      1,
+      70,
+      1380
+     ],
+     [
+      2,
+      1390,
+      2070
+     ],
+     [
+      3,
+      2080,
+      3340
+     ],
+     [
+      4,
+      3350,
+      7510
+     ]
+    ]
+   }
   },
   {
    "number": 5,
@@ -55,7 +203,64 @@
    "text": "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ",
    "translation": "yang membisikkan (kejahatan) ke dalam dada manusia,",
    "tajweed": "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ [h:14688[ٱ][l[ل][g[نّ][p[َا]سِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/114005.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/114005.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "ٱلَّذِى",
+     "audio": "https://audio.qurancdn.com/wbw/114_005_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "يُوَسْوِسُ",
+     "audio": "https://audio.qurancdn.com/wbw/114_005_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "فِى",
+     "audio": "https://audio.qurancdn.com/wbw/114_005_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "صُدُورِ",
+     "audio": "https://audio.qurancdn.com/wbw/114_005_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "ٱلنَّاسِ",
+     "audio": "https://audio.qurancdn.com/wbw/114_005_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/114005.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1060
+     ],
+     [
+      2,
+      1070,
+      2080
+     ],
+     [
+      3,
+      2090,
+      2460
+     ],
+     [
+      4,
+      2470,
+      3460
+     ],
+     [
+      5,
+      3470,
+      7790
+     ]
+    ]
+   }
   },
   {
    "number": 6,
@@ -65,7 +270,44 @@
    "text": "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
    "translation": "dari (golongan) jin dan manusia.",
    "tajweed": "مِنَ [h:6531[ٱ]لْجِ[g[نّ]َةِ وَ[h:824[ٱ][l[ل][g[نّ][p[َا]سِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/114006.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/114006.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "مِنَ",
+     "audio": "https://audio.qurancdn.com/wbw/114_006_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱلْجِنَّةِ",
+     "audio": "https://audio.qurancdn.com/wbw/114_006_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "وَٱلنَّاسِ",
+     "audio": "https://audio.qurancdn.com/wbw/114_006_003.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/114006.mp3",
+    "segments": [
+     [
+      1,
+      100,
+      380
+     ],
+     [
+      2,
+      390,
+      2580
+     ],
+     [
+      3,
+      2590,
+      7120
+     ]
+    ]
+   }
   }
  ]
 }

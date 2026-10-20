@@ -15,7 +15,54 @@
    "text": "وَيْلٌۭ لِّكُلِّ هُمَزَةٍۢ لُّمَزَةٍ",
    "translation": "Kecelakaanlah bagi setiap pengumpat lagi pencela,",
    "tajweed": "وَيْ[u:12392[لٌ ل]ِّكُلِّ هُمَزَ[u:14633[ةٍ ل]ُّمَزَةٍ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/104001.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/104001.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَيْلٌۭ",
+     "audio": "https://audio.qurancdn.com/wbw/104_001_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "لِّكُلِّ",
+     "audio": "https://audio.qurancdn.com/wbw/104_001_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "هُمَزَةٍۢ",
+     "audio": "https://audio.qurancdn.com/wbw/104_001_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "لُّمَزَةٍ",
+     "audio": "https://audio.qurancdn.com/wbw/104_001_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/104001.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      810
+     ],
+     [
+      2,
+      820,
+      1820
+     ],
+     [
+      3,
+      1830,
+      2820
+     ],
+     [
+      4,
+      2830,
+      3830
+     ]
+    ]
+   }
   },
   {
    "number": 2,
@@ -25,7 +72,54 @@
    "text": "ٱلَّذِى جَمَعَ مَالًۭا وَعَدَّدَهُۥ",
    "translation": "yang mengumpulkan harta dan menghitung-hitung,",
    "tajweed": "ٱلَّذِى جَمَعَ مَال[a:14634[اً و]َعَدَّدَهُۥ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/104002.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/104002.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "ٱلَّذِى",
+     "audio": "https://audio.qurancdn.com/wbw/104_002_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "جَمَعَ",
+     "audio": "https://audio.qurancdn.com/wbw/104_002_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "مَالًۭا",
+     "audio": "https://audio.qurancdn.com/wbw/104_002_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "وَعَدَّدَهُۥ",
+     "audio": "https://audio.qurancdn.com/wbw/104_002_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/104002.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1060
+     ],
+     [
+      2,
+      1070,
+      1800
+     ],
+     [
+      3,
+      1810,
+      2490
+     ],
+     [
+      4,
+      2500,
+      4580
+     ]
+    ]
+   }
   },
   {
    "number": 3,
@@ -35,7 +129,54 @@
    "text": "يَحْسَبُ أَنَّ مَالَهُۥٓ أَخْلَدَهُۥ",
    "translation": "dia mengira bahwa hartanya itu dapat mengkekalkannya,",
    "tajweed": "يَحْسَبُ أَ[g[نّ]َ مَالَهُ[o[ۥٓ] أَخْلَدَهُۥ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/104003.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/104003.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "يَحْسَبُ",
+     "audio": "https://audio.qurancdn.com/wbw/104_003_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "أَنَّ",
+     "audio": "https://audio.qurancdn.com/wbw/104_003_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "مَالَهُۥٓ",
+     "audio": "https://audio.qurancdn.com/wbw/104_003_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "أَخْلَدَهُۥ",
+     "audio": "https://audio.qurancdn.com/wbw/104_003_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/104003.mp3",
+    "segments": [
+     [
+      1,
+      60,
+      910
+     ],
+     [
+      2,
+      920,
+      2350
+     ],
+     [
+      3,
+      2360,
+      4860
+     ],
+     [
+      4,
+      4870,
+      5840
+     ]
+    ]
+   }
   },
   {
    "number": 4,
@@ -45,7 +186,54 @@
    "text": "كَلَّا ۖ لَيُنۢبَذَنَّ فِى ٱلْحُطَمَةِ",
    "translation": "sekali-kali tidak! Sesungguhnya dia benar-benar akan dilemparkan ke dalam Huthamah.",
    "tajweed": "كَلَّا‌ۖ لَيُ[i:14635[نۢب]َذَ[g[نّ]َ فِى [h:14636[ٱ]لْحُطَمَةِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/104004.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/104004.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "كَلَّا ۖ",
+     "audio": "https://audio.qurancdn.com/wbw/104_004_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "لَيُنۢبَذَنَّ",
+     "audio": "https://audio.qurancdn.com/wbw/104_004_003.mp3"
+    },
+    {
+     "position": 3,
+     "text": "فِى",
+     "audio": "https://audio.qurancdn.com/wbw/104_004_004.mp3"
+    },
+    {
+     "position": 4,
+     "text": "ٱلْحُطَمَةِ",
+     "audio": "https://audio.qurancdn.com/wbw/104_004_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/104004.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1590
+     ],
+     [
+      2,
+      1600,
+      4790
+     ],
+     [
+      3,
+      4800,
+      5050
+     ],
+     [
+      4,
+      5060,
+      6070
+     ]
+    ]
+   }
   },
   {
    "number": 5,
@@ -55,7 +243,54 @@
    "text": "وَمَآ أَدْرَىٰكَ مَا ٱلْحُطَمَةُ",
    "translation": "Dan tahukah kamu apa Huthamah itu?",
    "tajweed": "وَم[o[َآ] أَ[q:13858[دْ]رَ[n[ٮٰ]كَ مَا [h:14637[ٱ]لْحُطَمَةُ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/104005.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/104005.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَمَآ",
+     "audio": "https://audio.qurancdn.com/wbw/104_005_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "أَدْرَىٰكَ",
+     "audio": "https://audio.qurancdn.com/wbw/104_005_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "مَا",
+     "audio": "https://audio.qurancdn.com/wbw/104_005_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "ٱلْحُطَمَةُ",
+     "audio": "https://audio.qurancdn.com/wbw/104_005_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/104005.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1400
+     ],
+     [
+      2,
+      1410,
+      3070
+     ],
+     [
+      3,
+      3080,
+      3230
+     ],
+     [
+      4,
+      3240,
+      4290
+     ]
+    ]
+   }
   },
   {
    "number": 6,
@@ -65,7 +300,44 @@
    "text": "نَارُ ٱللَّهِ ٱلْمُوقَدَةُ",
    "translation": "(yaitu) api (yang disediakan) Allah yang dinyalakan,",
    "tajweed": "نَارُ [h:14638[ٱ]للَّهِ [h:14639[ٱ]لْمُوقَدَةُ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/104006.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/104006.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "نَارُ",
+     "audio": "https://audio.qurancdn.com/wbw/104_006_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱللَّهِ",
+     "audio": "https://audio.qurancdn.com/wbw/104_006_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "ٱلْمُوقَدَةُ",
+     "audio": "https://audio.qurancdn.com/wbw/104_006_003.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/104006.mp3",
+    "segments": [
+     [
+      1,
+      50,
+      660
+     ],
+     [
+      2,
+      670,
+      1610
+     ],
+     [
+      3,
+      1620,
+      2830
+     ]
+    ]
+   }
   },
   {
    "number": 7,
@@ -75,7 +347,54 @@
    "text": "ٱلَّتِى تَطَّلِعُ عَلَى ٱلْأَفْـِٔدَةِ",
    "translation": "yang (membakar) sampai ke hati.",
    "tajweed": "ٱلَّتِى تَطَّلِعُ عَلَى [h:14640[ٱ]لْأَفْــِٔدَةِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/104007.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/104007.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "ٱلَّتِى",
+     "audio": "https://audio.qurancdn.com/wbw/104_007_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "تَطَّلِعُ",
+     "audio": "https://audio.qurancdn.com/wbw/104_007_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "عَلَى",
+     "audio": "https://audio.qurancdn.com/wbw/104_007_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "ٱلْأَفْـِٔدَةِ",
+     "audio": "https://audio.qurancdn.com/wbw/104_007_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/104007.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1020
+     ],
+     [
+      2,
+      1030,
+      2080
+     ],
+     [
+      3,
+      2090,
+      2530
+     ],
+     [
+      4,
+      2540,
+      3830
+     ]
+    ]
+   }
   },
   {
    "number": 8,
@@ -85,7 +404,44 @@
    "text": "إِنَّهَا عَلَيْهِم مُّؤْصَدَةٌۭ",
    "translation": "Sesungguhnya api itu ditutup rapat atas mereka,",
    "tajweed": "إِ[g[نّ]َهَا عَلَيْه[w:14641[ِم م]ُّؤْصَدَةٌ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/104008.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/104008.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "إِنَّهَا",
+     "audio": "https://audio.qurancdn.com/wbw/104_008_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "عَلَيْهِم",
+     "audio": "https://audio.qurancdn.com/wbw/104_008_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "مُّؤْصَدَةٌۭ",
+     "audio": "https://audio.qurancdn.com/wbw/104_008_003.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/104008.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1790
+     ],
+     [
+      2,
+      1800,
+      2830
+     ],
+     [
+      3,
+      2840,
+      4960
+     ]
+    ]
+   }
   },
   {
    "number": 9,
@@ -95,7 +451,44 @@
    "text": "فِى عَمَدٍۢ مُّمَدَّدَةٍۭ",
    "translation": "(sedang mereka itu) diikat pada tiang-tiang yang panjang.",
    "tajweed": "فِى عَمَ[a:14642[دٍ م]ُّمَدَّدَةِۭ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/104009.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/104009.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "فِى",
+     "audio": "https://audio.qurancdn.com/wbw/104_009_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "عَمَدٍۢ",
+     "audio": "https://audio.qurancdn.com/wbw/104_009_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "مُّمَدَّدَةٍۭ",
+     "audio": "https://audio.qurancdn.com/wbw/104_009_003.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/104009.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      360
+     ],
+     [
+      2,
+      370,
+      2480
+     ],
+     [
+      3,
+      2490,
+      3770
+     ]
+    ]
+   }
   }
  ]
 }

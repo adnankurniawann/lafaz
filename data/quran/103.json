@@ -15,7 +15,24 @@
    "text": "وَٱلْعَصْرِ",
    "translation": "Demi masa.",
    "tajweed": "وَ[h:9999[ٱ]لْعَصْرِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/103001.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/103001.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَٱلْعَصْرِ",
+     "audio": "https://audio.qurancdn.com/wbw/103_001_001.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/103001.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1230
+     ]
+    ]
+   }
   },
   {
    "number": 2,
@@ -25,7 +42,54 @@
    "text": "إِنَّ ٱلْإِنسَٰنَ لَفِى خُسْرٍ",
    "translation": "Sesungguhnya manusia itu benar-benar dalam kerugian,",
    "tajweed": "إِ[g[نّ]َ [h:7137[ٱ]لْإِ[f:5969[نس]َ[n[ـٰ]نَ لَفِى خُسْرٍ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/103002.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/103002.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "إِنَّ",
+     "audio": "https://audio.qurancdn.com/wbw/103_002_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱلْإِنسَـٰنَ",
+     "audio": "https://audio.qurancdn.com/wbw/103_002_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "لَفِى",
+     "audio": "https://audio.qurancdn.com/wbw/103_002_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "خُسْرٍ",
+     "audio": "https://audio.qurancdn.com/wbw/103_002_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/103002.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1260
+     ],
+     [
+      2,
+      1270,
+      3830
+     ],
+     [
+      3,
+      3840,
+      4430
+     ],
+     [
+      4,
+      4440,
+      4900
+     ]
+    ]
+   }
   },
   {
    "number": 3,
@@ -35,7 +99,104 @@
    "text": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ",
    "translation": "kecuali orang-orang yang beriman dan mengerjakan amal saleh dan nasehat menasehati supaya mentaati kebenaran dan nasehat menasehati supaya menetapi kesabaran.",
    "tajweed": "إِلَّا [h:778[ٱ]لَّذِينَ ءَامَنُو[s[اْ] وَعَمِلُو[s[اْ] [h:118[ٱ][l[ل]صَّ[n[ـٰ]لِحَ[n[ـٰ]تِ وَتَوَاصَوْ[s[اْ] بِ[h:370[ٱ]لْحَقِّ وَتَوَاصَوْ[s[اْ] بِ[h:223[ٱ][l[ل]صَّ[q:223[بْ]رِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/103003.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/103003.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "إِلَّا",
+     "audio": "https://audio.qurancdn.com/wbw/103_003_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱلَّذِينَ",
+     "audio": "https://audio.qurancdn.com/wbw/103_003_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "ءَامَنُوا۟",
+     "audio": "https://audio.qurancdn.com/wbw/103_003_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "وَعَمِلُوا۟",
+     "audio": "https://audio.qurancdn.com/wbw/103_003_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "ٱلصَّـٰلِحَـٰتِ",
+     "audio": "https://audio.qurancdn.com/wbw/103_003_005.mp3"
+    },
+    {
+     "position": 6,
+     "text": "وَتَوَاصَوْا۟",
+     "audio": "https://audio.qurancdn.com/wbw/103_003_006.mp3"
+    },
+    {
+     "position": 7,
+     "text": "بِٱلْحَقِّ",
+     "audio": "https://audio.qurancdn.com/wbw/103_003_007.mp3"
+    },
+    {
+     "position": 8,
+     "text": "وَتَوَاصَوْا۟",
+     "audio": "https://audio.qurancdn.com/wbw/103_003_008.mp3"
+    },
+    {
+     "position": 9,
+     "text": "بِٱلصَّبْرِ",
+     "audio": "https://audio.qurancdn.com/wbw/103_003_009.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/103003.mp3",
+    "segments": [
+     [
+      1,
+      50,
+      600
+     ],
+     [
+      2,
+      610,
+      1750
+     ],
+     [
+      3,
+      1760,
+      2910
+     ],
+     [
+      4,
+      2920,
+      3740
+     ],
+     [
+      5,
+      3750,
+      5330
+     ],
+     [
+      6,
+      5340,
+      6610
+     ],
+     [
+      7,
+      6620,
+      7700
+     ],
+     [
+      8,
+      7710,
+      9060
+     ],
+     [
+      9,
+      9070,
+      10080
+     ]
+    ]
+   }
   }
  ]
 }

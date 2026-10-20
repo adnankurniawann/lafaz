@@ -15,7 +15,64 @@
    "text": "إِنَّآ أَنزَلْنَٰهُ فِى لَيْلَةِ ٱلْقَدْرِ",
    "translation": "Sesungguhnya Kami telah menurunkannya (Al Quran) pada malam kemuliaan.",
    "tajweed": "إِ[g[نّ][o[َآ] أَ[f:4236[نز]َلْنَ[n[ـٰ]هُ فِى لَيْلَةِ [h:14580[ٱ]لْقَ[q:14581[دْ]رِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/097001.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/097001.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "إِنَّآ",
+     "audio": "https://audio.qurancdn.com/wbw/097_001_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "أَنزَلْنَـٰهُ",
+     "audio": "https://audio.qurancdn.com/wbw/097_001_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "فِى",
+     "audio": "https://audio.qurancdn.com/wbw/097_001_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "لَيْلَةِ",
+     "audio": "https://audio.qurancdn.com/wbw/097_001_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "ٱلْقَدْرِ",
+     "audio": "https://audio.qurancdn.com/wbw/097_001_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/097001.mp3",
+    "segments": [
+     [
+      1,
+      150,
+      2890
+     ],
+     [
+      2,
+      2900,
+      5410
+     ],
+     [
+      3,
+      5420,
+      5880
+     ],
+     [
+      4,
+      5890,
+      6710
+     ],
+     [
+      5,
+      6720,
+      7260
+     ]
+    ]
+   }
   },
   {
    "number": 2,
@@ -25,7 +82,64 @@
    "text": "وَمَآ أَدْرَىٰكَ مَا لَيْلَةُ ٱلْقَدْرِ",
    "translation": "Dan tahukah kamu apakah malam kemuliaan itu?",
    "tajweed": "وَم[o[َآ] أَ[q:13858[دْ]رَ[n[ٮٰ]كَ مَا لَيْلَةُ [h:14582[ٱ]لْقَ[q:14581[دْ]رِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/097002.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/097002.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَمَآ",
+     "audio": "https://audio.qurancdn.com/wbw/097_002_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "أَدْرَىٰكَ",
+     "audio": "https://audio.qurancdn.com/wbw/097_002_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "مَا",
+     "audio": "https://audio.qurancdn.com/wbw/097_002_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "لَيْلَةُ",
+     "audio": "https://audio.qurancdn.com/wbw/097_002_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "ٱلْقَدْرِ",
+     "audio": "https://audio.qurancdn.com/wbw/097_002_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/097002.mp3",
+    "segments": [
+     [
+      1,
+      40,
+      390
+     ],
+     [
+      2,
+      400,
+      3200
+     ],
+     [
+      3,
+      3210,
+      3630
+     ],
+     [
+      4,
+      3640,
+      4430
+     ],
+     [
+      5,
+      4440,
+      4990
+     ]
+    ]
+   }
   },
   {
    "number": 3,
@@ -35,7 +149,74 @@
    "text": "لَيْلَةُ ٱلْقَدْرِ خَيْرٌۭ مِّنْ أَلْفِ شَهْرٍۢ",
    "translation": "Malam kemuliaan itu lebih baik dari seribu bulan.",
    "tajweed": "لَيْلَةُ [h:14582[ٱ]لْقَ[q:14581[دْ]رِ خَيْ[a:1231[رٌ م]ِّنْ أَلْفِ شَهْرٍ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/097003.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/097003.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "لَيْلَةُ",
+     "audio": "https://audio.qurancdn.com/wbw/097_003_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱلْقَدْرِ",
+     "audio": "https://audio.qurancdn.com/wbw/097_003_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "خَيْرٌۭ",
+     "audio": "https://audio.qurancdn.com/wbw/097_003_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "مِّنْ",
+     "audio": "https://audio.qurancdn.com/wbw/097_003_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "أَلْفِ",
+     "audio": "https://audio.qurancdn.com/wbw/097_003_005.mp3"
+    },
+    {
+     "position": 6,
+     "text": "شَهْرٍۢ",
+     "audio": "https://audio.qurancdn.com/wbw/097_003_006.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/097003.mp3",
+    "segments": [
+     [
+      1,
+      150,
+      870
+     ],
+     [
+      2,
+      880,
+      1640
+     ],
+     [
+      3,
+      1650,
+      3350
+     ],
+     [
+      4,
+      3360,
+      3680
+     ],
+     [
+      5,
+      3690,
+      4250
+     ],
+     [
+      6,
+      4260,
+      4770
+     ]
+    ]
+   }
   },
   {
    "number": 4,
@@ -45,7 +226,104 @@
    "text": "تَنَزَّلُ ٱلْمَلَٰٓئِكَةُ وَٱلرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍۢ",
    "translation": "Pada malam itu turun malaikat-malaikat dan malaikat Jibril dengan izin Tuhannya untuk mengatur segala urusan.",
    "tajweed": "تَنَزَّلُ [h:14583[ٱ]لْمَلَ[o[ـٰٓ]ئِكَةُ وَ[h:13916[ٱ][l[ل]رُّوحُ فِيهَا بِإِذْنِ رَبِّه[w:14584[ِم م]ِّ[f:843[ن ك]ُلِّ أَمْرٍ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/097004.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/097004.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "تَنَزَّلُ",
+     "audio": "https://audio.qurancdn.com/wbw/097_004_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱلْمَلَـٰٓئِكَةُ",
+     "audio": "https://audio.qurancdn.com/wbw/097_004_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "وَٱلرُّوحُ",
+     "audio": "https://audio.qurancdn.com/wbw/097_004_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "فِيهَا",
+     "audio": "https://audio.qurancdn.com/wbw/097_004_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "بِإِذْنِ",
+     "audio": "https://audio.qurancdn.com/wbw/097_004_005.mp3"
+    },
+    {
+     "position": 6,
+     "text": "رَبِّهِم",
+     "audio": "https://audio.qurancdn.com/wbw/097_004_006.mp3"
+    },
+    {
+     "position": 7,
+     "text": "مِّن",
+     "audio": "https://audio.qurancdn.com/wbw/097_004_007.mp3"
+    },
+    {
+     "position": 8,
+     "text": "كُلِّ",
+     "audio": "https://audio.qurancdn.com/wbw/097_004_008.mp3"
+    },
+    {
+     "position": 9,
+     "text": "أَمْرٍۢ",
+     "audio": "https://audio.qurancdn.com/wbw/097_004_009.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/097004.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1010
+     ],
+     [
+      2,
+      1020,
+      3980
+     ],
+     [
+      3,
+      3990,
+      4940
+     ],
+     [
+      4,
+      4950,
+      5800
+     ],
+     [
+      5,
+      5810,
+      6550
+     ],
+     [
+      6,
+      6560,
+      8310
+     ],
+     [
+      7,
+      8320,
+      9380
+     ],
+     [
+      8,
+      9390,
+      10050
+     ],
+     [
+      9,
+      10060,
+      10570
+     ]
+    ]
+   }
   },
   {
    "number": 5,
@@ -55,7 +333,64 @@
    "text": "سَلَٰمٌ هِىَ حَتَّىٰ مَطْلَعِ ٱلْفَجْرِ",
    "translation": "Malam itu (penuh) kesejahteraan sampai terbit fajar.",
    "tajweed": "سَلَ[n[ـٰ]مٌ هِىَ حَتَّىٰ مَ[q:14585[طْ]لَعِ [h:14586[ٱ]لْفَ[q:996[جْ]رِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/097005.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/097005.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "سَلَـٰمٌ",
+     "audio": "https://audio.qurancdn.com/wbw/097_005_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "هِىَ",
+     "audio": "https://audio.qurancdn.com/wbw/097_005_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "حَتَّىٰ",
+     "audio": "https://audio.qurancdn.com/wbw/097_005_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "مَطْلَعِ",
+     "audio": "https://audio.qurancdn.com/wbw/097_005_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "ٱلْفَجْرِ",
+     "audio": "https://audio.qurancdn.com/wbw/097_005_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/097005.mp3",
+    "segments": [
+     [
+      1,
+      200,
+      1080
+     ],
+     [
+      2,
+      1090,
+      1530
+     ],
+     [
+      3,
+      1540,
+      2420
+     ],
+     [
+      4,
+      2430,
+      3380
+     ],
+     [
+      5,
+      3390,
+      4050
+     ]
+    ]
+   }
   }
  ]
 }

@@ -15,7 +15,54 @@
    "text": "أَرَءَيْتَ ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ",
    "translation": "Tahukah kamu (orang) yang mendustakan agama?",
    "tajweed": "أَرَءَيْتَ [h:14568[ٱ]لَّذِى يُكَذِّبُ بِ[h:14361[ٱ][l[ل]دّ[p[ِي]نِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/107001.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/107001.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "أَرَءَيْتَ",
+     "audio": "https://audio.qurancdn.com/wbw/107_001_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱلَّذِى",
+     "audio": "https://audio.qurancdn.com/wbw/107_001_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "يُكَذِّبُ",
+     "audio": "https://audio.qurancdn.com/wbw/107_001_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "بِٱلدِّينِ",
+     "audio": "https://audio.qurancdn.com/wbw/107_001_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/107001.mp3",
+    "segments": [
+     [
+      1,
+      150,
+      1020
+     ],
+     [
+      2,
+      1030,
+      1810
+     ],
+     [
+      3,
+      1820,
+      2930
+     ],
+     [
+      4,
+      2940,
+      5710
+     ]
+    ]
+   }
   },
   {
    "number": 2,
@@ -25,7 +72,54 @@
    "text": "فَذَٰلِكَ ٱلَّذِى يَدُعُّ ٱلْيَتِيمَ",
    "translation": "Itulah orang yang menghardik anak yatim,",
    "tajweed": "فَذ[n[َٲ]لِكَ [h:14654[ٱ]لَّذِى يَدُعُّ [h:14655[ٱ]لْيَت[p[ِي]مَ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/107002.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/107002.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "فَذَٰلِكَ",
+     "audio": "https://audio.qurancdn.com/wbw/107_002_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱلَّذِى",
+     "audio": "https://audio.qurancdn.com/wbw/107_002_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "يَدُعُّ",
+     "audio": "https://audio.qurancdn.com/wbw/107_002_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "ٱلْيَتِيمَ",
+     "audio": "https://audio.qurancdn.com/wbw/107_002_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/107002.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1060
+     ],
+     [
+      2,
+      1070,
+      1920
+     ],
+     [
+      3,
+      1930,
+      2760
+     ],
+     [
+      4,
+      2770,
+      5890
+     ]
+    ]
+   }
   },
   {
    "number": 3,
@@ -35,7 +129,64 @@
    "text": "وَلَا يَحُضُّ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ",
    "translation": "dan tidak menganjurkan memberi makan orang miskin.",
    "tajweed": "وَلَا يَحُضُّ عَلَىٰ طَعَامِ [h:13901[ٱ]لْمِسْك[p[ِي]نِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/107003.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/107003.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَلَا",
+     "audio": "https://audio.qurancdn.com/wbw/107_003_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "يَحُضُّ",
+     "audio": "https://audio.qurancdn.com/wbw/107_003_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "عَلَىٰ",
+     "audio": "https://audio.qurancdn.com/wbw/107_003_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "طَعَامِ",
+     "audio": "https://audio.qurancdn.com/wbw/107_003_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "ٱلْمِسْكِينِ",
+     "audio": "https://audio.qurancdn.com/wbw/107_003_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/107003.mp3",
+    "segments": [
+     [
+      1,
+      150,
+      710
+     ],
+     [
+      2,
+      720,
+      1560
+     ],
+     [
+      3,
+      1570,
+      2200
+     ],
+     [
+      4,
+      2210,
+      3140
+     ],
+     [
+      5,
+      3150,
+      6570
+     ]
+    ]
+   }
   },
   {
    "number": 4,
@@ -45,7 +196,34 @@
    "text": "فَوَيْلٌۭ لِّلْمُصَلِّينَ",
    "translation": "Maka kecelakaanlah bagi orang-orang yang shalat,",
    "tajweed": "فَوَيْ[u:14656[لٌ ل]ِّلْمُصَلّ[p[ِي]نَ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/107004.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/107004.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "فَوَيْلٌۭ",
+     "audio": "https://audio.qurancdn.com/wbw/107_004_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "لِّلْمُصَلِّينَ",
+     "audio": "https://audio.qurancdn.com/wbw/107_004_002.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/107004.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1170
+     ],
+     [
+      2,
+      1180,
+      5180
+     ]
+    ]
+   }
   },
   {
    "number": 5,
@@ -55,7 +233,64 @@
    "text": "ٱلَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ",
    "translation": "(yaitu) orang-orang yang lalai dari shalatnya,",
    "tajweed": "ٱلَّذِينَ هُمْ عَ[f:14657[ن ص]َلَاتِهِمْ سَاه[p[ُو]نَ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/107005.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/107005.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "ٱلَّذِينَ",
+     "audio": "https://audio.qurancdn.com/wbw/107_005_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "هُمْ",
+     "audio": "https://audio.qurancdn.com/wbw/107_005_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "عَن",
+     "audio": "https://audio.qurancdn.com/wbw/107_005_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "صَلَاتِهِمْ",
+     "audio": "https://audio.qurancdn.com/wbw/107_005_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "سَاهُونَ",
+     "audio": "https://audio.qurancdn.com/wbw/107_005_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/107005.mp3",
+    "segments": [
+     [
+      1,
+      50,
+      1210
+     ],
+     [
+      2,
+      1220,
+      1630
+     ],
+     [
+      3,
+      1640,
+      2690
+     ],
+     [
+      4,
+      2700,
+      4030
+     ],
+     [
+      5,
+      4040,
+      6910
+     ]
+    ]
+   }
   },
   {
    "number": 6,
@@ -65,7 +300,44 @@
    "text": "ٱلَّذِينَ هُمْ يُرَآءُونَ",
    "translation": "orang-orang yang berbuat riya,",
    "tajweed": "ٱلَّذِينَ هُمْ يُر[o[َا]ٓء[p[ُو]نَ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/107006.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/107006.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "ٱلَّذِينَ",
+     "audio": "https://audio.qurancdn.com/wbw/107_006_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "هُمْ",
+     "audio": "https://audio.qurancdn.com/wbw/107_006_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "يُرَآءُونَ",
+     "audio": "https://audio.qurancdn.com/wbw/107_006_003.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/107006.mp3",
+    "segments": [
+     [
+      1,
+      150,
+      1280
+     ],
+     [
+      2,
+      1290,
+      1720
+     ],
+     [
+      3,
+      1730,
+      6980
+     ]
+    ]
+   }
   },
   {
    "number": 7,
@@ -75,7 +347,34 @@
    "text": "وَيَمْنَعُونَ ٱلْمَاعُونَ",
    "translation": "dan enggan (menolong dengan) barang berguna.",
    "tajweed": "وَيَمْنَعُونَ [h:14658[ٱ]لْمَاع[p[ُو]نَ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/107007.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/107007.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَيَمْنَعُونَ",
+     "audio": "https://audio.qurancdn.com/wbw/107_007_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱلْمَاعُونَ",
+     "audio": "https://audio.qurancdn.com/wbw/107_007_002.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/107007.mp3",
+    "segments": [
+     [
+      1,
+      50,
+      1510
+     ],
+     [
+      2,
+      1520,
+      5120
+     ]
+    ]
+   }
   }
  ]
 }

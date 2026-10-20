@@ -15,7 +15,84 @@
    "text": "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَٰبِ ٱلْفِيلِ",
    "translation": "Apakah kamu tidak memperhatikan bagaimana Tuhanmu telah bertindak terhadap tentara bergajah?",
    "tajweed": "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَ[n[ـٰ]بِ [h:14643[ٱ]لْف[p[ِي]لِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/105001.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/105001.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "أَلَمْ",
+     "audio": "https://audio.qurancdn.com/wbw/105_001_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "تَرَ",
+     "audio": "https://audio.qurancdn.com/wbw/105_001_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "كَيْفَ",
+     "audio": "https://audio.qurancdn.com/wbw/105_001_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "فَعَلَ",
+     "audio": "https://audio.qurancdn.com/wbw/105_001_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "رَبُّكَ",
+     "audio": "https://audio.qurancdn.com/wbw/105_001_005.mp3"
+    },
+    {
+     "position": 6,
+     "text": "بِأَصْحَـٰبِ",
+     "audio": "https://audio.qurancdn.com/wbw/105_001_006.mp3"
+    },
+    {
+     "position": 7,
+     "text": "ٱلْفِيلِ",
+     "audio": "https://audio.qurancdn.com/wbw/105_001_007.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/105001.mp3",
+    "segments": [
+     [
+      1,
+      50,
+      560
+     ],
+     [
+      2,
+      570,
+      1030
+     ],
+     [
+      3,
+      1040,
+      1650
+     ],
+     [
+      4,
+      1660,
+      2380
+     ],
+     [
+      5,
+      2390,
+      3250
+     ],
+     [
+      6,
+      3260,
+      4520
+     ],
+     [
+      7,
+      4530,
+      6980
+     ]
+    ]
+   }
   },
   {
    "number": 2,
@@ -25,7 +102,64 @@
    "text": "أَلَمْ يَجْعَلْ كَيْدَهُمْ فِى تَضْلِيلٍۢ",
    "translation": "Bukankah Dia telah menjadikan tipu daya mereka (untuk menghancurkan Ka'bah) itu sia-sia?",
    "tajweed": "أَلَمْ يَ[q:4397[جْ]عَلْ كَيْدَهُمْ فِى تَضْل[p[ِي]لٍ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/105002.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/105002.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "أَلَمْ",
+     "audio": "https://audio.qurancdn.com/wbw/105_002_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "يَجْعَلْ",
+     "audio": "https://audio.qurancdn.com/wbw/105_002_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "كَيْدَهُمْ",
+     "audio": "https://audio.qurancdn.com/wbw/105_002_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "فِى",
+     "audio": "https://audio.qurancdn.com/wbw/105_002_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "تَضْلِيلٍۢ",
+     "audio": "https://audio.qurancdn.com/wbw/105_002_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/105002.mp3",
+    "segments": [
+     [
+      1,
+      150,
+      610
+     ],
+     [
+      2,
+      620,
+      1420
+     ],
+     [
+      3,
+      1430,
+      2520
+     ],
+     [
+      4,
+      2530,
+      2950
+     ],
+     [
+      5,
+      2960,
+      5420
+     ]
+    ]
+   }
   },
   {
    "number": 3,
@@ -35,7 +169,54 @@
    "text": "وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ",
    "translation": "dan Dia mengirimkan kapada mereka burung yang berbondong-bondong,",
    "tajweed": "وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَاب[p[ِي]لَ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/105003.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/105003.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَأَرْسَلَ",
+     "audio": "https://audio.qurancdn.com/wbw/105_003_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "عَلَيْهِمْ",
+     "audio": "https://audio.qurancdn.com/wbw/105_003_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "طَيْرًا",
+     "audio": "https://audio.qurancdn.com/wbw/105_003_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "أَبَابِيلَ",
+     "audio": "https://audio.qurancdn.com/wbw/105_003_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/105003.mp3",
+    "segments": [
+     [
+      1,
+      50,
+      1070
+     ],
+     [
+      2,
+      1080,
+      2100
+     ],
+     [
+      3,
+      2110,
+      2930
+     ],
+     [
+      4,
+      2940,
+      6190
+     ]
+    ]
+   }
   },
   {
    "number": 4,
@@ -45,7 +226,54 @@
    "text": "تَرْمِيهِم بِحِجَارَةٍۢ مِّن سِجِّيلٍۢ",
    "translation": "yang melempari mereka dengan batu (berasal) dari tanah yang terbakar,",
    "tajweed": "تَرْمِيه[c:14644[ِم ب]ِحِجَارَ[a:14645[ةٍ م]ِّ[f:6445[ن س]ِجّ[p[ِي]لٍ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/105004.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/105004.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "تَرْمِيهِم",
+     "audio": "https://audio.qurancdn.com/wbw/105_004_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "بِحِجَارَةٍۢ",
+     "audio": "https://audio.qurancdn.com/wbw/105_004_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "مِّن",
+     "audio": "https://audio.qurancdn.com/wbw/105_004_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "سِجِّيلٍۢ",
+     "audio": "https://audio.qurancdn.com/wbw/105_004_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/105004.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      2080
+     ],
+     [
+      2,
+      2090,
+      4620
+     ],
+     [
+      3,
+      4630,
+      5600
+     ],
+     [
+      4,
+      5610,
+      8620
+     ]
+    ]
+   }
   },
   {
    "number": 5,
@@ -55,7 +283,44 @@
    "text": "فَجَعَلَهُمْ كَعَصْفٍۢ مَّأْكُولٍۭ",
    "translation": "lalu Dia menjadikan mereka seperti daun-daun yang dimakan (ulat).",
    "tajweed": "فَجَعَلَهُمْ كَعَصْ[a:14646[فٍ م]َّأْك[p[ُو]لِۭ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/105005.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/105005.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "فَجَعَلَهُمْ",
+     "audio": "https://audio.qurancdn.com/wbw/105_005_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "كَعَصْفٍۢ",
+     "audio": "https://audio.qurancdn.com/wbw/105_005_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "مَّأْكُولٍۭ",
+     "audio": "https://audio.qurancdn.com/wbw/105_005_003.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/105005.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1200
+     ],
+     [
+      2,
+      1210,
+      3520
+     ],
+     [
+      3,
+      3530,
+      7020
+     ]
+    ]
+   }
   }
  ]
 }

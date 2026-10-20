@@ -15,7 +15,134 @@
    "text": "لَمْ يَكُنِ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَٰبِ وَٱلْمُشْرِكِينَ مُنفَكِّينَ حَتَّىٰ تَأْتِيَهُمُ ٱلْبَيِّنَةُ",
    "translation": "Orang-orang kafir yakni ahli Kitab dan orang-orang musyrik (mengatakan bahwa mereka) tidak akan meninggalkan (agamanya) sebelum datang kepada mereka bukti yang nyata,",
    "tajweed": "لَمْ يَكُنِ [h:14587[ٱ]لَّذِينَ كَفَرُو[s[اْ] مِنْ أَهْلِ [h:545[ٱ]لْكِتَ[n[ـٰ]بِ وَ[h:10916[ٱ]لْمُشْرِكِينَ مُ[f:14588[نف]َكِّينَ حَتَّىٰ تَأْتِيَهُمُ [h:14589[ٱ]لْبَيِّنَةُ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/098001.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/098001.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "لَمْ",
+     "audio": "https://audio.qurancdn.com/wbw/098_001_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "يَكُنِ",
+     "audio": "https://audio.qurancdn.com/wbw/098_001_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "ٱلَّذِينَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_001_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "كَفَرُوا۟",
+     "audio": "https://audio.qurancdn.com/wbw/098_001_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "مِنْ",
+     "audio": "https://audio.qurancdn.com/wbw/098_001_005.mp3"
+    },
+    {
+     "position": 6,
+     "text": "أَهْلِ",
+     "audio": "https://audio.qurancdn.com/wbw/098_001_006.mp3"
+    },
+    {
+     "position": 7,
+     "text": "ٱلْكِتَـٰبِ",
+     "audio": "https://audio.qurancdn.com/wbw/098_001_007.mp3"
+    },
+    {
+     "position": 8,
+     "text": "وَٱلْمُشْرِكِينَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_001_008.mp3"
+    },
+    {
+     "position": 9,
+     "text": "مُنفَكِّينَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_001_009.mp3"
+    },
+    {
+     "position": 10,
+     "text": "حَتَّىٰ",
+     "audio": "https://audio.qurancdn.com/wbw/098_001_010.mp3"
+    },
+    {
+     "position": 11,
+     "text": "تَأْتِيَهُمُ",
+     "audio": "https://audio.qurancdn.com/wbw/098_001_011.mp3"
+    },
+    {
+     "position": 12,
+     "text": "ٱلْبَيِّنَةُ",
+     "audio": "https://audio.qurancdn.com/wbw/098_001_012.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/098001.mp3",
+    "segments": [
+     [
+      1,
+      300,
+      590
+     ],
+     [
+      2,
+      600,
+      1200
+     ],
+     [
+      3,
+      1210,
+      2120
+     ],
+     [
+      4,
+      2130,
+      2950
+     ],
+     [
+      5,
+      2960,
+      3340
+     ],
+     [
+      6,
+      3350,
+      3960
+     ],
+     [
+      7,
+      3970,
+      4940
+     ],
+     [
+      8,
+      4950,
+      6510
+     ],
+     [
+      9,
+      6520,
+      8730
+     ],
+     [
+      10,
+      8740,
+      9540
+     ],
+     [
+      11,
+      9550,
+      10800
+     ],
+     [
+      12,
+      10810,
+      11860
+     ]
+    ]
+   }
   },
   {
    "number": 2,
@@ -25,7 +152,74 @@
    "text": "رَسُولٌۭ مِّنَ ٱللَّهِ يَتْلُوا۟ صُحُفًۭا مُّطَهَّرَةًۭ",
    "translation": "(yaitu) seorang Rasul dari Allah (Muhammad) yang membacakan lembaran-lembaran yang disucikan (Al Quran),",
    "tajweed": "رَسُو[a:14590[لٌ م]ِّنَ [h:321[ٱ]للَّهِ يَتْلُو[s[اْ] صُحُ[a:14591[فًا م]ُّطَهَّرَةً",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/098002.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/098002.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "رَسُولٌۭ",
+     "audio": "https://audio.qurancdn.com/wbw/098_002_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "مِّنَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_002_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "ٱللَّهِ",
+     "audio": "https://audio.qurancdn.com/wbw/098_002_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "يَتْلُوا۟",
+     "audio": "https://audio.qurancdn.com/wbw/098_002_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "صُحُفًۭا",
+     "audio": "https://audio.qurancdn.com/wbw/098_002_005.mp3"
+    },
+    {
+     "position": 6,
+     "text": "مُّطَهَّرَةًۭ",
+     "audio": "https://audio.qurancdn.com/wbw/098_002_006.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/098002.mp3",
+    "segments": [
+     [
+      1,
+      150,
+      1980
+     ],
+     [
+      2,
+      1990,
+      2290
+     ],
+     [
+      3,
+      2300,
+      3110
+     ],
+     [
+      4,
+      3120,
+      3800
+     ],
+     [
+      5,
+      3810,
+      5520
+     ],
+     [
+      6,
+      5530,
+      6520
+     ]
+    ]
+   }
   },
   {
    "number": 3,
@@ -35,7 +229,44 @@
    "text": "فِيهَا كُتُبٌۭ قَيِّمَةٌۭ",
    "translation": "di dalamnya terdapat (isi) Kitab-kitab yang lurus.",
    "tajweed": "فِيهَا كُتُ[f:14592[بٌ ق]َيِّمَةٌ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/098003.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/098003.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "فِيهَا",
+     "audio": "https://audio.qurancdn.com/wbw/098_003_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "كُتُبٌۭ",
+     "audio": "https://audio.qurancdn.com/wbw/098_003_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "قَيِّمَةٌۭ",
+     "audio": "https://audio.qurancdn.com/wbw/098_003_003.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/098003.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      770
+     ],
+     [
+      2,
+      780,
+      2400
+     ],
+     [
+      3,
+      2410,
+      3460
+     ]
+    ]
+   }
   },
   {
    "number": 4,
@@ -45,7 +276,124 @@
    "text": "وَمَا تَفَرَّقَ ٱلَّذِينَ أُوتُوا۟ ٱلْكِتَٰبَ إِلَّا مِنۢ بَعْدِ مَا جَآءَتْهُمُ ٱلْبَيِّنَةُ",
    "translation": "Dan tidaklah berpecah belah orang-orang yang didatangkan Al Kitab (kepada mereka) melainkan sesudah datang kepada mereka bukti yang nyata.",
    "tajweed": "وَمَا تَفَرَّقَ [h:14593[ٱ]لَّذِينَ أُوتُو[s[اْ] [h:524[ٱ]لْكِتَ[n[ـٰ]بَ إِلَّا م[i:146[ِنۢ ب]َعْدِ مَا ج[o[َا]ٓءَتْهُمُ [h:14594[ٱ]لْبَيِّنَةُ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/098004.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/098004.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَمَا",
+     "audio": "https://audio.qurancdn.com/wbw/098_004_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "تَفَرَّقَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_004_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "ٱلَّذِينَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_004_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "أُوتُوا۟",
+     "audio": "https://audio.qurancdn.com/wbw/098_004_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "ٱلْكِتَـٰبَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_004_005.mp3"
+    },
+    {
+     "position": 6,
+     "text": "إِلَّا",
+     "audio": "https://audio.qurancdn.com/wbw/098_004_006.mp3"
+    },
+    {
+     "position": 7,
+     "text": "مِنۢ",
+     "audio": "https://audio.qurancdn.com/wbw/098_004_007.mp3"
+    },
+    {
+     "position": 8,
+     "text": "بَعْدِ",
+     "audio": "https://audio.qurancdn.com/wbw/098_004_008.mp3"
+    },
+    {
+     "position": 9,
+     "text": "مَا",
+     "audio": "https://audio.qurancdn.com/wbw/098_004_009.mp3"
+    },
+    {
+     "position": 10,
+     "text": "جَآءَتْهُمُ",
+     "audio": "https://audio.qurancdn.com/wbw/098_004_010.mp3"
+    },
+    {
+     "position": 11,
+     "text": "ٱلْبَيِّنَةُ",
+     "audio": "https://audio.qurancdn.com/wbw/098_004_011.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/098004.mp3",
+    "segments": [
+     [
+      1,
+      200,
+      690
+     ],
+     [
+      2,
+      700,
+      1710
+     ],
+     [
+      3,
+      1720,
+      2730
+     ],
+     [
+      4,
+      2740,
+      3310
+     ],
+     [
+      5,
+      3320,
+      4330
+     ],
+     [
+      6,
+      4340,
+      5150
+     ],
+     [
+      7,
+      5160,
+      6190
+     ],
+     [
+      8,
+      6200,
+      6860
+     ],
+     [
+      9,
+      6870,
+      7190
+     ],
+     [
+      10,
+      7200,
+      9910
+     ],
+     [
+      11,
+      9920,
+      11030
+     ]
+    ]
+   }
   },
   {
    "number": 5,
@@ -55,7 +403,174 @@
    "text": "وَمَآ أُمِرُوٓا۟ إِلَّا لِيَعْبُدُوا۟ ٱللَّهَ مُخْلِصِينَ لَهُ ٱلدِّينَ حُنَفَآءَ وَيُقِيمُوا۟ ٱلصَّلَوٰةَ وَيُؤْتُوا۟ ٱلزَّكَوٰةَ ۚ وَذَٰلِكَ دِينُ ٱلْقَيِّمَةِ",
    "translation": "Padahal mereka tidak disuruh kecuali supaya menyembah Allah dengan memurnikan ketaatan kepada-Nya dalam (menjalankan) agama yang lurus, dan supaya mereka mendirikan shalat dan menunaikan zakat; dan yang demikian itulah agama yang lurus.",
    "tajweed": "وَم[o[َآ] أُمِر[o[ُوٓ][s[اْ] إِلَّا لِيَعْبُدُو[s[اْ] [h:14595[ٱ]للَّهَ مُخْلِصِينَ لَهُ [h:4649[ٱ][l[ل]دِّينَ حُنَف[o[َا]ٓءَ وَيُقِيمُو[s[اْ] [h:14596[ٱ][l[ل]صَّلَ[s[و][n[ٲ]ةَ وَيُؤْتُو[s[اْ] [h:14597[ٱ][l[ل]زَّكَ[s[و][n[ٲ]ةَ‌ۚ وَذ[n[َٲ]لِكَ دِينُ [h:14598[ٱ]لْقَيِّمَةِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/098005.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/098005.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَمَآ",
+     "audio": "https://audio.qurancdn.com/wbw/098_005_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "أُمِرُوٓا۟",
+     "audio": "https://audio.qurancdn.com/wbw/098_005_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "إِلَّا",
+     "audio": "https://audio.qurancdn.com/wbw/098_005_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "لِيَعْبُدُوا۟",
+     "audio": "https://audio.qurancdn.com/wbw/098_005_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "ٱللَّهَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_005_005.mp3"
+    },
+    {
+     "position": 6,
+     "text": "مُخْلِصِينَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_005_006.mp3"
+    },
+    {
+     "position": 7,
+     "text": "لَهُ",
+     "audio": "https://audio.qurancdn.com/wbw/098_005_007.mp3"
+    },
+    {
+     "position": 8,
+     "text": "ٱلدِّينَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_005_008.mp3"
+    },
+    {
+     "position": 9,
+     "text": "حُنَفَآءَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_005_009.mp3"
+    },
+    {
+     "position": 10,
+     "text": "وَيُقِيمُوا۟",
+     "audio": "https://audio.qurancdn.com/wbw/098_005_010.mp3"
+    },
+    {
+     "position": 11,
+     "text": "ٱلصَّلَوٰةَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_005_011.mp3"
+    },
+    {
+     "position": 12,
+     "text": "وَيُؤْتُوا۟",
+     "audio": "https://audio.qurancdn.com/wbw/098_005_012.mp3"
+    },
+    {
+     "position": 13,
+     "text": "ٱلزَّكَوٰةَ ۚ",
+     "audio": "https://audio.qurancdn.com/wbw/098_005_013.mp3"
+    },
+    {
+     "position": 14,
+     "text": "وَذَٰلِكَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_005_015.mp3"
+    },
+    {
+     "position": 15,
+     "text": "دِينُ",
+     "audio": "https://audio.qurancdn.com/wbw/098_005_016.mp3"
+    },
+    {
+     "position": 16,
+     "text": "ٱلْقَيِّمَةِ",
+     "audio": "https://audio.qurancdn.com/wbw/098_005_017.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/098005.mp3",
+    "segments": [
+     [
+      1,
+      200,
+      1860
+     ],
+     [
+      2,
+      1870,
+      3860
+     ],
+     [
+      3,
+      3870,
+      4620
+     ],
+     [
+      4,
+      4630,
+      5660
+     ],
+     [
+      5,
+      5670,
+      6440
+     ],
+     [
+      6,
+      6450,
+      7680
+     ],
+     [
+      7,
+      7690,
+      8040
+     ],
+     [
+      8,
+      8050,
+      8810
+     ],
+     [
+      9,
+      8820,
+      11320
+     ],
+     [
+      10,
+      11330,
+      12310
+     ],
+     [
+      11,
+      12320,
+      13390
+     ],
+     [
+      12,
+      13400,
+      14180
+     ],
+     [
+      13,
+      14190,
+      17160
+     ],
+     [
+      14,
+      17170,
+      18180
+     ],
+     [
+      15,
+      18190,
+      18820
+     ],
+     [
+      16,
+      18830,
+      19860
+     ]
+    ]
+   }
   },
   {
    "number": 6,
@@ -65,7 +580,174 @@
    "text": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَٰبِ وَٱلْمُشْرِكِينَ فِى نَارِ جَهَنَّمَ خَٰلِدِينَ فِيهَآ ۚ أُو۟لَٰٓئِكَ هُمْ شَرُّ ٱلْبَرِيَّةِ",
    "translation": "Sesungguhnya orang-orang yang kafir yakni ahli Kitab dan orang-orang yang musyrik (akan masuk) ke neraka Jahannam; mereka kekal di dalamnya. Mereka itu adalah seburuk-buruk makhluk.",
    "tajweed": "إِ[g[نّ]َ [h:24[ٱ]لَّذِينَ كَفَرُو[s[اْ] مِنْ أَهْلِ [h:545[ٱ]لْكِتَ[n[ـٰ]بِ وَ[h:10916[ٱ]لْمُشْرِكِينَ فِى نَارِ جَهَ[g[نّ]َمَ خَ[n[ـٰ]لِدِينَ فِيه[o[َآ‌ۚ] أُ[s[وْ]لَ[o[ـٰٓ]ئِكَ هُمْ شَرُّ [h:14599[ٱ]لْبَرِيَّةِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/098006.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/098006.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "إِنَّ",
+     "audio": "https://audio.qurancdn.com/wbw/098_006_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱلَّذِينَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_006_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "كَفَرُوا۟",
+     "audio": "https://audio.qurancdn.com/wbw/098_006_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "مِنْ",
+     "audio": "https://audio.qurancdn.com/wbw/098_006_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "أَهْلِ",
+     "audio": "https://audio.qurancdn.com/wbw/098_006_005.mp3"
+    },
+    {
+     "position": 6,
+     "text": "ٱلْكِتَـٰبِ",
+     "audio": "https://audio.qurancdn.com/wbw/098_006_006.mp3"
+    },
+    {
+     "position": 7,
+     "text": "وَٱلْمُشْرِكِينَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_006_007.mp3"
+    },
+    {
+     "position": 8,
+     "text": "فِى",
+     "audio": "https://audio.qurancdn.com/wbw/098_006_008.mp3"
+    },
+    {
+     "position": 9,
+     "text": "نَارِ",
+     "audio": "https://audio.qurancdn.com/wbw/098_006_009.mp3"
+    },
+    {
+     "position": 10,
+     "text": "جَهَنَّمَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_006_010.mp3"
+    },
+    {
+     "position": 11,
+     "text": "خَـٰلِدِينَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_006_011.mp3"
+    },
+    {
+     "position": 12,
+     "text": "فِيهَآ ۚ",
+     "audio": "https://audio.qurancdn.com/wbw/098_006_012.mp3"
+    },
+    {
+     "position": 13,
+     "text": "أُو۟لَـٰٓئِكَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_006_014.mp3"
+    },
+    {
+     "position": 14,
+     "text": "هُمْ",
+     "audio": "https://audio.qurancdn.com/wbw/098_006_015.mp3"
+    },
+    {
+     "position": 15,
+     "text": "شَرُّ",
+     "audio": "https://audio.qurancdn.com/wbw/098_006_016.mp3"
+    },
+    {
+     "position": 16,
+     "text": "ٱلْبَرِيَّةِ",
+     "audio": "https://audio.qurancdn.com/wbw/098_006_017.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/098006.mp3",
+    "segments": [
+     [
+      1,
+      150,
+      1580
+     ],
+     [
+      2,
+      1590,
+      2590
+     ],
+     [
+      3,
+      2600,
+      3430
+     ],
+     [
+      4,
+      3440,
+      3800
+     ],
+     [
+      5,
+      3810,
+      4420
+     ],
+     [
+      6,
+      4430,
+      5470
+     ],
+     [
+      7,
+      5480,
+      7040
+     ],
+     [
+      8,
+      7050,
+      7500
+     ],
+     [
+      9,
+      7510,
+      8100
+     ],
+     [
+      10,
+      8110,
+      10170
+     ],
+     [
+      11,
+      10180,
+      11440
+     ],
+     [
+      12,
+      11450,
+      13050
+     ],
+     [
+      13,
+      13060,
+      15400
+     ],
+     [
+      14,
+      15410,
+      15720
+     ],
+     [
+      15,
+      15730,
+      16370
+     ],
+     [
+      16,
+      16380,
+      17650
+     ]
+    ]
+   }
   },
   {
    "number": 7,
@@ -75,7 +757,104 @@
    "text": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ أُو۟لَٰٓئِكَ هُمْ خَيْرُ ٱلْبَرِيَّةِ",
    "translation": "Sesungguhnya orang-orang yang beriman dan mengerjakan amal saleh, mereka itu adalah sebaik-baik makhluk.",
    "tajweed": "إِ[g[نّ]َ [h:24[ٱ]لَّذِينَ ءَامَنُو[s[اْ] وَعَمِلُو[s[اْ] [h:118[ٱ][l[ل]صَّ[n[ـٰ]لِحَ[n[ـٰ]تِ أُ[s[وْ]لَ[o[ـٰٓ]ئِكَ هُمْ خَيْرُ [h:14600[ٱ]لْبَرِيَّةِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/098007.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/098007.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "إِنَّ",
+     "audio": "https://audio.qurancdn.com/wbw/098_007_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱلَّذِينَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_007_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "ءَامَنُوا۟",
+     "audio": "https://audio.qurancdn.com/wbw/098_007_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "وَعَمِلُوا۟",
+     "audio": "https://audio.qurancdn.com/wbw/098_007_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "ٱلصَّـٰلِحَـٰتِ",
+     "audio": "https://audio.qurancdn.com/wbw/098_007_005.mp3"
+    },
+    {
+     "position": 6,
+     "text": "أُو۟لَـٰٓئِكَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_007_006.mp3"
+    },
+    {
+     "position": 7,
+     "text": "هُمْ",
+     "audio": "https://audio.qurancdn.com/wbw/098_007_007.mp3"
+    },
+    {
+     "position": 8,
+     "text": "خَيْرُ",
+     "audio": "https://audio.qurancdn.com/wbw/098_007_008.mp3"
+    },
+    {
+     "position": 9,
+     "text": "ٱلْبَرِيَّةِ",
+     "audio": "https://audio.qurancdn.com/wbw/098_007_009.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/098007.mp3",
+    "segments": [
+     [
+      1,
+      200,
+      1590
+     ],
+     [
+      2,
+      1600,
+      2650
+     ],
+     [
+      3,
+      2660,
+      3720
+     ],
+     [
+      4,
+      3730,
+      4520
+     ],
+     [
+      5,
+      4530,
+      6030
+     ],
+     [
+      6,
+      6040,
+      8660
+     ],
+     [
+      7,
+      8670,
+      9080
+     ],
+     [
+      8,
+      9090,
+      9750
+     ],
+     [
+      9,
+      9760,
+      11599
+     ]
+    ]
+   }
   },
   {
    "number": 8,
@@ -85,7 +864,224 @@
    "text": "جَزَآؤُهُمْ عِندَ رَبِّهِمْ جَنَّٰتُ عَدْنٍۢ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ خَٰلِدِينَ فِيهَآ أَبَدًۭا ۖ رَّضِىَ ٱللَّهُ عَنْهُمْ وَرَضُوا۟ عَنْهُ ۚ ذَٰلِكَ لِمَنْ خَشِىَ رَبَّهُۥ",
    "translation": "Balasan mereka di sisi Tuhan mereka ialah surga 'Adn yang mengalir di bawahnya sungai-sungai; mereka kekal di dalamnya selama-lamanya. Allah ridha terhadap mereka dan merekapun ridha kepada-Nya. Yang demikian itu adalah (balasan) bagi orang yang takut kepada Tuhannya.",
    "tajweed": "جَز[o[َا]ٓؤُهُمْ عِ[f:264[ند]َ رَبِّهِمْ جَ[g[نّ]َ[n[ـٰ]تُ عَ[q:5720[دْ][f:8049[نٍ ت]َ[q:120[جْ]رِى مِ[f:121[ن ت]َحْتِهَا [h:122[ٱ]لْأَنْهَ[n[ـٰ]رُ خَ[n[ـٰ]لِدِينَ فِيه[o[َآ] أَبَ[u:3909[دًا‌ۖ ر]َّضِىَ [h:3910[ٱ]للَّهُ عَنْهُمْ وَرَضُو[s[اْ] عَنْهُ‌ۚ ذ[n[َٲ]لِكَ لِمَنْ خَشِىَ رَبَّهُۥ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/098008.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/098008.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "جَزَآؤُهُمْ",
+     "audio": "https://audio.qurancdn.com/wbw/098_008_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "عِندَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_008_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "رَبِّهِمْ",
+     "audio": "https://audio.qurancdn.com/wbw/098_008_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "جَنَّـٰتُ",
+     "audio": "https://audio.qurancdn.com/wbw/098_008_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "عَدْنٍۢ",
+     "audio": "https://audio.qurancdn.com/wbw/098_008_005.mp3"
+    },
+    {
+     "position": 6,
+     "text": "تَجْرِى",
+     "audio": "https://audio.qurancdn.com/wbw/098_008_006.mp3"
+    },
+    {
+     "position": 7,
+     "text": "مِن",
+     "audio": "https://audio.qurancdn.com/wbw/098_008_007.mp3"
+    },
+    {
+     "position": 8,
+     "text": "تَحْتِهَا",
+     "audio": "https://audio.qurancdn.com/wbw/098_008_008.mp3"
+    },
+    {
+     "position": 9,
+     "text": "ٱلْأَنْهَـٰرُ",
+     "audio": "https://audio.qurancdn.com/wbw/098_008_009.mp3"
+    },
+    {
+     "position": 10,
+     "text": "خَـٰلِدِينَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_008_010.mp3"
+    },
+    {
+     "position": 11,
+     "text": "فِيهَآ",
+     "audio": "https://audio.qurancdn.com/wbw/098_008_011.mp3"
+    },
+    {
+     "position": 12,
+     "text": "أَبَدًۭا ۖ",
+     "audio": "https://audio.qurancdn.com/wbw/098_008_012.mp3"
+    },
+    {
+     "position": 13,
+     "text": "رَّضِىَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_008_014.mp3"
+    },
+    {
+     "position": 14,
+     "text": "ٱللَّهُ",
+     "audio": "https://audio.qurancdn.com/wbw/098_008_015.mp3"
+    },
+    {
+     "position": 15,
+     "text": "عَنْهُمْ",
+     "audio": "https://audio.qurancdn.com/wbw/098_008_016.mp3"
+    },
+    {
+     "position": 16,
+     "text": "وَرَضُوا۟",
+     "audio": "https://audio.qurancdn.com/wbw/098_008_017.mp3"
+    },
+    {
+     "position": 17,
+     "text": "عَنْهُ ۚ",
+     "audio": "https://audio.qurancdn.com/wbw/098_008_018.mp3"
+    },
+    {
+     "position": 18,
+     "text": "ذَٰلِكَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_008_020.mp3"
+    },
+    {
+     "position": 19,
+     "text": "لِمَنْ",
+     "audio": "https://audio.qurancdn.com/wbw/098_008_021.mp3"
+    },
+    {
+     "position": 20,
+     "text": "خَشِىَ",
+     "audio": "https://audio.qurancdn.com/wbw/098_008_022.mp3"
+    },
+    {
+     "position": 21,
+     "text": "رَبَّهُۥ",
+     "audio": "https://audio.qurancdn.com/wbw/098_008_023.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/098008.mp3",
+    "segments": [
+     [
+      1,
+      200,
+      3100
+     ],
+     [
+      2,
+      3110,
+      4700
+     ],
+     [
+      3,
+      4710,
+      5780
+     ],
+     [
+      4,
+      5790,
+      7470
+     ],
+     [
+      5,
+      7480,
+      9110
+     ],
+     [
+      6,
+      9120,
+      9980
+     ],
+     [
+      7,
+      9990,
+      10900
+     ],
+     [
+      8,
+      10910,
+      11710
+     ],
+     [
+      9,
+      11720,
+      12950
+     ],
+     [
+      10,
+      12960,
+      14250
+     ],
+     [
+      11,
+      14260,
+      16670
+     ],
+     [
+      12,
+      16680,
+      17240
+     ],
+     [
+      13,
+      17250,
+      18110
+     ],
+     [
+      14,
+      18120,
+      18950
+     ],
+     [
+      15,
+      18960,
+      19800
+     ],
+     [
+      16,
+      19810,
+      20650
+     ],
+     [
+      17,
+      20660,
+      21770
+     ],
+     [
+      18,
+      21780,
+      22640
+     ],
+     [
+      19,
+      22650,
+      23190
+     ],
+     [
+      20,
+      23200,
+      23900
+     ],
+     [
+      21,
+      23910,
+      24630
+     ]
+    ]
+   }
   }
  ]
 }

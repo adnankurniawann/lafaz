@@ -22,6 +22,12 @@ const EDITIONS = {
 const VERSE_AUDIO = "https://everyayah.com/data/Alafasy_128kbps";
 const WORD_AUDIO = "https://audio.qurancdn.com/wbw";
 
+// quran.com gives per-word text, word audio, and the start/end time of every
+// word inside its own Alafasy verse recording (recitation 7).
+const QURAN_COM = "https://api.quran.com/api/v4/verses/by_chapter";
+const QURAN_COM_AUDIO = "https://verses.quran.com";
+const QURAN_COM_WORD_AUDIO = "https://audio.qurancdn.com";
+
 const OUT_DIR = path.join(process.cwd(), "data/quran");
 
 type ApiAyah = {
@@ -73,6 +79,65 @@ async function fetchEdition(surah: number, edition: string): Promise<ApiSurah> {
   }
 }
 
+type QuranComVerse = {
+  verse_number: number;
+  words: { position: number; char_type_name: string; text_uthmani: string; audio_url: string | null }[];
+  audio: { url: string; segments: number[][] };
+};
+
+export type Word = { position: number; text: string; audio: string };
+export type Timing = { audio: string; segments: [position: number, startMs: number, endMs: number][] };
+
+async function fetchJson(url: string) {
+  for (let attempt = 1; ; attempt++) {
+    try {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return await res.json();
+    } catch (err) {
+      if (attempt >= 3) throw new Error(`${url}: ${(err as Error).message}`);
+      await new Promise((r) => setTimeout(r, 1000 * attempt));
+    }
+  }
+}
+
+async function fetchWords(surah: number): Promise<Map<number, { words: Word[]; timing: Timing }>> {
+  const verses: QuranComVerse[] = [];
+  for (let page = 1; page; ) {
+    const body = await fetchJson(`${QURAN_COM}/${surah}?words=true&word_fields=text_uthmani&audio=7&per_page=50&page=${page}`);
+    if (!Array.isArray(body.verses)) throw new Error(`quran.com surah ${surah}: format tidak sesuai`);
+    verses.push(...body.verses);
+    page = body.pagination?.next_page ?? 0;
+  }
+
+  const out = new Map<number, { words: Word[]; timing: Timing }>();
+  for (const v of verses) {
+    const key = `${surah}:${v.verse_number}`;
+    const words = v.words
+      .filter((w) => w.char_type_name === "word")
+      .map((w) => {
+        if (!w.audio_url || !w.text_uthmani) throw new Error(`${key}: kata ${w.position} tanpa teks atau audio`);
+        return { position: w.position, text: w.text_uthmani, audio: `${QURAN_COM_WORD_AUDIO}/${w.audio_url}` };
+      });
+    words.forEach((w, i) => {
+      if (w.position !== i + 1) throw new Error(`${key}: urutan kata salah`);
+    });
+
+    // Segments come as [index, index + 1, startMs, endMs], one per word.
+    const segs = v.audio?.segments;
+    if (!v.audio?.url || !Array.isArray(segs) || segs.length !== words.length) {
+      throw new Error(`${key}: jumlah segmen audio (${segs?.length}) tidak sama dengan jumlah kata (${words.length})`);
+    }
+    const segments = segs.map((seg, i): [number, number, number] => {
+      const [from, to, start, end] = seg;
+      if (seg.length !== 4 || from !== i || to !== i + 1 || !(end > start)) throw new Error(`${key}: format segmen tidak dikenal ${JSON.stringify(seg)}`);
+      return [i + 1, start, end];
+    });
+    out.set(v.verse_number, { words, timing: { audio: `${QURAN_COM_AUDIO}/${v.audio.url}`, segments } });
+  }
+  return out;
+}
+
 async function urlWorks(url: string) {
   try {
     const res = await fetch(url, { method: "HEAD" });
@@ -96,11 +161,13 @@ async function main() {
   let encodingDiffs = 0;
 
   for (const n of SURAHS) {
-    const [text, translation, tajweed] = await Promise.all([
+    const [text, translation, tajweed, wordData] = await Promise.all([
       fetchEdition(n, EDITIONS.text),
       fetchEdition(n, EDITIONS.translation),
       fetchEdition(n, EDITIONS.tajweed),
+      fetchWords(n),
     ]);
+    if (wordData.size !== text.numberOfAyahs) throw new Error(`Surah ${n}: jumlah ayat quran.com berbeda`);
     if (translation.numberOfAyahs !== text.numberOfAyahs || tajweed.numberOfAyahs !== text.numberOfAyahs) {
       throw new Error(`Surah ${n}: jumlah ayat antar edisi berbeda`);
     }
@@ -140,12 +207,16 @@ async function main() {
         translation: translation.ayahs[i].text,
         tajweed: rawTajweed,
         audio: verseAudioUrl(n, a.numberInSurah),
+        words: wordData.get(a.numberInSurah)!.words,
+        timing: wordData.get(a.numberInSurah)!.timing,
       };
     });
 
     // Check the first and last ayah audio of every surah actually resolves.
     for (const a of [ayahs[0], ayahs[ayahs.length - 1]]) {
-      if (!(await urlWorks(a.audio))) throw new Error(`Audio tidak bisa diakses: ${a.audio}`);
+      for (const url of [a.audio, a.timing.audio, a.words[0].audio]) {
+        if (!(await urlWorks(url))) throw new Error(`Audio tidak bisa diakses: ${url}`);
+      }
     }
 
     const surah = {
@@ -177,6 +248,8 @@ async function main() {
           tajweed: `${API}/{n}/${EDITIONS.tajweed}`,
           verseAudio: `${VERSE_AUDIO}/{SSS}{AAA}.mp3`,
           wordAudio: wordAudio ? `${WORD_AUDIO}/{sss}_{aaa}_{www}.mp3` : null,
+          words: `${QURAN_COM}/{n}?words=true&word_fields=text_uthmani&audio=7`,
+          timedVerseAudio: `${QURAN_COM_AUDIO}/Alafasy/mp3/{SSS}{AAA}.mp3`,
         },
         basmalah,
         surahs: index,

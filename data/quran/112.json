@@ -15,7 +15,54 @@
    "text": "قُلْ هُوَ ٱللَّهُ أَحَدٌ",
    "translation": "Katakanlah: \"Dialah Allah, Yang Maha Esa.",
    "tajweed": "قُلْ هُوَ [h:8078[ٱ]للَّهُ أَحَ[q[د]ٌ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/112001.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/112001.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "قُلْ",
+     "audio": "https://audio.qurancdn.com/wbw/112_001_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "هُوَ",
+     "audio": "https://audio.qurancdn.com/wbw/112_001_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "ٱللَّهُ",
+     "audio": "https://audio.qurancdn.com/wbw/112_001_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "أَحَدٌ",
+     "audio": "https://audio.qurancdn.com/wbw/112_001_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/112001.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      390
+     ],
+     [
+      2,
+      400,
+      790
+     ],
+     [
+      3,
+      800,
+      1640
+     ],
+     [
+      4,
+      1650,
+      2300
+     ]
+    ]
+   }
   },
   {
    "number": 2,
@@ -25,7 +72,34 @@
    "text": "ٱللَّهُ ٱلصَّمَدُ",
    "translation": "Allah adalah Tuhan yang bergantung kepada-Nya segala sesuatu.",
    "tajweed": "ٱللَّهُ [h:14675[ٱ][l[ل]صَّمَ[q[د]ُ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/112002.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/112002.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "ٱللَّهُ",
+     "audio": "https://audio.qurancdn.com/wbw/112_002_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱلصَّمَدُ",
+     "audio": "https://audio.qurancdn.com/wbw/112_002_002.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/112002.mp3",
+    "segments": [
+     [
+      1,
+      40,
+      980
+     ],
+     [
+      2,
+      990,
+      1850
+     ]
+    ]
+   }
   },
   {
    "number": 3,
@@ -35,7 +109,54 @@
    "text": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
    "translation": "Dia tiada beranak dan tidak pula diperanakkan,",
    "tajweed": "لَمْ يَلِ[q:14676[دْ] وَلَمْ يُولَ[q:14677[دْ]",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/112003.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/112003.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "لَمْ",
+     "audio": "https://audio.qurancdn.com/wbw/112_003_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "يَلِدْ",
+     "audio": "https://audio.qurancdn.com/wbw/112_003_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "وَلَمْ",
+     "audio": "https://audio.qurancdn.com/wbw/112_003_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "يُولَدْ",
+     "audio": "https://audio.qurancdn.com/wbw/112_003_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/112003.mp3",
+    "segments": [
+     [
+      1,
+      60,
+      390
+     ],
+     [
+      2,
+      400,
+      1000
+     ],
+     [
+      3,
+      1010,
+      1720
+     ],
+     [
+      4,
+      1730,
+      2490
+     ]
+    ]
+   }
   },
   {
    "number": 4,
@@ -45,7 +166,64 @@
    "text": "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
    "translation": "dan tidak ada seorangpun yang setara dengan Dia\".",
    "tajweed": "وَلَمْ يَك[u:2596[ُن ل]َّهُ[n[ۥ] كُفُوًا أَحَ[q[د]ُۢ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/112004.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/112004.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَلَمْ",
+     "audio": "https://audio.qurancdn.com/wbw/112_004_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "يَكُن",
+     "audio": "https://audio.qurancdn.com/wbw/112_004_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "لَّهُۥ",
+     "audio": "https://audio.qurancdn.com/wbw/112_004_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "كُفُوًا",
+     "audio": "https://audio.qurancdn.com/wbw/112_004_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "أَحَدٌۢ",
+     "audio": "https://audio.qurancdn.com/wbw/112_004_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/112004.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      650
+     ],
+     [
+      2,
+      660,
+      1130
+     ],
+     [
+      3,
+      1140,
+      2040
+     ],
+     [
+      4,
+      2050,
+      2950
+     ],
+     [
+      5,
+      2960,
+      3570
+     ]
+    ]
+   }
   }
  ]
 }

@@ -15,7 +15,24 @@
    "text": "وَٱلضُّحَىٰ",
    "translation": "Demi waktu matahari sepenggalahan naik,",
    "tajweed": "وَ[h:9999[ٱ][l[ل]ضُّحَىٰ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/093001.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/093001.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَٱلضُّحَىٰ",
+     "audio": "https://audio.qurancdn.com/wbw/093_001_001.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/093001.mp3",
+    "segments": [
+     [
+      1,
+      60,
+      1610
+     ]
+    ]
+   }
   },
   {
    "number": 2,
@@ -25,7 +42,44 @@
    "text": "وَٱلَّيْلِ إِذَا سَجَىٰ",
    "translation": "dan demi malam apabila telah sunyi (gelap),",
    "tajweed": "وَ[h:9999[ٱ]لَّيْلِ إِذَا سَجَىٰ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/093002.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/093002.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَٱلَّيْلِ",
+     "audio": "https://audio.qurancdn.com/wbw/093_002_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "إِذَا",
+     "audio": "https://audio.qurancdn.com/wbw/093_002_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "سَجَىٰ",
+     "audio": "https://audio.qurancdn.com/wbw/093_002_003.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/093002.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1040
+     ],
+     [
+      2,
+      1050,
+      1610
+     ],
+     [
+      3,
+      1620,
+      2690
+     ]
+    ]
+   }
   },
   {
    "number": 3,
@@ -35,7 +89,64 @@
    "text": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ",
    "translation": "Tuhanmu tiada meninggalkan kamu dan tiada (pula) benci kepadamu.",
    "tajweed": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/093003.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/093003.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "مَا",
+     "audio": "https://audio.qurancdn.com/wbw/093_003_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "وَدَّعَكَ",
+     "audio": "https://audio.qurancdn.com/wbw/093_003_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "رَبُّكَ",
+     "audio": "https://audio.qurancdn.com/wbw/093_003_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "وَمَا",
+     "audio": "https://audio.qurancdn.com/wbw/093_003_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "قَلَىٰ",
+     "audio": "https://audio.qurancdn.com/wbw/093_003_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/093003.mp3",
+    "segments": [
+     [
+      1,
+      70,
+      490
+     ],
+     [
+      2,
+      500,
+      1520
+     ],
+     [
+      3,
+      1530,
+      2440
+     ],
+     [
+      4,
+      2450,
+      3050
+     ],
+     [
+      5,
+      3060,
+      3870
+     ]
+    ]
+   }
   },
   {
    "number": 4,
@@ -45,7 +156,64 @@
    "text": "وَلَلْءَاخِرَةُ خَيْرٌۭ لَّكَ مِنَ ٱلْأُولَىٰ",
    "translation": "Dan sesungguhnya hari kemudian itu lebih baik bagimu daripada yang sekarang (permulaan).",
    "tajweed": "وَلَلْأَخِرَةُ خَيْ[u:14539[رٌ ل]َّكَ مِنَ [h:14540[ٱ]لْأُولَىٰ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/093004.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/093004.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَلَلْـَٔاخِرَةُ",
+     "audio": "https://audio.qurancdn.com/wbw/093_004_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "خَيْرٌۭ",
+     "audio": "https://audio.qurancdn.com/wbw/093_004_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "لَّكَ",
+     "audio": "https://audio.qurancdn.com/wbw/093_004_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "مِنَ",
+     "audio": "https://audio.qurancdn.com/wbw/093_004_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "ٱلْأُولَىٰ",
+     "audio": "https://audio.qurancdn.com/wbw/093_004_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/093004.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1700
+     ],
+     [
+      2,
+      1710,
+      2430
+     ],
+     [
+      3,
+      2440,
+      3070
+     ],
+     [
+      4,
+      3080,
+      3450
+     ],
+     [
+      5,
+      3460,
+      4970
+     ]
+    ]
+   }
   },
   {
    "number": 5,
@@ -55,7 +223,54 @@
    "text": "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ",
    "translation": "Dan kelak Tuhanmu pasti memberikan karunia-Nya kepadamu, lalu (hati) kamu menjadi puas.",
    "tajweed": "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/093005.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/093005.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَلَسَوْفَ",
+     "audio": "https://audio.qurancdn.com/wbw/093_005_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "يُعْطِيكَ",
+     "audio": "https://audio.qurancdn.com/wbw/093_005_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "رَبُّكَ",
+     "audio": "https://audio.qurancdn.com/wbw/093_005_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "فَتَرْضَىٰٓ",
+     "audio": "https://audio.qurancdn.com/wbw/093_005_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/093005.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1060
+     ],
+     [
+      2,
+      1070,
+      2260
+     ],
+     [
+      3,
+      2270,
+      3110
+     ],
+     [
+      4,
+      3120,
+      4590
+     ]
+    ]
+   }
   },
   {
    "number": 6,
@@ -65,7 +280,54 @@
    "text": "أَلَمْ يَجِدْكَ يَتِيمًۭا فَـَٔاوَىٰ",
    "translation": "Bukankah Dia mendapatimu sebagai seorang yatim, lalu Dia melindungimu?",
    "tajweed": "أَلَمْ يَجِ[q:14541[دْ]كَ يَتِي[f:14542[مًا ف]َـَٔـاوَىٰ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/093006.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/093006.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "أَلَمْ",
+     "audio": "https://audio.qurancdn.com/wbw/093_006_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "يَجِدْكَ",
+     "audio": "https://audio.qurancdn.com/wbw/093_006_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "يَتِيمًۭا",
+     "audio": "https://audio.qurancdn.com/wbw/093_006_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "فَـَٔاوَىٰ",
+     "audio": "https://audio.qurancdn.com/wbw/093_006_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/093006.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      590
+     ],
+     [
+      2,
+      600,
+      1400
+     ],
+     [
+      3,
+      1410,
+      3360
+     ],
+     [
+      4,
+      3370,
+      4800
+     ]
+    ]
+   }
   },
   {
    "number": 7,
@@ -75,7 +337,44 @@
    "text": "وَوَجَدَكَ ضَآلًّۭا فَهَدَىٰ",
    "translation": "Dan Dia mendapatimu sebagai seorang yang bingung, lalu Dia memberikan petunjuk.",
    "tajweed": "وَوَجَدَكَ ضَآل[f:14543[اًّ ف]َهَدَىٰ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/093007.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/093007.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَوَجَدَكَ",
+     "audio": "https://audio.qurancdn.com/wbw/093_007_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ضَآلًّۭا",
+     "audio": "https://audio.qurancdn.com/wbw/093_007_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "فَهَدَىٰ",
+     "audio": "https://audio.qurancdn.com/wbw/093_007_003.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/093007.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1010
+     ],
+     [
+      2,
+      1020,
+      5520
+     ],
+     [
+      3,
+      5530,
+      6840
+     ]
+    ]
+   }
   },
   {
    "number": 8,
@@ -85,7 +384,44 @@
    "text": "وَوَجَدَكَ عَآئِلًۭا فَأَغْنَىٰ",
    "translation": "Dan Dia mendapatimu sebagai seorang yang kekurangan, lalu Dia memberikan kecukupan.",
    "tajweed": "وَوَجَدَكَ ع[o[َا]ٓئِل[f:14544[اً ف]َأَغْنَىٰ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/093008.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/093008.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَوَجَدَكَ",
+     "audio": "https://audio.qurancdn.com/wbw/093_008_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "عَآئِلًۭا",
+     "audio": "https://audio.qurancdn.com/wbw/093_008_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "فَأَغْنَىٰ",
+     "audio": "https://audio.qurancdn.com/wbw/093_008_003.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/093008.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1040
+     ],
+     [
+      2,
+      1050,
+      4140
+     ],
+     [
+      3,
+      4150,
+      5600
+     ]
+    ]
+   }
   },
   {
    "number": 9,
@@ -95,7 +431,54 @@
    "text": "فَأَمَّا ٱلْيَتِيمَ فَلَا تَقْهَرْ",
    "translation": "Sebab itu, terhadap anak yatim janganlah kamu berlaku sewenang-wenang.",
    "tajweed": "فَأَ[g[مّ]َا [h:14545[ٱ]لْيَتِيمَ فَلَا تَ[q:14546[قْ]هَرْ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/093009.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/093009.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "فَأَمَّا",
+     "audio": "https://audio.qurancdn.com/wbw/093_009_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱلْيَتِيمَ",
+     "audio": "https://audio.qurancdn.com/wbw/093_009_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "فَلَا",
+     "audio": "https://audio.qurancdn.com/wbw/093_009_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "تَقْهَرْ",
+     "audio": "https://audio.qurancdn.com/wbw/093_009_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/093009.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1580
+     ],
+     [
+      2,
+      1590,
+      2720
+     ],
+     [
+      3,
+      2730,
+      3390
+     ],
+     [
+      4,
+      3400,
+      4290
+     ]
+    ]
+   }
   },
   {
    "number": 10,
@@ -105,7 +488,54 @@
    "text": "وَأَمَّا ٱلسَّآئِلَ فَلَا تَنْهَرْ",
    "translation": "Dan terhadap orang yang minta-minta, janganlah kamu menghardiknya.",
    "tajweed": "وَأَ[g[مّ]َا [h:14547[ٱ][l[ل]سّ[o[َا]ٓئِلَ فَلَا تَنْهَرْ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/093010.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/093010.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَأَمَّا",
+     "audio": "https://audio.qurancdn.com/wbw/093_010_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "ٱلسَّآئِلَ",
+     "audio": "https://audio.qurancdn.com/wbw/093_010_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "فَلَا",
+     "audio": "https://audio.qurancdn.com/wbw/093_010_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "تَنْهَرْ",
+     "audio": "https://audio.qurancdn.com/wbw/093_010_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/093010.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1280
+     ],
+     [
+      2,
+      1290,
+      4130
+     ],
+     [
+      3,
+      4140,
+      4780
+     ],
+     [
+      4,
+      4790,
+      5720
+     ]
+    ]
+   }
   },
   {
    "number": 11,
@@ -115,7 +545,54 @@
    "text": "وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ",
    "translation": "Dan terhadap nikmat Tuhanmu, maka hendaklah kamu siarkan.",
    "tajweed": "وَأَ[g[مّ]َا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/093011.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/093011.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَأَمَّا",
+     "audio": "https://audio.qurancdn.com/wbw/093_011_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "بِنِعْمَةِ",
+     "audio": "https://audio.qurancdn.com/wbw/093_011_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "رَبِّكَ",
+     "audio": "https://audio.qurancdn.com/wbw/093_011_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "فَحَدِّثْ",
+     "audio": "https://audio.qurancdn.com/wbw/093_011_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/093011.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1710
+     ],
+     [
+      2,
+      1720,
+      2790
+     ],
+     [
+      3,
+      2800,
+      3710
+     ],
+     [
+      4,
+      3720,
+      4960
+     ]
+    ]
+   }
   }
  ]
 }

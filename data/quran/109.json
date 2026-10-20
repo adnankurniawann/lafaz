@@ -15,7 +15,44 @@
    "text": "قُلْ يَٰٓأَيُّهَا ٱلْكَٰفِرُونَ",
    "translation": "Katakanlah: \"Hai orang-orang kafir,",
    "tajweed": "قُلْ يَ[o[ـٰٓ]أَيُّهَا [h:14663[ٱ]لْكَ[n[ـٰ]فِر[p[ُو]نَ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/109001.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/109001.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "قُلْ",
+     "audio": "https://audio.qurancdn.com/wbw/109_001_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "يَـٰٓأَيُّهَا",
+     "audio": "https://audio.qurancdn.com/wbw/109_001_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "ٱلْكَـٰفِرُونَ",
+     "audio": "https://audio.qurancdn.com/wbw/109_001_003.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/109001.mp3",
+    "segments": [
+     [
+      1,
+      150,
+      430
+     ],
+     [
+      2,
+      440,
+      3290
+     ],
+     [
+      3,
+      3300,
+      6810
+     ]
+    ]
+   }
   },
   {
    "number": 2,
@@ -25,7 +62,54 @@
    "text": "لَآ أَعْبُدُ مَا تَعْبُدُونَ",
    "translation": "Aku tidak akan menyembah apa yang kamu sembah.",
    "tajweed": "ل[o[َآ] أَعْبُدُ مَا تَعْبُد[p[ُو]نَ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/109002.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/109002.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "لَآ",
+     "audio": "https://audio.qurancdn.com/wbw/109_002_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "أَعْبُدُ",
+     "audio": "https://audio.qurancdn.com/wbw/109_002_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "مَا",
+     "audio": "https://audio.qurancdn.com/wbw/109_002_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "تَعْبُدُونَ",
+     "audio": "https://audio.qurancdn.com/wbw/109_002_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/109002.mp3",
+    "segments": [
+     [
+      1,
+      100,
+      1730
+     ],
+     [
+      2,
+      1740,
+      3410
+     ],
+     [
+      3,
+      3420,
+      3780
+     ],
+     [
+      4,
+      3790,
+      7060
+     ]
+    ]
+   }
   },
   {
    "number": 3,
@@ -35,7 +119,64 @@
    "text": "وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ",
    "translation": "Dan kamu bukan penyembah Tuhan yang aku sembah.",
    "tajweed": "وَل[o[َآ] أَ[f:428[نت]ُمْ عَ[n[ـٰ]بِدُونَ م[o[َآ] أَعْبُ[q[د]ُ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/109003.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/109003.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَلَآ",
+     "audio": "https://audio.qurancdn.com/wbw/109_003_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "أَنتُمْ",
+     "audio": "https://audio.qurancdn.com/wbw/109_003_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "عَـٰبِدُونَ",
+     "audio": "https://audio.qurancdn.com/wbw/109_003_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "مَآ",
+     "audio": "https://audio.qurancdn.com/wbw/109_003_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "أَعْبُدُ",
+     "audio": "https://audio.qurancdn.com/wbw/109_003_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/109003.mp3",
+    "segments": [
+     [
+      1,
+      70,
+      2030
+     ],
+     [
+      2,
+      2040,
+      3710
+     ],
+     [
+      3,
+      3720,
+      5140
+     ],
+     [
+      4,
+      5150,
+      6910
+     ],
+     [
+      5,
+      6920,
+      7760
+     ]
+    ]
+   }
   },
   {
    "number": 4,
@@ -45,7 +186,64 @@
    "text": "وَلَآ أَنَا۠ عَابِدٌۭ مَّا عَبَدتُّمْ",
    "translation": "Dan aku tidak pernah menjadi penyembah apa yang kamu sembah,",
    "tajweed": "وَل[o[َآ] أَنَا۟ عَابِ[a:14664[دٌ م]َّا عَبَ[d:14665[د]تُّمْ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/109004.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/109004.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَلَآ",
+     "audio": "https://audio.qurancdn.com/wbw/109_004_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "أَنَا۠",
+     "audio": "https://audio.qurancdn.com/wbw/109_004_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "عَابِدٌۭ",
+     "audio": "https://audio.qurancdn.com/wbw/109_004_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "مَّا",
+     "audio": "https://audio.qurancdn.com/wbw/109_004_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "عَبَدتُّمْ",
+     "audio": "https://audio.qurancdn.com/wbw/109_004_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/109004.mp3",
+    "segments": [
+     [
+      1,
+      40,
+      2050
+     ],
+     [
+      2,
+      2060,
+      2610
+     ],
+     [
+      3,
+      2620,
+      3580
+     ],
+     [
+      4,
+      3590,
+      4890
+     ],
+     [
+      5,
+      4900,
+      5880
+     ]
+    ]
+   }
   },
   {
    "number": 5,
@@ -55,7 +253,64 @@
    "text": "وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ",
    "translation": "dan kamu tidak pernah (pula) menjadi penyembah Tuhan yang aku sembah.",
    "tajweed": "وَل[o[َآ] أَ[f:428[نت]ُمْ عَ[n[ـٰ]بِدُونَ م[o[َآ] أَعْبُ[q[د]ُ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/109005.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/109005.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَلَآ",
+     "audio": "https://audio.qurancdn.com/wbw/109_005_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "أَنتُمْ",
+     "audio": "https://audio.qurancdn.com/wbw/109_005_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "عَـٰبِدُونَ",
+     "audio": "https://audio.qurancdn.com/wbw/109_005_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "مَآ",
+     "audio": "https://audio.qurancdn.com/wbw/109_005_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "أَعْبُدُ",
+     "audio": "https://audio.qurancdn.com/wbw/109_005_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/109005.mp3",
+    "segments": [
+     [
+      1,
+      50,
+      2080
+     ],
+     [
+      2,
+      2090,
+      3720
+     ],
+     [
+      3,
+      3730,
+      5160
+     ],
+     [
+      4,
+      5170,
+      6850
+     ],
+     [
+      5,
+      6860,
+      7900
+     ]
+    ]
+   }
   },
   {
    "number": 6,
@@ -65,7 +320,54 @@
    "text": "لَكُمْ دِينُكُمْ وَلِىَ دِينِ",
    "translation": "Untukmu agamamu, dan untukkulah, agamaku\".",
    "tajweed": "لَكُمْ دِينُكُمْ وَلِىَ د[p[ِي]نِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/109006.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/109006.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "لَكُمْ",
+     "audio": "https://audio.qurancdn.com/wbw/109_006_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "دِينُكُمْ",
+     "audio": "https://audio.qurancdn.com/wbw/109_006_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "وَلِىَ",
+     "audio": "https://audio.qurancdn.com/wbw/109_006_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "دِينِ",
+     "audio": "https://audio.qurancdn.com/wbw/109_006_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/109006.mp3",
+    "segments": [
+     [
+      1,
+      50,
+      670
+     ],
+     [
+      2,
+      680,
+      1910
+     ],
+     [
+      3,
+      1920,
+      2530
+     ],
+     [
+      4,
+      2540,
+      4740
+     ]
+    ]
+   }
   }
  ]
 }

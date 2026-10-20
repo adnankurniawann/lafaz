@@ -15,7 +15,44 @@
    "text": "إِنَّآ أَعْطَيْنَٰكَ ٱلْكَوْثَرَ",
    "translation": "Sesungguhnya Kami telah memberikan kepadamu nikmat yang banyak.",
    "tajweed": "إِ[g[نّ][o[َآ] أَعْطَيْنَ[n[ـٰ]كَ [h:14659[ٱ]لْكَوْثَرَ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/108001.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/108001.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "إِنَّآ",
+     "audio": "https://audio.qurancdn.com/wbw/108_001_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "أَعْطَيْنَـٰكَ",
+     "audio": "https://audio.qurancdn.com/wbw/108_001_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "ٱلْكَوْثَرَ",
+     "audio": "https://audio.qurancdn.com/wbw/108_001_003.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/108001.mp3",
+    "segments": [
+     [
+      1,
+      150,
+      2120
+     ],
+     [
+      2,
+      2130,
+      4970
+     ],
+     [
+      3,
+      4980,
+      5900
+     ]
+    ]
+   }
   },
   {
    "number": 2,
@@ -25,7 +62,44 @@
    "text": "فَصَلِّ لِرَبِّكَ وَٱنْحَرْ",
    "translation": "Maka dirikanlah shalat karena Tuhanmu; dan berkorbanlah.",
    "tajweed": "فَصَلِّ لِرَبِّكَ وَ[h:14660[ٱ]نْحَرْ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/108002.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/108002.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "فَصَلِّ",
+     "audio": "https://audio.qurancdn.com/wbw/108_002_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "لِرَبِّكَ",
+     "audio": "https://audio.qurancdn.com/wbw/108_002_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "وَٱنْحَرْ",
+     "audio": "https://audio.qurancdn.com/wbw/108_002_003.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/108002.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      910
+     ],
+     [
+      2,
+      920,
+      1970
+     ],
+     [
+      3,
+      1980,
+      2790
+     ]
+    ]
+   }
   },
   {
    "number": 3,
@@ -35,7 +109,54 @@
    "text": "إِنَّ شَانِئَكَ هُوَ ٱلْأَبْتَرُ",
    "translation": "Sesungguhnya orang-orang yang membenci kamu dialah yang terputus.",
    "tajweed": "إِ[g[نّ]َ شَانِئَكَ هُوَ [h:14661[ٱ]لْأَ[q:14662[بْ]تَرُ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/108003.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/108003.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "إِنَّ",
+     "audio": "https://audio.qurancdn.com/wbw/108_003_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "شَانِئَكَ",
+     "audio": "https://audio.qurancdn.com/wbw/108_003_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "هُوَ",
+     "audio": "https://audio.qurancdn.com/wbw/108_003_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "ٱلْأَبْتَرُ",
+     "audio": "https://audio.qurancdn.com/wbw/108_003_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/108003.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1660
+     ],
+     [
+      2,
+      1670,
+      2750
+     ],
+     [
+      3,
+      2760,
+      3220
+     ],
+     [
+      4,
+      3230,
+      4250
+     ]
+    ]
+   }
   }
  ]
 }

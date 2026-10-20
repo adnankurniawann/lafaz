@@ -15,7 +15,64 @@
    "text": "تَبَّتْ يَدَآ أَبِى لَهَبٍۢ وَتَبَّ",
    "translation": "Binasalah kedua tangan Abu Lahab dan sesungguhnya dia akan binasa.",
    "tajweed": "تَبَّتْ يَد[o[َآ] أَبِى لَهَ[a:14669[بٍ و]َتَ[q[ب]َّ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/111001.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/111001.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "تَبَّتْ",
+     "audio": "https://audio.qurancdn.com/wbw/111_001_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "يَدَآ",
+     "audio": "https://audio.qurancdn.com/wbw/111_001_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "أَبِى",
+     "audio": "https://audio.qurancdn.com/wbw/111_001_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "لَهَبٍۢ",
+     "audio": "https://audio.qurancdn.com/wbw/111_001_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "وَتَبَّ",
+     "audio": "https://audio.qurancdn.com/wbw/111_001_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/111001.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      790
+     ],
+     [
+      2,
+      800,
+      1320
+     ],
+     [
+      3,
+      1330,
+      3880
+     ],
+     [
+      4,
+      3890,
+      5440
+     ],
+     [
+      5,
+      5450,
+      6680
+     ]
+    ]
+   }
   },
   {
    "number": 2,
@@ -25,7 +82,74 @@
    "text": "مَآ أَغْنَىٰ عَنْهُ مَالُهُۥ وَمَا كَسَبَ",
    "translation": "Tidaklah berfaedah kepadanya harta bendanya dan apa yang ia usahakan.",
    "tajweed": "م[o[َآ] أَغْنَىٰ عَنْهُ مَالُهُ[n[ۥ] وَمَا كَسَ[q[ب]َ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/111002.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/111002.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "مَآ",
+     "audio": "https://audio.qurancdn.com/wbw/111_002_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "أَغْنَىٰ",
+     "audio": "https://audio.qurancdn.com/wbw/111_002_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "عَنْهُ",
+     "audio": "https://audio.qurancdn.com/wbw/111_002_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "مَالُهُۥ",
+     "audio": "https://audio.qurancdn.com/wbw/111_002_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "وَمَا",
+     "audio": "https://audio.qurancdn.com/wbw/111_002_005.mp3"
+    },
+    {
+     "position": 6,
+     "text": "كَسَبَ",
+     "audio": "https://audio.qurancdn.com/wbw/111_002_006.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/111002.mp3",
+    "segments": [
+     [
+      1,
+      50,
+      2230
+     ],
+     [
+      2,
+      2240,
+      3060
+     ],
+     [
+      3,
+      3070,
+      3850
+     ],
+     [
+      4,
+      3860,
+      4930
+     ],
+     [
+      5,
+      4940,
+      5500
+     ],
+     [
+      6,
+      5510,
+      6140
+     ]
+    ]
+   }
   },
   {
    "number": 3,
@@ -35,7 +159,54 @@
    "text": "سَيَصْلَىٰ نَارًۭا ذَاتَ لَهَبٍۢ",
    "translation": "Kelak dia akan masuk ke dalam api yang bergejolak.",
    "tajweed": "سَيَصْلَىٰ نَا[f:14670[رًا ذ]َاتَ لَهَ[q[ب]ٍ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/111003.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/111003.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "سَيَصْلَىٰ",
+     "audio": "https://audio.qurancdn.com/wbw/111_003_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "نَارًۭا",
+     "audio": "https://audio.qurancdn.com/wbw/111_003_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "ذَاتَ",
+     "audio": "https://audio.qurancdn.com/wbw/111_003_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "لَهَبٍۢ",
+     "audio": "https://audio.qurancdn.com/wbw/111_003_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/111003.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1100
+     ],
+     [
+      2,
+      1110,
+      2970
+     ],
+     [
+      3,
+      2980,
+      3640
+     ],
+     [
+      4,
+      3650,
+      4170
+     ]
+    ]
+   }
   },
   {
    "number": 4,
@@ -45,7 +216,44 @@
    "text": "وَٱمْرَأَتُهُۥ حَمَّالَةَ ٱلْحَطَبِ",
    "translation": "Dan (begitu pula) istrinya, pembawa kayu bakar.",
    "tajweed": "وَ[h:9999[ٱ]مْرَأَتُهُ[n[ۥ] حَ[g[مّ]َالَةَ [h:14671[ٱ]لْحَطَ[q[ب]ِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/111004.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/111004.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَٱمْرَأَتُهُۥ",
+     "audio": "https://audio.qurancdn.com/wbw/111_004_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "حَمَّالَةَ",
+     "audio": "https://audio.qurancdn.com/wbw/111_004_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "ٱلْحَطَبِ",
+     "audio": "https://audio.qurancdn.com/wbw/111_004_003.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/111004.mp3",
+    "segments": [
+     [
+      1,
+      40,
+      1480
+     ],
+     [
+      2,
+      1490,
+      3850
+     ],
+     [
+      3,
+      3860,
+      4730
+     ]
+    ]
+   }
   },
   {
    "number": 5,
@@ -55,7 +263,64 @@
    "text": "فِى جِيدِهَا حَبْلٌۭ مِّن مَّسَدٍۭ",
    "translation": "Yang di lehernya ada tali dari sabut.",
    "tajweed": "فِى جِيدِهَا حَ[q:14672[بْ][a:14673[لٌ م]ّ[a:14674[ِن م]َّسَ[q[د]ِۭ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/111005.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/111005.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "فِى",
+     "audio": "https://audio.qurancdn.com/wbw/111_005_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "جِيدِهَا",
+     "audio": "https://audio.qurancdn.com/wbw/111_005_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "حَبْلٌۭ",
+     "audio": "https://audio.qurancdn.com/wbw/111_005_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "مِّن",
+     "audio": "https://audio.qurancdn.com/wbw/111_005_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "مَّسَدٍۭ",
+     "audio": "https://audio.qurancdn.com/wbw/111_005_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/111005.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      390
+     ],
+     [
+      2,
+      400,
+      1480
+     ],
+     [
+      3,
+      1490,
+      3480
+     ],
+     [
+      4,
+      3490,
+      4630
+     ],
+     [
+      5,
+      4640,
+      5210
+     ]
+    ]
+   }
   }
  ]
 }

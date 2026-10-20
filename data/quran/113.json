@@ -15,7 +15,54 @@
    "text": "قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ",
    "translation": "Katakanlah: \"Aku berlindung kepada Tuhan Yang Menguasai subuh,",
    "tajweed": "قُلْ أَعُوذُ بِرَبِّ [h:14678[ٱ]لْفَلَ[q[ق]ِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/113001.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/113001.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "قُلْ",
+     "audio": "https://audio.qurancdn.com/wbw/113_001_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "أَعُوذُ",
+     "audio": "https://audio.qurancdn.com/wbw/113_001_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "بِرَبِّ",
+     "audio": "https://audio.qurancdn.com/wbw/113_001_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "ٱلْفَلَقِ",
+     "audio": "https://audio.qurancdn.com/wbw/113_001_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/113001.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      340
+     ],
+     [
+      2,
+      350,
+      1200
+     ],
+     [
+      3,
+      1210,
+      2080
+     ],
+     [
+      4,
+      2090,
+      2870
+     ]
+    ]
+   }
   },
   {
    "number": 2,
@@ -25,7 +72,54 @@
    "text": "مِن شَرِّ مَا خَلَقَ",
    "translation": "dari kejahatan makhluk-Nya,",
    "tajweed": "مِ[f:14679[ن ش]َرِّ مَا خَلَ[q[ق]َ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/113002.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/113002.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "مِن",
+     "audio": "https://audio.qurancdn.com/wbw/113_002_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "شَرِّ",
+     "audio": "https://audio.qurancdn.com/wbw/113_002_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "مَا",
+     "audio": "https://audio.qurancdn.com/wbw/113_002_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "خَلَقَ",
+     "audio": "https://audio.qurancdn.com/wbw/113_002_004.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/113002.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1300
+     ],
+     [
+      2,
+      1310,
+      2020
+     ],
+     [
+      3,
+      2030,
+      2370
+     ],
+     [
+      4,
+      2380,
+      3060
+     ]
+    ]
+   }
   },
   {
    "number": 3,
@@ -35,7 +129,64 @@
    "text": "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
    "translation": "dan dari kejahatan malam apabila telah gelap gulita,",
    "tajweed": "وَمِ[f:14680[ن ش]َرِّ غَاسِقٍ إِذَا وَقَ[q[ب]َ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/113003.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/113003.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَمِن",
+     "audio": "https://audio.qurancdn.com/wbw/113_003_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "شَرِّ",
+     "audio": "https://audio.qurancdn.com/wbw/113_003_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "غَاسِقٍ",
+     "audio": "https://audio.qurancdn.com/wbw/113_003_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "إِذَا",
+     "audio": "https://audio.qurancdn.com/wbw/113_003_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "وَقَبَ",
+     "audio": "https://audio.qurancdn.com/wbw/113_003_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/113003.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1410
+     ],
+     [
+      2,
+      1420,
+      2100
+     ],
+     [
+      3,
+      2110,
+      3190
+     ],
+     [
+      4,
+      3200,
+      3820
+     ],
+     [
+      5,
+      3830,
+      4470
+     ]
+    ]
+   }
   },
   {
    "number": 4,
@@ -45,7 +196,64 @@
    "text": "وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ",
    "translation": "dan dari kejahatan wanita-wanita tukang sihir yang menghembus pada buhul-buhul,",
    "tajweed": "وَمِ[f:14680[ن ش]َرِّ [h:14681[ٱ][l[ل][g[نّ]َفَّ[n[ـٰ]ثَ[n[ـٰ]تِ فِى [h:14682[ٱ]لْعُقَ[q[د]ِ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/113004.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/113004.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَمِن",
+     "audio": "https://audio.qurancdn.com/wbw/113_004_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "شَرِّ",
+     "audio": "https://audio.qurancdn.com/wbw/113_004_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "ٱلنَّفَّـٰثَـٰتِ",
+     "audio": "https://audio.qurancdn.com/wbw/113_004_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "فِى",
+     "audio": "https://audio.qurancdn.com/wbw/113_004_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "ٱلْعُقَدِ",
+     "audio": "https://audio.qurancdn.com/wbw/113_004_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/113004.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1400
+     ],
+     [
+      2,
+      1410,
+      2140
+     ],
+     [
+      3,
+      2150,
+      4360
+     ],
+     [
+      4,
+      4370,
+      4590
+     ],
+     [
+      5,
+      4600,
+      5460
+     ]
+    ]
+   }
   },
   {
    "number": 5,
@@ -55,7 +263,64 @@
    "text": "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
    "translation": "dan dari kejahatan pendengki bila ia dengki\".",
    "tajweed": "وَمِ[f:14680[ن ش]َرِّ حَاسِدٍ إِذَا حَسَ[q[د]َ",
-   "audio": "https://everyayah.com/data/Alafasy_128kbps/113005.mp3"
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/113005.mp3",
+   "words": [
+    {
+     "position": 1,
+     "text": "وَمِن",
+     "audio": "https://audio.qurancdn.com/wbw/113_005_001.mp3"
+    },
+    {
+     "position": 2,
+     "text": "شَرِّ",
+     "audio": "https://audio.qurancdn.com/wbw/113_005_002.mp3"
+    },
+    {
+     "position": 3,
+     "text": "حَاسِدٍ",
+     "audio": "https://audio.qurancdn.com/wbw/113_005_003.mp3"
+    },
+    {
+     "position": 4,
+     "text": "إِذَا",
+     "audio": "https://audio.qurancdn.com/wbw/113_005_004.mp3"
+    },
+    {
+     "position": 5,
+     "text": "حَسَدَ",
+     "audio": "https://audio.qurancdn.com/wbw/113_005_005.mp3"
+    }
+   ],
+   "timing": {
+    "audio": "https://verses.quran.com/Alafasy/mp3/113005.mp3",
+    "segments": [
+     [
+      1,
+      30,
+      1270
+     ],
+     [
+      2,
+      1280,
+      1920
+     ],
+     [
+      3,
+      1930,
+      3070
+     ],
+     [
+      4,
+      3080,
+      3640
+     ],
+     [
+      5,
+      3650,
+      4330
+     ]
+    ]
+   }
   }
  ]
 }

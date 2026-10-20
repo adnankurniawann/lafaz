@@ -1,17 +1,48 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f6f4ee;
-  --foreground: #1f2a24;
-  --primary: #1f7a5a;
-  --muted: #6b7568;
+  --background: #ffffff;
+  --foreground: #3c3c3c;
+  --muted: #8a8f98;
+  --line: #e5e5e5;
+  --green: #3fb950;
+  --green-dark: #2e9a3f;
+  --blue: #2b9ae6;
+  --blue-dark: #1f7cc0;
+  --red: #ef4b4b;
+  --red-dark: #c73636;
+  --gold: #f5b400;
+  --gold-dark: #d29a00;
+  --orange: #ff9a1f;
+  --purple: #9b5de5;
+  --purple-dark: #7b3fc4;
+  --pink: #e8558f;
+  --pink-dark: #c23c73;
+  --teal: #13b5a6;
+  --teal-dark: #0e8f83;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-primary: var(--primary);
   --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-green: var(--green);
+  --color-green-dark: var(--green-dark);
+  --color-blue: var(--blue);
+  --color-blue-dark: var(--blue-dark);
+  --color-red: var(--red);
+  --color-red-dark: var(--red-dark);
+  --color-gold: var(--gold);
+  --color-gold-dark: var(--gold-dark);
+  --color-orange: var(--orange);
+  --color-purple: var(--purple);
+  --color-purple-dark: var(--purple-dark);
+  --color-pink: var(--pink);
+  --color-pink-dark: var(--pink-dark);
+  --color-teal: var(--teal);
+  --color-teal-dark: var(--teal-dark);
+  --color-primary: var(--green);
   --font-sans: var(--font-nunito);
   --font-quran: var(--font-amiri-quran);
 }
@@ -19,6 +50,7 @@
 body {
   color: var(--foreground);
   font-family: var(--font-nunito), system-ui, sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Qur'an text. Amiri Quran stacks harakat and waqf marks high above and below
@@ -34,4 +66,60 @@ body {
   padding-block: 0.25em;
   overflow: visible;
   word-spacing: 0.08em;
+}
+
+/* Single letters and short words shown large. */
+.arabic-big {
+  font-family: var(--font-amiri-quran), serif;
+  direction: rtl;
+  unicode-bidi: isolate;
+  line-height: 1.9;
+  overflow: visible;
+}
+
+@keyframes bounce-soft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+@keyframes pop-in {
+  0% { transform: scale(0.6); opacity: 0; }
+  70% { transform: scale(1.08); opacity: 1; }
+  100% { transform: scale(1); }
+}
+@keyframes slide-up {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+@keyframes flame {
+  0%, 100% { transform: scale(1) rotate(-2deg); }
+  50% { transform: scale(1.08) rotate(2deg); }
+}
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgb(239 75 75 / 0.5); }
+  100% { box-shadow: 0 0 0 18px rgb(239 75 75 / 0); }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes confetti-fall {
+  0% { transform: translateY(-20px) rotate(0); opacity: 1; }
+  100% { transform: translateY(420px) rotate(540deg); opacity: 0; }
+}
+
+.animate-bounce-soft { animation: bounce-soft 1.4s ease-in-out infinite; }
+.animate-pop-in { animation: pop-in 0.35s ease-out both; }
+.animate-slide-up { animation: slide-up 0.22s ease-out both; }
+.animate-shake { animation: shake 0.35s ease-in-out; }
+.animate-flame { animation: flame 1.2s ease-in-out infinite; }
+.animate-pulse-ring { animation: pulse-ring 1.1s ease-out infinite; }
+.animate-fade-in { animation: fade-in 0.25s ease-out both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-bounce-soft, .animate-flame, .animate-pulse-ring { animation: none; }
 }

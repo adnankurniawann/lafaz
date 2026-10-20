@@ -11,6 +11,7 @@
     "build-letter-examples": "NODE_OPTIONS=--network-family-autoselection-attempt-timeout=3000 tsx scripts/build-letter-examples.ts"
   },
   "dependencies": {
+    "jszip": "^3.10.2",
     "next": "16.4.2",
     "react": "19.3.0",
     "react-dom": "19.3.0",

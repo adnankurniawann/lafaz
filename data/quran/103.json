@@ -1,0 +1,41 @@
+{
+ "number": 103,
+ "name": "سُورَةُ العَصۡرِ",
+ "englishName": "Al-Asr",
+ "englishNameTranslation": "The Declining Day, Epoch",
+ "revelationType": "Meccan",
+ "ayahCount": 3,
+ "hasBasmalah": true,
+ "ayahs": [
+  {
+   "number": 1,
+   "globalNumber": 6177,
+   "juz": 30,
+   "page": 601,
+   "text": "وَٱلْعَصْرِ",
+   "translation": "Demi masa.",
+   "tajweed": "وَ[h:9999[ٱ]لْعَصْرِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/103001.mp3"
+  },
+  {
+   "number": 2,
+   "globalNumber": 6178,
+   "juz": 30,
+   "page": 601,
+   "text": "إِنَّ ٱلْإِنسَٰنَ لَفِى خُسْرٍ",
+   "translation": "Sesungguhnya manusia itu benar-benar dalam kerugian,",
+   "tajweed": "إِ[g[نّ]َ [h:7137[ٱ]لْإِ[f:5969[نس]َ[n[ـٰ]نَ لَفِى خُسْرٍ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/103002.mp3"
+  },
+  {
+   "number": 3,
+   "globalNumber": 6179,
+   "juz": 30,
+   "page": 601,
+   "text": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ",
+   "translation": "kecuali orang-orang yang beriman dan mengerjakan amal saleh dan nasehat menasehati supaya mentaati kebenaran dan nasehat menasehati supaya menetapi kesabaran.",
+   "tajweed": "إِلَّا [h:778[ٱ]لَّذِينَ ءَامَنُو[s[اْ] وَعَمِلُو[s[اْ] [h:118[ٱ][l[ل]صَّ[n[ـٰ]لِحَ[n[ـٰ]تِ وَتَوَاصَوْ[s[اْ] بِ[h:370[ٱ]لْحَقِّ وَتَوَاصَوْ[s[اْ] بِ[h:223[ٱ][l[ل]صَّ[q:223[بْ]رِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/103003.mp3"
+  }
+ ]
+}

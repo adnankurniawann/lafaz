@@ -1,0 +1,71 @@
+{
+ "number": 109,
+ "name": "سُورَةُ الكَافِرُونَ",
+ "englishName": "Al-Kaafiroon",
+ "englishNameTranslation": "The Disbelievers",
+ "revelationType": "Meccan",
+ "ayahCount": 6,
+ "hasBasmalah": true,
+ "ayahs": [
+  {
+   "number": 1,
+   "globalNumber": 6208,
+   "juz": 30,
+   "page": 603,
+   "text": "قُلْ يَٰٓأَيُّهَا ٱلْكَٰفِرُونَ",
+   "translation": "Katakanlah: \"Hai orang-orang kafir,",
+   "tajweed": "قُلْ يَ[o[ـٰٓ]أَيُّهَا [h:14663[ٱ]لْكَ[n[ـٰ]فِر[p[ُو]نَ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/109001.mp3"
+  },
+  {
+   "number": 2,
+   "globalNumber": 6209,
+   "juz": 30,
+   "page": 603,
+   "text": "لَآ أَعْبُدُ مَا تَعْبُدُونَ",
+   "translation": "Aku tidak akan menyembah apa yang kamu sembah.",
+   "tajweed": "ل[o[َآ] أَعْبُدُ مَا تَعْبُد[p[ُو]نَ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/109002.mp3"
+  },
+  {
+   "number": 3,
+   "globalNumber": 6210,
+   "juz": 30,
+   "page": 603,
+   "text": "وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ",
+   "translation": "Dan kamu bukan penyembah Tuhan yang aku sembah.",
+   "tajweed": "وَل[o[َآ] أَ[f:428[نت]ُمْ عَ[n[ـٰ]بِدُونَ م[o[َآ] أَعْبُ[q[د]ُ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/109003.mp3"
+  },
+  {
+   "number": 4,
+   "globalNumber": 6211,
+   "juz": 30,
+   "page": 603,
+   "text": "وَلَآ أَنَا۠ عَابِدٌۭ مَّا عَبَدتُّمْ",
+   "translation": "Dan aku tidak pernah menjadi penyembah apa yang kamu sembah,",
+   "tajweed": "وَل[o[َآ] أَنَا۟ عَابِ[a:14664[دٌ م]َّا عَبَ[d:14665[د]تُّمْ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/109004.mp3"
+  },
+  {
+   "number": 5,
+   "globalNumber": 6212,
+   "juz": 30,
+   "page": 603,
+   "text": "وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ",
+   "translation": "dan kamu tidak pernah (pula) menjadi penyembah Tuhan yang aku sembah.",
+   "tajweed": "وَل[o[َآ] أَ[f:428[نت]ُمْ عَ[n[ـٰ]بِدُونَ م[o[َآ] أَعْبُ[q[د]ُ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/109005.mp3"
+  },
+  {
+   "number": 6,
+   "globalNumber": 6213,
+   "juz": 30,
+   "page": 603,
+   "text": "لَكُمْ دِينُكُمْ وَلِىَ دِينِ",
+   "translation": "Untukmu agamamu, dan untukkulah, agamaku\".",
+   "tajweed": "لَكُمْ دِينُكُمْ وَلِىَ د[p[ِي]نِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/109006.mp3"
+  }
+ ]
+}

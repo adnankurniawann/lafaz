@@ -1,0 +1,201 @@
+{
+ "number": 82,
+ "name": "سُورَةُ الانفِطَارِ",
+ "englishName": "Al-Infitaar",
+ "englishNameTranslation": "The Cleaving",
+ "revelationType": "Meccan",
+ "ayahCount": 19,
+ "hasBasmalah": true,
+ "ayahs": [
+  {
+   "number": 1,
+   "globalNumber": 5830,
+   "juz": 30,
+   "page": 587,
+   "text": "إِذَا ٱلسَّمَآءُ ٱنفَطَرَتْ",
+   "translation": "Apabila langit terbelah,",
+   "tajweed": "إِذَا [h:14351[ٱ][l[ل]سَّم[o[َا]ٓءُ [h:14352[ٱ][f:14353[نف]َطَرَتْ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/082001.mp3"
+  },
+  {
+   "number": 2,
+   "globalNumber": 5831,
+   "juz": 30,
+   "page": 587,
+   "text": "وَإِذَا ٱلْكَوَاكِبُ ٱنتَثَرَتْ",
+   "translation": "dan apabila bintang-bintang jatuh berserakan,",
+   "tajweed": "وَإِذَا [h:14354[ٱ]لْكَوَاكِبُ [h:14355[ٱ][f:14356[نت]َثَرَتْ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/082002.mp3"
+  },
+  {
+   "number": 3,
+   "globalNumber": 5832,
+   "juz": 30,
+   "page": 587,
+   "text": "وَإِذَا ٱلْبِحَارُ فُجِّرَتْ",
+   "translation": "dan apabila lautan menjadikan meluap,",
+   "tajweed": "وَإِذَا [h:14337[ٱ]لْبِحَارُ فُجِّرَتْ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/082003.mp3"
+  },
+  {
+   "number": 4,
+   "globalNumber": 5833,
+   "juz": 30,
+   "page": 587,
+   "text": "وَإِذَا ٱلْقُبُورُ بُعْثِرَتْ",
+   "translation": "dan apabila kuburan-kuburan dibongkar,",
+   "tajweed": "وَإِذَا [h:14357[ٱ]لْقُبُورُ بُعْثِرَتْ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/082004.mp3"
+  },
+  {
+   "number": 5,
+   "globalNumber": 5834,
+   "juz": 30,
+   "page": 587,
+   "text": "عَلِمَتْ نَفْسٌۭ مَّا قَدَّمَتْ وَأَخَّرَتْ",
+   "translation": "maka tiap-tiap jiwa akan mengetahui apa yang telah dikerjakan dan yang dilalaikannya.",
+   "tajweed": "عَلِمَتْ نَفْ[a:10644[سٌ م]َّا قَدَّمَتْ وَأَخَّرَتْ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/082005.mp3"
+  },
+  {
+   "number": 6,
+   "globalNumber": 5835,
+   "juz": 30,
+   "page": 587,
+   "text": "يَٰٓأَيُّهَا ٱلْإِنسَٰنُ مَا غَرَّكَ بِرَبِّكَ ٱلْكَرِيمِ",
+   "translation": "Hai manusia, apakah yang telah memperdayakan kamu (berbuat durhaka) terhadap Tuhanmu Yang Maha Pemurah.",
+   "tajweed": "يَ[o[ـٰٓ]أَيُّهَا [h:14358[ٱ]لْإِ[f:2732[نس]َ[n[ـٰ]نُ مَا غَرَّكَ بِرَبِّكَ [h:14359[ٱ]لْكَر[p[ِي]مِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/082006.mp3"
+  },
+  {
+   "number": 7,
+   "globalNumber": 5836,
+   "juz": 30,
+   "page": 587,
+   "text": "ٱلَّذِى خَلَقَكَ فَسَوَّىٰكَ فَعَدَلَكَ",
+   "translation": "Yang telah menciptakan kamu lalu menyempurnakan kejadianmu dan menjadikan (susunan tubuh)mu seimbang,",
+   "tajweed": "ٱلَّذِى خَلَقَكَ فَسَوَّ[n[ٮٰ]كَ فَعَدَلَكَ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/082007.mp3"
+  },
+  {
+   "number": 8,
+   "globalNumber": 5837,
+   "juz": 30,
+   "page": 587,
+   "text": "فِىٓ أَىِّ صُورَةٍۢ مَّا شَآءَ رَكَّبَكَ",
+   "translation": "dalam bentuk apa saja yang Dia kehendaki, Dia menyusun tubuhmu.",
+   "tajweed": "ف[o[ِىٓ] أَىِّ صُورَ[a:14360[ةٍ م]َّا ش[o[َا]ٓءَ رَكَّبَكَ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/082008.mp3"
+  },
+  {
+   "number": 9,
+   "globalNumber": 5838,
+   "juz": 30,
+   "page": 587,
+   "text": "كَلَّا بَلْ تُكَذِّبُونَ بِٱلدِّينِ",
+   "translation": "Bukan hanya durhaka saja, bahkan kamu mendustakan hari pembalasan.",
+   "tajweed": "كَلَّا بَلْ تُكَذِّبُونَ بِ[h:14361[ٱ][l[ل]دّ[p[ِي]نِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/082009.mp3"
+  },
+  {
+   "number": 10,
+   "globalNumber": 5839,
+   "juz": 30,
+   "page": 587,
+   "text": "وَإِنَّ عَلَيْكُمْ لَحَٰفِظِينَ",
+   "translation": "Padahal sesungguhnya bagi kamu ada (malaikat-malaikat) yang mengawasi (pekerjaanmu),",
+   "tajweed": "وَإِ[g[نّ]َ عَلَيْكُمْ لَحَ[n[ـٰ]فِظ[p[ِي]نَ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/082010.mp3"
+  },
+  {
+   "number": 11,
+   "globalNumber": 5840,
+   "juz": 30,
+   "page": 587,
+   "text": "كِرَامًۭا كَٰتِبِينَ",
+   "translation": "yang mulia (di sisi Allah) dan mencatat (pekerjaan-pekerjaanmu itu),",
+   "tajweed": "كِرَا[f:14362[مًا ك]َ[n[ـٰ]تِب[p[ِي]نَ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/082011.mp3"
+  },
+  {
+   "number": 12,
+   "globalNumber": 5841,
+   "juz": 30,
+   "page": 587,
+   "text": "يَعْلَمُونَ مَا تَفْعَلُونَ",
+   "translation": "mereka mengetahui apa yang kamu kerjakan.",
+   "tajweed": "يَعْلَمُونَ مَا تَفْعَل[p[ُو]نَ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/082012.mp3"
+  },
+  {
+   "number": 13,
+   "globalNumber": 5842,
+   "juz": 30,
+   "page": 587,
+   "text": "إِنَّ ٱلْأَبْرَارَ لَفِى نَعِيمٍۢ",
+   "translation": "Sesungguhnya orang-orang yang banyak berbakti benar-benar berada dalam surga yang penuh kenikmatan,",
+   "tajweed": "إِ[g[نّ]َ [h:14162[ٱ]لْأَ[q:14163[بْ]رَارَ لَفِى نَع[p[ِي]مٍ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/082013.mp3"
+  },
+  {
+   "number": 14,
+   "globalNumber": 5843,
+   "juz": 30,
+   "page": 587,
+   "text": "وَإِنَّ ٱلْفُجَّارَ لَفِى جَحِيمٍۢ",
+   "translation": "dan sesungguhnya orang-orang yang durhaka benar-benar berada dalam neraka.",
+   "tajweed": "وَإِ[g[نّ]َ [h:14363[ٱ]لْفُجَّارَ لَفِى جَح[p[ِي]مٍ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/082014.mp3"
+  },
+  {
+   "number": 15,
+   "globalNumber": 5844,
+   "juz": 30,
+   "page": 587,
+   "text": "يَصْلَوْنَهَا يَوْمَ ٱلدِّينِ",
+   "translation": "Mereka masuk ke dalamnya pada hari pembalasan.",
+   "tajweed": "يَصْلَوْنَهَا يَوْمَ [h:9781[ٱ][l[ل]دّ[p[ِي]نِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/082015.mp3"
+  },
+  {
+   "number": 16,
+   "globalNumber": 5845,
+   "juz": 30,
+   "page": 587,
+   "text": "وَمَا هُمْ عَنْهَا بِغَآئِبِينَ",
+   "translation": "Dan mereka sekali-kali tidak dapat keluar dari neraka itu.",
+   "tajweed": "وَمَا هُمْ عَنْهَا بِغ[o[َا]ٓئِب[p[ِي]نَ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/082016.mp3"
+  },
+  {
+   "number": 17,
+   "globalNumber": 5846,
+   "juz": 30,
+   "page": 587,
+   "text": "وَمَآ أَدْرَىٰكَ مَا يَوْمُ ٱلدِّينِ",
+   "translation": "Tahukah kamu apakah hari pembalasan itu?",
+   "tajweed": "وَم[o[َآ] أَ[q:13858[دْ]رَ[n[ٮٰ]كَ مَا يَوْمُ [h:11335[ٱ][l[ل]دّ[p[ِي]نِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/082017.mp3"
+  },
+  {
+   "number": 18,
+   "globalNumber": 5847,
+   "juz": 30,
+   "page": 587,
+   "text": "ثُمَّ مَآ أَدْرَىٰكَ مَا يَوْمُ ٱلدِّينِ",
+   "translation": "Sekali lagi, tahukah kamu apakah hari pembalasan itu?",
+   "tajweed": "ثُ[g[مّ]َ م[o[َآ] أَ[q:13858[دْ]رَ[n[ٮٰ]كَ مَا يَوْمُ [h:11335[ٱ][l[ل]دّ[p[ِي]نِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/082018.mp3"
+  },
+  {
+   "number": 19,
+   "globalNumber": 5848,
+   "juz": 30,
+   "page": 587,
+   "text": "يَوْمَ لَا تَمْلِكُ نَفْسٌۭ لِّنَفْسٍۢ شَيْـًۭٔا ۖ وَٱلْأَمْرُ يَوْمَئِذٍۢ لِّلَّهِ",
+   "translation": "(Yaitu) hari (ketika) seseorang tidak berdaya sedikitpun untuk menolong orang lain. Dan segala urusan pada hari itu dalam kekuasaan Allah.",
+   "tajweed": "يَوْمَ لَا تَمْلِكُ نَفْ[u:14364[سٌ ل]ِّنَفْ[f:14365[سٍ ش]َيْـ[a:14366[ـًٔا‌ۖ و]َ[h:4748[ٱ]لْأَمْرُ يَوْمَئِ[u:9076[ذٍ ل]ِّلَّهِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/082019.mp3"
+  }
+ ]
+}

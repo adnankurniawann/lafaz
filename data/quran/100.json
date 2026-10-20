@@ -1,0 +1,121 @@
+{
+ "number": 100,
+ "name": "سُورَةُ العَادِيَاتِ",
+ "englishName": "Al-Aadiyaat",
+ "englishNameTranslation": "The Chargers",
+ "revelationType": "Meccan",
+ "ayahCount": 11,
+ "hasBasmalah": true,
+ "ayahs": [
+  {
+   "number": 1,
+   "globalNumber": 6147,
+   "juz": 30,
+   "page": 599,
+   "text": "وَٱلْعَٰدِيَٰتِ ضَبْحًۭا",
+   "translation": "Demi kuda perang yang berlari kencang dengan terengah-engah,",
+   "tajweed": "وَ[h:9999[ٱ]لْعَ[n[ـٰ]دِيَ[n[ـٰ]تِ ضَ[q:14611[بْ]حًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/100001.mp3"
+  },
+  {
+   "number": 2,
+   "globalNumber": 6148,
+   "juz": 30,
+   "page": 599,
+   "text": "فَٱلْمُورِيَٰتِ قَدْحًۭا",
+   "translation": "dan kuda yang mencetuskan api dengan pukulan (kuku kakinya),",
+   "tajweed": "فَ[h:9999[ٱ]لْمُورِيَ[n[ـٰ]تِ قَ[q:14612[دْ]حًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/100002.mp3"
+  },
+  {
+   "number": 3,
+   "globalNumber": 6149,
+   "juz": 30,
+   "page": 599,
+   "text": "فَٱلْمُغِيرَٰتِ صُبْحًۭا",
+   "translation": "dan kuda yang menyerang dengan tiba-tiba di waktu pagi,",
+   "tajweed": "فَ[h:9999[ٱ]لْمُغِير[n[َٲ]تِ صُ[q:14613[بْ]حًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/100003.mp3"
+  },
+  {
+   "number": 4,
+   "globalNumber": 6150,
+   "juz": 30,
+   "page": 599,
+   "text": "فَأَثَرْنَ بِهِۦ نَقْعًۭا",
+   "translation": "maka ia menerbangkan debu,",
+   "tajweed": "فَأَثَرْنَ بِه[n[ِۦ] نَ[q:14614[قْ]عًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/100004.mp3"
+  },
+  {
+   "number": 5,
+   "globalNumber": 6151,
+   "juz": 30,
+   "page": 599,
+   "text": "فَوَسَطْنَ بِهِۦ جَمْعًا",
+   "translation": "dan menyerbu ke tengah-tengah kumpulan musuh,",
+   "tajweed": "فَوَسَ[q:14615[طْ]نَ بِه[n[ِۦ] جَمْعًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/100005.mp3"
+  },
+  {
+   "number": 6,
+   "globalNumber": 6152,
+   "juz": 30,
+   "page": 599,
+   "text": "إِنَّ ٱلْإِنسَٰنَ لِرَبِّهِۦ لَكَنُودٌۭ",
+   "translation": "sesungguhnya manusia itu sangat ingkar, tidak berterima kasih kepada Tuhannya,",
+   "tajweed": "إِ[g[نّ]َ [h:7137[ٱ]لْإِ[f:5969[نس]َ[n[ـٰ]نَ لِرَبِّه[n[ِۦ] لَكَن[p[ُو][q[د]ٌ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/100006.mp3"
+  },
+  {
+   "number": 7,
+   "globalNumber": 6153,
+   "juz": 30,
+   "page": 599,
+   "text": "وَإِنَّهُۥ عَلَىٰ ذَٰلِكَ لَشَهِيدٌۭ",
+   "translation": "dan sesungguhnya manusia itu menyaksikan (sendiri) keingkarannya,",
+   "tajweed": "وَإِ[g[نّ]َهُ[n[ۥ] عَلَىٰ ذ[n[َٲ]لِكَ لَشَه[p[ِي][q[د]ٌ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/100007.mp3"
+  },
+  {
+   "number": 8,
+   "globalNumber": 6154,
+   "juz": 30,
+   "page": 599,
+   "text": "وَإِنَّهُۥ لِحُبِّ ٱلْخَيْرِ لَشَدِيدٌ",
+   "translation": "dan sesungguhnya dia sangat bakhil karena cintanya kepada harta.",
+   "tajweed": "وَإِ[g[نّ]َهُ[n[ۥ] لِحُبِّ [h:14616[ٱ]لْخَيْرِ لَشَد[p[ِي][q[د]ٌ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/100008.mp3"
+  },
+  {
+   "number": 9,
+   "globalNumber": 6155,
+   "juz": 30,
+   "page": 599,
+   "text": "۞ أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِى ٱلْقُبُورِ",
+   "translation": "Maka apakah dia tidak mengetahui apabila dibangkitkan apa yang ada di dalam kubur,",
+   "tajweed": "۞ أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِى [h:8926[ٱ]لْقُب[p[ُو]رِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/100009.mp3"
+  },
+  {
+   "number": 10,
+   "globalNumber": 6156,
+   "juz": 30,
+   "page": 600,
+   "text": "وَحُصِّلَ مَا فِى ٱلصُّدُورِ",
+   "translation": "dan dilahirkan apa yang ada di dalam dada,",
+   "tajweed": "وَحُصِّلَ مَا فِى [h:6095[ٱ][l[ل]صُّد[p[ُو]رِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/100010.mp3"
+  },
+  {
+   "number": 11,
+   "globalNumber": 6157,
+   "juz": 30,
+   "page": 600,
+   "text": "إِنَّ رَبَّهُم بِهِمْ يَوْمَئِذٍۢ لَّخَبِيرٌۢ",
+   "translation": "sesungguhnya Tuhan mereka pada hari itu Maha Mengetahui keadaan mereka.",
+   "tajweed": "إِ[g[نّ]َ رَبَّه[c:14617[ُم ب]ِهِمْ يَوْمَئِ[u:14618[ذٍ ل]َّخَب[p[ِي]رُۢ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/100011.mp3"
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "number": 108,
+ "name": "سُورَةُ الكَوۡثَرِ",
+ "englishName": "Al-Kawthar",
+ "englishNameTranslation": "Abundance",
+ "revelationType": "Meccan",
+ "ayahCount": 3,
+ "hasBasmalah": true,
+ "ayahs": [
+  {
+   "number": 1,
+   "globalNumber": 6205,
+   "juz": 30,
+   "page": 602,
+   "text": "إِنَّآ أَعْطَيْنَٰكَ ٱلْكَوْثَرَ",
+   "translation": "Sesungguhnya Kami telah memberikan kepadamu nikmat yang banyak.",
+   "tajweed": "إِ[g[نّ][o[َآ] أَعْطَيْنَ[n[ـٰ]كَ [h:14659[ٱ]لْكَوْثَرَ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/108001.mp3"
+  },
+  {
+   "number": 2,
+   "globalNumber": 6206,
+   "juz": 30,
+   "page": 602,
+   "text": "فَصَلِّ لِرَبِّكَ وَٱنْحَرْ",
+   "translation": "Maka dirikanlah shalat karena Tuhanmu; dan berkorbanlah.",
+   "tajweed": "فَصَلِّ لِرَبِّكَ وَ[h:14660[ٱ]نْحَرْ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/108002.mp3"
+  },
+  {
+   "number": 3,
+   "globalNumber": 6207,
+   "juz": 30,
+   "page": 602,
+   "text": "إِنَّ شَانِئَكَ هُوَ ٱلْأَبْتَرُ",
+   "translation": "Sesungguhnya orang-orang yang membenci kamu dialah yang terputus.",
+   "tajweed": "إِ[g[نّ]َ شَانِئَكَ هُوَ [h:14661[ٱ]لْأَ[q:14662[بْ]تَرُ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/108003.mp3"
+  }
+ ]
+}

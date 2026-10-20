@@ -1,0 +1,61 @@
+{
+ "number": 113,
+ "name": "سُورَةُ الفَلَقِ",
+ "englishName": "Al-Falaq",
+ "englishNameTranslation": "The Dawn",
+ "revelationType": "Meccan",
+ "ayahCount": 5,
+ "hasBasmalah": true,
+ "ayahs": [
+  {
+   "number": 1,
+   "globalNumber": 6226,
+   "juz": 30,
+   "page": 604,
+   "text": "قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ",
+   "translation": "Katakanlah: \"Aku berlindung kepada Tuhan Yang Menguasai subuh,",
+   "tajweed": "قُلْ أَعُوذُ بِرَبِّ [h:14678[ٱ]لْفَلَ[q[ق]ِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/113001.mp3"
+  },
+  {
+   "number": 2,
+   "globalNumber": 6227,
+   "juz": 30,
+   "page": 604,
+   "text": "مِن شَرِّ مَا خَلَقَ",
+   "translation": "dari kejahatan makhluk-Nya,",
+   "tajweed": "مِ[f:14679[ن ش]َرِّ مَا خَلَ[q[ق]َ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/113002.mp3"
+  },
+  {
+   "number": 3,
+   "globalNumber": 6228,
+   "juz": 30,
+   "page": 604,
+   "text": "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+   "translation": "dan dari kejahatan malam apabila telah gelap gulita,",
+   "tajweed": "وَمِ[f:14680[ن ش]َرِّ غَاسِقٍ إِذَا وَقَ[q[ب]َ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/113003.mp3"
+  },
+  {
+   "number": 4,
+   "globalNumber": 6229,
+   "juz": 30,
+   "page": 604,
+   "text": "وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ",
+   "translation": "dan dari kejahatan wanita-wanita tukang sihir yang menghembus pada buhul-buhul,",
+   "tajweed": "وَمِ[f:14680[ن ش]َرِّ [h:14681[ٱ][l[ل][g[نّ]َفَّ[n[ـٰ]ثَ[n[ـٰ]تِ فِى [h:14682[ٱ]لْعُقَ[q[د]ِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/113004.mp3"
+  },
+  {
+   "number": 5,
+   "globalNumber": 6230,
+   "juz": 30,
+   "page": 604,
+   "text": "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+   "translation": "dan dari kejahatan pendengki bila ia dengki\".",
+   "tajweed": "وَمِ[f:14680[ن ش]َرِّ حَاسِدٍ إِذَا حَسَ[q[د]َ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/113005.mp3"
+  }
+ ]
+}

@@ -1,0 +1,121 @@
+{
+ "number": 93,
+ "name": "سُورَةُ الضُّحَىٰ",
+ "englishName": "Ad-Dhuhaa",
+ "englishNameTranslation": "The Morning Hours",
+ "revelationType": "Meccan",
+ "ayahCount": 11,
+ "hasBasmalah": true,
+ "ayahs": [
+  {
+   "number": 1,
+   "globalNumber": 6080,
+   "juz": 30,
+   "page": 596,
+   "text": "وَٱلضُّحَىٰ",
+   "translation": "Demi waktu matahari sepenggalahan naik,",
+   "tajweed": "وَ[h:9999[ٱ][l[ل]ضُّحَىٰ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/093001.mp3"
+  },
+  {
+   "number": 2,
+   "globalNumber": 6081,
+   "juz": 30,
+   "page": 596,
+   "text": "وَٱلَّيْلِ إِذَا سَجَىٰ",
+   "translation": "dan demi malam apabila telah sunyi (gelap),",
+   "tajweed": "وَ[h:9999[ٱ]لَّيْلِ إِذَا سَجَىٰ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/093002.mp3"
+  },
+  {
+   "number": 3,
+   "globalNumber": 6082,
+   "juz": 30,
+   "page": 596,
+   "text": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ",
+   "translation": "Tuhanmu tiada meninggalkan kamu dan tiada (pula) benci kepadamu.",
+   "tajweed": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/093003.mp3"
+  },
+  {
+   "number": 4,
+   "globalNumber": 6083,
+   "juz": 30,
+   "page": 596,
+   "text": "وَلَلْءَاخِرَةُ خَيْرٌۭ لَّكَ مِنَ ٱلْأُولَىٰ",
+   "translation": "Dan sesungguhnya hari kemudian itu lebih baik bagimu daripada yang sekarang (permulaan).",
+   "tajweed": "وَلَلْأَخِرَةُ خَيْ[u:14539[رٌ ل]َّكَ مِنَ [h:14540[ٱ]لْأُولَىٰ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/093004.mp3"
+  },
+  {
+   "number": 5,
+   "globalNumber": 6084,
+   "juz": 30,
+   "page": 596,
+   "text": "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ",
+   "translation": "Dan kelak Tuhanmu pasti memberikan karunia-Nya kepadamu, lalu (hati) kamu menjadi puas.",
+   "tajweed": "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/093005.mp3"
+  },
+  {
+   "number": 6,
+   "globalNumber": 6085,
+   "juz": 30,
+   "page": 596,
+   "text": "أَلَمْ يَجِدْكَ يَتِيمًۭا فَـَٔاوَىٰ",
+   "translation": "Bukankah Dia mendapatimu sebagai seorang yatim, lalu Dia melindungimu?",
+   "tajweed": "أَلَمْ يَجِ[q:14541[دْ]كَ يَتِي[f:14542[مًا ف]َـَٔـاوَىٰ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/093006.mp3"
+  },
+  {
+   "number": 7,
+   "globalNumber": 6086,
+   "juz": 30,
+   "page": 596,
+   "text": "وَوَجَدَكَ ضَآلًّۭا فَهَدَىٰ",
+   "translation": "Dan Dia mendapatimu sebagai seorang yang bingung, lalu Dia memberikan petunjuk.",
+   "tajweed": "وَوَجَدَكَ ضَآل[f:14543[اًّ ف]َهَدَىٰ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/093007.mp3"
+  },
+  {
+   "number": 8,
+   "globalNumber": 6087,
+   "juz": 30,
+   "page": 596,
+   "text": "وَوَجَدَكَ عَآئِلًۭا فَأَغْنَىٰ",
+   "translation": "Dan Dia mendapatimu sebagai seorang yang kekurangan, lalu Dia memberikan kecukupan.",
+   "tajweed": "وَوَجَدَكَ ع[o[َا]ٓئِل[f:14544[اً ف]َأَغْنَىٰ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/093008.mp3"
+  },
+  {
+   "number": 9,
+   "globalNumber": 6088,
+   "juz": 30,
+   "page": 596,
+   "text": "فَأَمَّا ٱلْيَتِيمَ فَلَا تَقْهَرْ",
+   "translation": "Sebab itu, terhadap anak yatim janganlah kamu berlaku sewenang-wenang.",
+   "tajweed": "فَأَ[g[مّ]َا [h:14545[ٱ]لْيَتِيمَ فَلَا تَ[q:14546[قْ]هَرْ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/093009.mp3"
+  },
+  {
+   "number": 10,
+   "globalNumber": 6089,
+   "juz": 30,
+   "page": 596,
+   "text": "وَأَمَّا ٱلسَّآئِلَ فَلَا تَنْهَرْ",
+   "translation": "Dan terhadap orang yang minta-minta, janganlah kamu menghardiknya.",
+   "tajweed": "وَأَ[g[مّ]َا [h:14547[ٱ][l[ل]سّ[o[َا]ٓئِلَ فَلَا تَنْهَرْ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/093010.mp3"
+  },
+  {
+   "number": 11,
+   "globalNumber": 6090,
+   "juz": 30,
+   "page": 596,
+   "text": "وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ",
+   "translation": "Dan terhadap nikmat Tuhanmu, maka hendaklah kamu siarkan.",
+   "tajweed": "وَأَ[g[مّ]َا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/093011.mp3"
+  }
+ ]
+}

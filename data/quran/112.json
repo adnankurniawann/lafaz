@@ -1,0 +1,51 @@
+{
+ "number": 112,
+ "name": "سُورَةُ الإِخۡلَاصِ",
+ "englishName": "Al-Ikhlaas",
+ "englishNameTranslation": "Sincerity",
+ "revelationType": "Meccan",
+ "ayahCount": 4,
+ "hasBasmalah": true,
+ "ayahs": [
+  {
+   "number": 1,
+   "globalNumber": 6222,
+   "juz": 30,
+   "page": 604,
+   "text": "قُلْ هُوَ ٱللَّهُ أَحَدٌ",
+   "translation": "Katakanlah: \"Dialah Allah, Yang Maha Esa.",
+   "tajweed": "قُلْ هُوَ [h:8078[ٱ]للَّهُ أَحَ[q[د]ٌ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/112001.mp3"
+  },
+  {
+   "number": 2,
+   "globalNumber": 6223,
+   "juz": 30,
+   "page": 604,
+   "text": "ٱللَّهُ ٱلصَّمَدُ",
+   "translation": "Allah adalah Tuhan yang bergantung kepada-Nya segala sesuatu.",
+   "tajweed": "ٱللَّهُ [h:14675[ٱ][l[ل]صَّمَ[q[د]ُ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/112002.mp3"
+  },
+  {
+   "number": 3,
+   "globalNumber": 6224,
+   "juz": 30,
+   "page": 604,
+   "text": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+   "translation": "Dia tiada beranak dan tidak pula diperanakkan,",
+   "tajweed": "لَمْ يَلِ[q:14676[دْ] وَلَمْ يُولَ[q:14677[دْ]",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/112003.mp3"
+  },
+  {
+   "number": 4,
+   "globalNumber": 6225,
+   "juz": 30,
+   "page": 604,
+   "text": "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
+   "translation": "dan tidak ada seorangpun yang setara dengan Dia\".",
+   "tajweed": "وَلَمْ يَك[u:2596[ُن ل]َّهُ[n[ۥ] كُفُوًا أَحَ[q[د]ُۢ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/112004.mp3"
+  }
+ ]
+}

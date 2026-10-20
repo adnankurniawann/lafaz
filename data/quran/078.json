@@ -1,0 +1,411 @@
+{
+ "number": 78,
+ "name": "سُورَةُ النَّبَإِ",
+ "englishName": "An-Naba",
+ "englishNameTranslation": "The Announcement",
+ "revelationType": "Meccan",
+ "ayahCount": 40,
+ "hasBasmalah": true,
+ "ayahs": [
+  {
+   "number": 1,
+   "globalNumber": 5673,
+   "juz": 30,
+   "page": 582,
+   "text": "عَمَّ يَتَسَآءَلُونَ",
+   "translation": "Tentang apakah mereka saling bertanya-tanya?",
+   "tajweed": "عَ[g[مّ]َ يَتَس[o[َا]ٓءَل[p[ُو]نَ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078001.mp3"
+  },
+  {
+   "number": 2,
+   "globalNumber": 5674,
+   "juz": 30,
+   "page": 582,
+   "text": "عَنِ ٱلنَّبَإِ ٱلْعَظِيمِ",
+   "translation": "Tentang berita yang besar,",
+   "tajweed": "عَنِ [h:14239[ٱ][l[ل][g[نّ]َبَإِ [h:14240[ٱ]لْعَظ[p[ِي]مِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078002.mp3"
+  },
+  {
+   "number": 3,
+   "globalNumber": 5675,
+   "juz": 30,
+   "page": 582,
+   "text": "ٱلَّذِى هُمْ فِيهِ مُخْتَلِفُونَ",
+   "translation": "yang mereka perselisihkan tentang ini.",
+   "tajweed": "ٱلَّذِى هُمْ فِيهِ مُخْتَلِف[p[ُو]نَ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078003.mp3"
+  },
+  {
+   "number": 4,
+   "globalNumber": 5676,
+   "juz": 30,
+   "page": 582,
+   "text": "كَلَّا سَيَعْلَمُونَ",
+   "translation": "Sekali-kali tidak; kelak mereka akan mengetahui,",
+   "tajweed": "كَلَّا سَيَعْلَم[p[ُو]نَ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078004.mp3"
+  },
+  {
+   "number": 5,
+   "globalNumber": 5677,
+   "juz": 30,
+   "page": 582,
+   "text": "ثُمَّ كَلَّا سَيَعْلَمُونَ",
+   "translation": "kemudian sekali-kali tidak; kelak mereka mengetahui.",
+   "tajweed": "ثُ[g[مّ]َ كَلَّا سَيَعْلَم[p[ُو]نَ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078005.mp3"
+  },
+  {
+   "number": 6,
+   "globalNumber": 5678,
+   "juz": 30,
+   "page": 582,
+   "text": "أَلَمْ نَجْعَلِ ٱلْأَرْضَ مِهَٰدًۭا",
+   "translation": "Bukankah Kami telah menjadikan bumi itu sebagai hamparan?,",
+   "tajweed": "أَلَمْ نَ[q:14221[جْ]عَلِ [h:14222[ٱ]لْأَرْضَ مِهَ[n[ـٰ]دًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078006.mp3"
+  },
+  {
+   "number": 7,
+   "globalNumber": 5679,
+   "juz": 30,
+   "page": 582,
+   "text": "وَٱلْجِبَالَ أَوْتَادًۭا",
+   "translation": "dan gunung-gunung sebagai pasak?,",
+   "tajweed": "وَ[h:9999[ٱ]لْجِبَالَ أَوْتَادًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078007.mp3"
+  },
+  {
+   "number": 8,
+   "globalNumber": 5680,
+   "juz": 30,
+   "page": 582,
+   "text": "وَخَلَقْنَٰكُمْ أَزْوَٰجًۭا",
+   "translation": "dan Kami jadikan kamu berpasang-pasangan,",
+   "tajweed": "وَخَلَ[q:14241[قْ]نَ[n[ـٰ]كُمْ أَزْو[n[َٲ]جًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078008.mp3"
+  },
+  {
+   "number": 9,
+   "globalNumber": 5681,
+   "juz": 30,
+   "page": 582,
+   "text": "وَجَعَلْنَا نَوْمَكُمْ سُبَاتًۭا",
+   "translation": "dan Kami jadikan tidurmu untuk istirahat,",
+   "tajweed": "وَجَعَلْنَا نَوْمَكُمْ سُبَاتًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078009.mp3"
+  },
+  {
+   "number": 10,
+   "globalNumber": 5682,
+   "juz": 30,
+   "page": 582,
+   "text": "وَجَعَلْنَا ٱلَّيْلَ لِبَاسًۭا",
+   "translation": "dan Kami jadikan malam sebagai pakaian,",
+   "tajweed": "وَجَعَلْنَا [h:7689[ٱ]لَّيْلَ لِبَاسًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078010.mp3"
+  },
+  {
+   "number": 11,
+   "globalNumber": 5683,
+   "juz": 30,
+   "page": 582,
+   "text": "وَجَعَلْنَا ٱلنَّهَارَ مَعَاشًۭا",
+   "translation": "dan Kami jadikan siang untuk mencari penghidupan,",
+   "tajweed": "وَجَعَلْنَا [h:14242[ٱ][l[ل][g[نّ]َهَارَ مَعَاشًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078011.mp3"
+  },
+  {
+   "number": 12,
+   "globalNumber": 5684,
+   "juz": 30,
+   "page": 582,
+   "text": "وَبَنَيْنَا فَوْقَكُمْ سَبْعًۭا شِدَادًۭا",
+   "translation": "dan Kami bina di atas kamu tujuh buah (langit) yang kokoh,",
+   "tajweed": "وَبَنَيْنَا فَوْقَكُمْ سَ[q:7306[بْ][f:14243[عًا ش]ِدَادًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078012.mp3"
+  },
+  {
+   "number": 13,
+   "globalNumber": 5685,
+   "juz": 30,
+   "page": 582,
+   "text": "وَجَعَلْنَا سِرَاجًۭا وَهَّاجًۭا",
+   "translation": "dan Kami jadikan pelita yang amat terang (matahari),",
+   "tajweed": "وَجَعَلْنَا سِرَا[a:14244[جًا و]َهَّاجًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078013.mp3"
+  },
+  {
+   "number": 14,
+   "globalNumber": 5686,
+   "juz": 30,
+   "page": 582,
+   "text": "وَأَنزَلْنَا مِنَ ٱلْمُعْصِرَٰتِ مَآءًۭ ثَجَّاجًۭا",
+   "translation": "dan Kami turunkan dari awan air yang banyak tercurah,",
+   "tajweed": "وَأَ[f:271[نز]َلْنَا مِنَ [h:14245[ٱ]لْمُعْصِر[n[َٲ]تِ م[o[َا]ٓ[f:14246[ءً ث]َجَّاجًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078014.mp3"
+  },
+  {
+   "number": 15,
+   "globalNumber": 5687,
+   "juz": 30,
+   "page": 582,
+   "text": "لِّنُخْرِجَ بِهِۦ حَبًّۭا وَنَبَاتًۭا",
+   "translation": "supaya Kami tumbuhkan dengan air itu biji-bijian dan tumbuh-tumbuhan,",
+   "tajweed": "لِّنُخْرِجَ بِه[n[ِۦ] حَب[a:14247[ًّا و]َنَبَاتًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078015.mp3"
+  },
+  {
+   "number": 16,
+   "globalNumber": 5688,
+   "juz": 30,
+   "page": 582,
+   "text": "وَجَنَّٰتٍ أَلْفَافًا",
+   "translation": "dan kebun-kebun yang lebat?",
+   "tajweed": "وَجَ[g[نّ]َ[n[ـٰ]تٍ أَلْفَافًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078016.mp3"
+  },
+  {
+   "number": 17,
+   "globalNumber": 5689,
+   "juz": 30,
+   "page": 582,
+   "text": "إِنَّ يَوْمَ ٱلْفَصْلِ كَانَ مِيقَٰتًۭا",
+   "translation": "Sesungguhnya Hari Keputusan adalah suatu waktu yang ditetapkan,",
+   "tajweed": "إِ[g[نّ]َ يَوْمَ [h:12368[ٱ]لْفَصْلِ كَانَ مِيقَ[n[ـٰ]تًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078017.mp3"
+  },
+  {
+   "number": 18,
+   "globalNumber": 5690,
+   "juz": 30,
+   "page": 582,
+   "text": "يَوْمَ يُنفَخُ فِى ٱلصُّورِ فَتَأْتُونَ أَفْوَاجًۭا",
+   "translation": "yaitu hari (yang pada waktu itu) ditiup sangkakala lalu kamu datang berkelompok-kelompok,",
+   "tajweed": "يَوْمَ يُ[f:4184[نف]َخُ فِى [h:4185[ٱ][l[ل]صُّورِ فَتَأْتُونَ أَفْوَاجًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078018.mp3"
+  },
+  {
+   "number": 19,
+   "globalNumber": 5691,
+   "juz": 30,
+   "page": 582,
+   "text": "وَفُتِحَتِ ٱلسَّمَآءُ فَكَانَتْ أَبْوَٰبًۭا",
+   "translation": "dan dibukalah langit, maka terdapatlah beberapa pintu,",
+   "tajweed": "وَفُتِحَتِ [h:14248[ٱ][l[ل]سَّم[o[َا]ٓءُ فَكَانَتْ أَ[q:12251[بْ]و[n[َٲ]بًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078019.mp3"
+  },
+  {
+   "number": 20,
+   "globalNumber": 5692,
+   "juz": 30,
+   "page": 582,
+   "text": "وَسُيِّرَتِ ٱلْجِبَالُ فَكَانَتْ سَرَابًا",
+   "translation": "dan dijalankanlah gunung-gunung maka menjadi fatamorganalah ia.",
+   "tajweed": "وَسُيِّرَتِ [h:14249[ٱ]لْجِبَالُ فَكَانَتْ سَرَابًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078020.mp3"
+  },
+  {
+   "number": 21,
+   "globalNumber": 5693,
+   "juz": 30,
+   "page": 582,
+   "text": "إِنَّ جَهَنَّمَ كَانَتْ مِرْصَادًۭا",
+   "translation": "Sesungguhnya neraka Jahannam itu (padanya) ada tempat pengintai,",
+   "tajweed": "إِ[g[نّ]َ جَهَ[g[نّ]َمَ كَانَتْ مِرْصَادًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078021.mp3"
+  },
+  {
+   "number": 22,
+   "globalNumber": 5694,
+   "juz": 30,
+   "page": 582,
+   "text": "لِّلطَّٰغِينَ مَـَٔابًۭا",
+   "translation": "lagi menjadi tempat kembali bagi orang-orang yang melampaui batas,",
+   "tajweed": "لِّلطَّ[n[ـٰ]غِينَ مَـَٔـابًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078022.mp3"
+  },
+  {
+   "number": 23,
+   "globalNumber": 5695,
+   "juz": 30,
+   "page": 582,
+   "text": "لَّٰبِثِينَ فِيهَآ أَحْقَابًۭا",
+   "translation": "mereka tinggal di dalamnya berabad-abad lamanya,",
+   "tajweed": "لَّ[n[ـٰ]بِثِينَ فِيه[o[َآ] أَحْقَابًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078023.mp3"
+  },
+  {
+   "number": 24,
+   "globalNumber": 5696,
+   "juz": 30,
+   "page": 582,
+   "text": "لَّا يَذُوقُونَ فِيهَا بَرْدًۭا وَلَا شَرَابًا",
+   "translation": "mereka tidak merasakan kesejukan di dalamnya dan tidak (pula mendapat) minuman,",
+   "tajweed": "لَّا يَذُوقُونَ فِيهَا بَرْ[a:14250[دًا و]َلَا شَرَابًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078024.mp3"
+  },
+  {
+   "number": 25,
+   "globalNumber": 5697,
+   "juz": 30,
+   "page": 582,
+   "text": "إِلَّا حَمِيمًۭا وَغَسَّاقًۭا",
+   "translation": "selain air yang mendidih dan nanah,",
+   "tajweed": "إِلَّا حَمِي[a:14251[مًا و]َغَسَّاقًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078025.mp3"
+  },
+  {
+   "number": 26,
+   "globalNumber": 5698,
+   "juz": 30,
+   "page": 582,
+   "text": "جَزَآءًۭ وِفَاقًا",
+   "translation": "sebagai pambalasan yang setimpal.",
+   "tajweed": "جَز[o[َا]ٓ[a:14252[ءً و]ِفَاقًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078026.mp3"
+  },
+  {
+   "number": 27,
+   "globalNumber": 5699,
+   "juz": 30,
+   "page": 582,
+   "text": "إِنَّهُمْ كَانُوا۟ لَا يَرْجُونَ حِسَابًۭا",
+   "translation": "Sesungguhnya mereka tidak berharap (takut) kepada hisab,",
+   "tajweed": "إِ[g[نّ]َهُمْ كَانُو[s[اْ] لَا يَرْجُونَ حِسَابًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078027.mp3"
+  },
+  {
+   "number": 28,
+   "globalNumber": 5700,
+   "juz": 30,
+   "page": 582,
+   "text": "وَكَذَّبُوا۟ بِـَٔايَٰتِنَا كِذَّابًۭا",
+   "translation": "dan mereka mendustakan ayat-ayat Kami dengan sesungguh-sungguhnya.",
+   "tajweed": "وَكَذَّبُو[s[اْ] بِـَٔـايَ[n[ـٰ]تِنَا كِذَّابًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078028.mp3"
+  },
+  {
+   "number": 29,
+   "globalNumber": 5701,
+   "juz": 30,
+   "page": 582,
+   "text": "وَكُلَّ شَىْءٍ أَحْصَيْنَٰهُ كِتَٰبًۭا",
+   "translation": "Dan segala sesuatu telah Kami catat dalam suatu kitab.",
+   "tajweed": "وَكُلَّ شَىْءٍ أَحْصَيْنَ[n[ـٰ]هُ كِتَ[n[ـٰ]بًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078029.mp3"
+  },
+  {
+   "number": 30,
+   "globalNumber": 5702,
+   "juz": 30,
+   "page": 582,
+   "text": "فَذُوقُوا۟ فَلَن نَّزِيدَكُمْ إِلَّا عَذَابًا",
+   "translation": "Karena itu rasakanlah. Dan Kami sekali-kali tidak akan menambah kepada kamu selain daripada azab.",
+   "tajweed": "فَذُوقُو[s[اْ] فَل[a:14253[َن ن]َّزِيدَكُمْ إِلَّا عَذَابًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078030.mp3"
+  },
+  {
+   "number": 31,
+   "globalNumber": 5703,
+   "juz": 30,
+   "page": 583,
+   "text": "إِنَّ لِلْمُتَّقِينَ مَفَازًا",
+   "translation": "Sesungguhnya orang-orang yang bertakwa mendapat kemenangan,",
+   "tajweed": "إِ[g[نّ]َ لِلْمُتَّقِينَ مَفَازًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078031.mp3"
+  },
+  {
+   "number": 32,
+   "globalNumber": 5704,
+   "juz": 30,
+   "page": 583,
+   "text": "حَدَآئِقَ وَأَعْنَٰبًۭا",
+   "translation": "(yaitu) kebun-kebun dan buah anggur,",
+   "tajweed": "حَد[o[َا]ٓئِقَ وَأَعْنَ[n[ـٰ]بًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078032.mp3"
+  },
+  {
+   "number": 33,
+   "globalNumber": 5705,
+   "juz": 30,
+   "page": 583,
+   "text": "وَكَوَاعِبَ أَتْرَابًۭا",
+   "translation": "dan gadis-gadis remaja yang sebaya,",
+   "tajweed": "وَكَوَاعِبَ أَتْرَابًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078033.mp3"
+  },
+  {
+   "number": 34,
+   "globalNumber": 5706,
+   "juz": 30,
+   "page": 583,
+   "text": "وَكَأْسًۭا دِهَاقًۭا",
+   "translation": "dan gelas-gelas yang penuh (berisi minuman).",
+   "tajweed": "وَكَأْ[f:14254[سًا د]ِهَاقًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078034.mp3"
+  },
+  {
+   "number": 35,
+   "globalNumber": 5707,
+   "juz": 30,
+   "page": 583,
+   "text": "لَّا يَسْمَعُونَ فِيهَا لَغْوًۭا وَلَا كِذَّٰبًۭا",
+   "translation": "Di dalamnya mereka tidak mendengar perkataan yang sia-sia dan tidak (pula) perkataan dusta.",
+   "tajweed": "لَّا يَسْمَعُونَ فِيهَا لَغْ[a:13226[وًا و]َلَا كِذّ[n[َٲ]بًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078035.mp3"
+  },
+  {
+   "number": 36,
+   "globalNumber": 5708,
+   "juz": 30,
+   "page": 583,
+   "text": "جَزَآءًۭ مِّن رَّبِّكَ عَطَآءً حِسَابًۭا",
+   "translation": "Sebagai pembalasan dari Tuhanmu dan pemberian yang cukup banyak,",
+   "tajweed": "جَز[o[َا]ٓ[a:14255[ءً م]ّ[u:770[ِن ر]َّبِّكَ عَط[o[َا]ٓءً حِسَابًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078036.mp3"
+  },
+  {
+   "number": 37,
+   "globalNumber": 5709,
+   "juz": 30,
+   "page": 583,
+   "text": "رَّبِّ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ وَمَا بَيْنَهُمَا ٱلرَّحْمَٰنِ ۖ لَا يَمْلِكُونَ مِنْهُ خِطَابًۭا",
+   "translation": "Tuhan Yang memelihara langit dan bumi dan apa yang ada di antara keduanya; Yang Maha Pemurah. Mereka tidak dapat berbicara dengan Dia.",
+   "tajweed": "رَّبِّ [h:12320[ٱ][l[ل]سَّمَ[n[ـٰ]و[n[َٲ]تِ وَ[h:177[ٱ]لْأَرْضِ وَمَا بَيْنَهُمَا [h:14256[ٱ][l[ل]رَّحْمَ[n[ـٰ]نِ‌ۖ لَا يَمْلِكُونَ مِنْهُ خِطَابًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078037.mp3"
+  },
+  {
+   "number": 38,
+   "globalNumber": 5710,
+   "juz": 30,
+   "page": 583,
+   "text": "يَوْمَ يَقُومُ ٱلرُّوحُ وَٱلْمَلَٰٓئِكَةُ صَفًّۭا ۖ لَّا يَتَكَلَّمُونَ إِلَّا مَنْ أَذِنَ لَهُ ٱلرَّحْمَٰنُ وَقَالَ صَوَابًۭا",
+   "translation": "Pada hari, ketika ruh dan para malaikat berdiri bershaf-shaf, mereka tidak berkata-kata, kecuali siapa yang telah diberi izin kepadanya oleh Tuhan Yang Maha Pemurah; dan ia mengucapkan kata yang benar.",
+   "tajweed": "يَوْمَ يَقُومُ [h:14257[ٱ][l[ل]رُّوحُ وَ[h:1146[ٱ]لْمَلَ[o[ـٰٓ]ئِكَةُ صَف[u:14258[ًّا‌ۖ ل]َّا يَتَكَلَّمُونَ إِلَّا مَنْ أَذِنَ لَهُ [h:8399[ٱ][l[ل]رَّحْمَ[n[ـٰ]نُ وَقَالَ صَوَابًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078038.mp3"
+  },
+  {
+   "number": 39,
+   "globalNumber": 5711,
+   "juz": 30,
+   "page": 583,
+   "text": "ذَٰلِكَ ٱلْيَوْمُ ٱلْحَقُّ ۖ فَمَن شَآءَ ٱتَّخَذَ إِلَىٰ رَبِّهِۦ مَـَٔابًا",
+   "translation": "Itulah hari yang pasti terjadi. Maka barangsiapa yang menghendaki, niscaya ia menempuh jalan kembali kepada Tuhannya.",
+   "tajweed": "ذ[n[َٲ]لِكَ [h:13944[ٱ]لْيَوْمُ [h:14259[ٱ]لْحَقُّ‌ۖ فَمَ[f:8041[ن ش][o[َا]ٓءَ [h:14056[ٱ]تَّخَذَ إِلَىٰ رَبِّه[n[ِۦ] مَـَٔـابًا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078039.mp3"
+  },
+  {
+   "number": 40,
+   "globalNumber": 5712,
+   "juz": 30,
+   "page": 583,
+   "text": "إِنَّآ أَنذَرْنَٰكُمْ عَذَابًۭا قَرِيبًۭا يَوْمَ يَنظُرُ ٱلْمَرْءُ مَا قَدَّمَتْ يَدَاهُ وَيَقُولُ ٱلْكَافِرُ يَٰلَيْتَنِى كُنتُ تُرَٰبًۢا",
+   "translation": "Sesungguhnya Kami telah memperingatkan kepadamu (hai orang kafir) siksa yang dekat, pada hari manusia melihat apa yang telah diperbuat oleh kedua tangannya; dan orang kafir berkata: \"Alangkah baiknya sekiranya aku dahulu adalah tanah\".",
+   "tajweed": "إِ[g[نّ][o[َآ] أَ[f:14260[نذ]َرْنَ[n[ـٰ]كُمْ عَذَا[f:14261[بًا ق]َرِي[a:14262[بًا ي]َوْمَ يَ[f:2039[نظ]ُرُ [h:14263[ٱ]لْمَرْءُ مَا قَدَّمَتْ يَدَاهُ وَيَقُولُ [h:14264[ٱ]لْكَافِرُ يَ[n[ـٰ]لَيْتَنِى كُ[f:2917[نت]ُ تُر[n[َٲ]بَۢا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/078040.mp3"
+  }
+ ]
+}

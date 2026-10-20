@@ -1,0 +1,91 @@
+{
+ "number": 99,
+ "name": "سُورَةُ الزَّلۡزَلَةِ",
+ "englishName": "Az-Zalzala",
+ "englishNameTranslation": "The Earthquake",
+ "revelationType": "Medinan",
+ "ayahCount": 8,
+ "hasBasmalah": true,
+ "ayahs": [
+  {
+   "number": 1,
+   "globalNumber": 6139,
+   "juz": 30,
+   "page": 599,
+   "text": "إِذَا زُلْزِلَتِ ٱلْأَرْضُ زِلْزَالَهَا",
+   "translation": "Apabila bumi digoncangkan dengan goncangan (yang dahsyat),",
+   "tajweed": "إِذَا زُلْزِلَتِ [h:14601[ٱ]لْأَرْضُ زِلْزَالَهَا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/099001.mp3"
+  },
+  {
+   "number": 2,
+   "globalNumber": 6140,
+   "juz": 30,
+   "page": 599,
+   "text": "وَأَخْرَجَتِ ٱلْأَرْضُ أَثْقَالَهَا",
+   "translation": "dan bumi telah mengeluarkan beban-beban berat (yang dikandung)nya,",
+   "tajweed": "وَأَخْرَجَتِ [h:14602[ٱ]لْأَرْضُ أَثْقَالَهَا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/099002.mp3"
+  },
+  {
+   "number": 3,
+   "globalNumber": 6141,
+   "juz": 30,
+   "page": 599,
+   "text": "وَقَالَ ٱلْإِنسَٰنُ مَا لَهَا",
+   "translation": "dan manusia bertanya: \"Mengapa bumi (menjadi begini)?\",",
+   "tajweed": "وَقَالَ [h:14603[ٱ]لْإِ[f:2732[نس]َ[n[ـٰ]نُ مَا لَهَا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/099003.mp3"
+  },
+  {
+   "number": 4,
+   "globalNumber": 6142,
+   "juz": 30,
+   "page": 599,
+   "text": "يَوْمَئِذٍۢ تُحَدِّثُ أَخْبَارَهَا",
+   "translation": "pada hari itu bumi menceritakan beritanya,",
+   "tajweed": "يَوْمَئِ[f:14604[ذٍ ت]ُحَدِّثُ أَخْبَارَهَا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/099004.mp3"
+  },
+  {
+   "number": 5,
+   "globalNumber": 6143,
+   "juz": 30,
+   "page": 599,
+   "text": "بِأَنَّ رَبَّكَ أَوْحَىٰ لَهَا",
+   "translation": "karena sesungguhnya Tuhanmu telah memerintahkan (yang sedemikian itu) kepadanya.",
+   "tajweed": "بِأَ[g[نّ]َ رَبَّكَ أَوْحَىٰ لَهَا",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/099005.mp3"
+  },
+  {
+   "number": 6,
+   "globalNumber": 6144,
+   "juz": 30,
+   "page": 599,
+   "text": "يَوْمَئِذٍۢ يَصْدُرُ ٱلنَّاسُ أَشْتَاتًۭا لِّيُرَوْا۟ أَعْمَٰلَهُمْ",
+   "translation": "Pada hari itu manusia ke luar dari kuburnya dalam keadaan bermacam-macam, supaya diperlihatkan kepada mereka (balasan) pekerjaan mereka,",
+   "tajweed": "يَوْمَئِ[a:14605[ذٍ ي]َصْدُرُ [h:14606[ٱ][l[ل][g[نّ]َاسُ أَشْتَا[u:14607[تًا ل]ِّيُرَوْ[s[اْ] أَعْمَ[n[ـٰ]لَهُمْ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/099006.mp3"
+  },
+  {
+   "number": 7,
+   "globalNumber": 6145,
+   "juz": 30,
+   "page": 599,
+   "text": "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًۭا يَرَهُۥ",
+   "translation": "Barangsiapa yang mengerjakan kebaikan seberat dzarrahpun, niscaya dia akan melihat (balasan)nya.",
+   "tajweed": "فَم[a:8855[َن ي]َعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْ[a:14608[رًا ي]َرَهُۥ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/099007.mp3"
+  },
+  {
+   "number": 8,
+   "globalNumber": 6146,
+   "juz": 30,
+   "page": 599,
+   "text": "وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍۢ شَرًّۭا يَرَهُۥ",
+   "translation": "Dan barangsiapa yang mengerjakan kejahatan sebesar dzarrahpun, niscaya dia akan melihat (balasan)nya pula.",
+   "tajweed": "وَم[a:3112[َن ي]َعْمَلْ مِثْقَالَ ذَرَّ[f:14609[ةٍ ش]َر[a:14610[ًّا ي]َرَهُۥ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/099008.mp3"
+  }
+ ]
+}

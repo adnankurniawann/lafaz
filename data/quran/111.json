@@ -1,0 +1,61 @@
+{
+ "number": 111,
+ "name": "سُورَةُ المَسَدِ",
+ "englishName": "Al-Masad",
+ "englishNameTranslation": "The Palm Fibre",
+ "revelationType": "Meccan",
+ "ayahCount": 5,
+ "hasBasmalah": true,
+ "ayahs": [
+  {
+   "number": 1,
+   "globalNumber": 6217,
+   "juz": 30,
+   "page": 603,
+   "text": "تَبَّتْ يَدَآ أَبِى لَهَبٍۢ وَتَبَّ",
+   "translation": "Binasalah kedua tangan Abu Lahab dan sesungguhnya dia akan binasa.",
+   "tajweed": "تَبَّتْ يَد[o[َآ] أَبِى لَهَ[a:14669[بٍ و]َتَ[q[ب]َّ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/111001.mp3"
+  },
+  {
+   "number": 2,
+   "globalNumber": 6218,
+   "juz": 30,
+   "page": 603,
+   "text": "مَآ أَغْنَىٰ عَنْهُ مَالُهُۥ وَمَا كَسَبَ",
+   "translation": "Tidaklah berfaedah kepadanya harta bendanya dan apa yang ia usahakan.",
+   "tajweed": "م[o[َآ] أَغْنَىٰ عَنْهُ مَالُهُ[n[ۥ] وَمَا كَسَ[q[ب]َ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/111002.mp3"
+  },
+  {
+   "number": 3,
+   "globalNumber": 6219,
+   "juz": 30,
+   "page": 603,
+   "text": "سَيَصْلَىٰ نَارًۭا ذَاتَ لَهَبٍۢ",
+   "translation": "Kelak dia akan masuk ke dalam api yang bergejolak.",
+   "tajweed": "سَيَصْلَىٰ نَا[f:14670[رًا ذ]َاتَ لَهَ[q[ب]ٍ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/111003.mp3"
+  },
+  {
+   "number": 4,
+   "globalNumber": 6220,
+   "juz": 30,
+   "page": 603,
+   "text": "وَٱمْرَأَتُهُۥ حَمَّالَةَ ٱلْحَطَبِ",
+   "translation": "Dan (begitu pula) istrinya, pembawa kayu bakar.",
+   "tajweed": "وَ[h:9999[ٱ]مْرَأَتُهُ[n[ۥ] حَ[g[مّ]َالَةَ [h:14671[ٱ]لْحَطَ[q[ب]ِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/111004.mp3"
+  },
+  {
+   "number": 5,
+   "globalNumber": 6221,
+   "juz": 30,
+   "page": 603,
+   "text": "فِى جِيدِهَا حَبْلٌۭ مِّن مَّسَدٍۭ",
+   "translation": "Yang di lehernya ada tali dari sabut.",
+   "tajweed": "فِى جِيدِهَا حَ[q:14672[بْ][a:14673[لٌ م]ّ[a:14674[ِن م]َّسَ[q[د]ِۭ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/111005.mp3"
+  }
+ ]
+}

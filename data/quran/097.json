@@ -1,0 +1,61 @@
+{
+ "number": 97,
+ "name": "سُورَةُ القَدۡرِ",
+ "englishName": "Al-Qadr",
+ "englishNameTranslation": "The Power, Fate",
+ "revelationType": "Meccan",
+ "ayahCount": 5,
+ "hasBasmalah": true,
+ "ayahs": [
+  {
+   "number": 1,
+   "globalNumber": 6126,
+   "juz": 30,
+   "page": 598,
+   "text": "إِنَّآ أَنزَلْنَٰهُ فِى لَيْلَةِ ٱلْقَدْرِ",
+   "translation": "Sesungguhnya Kami telah menurunkannya (Al Quran) pada malam kemuliaan.",
+   "tajweed": "إِ[g[نّ][o[َآ] أَ[f:4236[نز]َلْنَ[n[ـٰ]هُ فِى لَيْلَةِ [h:14580[ٱ]لْقَ[q:14581[دْ]رِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/097001.mp3"
+  },
+  {
+   "number": 2,
+   "globalNumber": 6127,
+   "juz": 30,
+   "page": 598,
+   "text": "وَمَآ أَدْرَىٰكَ مَا لَيْلَةُ ٱلْقَدْرِ",
+   "translation": "Dan tahukah kamu apakah malam kemuliaan itu?",
+   "tajweed": "وَم[o[َآ] أَ[q:13858[دْ]رَ[n[ٮٰ]كَ مَا لَيْلَةُ [h:14582[ٱ]لْقَ[q:14581[دْ]رِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/097002.mp3"
+  },
+  {
+   "number": 3,
+   "globalNumber": 6128,
+   "juz": 30,
+   "page": 598,
+   "text": "لَيْلَةُ ٱلْقَدْرِ خَيْرٌۭ مِّنْ أَلْفِ شَهْرٍۢ",
+   "translation": "Malam kemuliaan itu lebih baik dari seribu bulan.",
+   "tajweed": "لَيْلَةُ [h:14582[ٱ]لْقَ[q:14581[دْ]رِ خَيْ[a:1231[رٌ م]ِّنْ أَلْفِ شَهْرٍ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/097003.mp3"
+  },
+  {
+   "number": 4,
+   "globalNumber": 6129,
+   "juz": 30,
+   "page": 598,
+   "text": "تَنَزَّلُ ٱلْمَلَٰٓئِكَةُ وَٱلرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍۢ",
+   "translation": "Pada malam itu turun malaikat-malaikat dan malaikat Jibril dengan izin Tuhannya untuk mengatur segala urusan.",
+   "tajweed": "تَنَزَّلُ [h:14583[ٱ]لْمَلَ[o[ـٰٓ]ئِكَةُ وَ[h:13916[ٱ][l[ل]رُّوحُ فِيهَا بِإِذْنِ رَبِّه[w:14584[ِم م]ِّ[f:843[ن ك]ُلِّ أَمْرٍ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/097004.mp3"
+  },
+  {
+   "number": 5,
+   "globalNumber": 6130,
+   "juz": 30,
+   "page": 598,
+   "text": "سَلَٰمٌ هِىَ حَتَّىٰ مَطْلَعِ ٱلْفَجْرِ",
+   "translation": "Malam itu (penuh) kesejahteraan sampai terbit fajar.",
+   "tajweed": "سَلَ[n[ـٰ]مٌ هِىَ حَتَّىٰ مَ[q:14585[طْ]لَعِ [h:14586[ٱ]لْفَ[q:996[جْ]رِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/097005.mp3"
+  }
+ ]
+}

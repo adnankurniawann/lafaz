@@ -1,0 +1,121 @@
+{
+ "number": 101,
+ "name": "سُورَةُ القَارِعَةِ",
+ "englishName": "Al-Qaari'a",
+ "englishNameTranslation": "The Calamity",
+ "revelationType": "Meccan",
+ "ayahCount": 11,
+ "hasBasmalah": true,
+ "ayahs": [
+  {
+   "number": 1,
+   "globalNumber": 6158,
+   "juz": 30,
+   "page": 600,
+   "text": "ٱلْقَارِعَةُ",
+   "translation": "Hari Kiamat,",
+   "tajweed": "ٱلْقَارِعَةُ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/101001.mp3"
+  },
+  {
+   "number": 2,
+   "globalNumber": 6159,
+   "juz": 30,
+   "page": 600,
+   "text": "مَا ٱلْقَارِعَةُ",
+   "translation": "apakah hari Kiamat itu?",
+   "tajweed": "مَا [h:14619[ٱ]لْقَارِعَةُ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/101002.mp3"
+  },
+  {
+   "number": 3,
+   "globalNumber": 6160,
+   "juz": 30,
+   "page": 600,
+   "text": "وَمَآ أَدْرَىٰكَ مَا ٱلْقَارِعَةُ",
+   "translation": "Tahukah kamu apakah hari Kiamat itu?",
+   "tajweed": "وَم[o[َآ] أَ[q:13858[دْ]رَ[n[ٮٰ]كَ مَا [h:14619[ٱ]لْقَارِعَةُ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/101003.mp3"
+  },
+  {
+   "number": 4,
+   "globalNumber": 6161,
+   "juz": 30,
+   "page": 600,
+   "text": "يَوْمَ يَكُونُ ٱلنَّاسُ كَٱلْفَرَاشِ ٱلْمَبْثُوثِ",
+   "translation": "Pada hari itu manusia adalah seperti anai-anai yang bertebaran,",
+   "tajweed": "يَوْمَ يَكُونُ [h:14620[ٱ][l[ل][g[نّ]َاسُ كَ[h:14621[ٱ]لْفَرَاشِ [h:14622[ٱ]لْمَ[q:14623[بْ]ث[p[ُو]ثِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/101004.mp3"
+  },
+  {
+   "number": 5,
+   "globalNumber": 6162,
+   "juz": 30,
+   "page": 600,
+   "text": "وَتَكُونُ ٱلْجِبَالُ كَٱلْعِهْنِ ٱلْمَنفُوشِ",
+   "translation": "dan gunung-gunung adalah seperti bulu yang dihambur-hamburkan.",
+   "tajweed": "وَتَكُونُ [h:13919[ٱ]لْجِبَالُ كَ[h:13920[ٱ]لْعِهْنِ [h:14624[ٱ]لْمَ[f:14625[نف][p[ُو]شِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/101005.mp3"
+  },
+  {
+   "number": 6,
+   "globalNumber": 6163,
+   "juz": 30,
+   "page": 600,
+   "text": "فَأَمَّا مَن ثَقُلَتْ مَوَٰزِينُهُۥ",
+   "translation": "Dan adapun orang-orang yang berat timbangan (kebaikan)nya,",
+   "tajweed": "فَأَ[g[مّ]َا مَ[f:14626[ن ث]َقُلَتْ مَو[n[َٲ]زِينُهُۥ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/101006.mp3"
+  },
+  {
+   "number": 7,
+   "globalNumber": 6164,
+   "juz": 30,
+   "page": 600,
+   "text": "فَهُوَ فِى عِيشَةٍۢ رَّاضِيَةٍۢ",
+   "translation": "maka dia berada dalam kehidupan yang memuaskan.",
+   "tajweed": "فَهُوَ فِى عِيشَ[u:13890[ةٍ ر]َّاضِيَةٍ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/101007.mp3"
+  },
+  {
+   "number": 8,
+   "globalNumber": 6165,
+   "juz": 30,
+   "page": 600,
+   "text": "وَأَمَّا مَنْ خَفَّتْ مَوَٰزِينُهُۥ",
+   "translation": "Dan adapun orang-orang yang ringan timbangan (kebaikan)nya,",
+   "tajweed": "وَأَ[g[مّ]َا مَنْ خَفَّتْ مَو[n[َٲ]زِينُهُۥ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/101008.mp3"
+  },
+  {
+   "number": 9,
+   "globalNumber": 6166,
+   "juz": 30,
+   "page": 600,
+   "text": "فَأُمُّهُۥ هَاوِيَةٌۭ",
+   "translation": "maka tempat kembalinya adalah neraka Hawiyah.",
+   "tajweed": "فَأُ[g[مّ]ُهُ[n[ۥ] هَاوِيَةٌ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/101009.mp3"
+  },
+  {
+   "number": 10,
+   "globalNumber": 6167,
+   "juz": 30,
+   "page": 600,
+   "text": "وَمَآ أَدْرَىٰكَ مَا هِيَهْ",
+   "translation": "Tahukah kamu apakah neraka Hawiyah itu?",
+   "tajweed": "وَم[o[َآ] أَ[q:13858[دْ]رَ[n[ٮٰ]كَ مَا هِيَهْ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/101010.mp3"
+  },
+  {
+   "number": 11,
+   "globalNumber": 6168,
+   "juz": 30,
+   "page": 600,
+   "text": "نَارٌ حَامِيَةٌۢ",
+   "translation": "(Yaitu) api yang sangat panas.",
+   "tajweed": "نَارٌ حَامِيَةُۢ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/101011.mp3"
+  }
+ ]
+}

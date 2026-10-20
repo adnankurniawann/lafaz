@@ -1,0 +1,51 @@
+{
+ "number": 106,
+ "name": "سُورَةُ قُرَيۡشٍ",
+ "englishName": "Quraish",
+ "englishNameTranslation": "Quraysh",
+ "revelationType": "Meccan",
+ "ayahCount": 4,
+ "hasBasmalah": true,
+ "ayahs": [
+  {
+   "number": 1,
+   "globalNumber": 6194,
+   "juz": 30,
+   "page": 602,
+   "text": "لِإِيلَٰفِ قُرَيْشٍ",
+   "translation": "Karena kebiasaan orang-orang Quraisy,",
+   "tajweed": "لِإِيلَ[n[ـٰ]فِ قُر[p[َي]ْشٍ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/106001.mp3"
+  },
+  {
+   "number": 2,
+   "globalNumber": 6195,
+   "juz": 30,
+   "page": 602,
+   "text": "إِۦلَٰفِهِمْ رِحْلَةَ ٱلشِّتَآءِ وَٱلصَّيْفِ",
+   "translation": "(yaitu) kebiasaan mereka bepergian pada musim dingin dan musim panas.",
+   "tajweed": "إ[n[ِۦ]لَ[n[ـٰ]فِهِمْ رِحْلَةَ [h:14647[ٱ][l[ل]شِّت[o[َا]ٓءِ وَ[h:14648[ٱ][l[ل]صّ[p[َي]ْفِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/106002.mp3"
+  },
+  {
+   "number": 3,
+   "globalNumber": 6196,
+   "juz": 30,
+   "page": 602,
+   "text": "فَلْيَعْبُدُوا۟ رَبَّ هَٰذَا ٱلْبَيْتِ",
+   "translation": "Maka hendaklah mereka menyembah Tuhan Pemilik rumah ini (Ka'bah).",
+   "tajweed": "فَلْيَعْبُدُو[s[اْ] رَبَّ هَ[n[ـٰ]ذَا [h:14649[ٱ]لْب[p[َي]ْتِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/106003.mp3"
+  },
+  {
+   "number": 4,
+   "globalNumber": 6197,
+   "juz": 30,
+   "page": 602,
+   "text": "ٱلَّذِىٓ أَطْعَمَهُم مِّن جُوعٍۢ وَءَامَنَهُم مِّنْ خَوْفٍۭ",
+   "translation": "Yang telah memberi makanan kepada mereka untuk menghilangkan lapar dan mengamankan mereka dari ketakutan.",
+   "tajweed": "ٱلَّذ[o[ِىٓ] أَ[q:14650[طْ]عَمَه[w:14651[ُم م]ِّ[f:14454[ن ج]ُو[a:14652[عٍ و]َءَامَنَه[w:14653[ُم م]ِّنْ خ[p[َو]ْفِۭ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/106004.mp3"
+  }
+ ]
+}

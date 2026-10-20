@@ -1,0 +1,81 @@
+{
+ "number": 1,
+ "name": "سُورَةُ ٱلْفَاتِحَةِ",
+ "englishName": "Al-Faatiha",
+ "englishNameTranslation": "The Opening",
+ "revelationType": "Meccan",
+ "ayahCount": 7,
+ "hasBasmalah": false,
+ "ayahs": [
+  {
+   "number": 1,
+   "globalNumber": 1,
+   "juz": 1,
+   "page": 1,
+   "text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+   "translation": "Dengan menyebut nama Allah Yang Maha Pemurah lagi Maha Penyayang.",
+   "tajweed": "بِسْمِ [h:1[ٱ]للَّهِ [h:2[ٱ][l[ل]رَّحْمَ[n[ـٰ]نِ [h:3[ٱ][l[ل]رَّح[p[ِي]مِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/001001.mp3"
+  },
+  {
+   "number": 2,
+   "globalNumber": 2,
+   "juz": 1,
+   "page": 1,
+   "text": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
+   "translation": "Segala puji bagi Allah, Tuhan semesta alam.",
+   "tajweed": "ٱلْحَمْدُ لِلَّهِ رَبِّ [h:4[ٱ]لْعَ[n[ـٰ]لَم[p[ِي]نَ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/001002.mp3"
+  },
+  {
+   "number": 3,
+   "globalNumber": 3,
+   "juz": 1,
+   "page": 1,
+   "text": "ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+   "translation": "Maha Pemurah lagi Maha Penyayang.",
+   "tajweed": "ٱ[l[ل]رَّحْمَ[n[ـٰ]نِ [h:3[ٱ][l[ل]رَّح[p[ِي]مِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/001003.mp3"
+  },
+  {
+   "number": 4,
+   "globalNumber": 4,
+   "juz": 1,
+   "page": 1,
+   "text": "مَٰلِكِ يَوْمِ ٱلدِّينِ",
+   "translation": "Yang menguasai di Hari Pembalasan.",
+   "tajweed": "مَ[n[ـٰ]لِكِ يَوْمِ [h:5[ٱ][l[ل]دّ[p[ِي]نِ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/001004.mp3"
+  },
+  {
+   "number": 5,
+   "globalNumber": 5,
+   "juz": 1,
+   "page": 1,
+   "text": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+   "translation": "Hanya Engkaulah yang kami sembah, dan hanya kepada Engkaulah kami meminta pertolongan.",
+   "tajweed": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَع[p[ِي]نُ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/001005.mp3"
+  },
+  {
+   "number": 6,
+   "globalNumber": 6,
+   "juz": 1,
+   "page": 1,
+   "text": "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
+   "translation": "Tunjukilah kami jalan yang lurus,",
+   "tajweed": "ٱهْدِنَا [h:6[ٱ][l[ل]صِّر[n[َٲ]طَ [h:7[ٱ]لْمُسْتَق[p[ِي]مَ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/001006.mp3"
+  },
+  {
+   "number": 7,
+   "globalNumber": 7,
+   "juz": 1,
+   "page": 1,
+   "text": "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
+   "translation": "(yaitu) Jalan orang-orang yang telah Engkau beri nikmat kepada mereka; bukan (jalan) mereka yang dimurkai dan bukan (pula jalan) mereka yang sesat.",
+   "tajweed": "صِر[n[َٲ]طَ [h:8[ٱ]لَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ [h:9[ٱ]لْمَغْضُوبِ عَلَيْهِمْ وَلَا [h:10[ٱ][l[ل]ضّ[m[َا]ٓلّ[p[ِي]نَ",
+   "audio": "https://everyayah.com/data/Alafasy_128kbps/001007.mp3"
+  }
+ ]
+}

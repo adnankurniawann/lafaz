@@ -27,8 +27,11 @@ const FIRST_CHAR: Record<string, string[]> = {
 const FATHAH = "\u064E";
 const SHADDA = "\u0651";
 const BASE_LETTER = /[\u0621-\u064A\u0671]/g;
+// Small Qur'anic signs (waqf marks, small high zero, small meem, ...) that a
+// beginner has not met yet.
+const SPECIAL_MARK = /[\u06D6-\u06ED]/;
 
-type Candidate = { text: string; audio: string; ref: string; surah: number; fathah: boolean; length: number; skeleton: string };
+type Candidate = { text: string; audio: string; ref: string; surah: number; fathah: boolean; length: number; skeleton: string; special: boolean };
 
 async function main() {
   const files = (await readdir(DATA_DIR)).filter((f) => /^\d{3}\.json$/.test(f));
@@ -46,6 +49,7 @@ async function main() {
           fathah: second === FATHAH,
           length: (w.text.match(BASE_LETTER) ?? []).length,
           skeleton: (w.text.match(BASE_LETTER) ?? []).join(""),
+          special: SPECIAL_MARK.test(w.text),
         });
       }
     }
@@ -53,8 +57,8 @@ async function main() {
 
   const rank = (c: Candidate) => {
     const familiar = FAMILIAR_SURAHS.indexOf(c.surah);
-    // Words carrying a waqf mark arrive as "word ۜ"; prefer the plain form.
-    return [c.fathah ? 0 : 1, Math.max(c.length, 3), c.text.includes(" ") ? 1 : 0, familiar === -1 ? 99 : familiar, c.surah];
+    // Prefer plain words: no special signs, and no waqf mark ("word ۜ").
+    return [c.fathah ? 0 : 1, c.special || c.text.includes(" ") ? 1 : 0, Math.max(c.length, 3), familiar === -1 ? 99 : familiar, c.surah];
   };
   const compare = (a: Candidate, b: Candidate) => {
     const ra = rank(a);

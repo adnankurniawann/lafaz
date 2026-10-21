@@ -72,15 +72,22 @@ Sisa yang belum bisa ditutup agen:
 - [ ] Ustadz: cek `data/content/harakat.json`, `data/content/reading.json`, dan cara baca latin suku kata (huruf tebal "o", tasydid dobel, mad tanpa sukun).
 - [ ] Rekaman Huruf kasrah/dhammah lewat Studio. Sampai ada, 9 huruf berkasrah belum punya contoh suara qari.
 
-## Blok 4: Level Tajwid
-- [ ] Level di kode: onboarding "Mau mulai dari mana?", pemilih Level di bar atas tab Belajar, tes naik Level dari ujian akhir Iqro dengan "tetap masuk" (ADR-0010).
-- [ ] Pemutar Potongan Ayat dari `timing` (FR-16).
-- [ ] Deteksi izhar dari Teks Utsmani, ditandai perlu cek ustadz.
-- [ ] Unit nun mati dan tanwin dengan 6 jenis soal.
-- [ ] Unit mim mati, qalqalah (sughra/kubra dari posisi, ditandai perlu cek), mad.
-- [ ] Badge Level Tajwid.
+## DONE — Blok 4: Level Tajwid
+Dikerjakan atas permintaan pemilik di chat (21 Okt 2026), karena belum ada blok yang dipindah ke ACTIVE.
 
-**Checkpoint:** satu lesson ikhfa dari kenali bunyi sampai ucapkan potongan berjalan dengan audio qari yang terpotong tepat.
+- [x] Level di kode (`LEVELS`, `level`, `levels` di store versi 3): onboarding "Mau mulai dari mana?" (Iqro, tes dulu, langsung Tajwid), pemilih Level di bar atas tab Belajar setelah ada lebih dari satu Level, kartu "Level berikutnya" di akhir path Iqro, dan tes naik Level `naik-tajwid` (baca 7 ayat Al-Fatihah) dengan saran dan tombol "Tetap masuk" kalau belum lulus (ADR-0010). Lulus Uji unit Al-Fatihah juga membuka Level Tajwid.
+- [x] Pemutar Potongan Ayat dari `timing` (FR-16): `playSpan` berhenti tepat di akhir kata (cek tiap 15 ms, bukan `timeupdate` yang telat sampai 250 ms), bisa diputar pelan 0,7x tanpa mengubah nada.
+- [x] `npm run build-tajweed-examples`: contoh 14 hukum dari 486 ayat ke `data/content/tajweed-examples.json`. Izhar halqi dan izhar syafawi dideteksi dari Teks Utsmani, qalqalah sughra/kubra dari posisinya. Semua hasil deteksi dan pemetaan yang belum yakin ditandai review.
+- [x] Bagian nun mati dan tanwin: satu unit per hukum (izhar, idgham bighunnah, idgham bilaghunnah, iqlab, ikhfa) dan unit ulasan, dengan 6 jenis soal: kenali bunyinya, dengar dan bandingkan, tebak dari Potongan Ayat, tebak dari suara (teks muncul setelah menjawab), cari di ayat, ucapkan potongan (Cek Suara per kata + Nilai Sendiri).
+- [x] Unit mim mati, qalqalah, dan mad, satu unit per bagian karena contohnya di juz 30 sedikit (idgham mimi 7, ikhfa syafawi 9, mad lazim 5).
+- [x] Badge Level Tajwid: Ahli nun mati & tanwin, Ahli mim mati, Ahli qalqalah, Ahli mad, Telinga tajwid (50 kali benar menebak dari suara).
+
+**Checkpoint:** unit ikhfa dari Kenali bunyinya sampai Ucapkan potongan berjalan di 375×812, Potongan Ayat terpotong tepat (112:4 kata 4–5: mulai 2,050 detik, berhenti 3,634 detik untuk target 3,630). `npm run lint`, `npx tsc --noEmit`, `npm run check`, dan `npm run build` bersih. ✅ 21 Okt 2026.
+
+Sisa yang belum bisa ditutup agen:
+- [ ] Ustadz: cek `data/content/tajweed-lessons.json` (penjelasan 14 hukum) dan contoh bertanda review di `data/content/tajweed-examples.json` (izhar, qalqalah sughra/kubra, mad thabi'i, mad wajib/jaiz, mad 'aridh).
+- [ ] Ucapkan potongan dengan Cek Suara belum diuji: model belum ada di mesin ini (`public/models/` tidak di-commit), jadi soal jatuh ke Nilai Sendiri. Uji setelah model dikonversi atau di-upload.
+- [ ] Pilihan "Hafalan" di "Mau mulai dari mana?" ditambahkan bersama Blok 5.
 
 ## Blok 5: Level Hafalan Juz Amma
 - [ ] Alur tikrar per ayat lalu menyambung, dan tes hafalan (FR-17).

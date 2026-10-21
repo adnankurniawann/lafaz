@@ -90,7 +90,7 @@ Grid 29 huruf dengan bar Penguasaan Huruf, kartu penjelasan (makhraj dan Contoh 
 - Huruf keluar dari koleksi setelah dijawab benar beberapa kali berturut-turut. Koleksi kosong memberi badge.
 
 ### FR-10 — Badge 🔧
-Sudah ada: semua badge Level Iqro (Kenal semua huruf, Lancar harakat, Ayat pertama, Bisa baca Al-Fatihah, Penakluk huruf bandel), plus Streak 7 hari dan Juara tantangan. Badge Tajwid dan Hafalan menyusul bersama levelnya.
+Sudah ada: semua badge Level Iqro (Kenal semua huruf, Lancar harakat, Ayat pertama, Bisa baca Al-Fatihah, Penakluk huruf bandel), semua badge Level Tajwid, plus Streak 7 hari dan Juara tantangan. Badge Hafalan menyusul bersama levelnya.
 
 
 | Level Iqro | Level Tajwid | Level Hafalan |
@@ -121,14 +121,15 @@ Model Tarteel ONNX di browser, diunduh otomatis di latar belakang setelah onboar
 ### FR-15 — Iqro Lanjutan ✅
 Harakat kasrah dan dhammah, tanwin, sukun, tasydid, mad dasar, bentuk huruf sambung. Latihan Ulang terjadwal gaya Leitner. Berakhir dengan Pelajar membaca Al-Fatihah.
 
-### FR-16 — Tajwid Lewat Dengar ⏳
+### FR-16 — Tajwid Lewat Dengar ✅
 - Pemutar Potongan Ayat dari audio ayat penuh memakai waktu tiap kata. Audio per kata tidak dipakai di sini karena hukum antar kata (ikhfa, idgham, iqlab) tidak terdengar.
 - Urutan unit: nun mati dan tanwin (izhar, idgham bighunnah, idgham bilaghunnah, iqlab, ikhfa), mim mati, qalqalah, mad.
 - Pola lesson per hukum: kenali bunyinya, dengar dan bandingkan, tebak dari Potongan Ayat, tebak dari suara (teks muncul setelah menjawab), cari di ayat, ucapkan potongan.
 - Izhar dideteksi otomatis dari Teks Utsmani dan ditandai perlu cek ustadz. Qalqalah sughra dan kubra dibedakan dari posisinya, juga ditandai perlu cek.
+- Mim mati, qalqalah, dan mad masing-masing satu unit, karena contohnya di juz 30 sedikit.
 
 ### FR-18 — Level, Tes Matrikulasi & Rank 🔧
-Sudah ada: Tes Matrikulasi di Iqro, Rank. Menyusul di Blok 4: pertanyaan "Mau mulai dari mana?", pemilih Level, tes naik Level.
+Sudah ada: Tes Matrikulasi di Iqro, Rank, pertanyaan "Mau mulai dari mana?" (Iqro, tes dulu, Tajwid), pemilih Level, tes naik Level ke Tajwid. Menyusul di Blok 5: pilihan Hafalan.
 - Onboarding: "Mau mulai dari mana?" (Iqro, Tajwid, Hafalan, atau tes dulu). Pilihan dipercaya tanpa tes (ADR-0010).
 - Tes Matrikulasi ≤15 soal, bertahap, menaruh Pelajar di Bagian. Materi sebelumnya dihitung dilewati: membuka lesson dan Peta Ayat, tanpa XP dan badge.
 - Setelah Iqro, Tajwid dan Hafalan sejajar. Naik memakai ujian akhir Level di bawahnya. Gagal tes hanya memberi saran, ada "tetap masuk". Turun bebas, progres per Level disimpan.

@@ -23,7 +23,7 @@ _Hindari_: setoran wajib, ujian guru
 ## Struktur Belajar
 
 **Level**:
-Tiga tahap besar Lafaz: **Level Iqro** (huruf sampai bisa membaca ayat), **Level Tajwid** (hukum bacaan lewat mendengar), **Level Hafalan** (juz amma). Setelah Iqro, Tajwid dan Hafalan sejajar. Naik Level lewat tes, turun bebas (ADR-0010). Belum ada di kode.
+Tiga tahap besar Lafaz: **Level Iqro** (huruf sampai bisa membaca ayat), **Level Tajwid** (hukum bacaan lewat mendengar), **Level Hafalan** (juz amma). Setelah Iqro, Tajwid dan Hafalan sejajar. Naik Level lewat tes, turun bebas (ADR-0010). Level Hafalan belum ada di kode.
 _Hindari_: tingkat, tahap, course
 
 **Bagian**:

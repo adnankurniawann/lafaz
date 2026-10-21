@@ -31,11 +31,14 @@ lafaz/
 │   └── content/
 │       ├── hijaiyah.json        # nama, transliterasi, makhraj tiap huruf
 │       ├── letter-examples.json # Contoh Kata per huruf (hasil script)
-│       └── tajweed-rules.json   # kode tajwid → nama hukum
+│       ├── tajweed-rules.json   # kode tajwid → nama hukum
+│       ├── tajweed-lessons.json # materi Level Tajwid: 14 hukum dalam 4 kelompok
+│       └── tajweed-examples.json # contoh tiap hukum per ayat, dengan rentang kata dan waktu (hasil script)
 ├── public/audio/huruf/     # Rekaman Huruf + manifest.json (masih kosong)
 ├── scripts/
 │   ├── fetch-quran.ts
-│   └── build-letter-examples.ts
+│   ├── build-letter-examples.ts
+│   └── build-tajweed-examples.ts
 └── src/
     ├── app/
     │   ├── (tabs)/         # Belajar (/), Huruf, Peta Ayat (/peta), Misi, Profil
@@ -44,13 +47,16 @@ lafaz/
     │   ├── studio/
     │   └── debug/tajwid/   # cek hasil parser tajwid per surah
     ├── components/
-    │   ├── lesson/         # LessonPlayer, Exercises (tiap jenis soal), LessonEnd
+    │   ├── lesson/         # LessonPlayer, Exercises (tiap jenis soal), TajweedExercises (soal Level Tajwid), LessonEnd
     │   ├── path/           # LearnPath, unitColors
     │   ├── screens/        # Onboarding, Letters, Profile, Quests, Studio
     │   └── *.tsx           # AppGate, TopBar, BottomNav, AudioButton, LetterSound, TajweedText, Mascot, Sheet
     └── lib/
-        ├── course.ts       # Bagian, unit, node path, aturan buka-kunci, Huruf Mirip
+        ├── course.ts       # Level, Bagian, unit, node path, aturan buka-kunci per Level, Huruf Mirip
         ├── exercises.ts    # tipe tiap jenis soal + penyusun soal per jenis lesson
+        ├── tajweed-exercises.ts # penyusun soal Level Tajwid
+        ├── tajweed-lessons.ts   # materi hukum Level Tajwid dari JSON
+        ├── clips.ts        # Potongan Ayat: contoh per hukum, sorotan, rentang audio
         ├── store.ts        # state game, persist ke localStorage
         ├── quests.ts       # Misi Harian
         ├── trouble.ts      # Huruf Bandel: masuk saat salah, keluar setelah benar beruntun
@@ -77,13 +83,15 @@ lafaz/
 2. `exercises.ts` menyusun soal dari `lessonKind` dan huruf lesson. Jenis soal: `intro`, `listen-pick`, `word-initial`, `sound-pick`, `name-pick`, `match`, `sequence`, `speak`. Yang dinilai app (`GRADED`): `listen-pick`, `word-initial`, `sound-pick`, `name-pick`, `sequence`.
 3. `LessonPlayer` memutar soal satu per satu, mengulang soal salah di akhir, lalu memanggil `store.completeLesson` dengan `LessonResult`.
 4. `LessonEnd` menampilkan rangkaian layar akhir dari `LessonSummary`: hasil, sorot huruf di ayat (hanya Uji unit pertama kali), badge baru, streak, Target Harian, Misi Harian.
-5. Id lesson khusus: `latihan` (Latihan Ulang), `taklukkan` (khusus Huruf Bandel), `tantangan-u1` dst. (Mode Tantangan, memakai soal Uji unit dengan 3 nyawa dan timer).
+5. Id lesson khusus: `latihan` (Latihan Ulang), `taklukkan` (khusus Huruf Bandel), `tantangan-u1` dst. (Mode Tantangan, memakai soal Uji unit dengan 3 nyawa dan timer), `matrikulasi` (Tes Matrikulasi), `naik-tajwid` (tes naik Level: soal Uji unit Al-Fatihah, tanpa XP).
+6. **Level.** Tiap `Section` punya `level` (`iqro` atau `tajwid`). Path tab Belajar hanya menampilkan Level yang dipilih, dan buka-kunci berjalan terpisah per Level. Level yang terbuka disimpan di store (`levels`).
+7. **Level Tajwid.** Unit t1–t5 satu hukum nun mati dan tanwin, t6 ulasan, t7 mim mati, t8 qalqalah, t9 mad. Lesson: Kenali bunyinya, Dengar dan bandingkan, peti, Tebak hukumnya (tidak ada di t1), Cari di ayat, Ucapkan potongan, Uji unit. Unit ulasan diawali Tebak dari suara. Jenis soal: `rule-intro`, `rule-compare`, `rule-from-text`, `rule-from-audio`, `rule-find`, `clip-speak`. Soal menyimpan id Potongan Ayat (`surah:ayat:indeks`), bukan teksnya. Tebak dari suara hanya memakai potongan yang tidak berisi hukum lain dari kelompok yang sama.
 
 ## 5. State & Penyimpanan
 
 | Data | Di mana | Catatan |
 |---|---|---|
-| Progres (onboarding, XP per hari, streak, Penguasaan Huruf, Huruf Bandel, badge, tantangan, lesson selesai, misi) | localStorage, zustand `persist` | Versi 2: hati dan gems dihapus lewat `migrate` (ADR-0004, 0006) |
+| Progres (onboarding, XP per hari, streak, Penguasaan Huruf, Huruf Bandel, badge, tantangan, lesson selesai, misi, Level) | localStorage, zustand `persist` | Versi 2: hati dan gems dihapus (ADR-0004, 0006). Versi 3: `level` dan `levels`, Tajwid terbuka kalau Uji unit Al-Fatihah sudah lulus |
 | Rekaman Huruf dari Studio | IndexedDB | Tidak pernah dikirim ke mana pun |
 | Rekaman Pelajar di soal ucapkan | Memori saja, hilang setelah lesson | `src/lib/use-recorder.ts` |
 | Model Cek Suara | Cache browser | ±102 MB (encoder 23 + decoder 79), diunduh di latar belakang setelah onboarding, jalan di Web Worker |
@@ -95,7 +103,7 @@ Halaman di `(tabs)` memakai `export const instant = false` supaya dirender di kl
 
 - `audio.ts` memegang satu elemen audio untuk semua bacaan (huruf, kata, ayat, rekaman Pelajar), jadi dua bacaan tidak pernah bertumpuk.
 - Efek suara memanggil `stopAudio()` dulu, sesuai aturan adab (`AGENTS.md` §2).
-- Rencana Potongan Ayat: putar audio ayat dari `verses.quran.com`, lompat ke `timing` kata pertama, berhenti di akhir kata terakhir.
+- Potongan Ayat (`playSpan`): audio ayat dari `verses.quran.com` diputar dari `timing` kata pertama dan berhenti di akhir kata terakhir ditambah 60 ms. Akhirnya dicek tiap 15 ms, karena `timeupdate` baru datang tiap ±250 ms dan bisa masuk ke kata berikutnya. Kalau hukumnya jatuh di ujung kata, potongan ikut memuat kata berikutnya (mad jaiz sebelum hamzah, misalnya). Bisa diputar pelan 0,7x.
 
 ## 7. Deploy
 
@@ -112,5 +120,6 @@ Belum dideploy. Rencananya Vercel: push repo ke GitHub, import di vercel.com. HT
 | `npm run check` | Cek kecil logika bercabang (`scripts/check.ts`) |
 | `npm run fetch-quran` | Unduh ulang data Qur'an ke `data/quran/` |
 | `npm run build-letter-examples` | Pilih ulang Contoh Kata dari `data/quran/` |
+| `npm run build-tajweed-examples` | Pilih ulang contoh Level Tajwid dari `data/quran/`: anotasi, deteksi izhar, dan qalqalah sughra/kubra (`data/content/tajweed-examples.json`) |
 | `npm run build-reading-data` | Pilih kata qari per suku kata, kata dan ayat Momen Bisa Baca per unit, dan kata bertanda khusus (`data/content/reading.json`) |
 | `uv run scripts/convert-speech-model.py` | Ubah model Tarteel ke ONNX untuk Cek Suara, hasil di `public/models/` (tidak di-commit) |

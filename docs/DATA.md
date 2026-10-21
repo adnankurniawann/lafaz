@@ -39,6 +39,8 @@ Audio tidak disimpan di repo. File `data/quran/*.json` hanya menyimpan URL, jadi
 - `data/quran/text-notes.txt`: catatan perbedaan teks yang ditemukan script.
 - `data/content/letter-examples.json`: Contoh Kata per huruf, dipilih oleh `scripts/build-letter-examples.ts`. Aturannya: kata diawali huruf itu, diutamakan yang berharakat fathah, tanpa tanda khusus mushaf, pendek, dan dari surah yang dikenal. Untuk ص ق ن juga disimpan rekaman qari menyebut nama hurufnya (38:1, 50:1, 68:1).
 
+- `data/content/tajweed-examples.json`: contoh 14 hukum Level Tajwid per ayat, dibuat oleh `scripts/build-tajweed-examples.ts`. Tiap ayat menyimpan rentang karakter tiap kata, waktu tiap kata, dan tanda hukum (`marks`). Hukum yang melewati tanda waqaf dilewati karena qari bisa berhenti di situ.
+
 **Nomor file audio per kata** mengikuti posisi kata (`www` = `position`). Jangan pakai `audio_url` dari API quran.com: di ayat yang punya tanda waqaf di tengah (misalnya ۖ di 78:38), nomornya meleset +1 per tanda, sehingga kata memutar suara kata sesudahnya dan kata terakhir 404. Ditemukan 20 Okt 2026, 73 kata di 15 ayat.
 
 **Penting soal audio per kata**: tiap kata dibaca terpisah, jadi hukum tajwid antar kata (ikhfa, idgham, iqlab) tidak terdengar. Untuk Potongan Ayat, audionya diputar dari audio ayat penuh, dipotong dengan `timing`.
@@ -80,6 +82,17 @@ Catatan soal mad: halaman panduan alquran.cloud memberi label Arab مد واجب
 
 **Hukum yang tidak ditandai di data**: izhar halqi dan izhar syafawi tidak punya kode. Di juz 30 tidak ada contoh idgham mutaqaribain, dan idgham mutajanisain hanya ada satu.
 
+### 3.1 Deteksi dan pembedaan untuk Level Tajwid
+
+Semua hasil di bawah ditandai `review` di `tajweed-examples.json` dan tampil dengan catatan "perlu cek ustadz".
+
+- **Izhar halqi**: nun bersukun (ن + ْ) atau tanwin, lalu huruf pertama yang dibaca sesudahnya adalah ء أ إ ؤ ئ ه ع ح غ خ di ayat yang sama. Yang dilompati: spasi, alif sesudah fathatan, alif maqsurah, dan tanda mim kecil. Tidak boleh ada tanda waqaf di antaranya. Tanwin di akhir ayat tidak dihitung karena dibaca waqaf. Hasil: 69 contoh, tidak ada yang bertabrakan dengan anotasi idgham, iqlab, atau ikhfa.
+- **Izhar syafawi**: mim bersukun (م + ْ), lalu huruf berikutnya bukan م dan bukan ب, di ayat yang sama tanpa tanda waqaf di antaranya. Hasil: 101 contoh.
+- **Qalqalah**: anotasi `q` di akhir ayat dianggap kubra (71), di tengah ayat sughra (121). Yang tepat sebelum tanda waqaf dilewati karena qari bisa berhenti atau tidak.
+- **Mad**: memakai anotasi `n`, `o`, `p`, `m` apa adanya. Yang bertanda **belum** di tabel atas (`n`, `o`, `p`) ditandai review.
+
+Teks Utsmani edisi ini memakai tanda mim kecil (ۢ, ۭ) sesudah tanwin dengan cara yang tidak konsisten dengan hukumnya (ۢ juga muncul sebelum huruf idgham), jadi deteksi tidak bergantung pada tanda itu.
+
 Batas segmen mengikuti data sumber apa adanya, termasuk kalau batasnya jatuh di antara huruf dan harakatnya (contoh di 112:4, dhammah pada kaf ikut ditandai idgham). Chromium dan Firefox tetap menyambung huruf Arab dengan benar walau warnanya berbeda per span.
 
 ## 4. Suara Huruf
@@ -103,5 +116,6 @@ Cara memasukkan rekaman ustadz untuk semua Pelajar:
 | Pengelompokan Huruf Mirip | `SIMILAR_GROUPS` di `src/lib/course.ts` |
 | Pemetaan kode tajwid bertanda **belum** (`n`, `p`, `o`, `q`, `g`) | §3 dan `data/content/tajweed-rules.json` |
 | Nama hukum dalam bahasa Indonesia | `data/content/tajweed-rules.json` |
-| Hasil deteksi izhar dan pembedaan qalqalah (rencana) | Ditandai `"review": "perlu cek ustadz"` |
+| Penjelasan 14 hukum Level Tajwid | `data/content/tajweed-lessons.json` |
+| Hasil deteksi izhar, pembedaan qalqalah sughra/kubra, dan contoh mad yang pemetaannya belum yakin | `review: true` di `data/content/tajweed-examples.json` |
 | Rekaman Huruf | Setelah dibuat lewat Studio |

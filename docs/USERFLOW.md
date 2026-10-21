@@ -6,10 +6,10 @@ Status: ✅ ada, ⏳ rencana.
 1. Pelajar baru diarahkan ke `/onboarding` oleh `AppGate`.
 2. Sambutan bersama maskot.
 3. **Tujuan**: kenapa ingin belajar.
-4. **Kemampuan awal**: dari belum kenal huruf sampai sudah bisa membaca. Nanti diganti "Mau mulai dari mana?" dengan opsi Tes Matrikulasi (ADR-0010). ⏳
+4. **Mau mulai dari mana?**: dari huruf pertama (Level Iqro), "belum tahu, tes aku dulu" (Tes Matrikulasi), atau langsung Tajwid. Pilihan dipercaya tanpa tes (ADR-0010). Pilihan Hafalan menyusul. ✅
 5. **Target Harian**: Santai, Biasa, Serius, Intens.
 6. **Talaqqi**: ajakan ramah untuk memperdengarkan bacaan ke guru atau teman yang lancar (ADR-0009). ✅
-7. Tombol "Mulai lesson pertama" langsung membuka lesson pertama unit 1.
+7. Tombol "Mulai lesson pertama" langsung membuka lesson pertama Level yang dipilih, atau Tes Matrikulasi.
 8. Model Cek Suara mulai diunduh di latar belakang (ADR-0008). ✅
 
 ## 2. Belajar di Path ✅
@@ -18,6 +18,20 @@ Status: ✅ ada, ⏳ rencana.
 3. Tombol Panduan di banner membuka kartu materi unit.
 4. Peti di tengah unit bisa dibuka setelah lesson sebelumnya selesai.
 5. Uji Unit (piala) di akhir unit.
+
+## 2a. Level ✅
+1. Bar atas tab Belajar menampilkan pemilih Level setelah ada lebih dari satu Level terbuka. Pindah Level kapan saja, progres tiap Level tetap.
+2. Di akhir path Iqro ada kartu "Level berikutnya". Kalau Tajwid belum terbuka: tombol "Tes naik level", yaitu membaca ketujuh ayat Al-Fatihah sendiri.
+3. Lulus: Level Tajwid terbuka. Belum lulus: saran untuk menyelesaikan Bagian Membaca dulu, dengan tombol "Tetap masuk" dan "Kembali ke Iqro".
+4. Lulus Uji unit Al-Fatihah di path juga membuka Level Tajwid, dengan layar "Level Tajwid terbuka!" di akhir lesson.
+
+## 2b. Lesson Level Tajwid ✅
+1. **Kenali bunyinya**: kartu hukum (huruf, cara baca, yang didengar), lalu 3 Potongan Ayat dengan bagian hukumnya diwarnai. Tiap potongan bisa diputar normal atau pelan.
+2. **Dengar dan bandingkan**: potongan A dan B diputar berurutan, pilih yang ada hukumnya. Teks muncul setelah menjawab.
+3. **Tebak dari Potongan Ayat**: satu bagian disorot dengan warna netral, pilih nama hukumnya.
+4. **Tebak dari suara**: hanya suara qari, pilih hukumnya. Teks muncul setelah menjawab.
+5. **Cari di ayat**: ketuk kata yang ada hukumnya. Kata mana pun yang tersentuh hukum itu dihitung benar.
+6. **Ucapkan potongan**: rekam, Cek Suara menandai kata (kalau model siap), lalu Nilai Sendiri untuk tajwidnya.
 
 ## 3. Satu Lesson ✅
 1. Atas: tombol keluar (dengan konfirmasi) dan progress bar.

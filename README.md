@@ -6,7 +6,7 @@ App belajar membaca Al-Qur'an lewat suara, satu soal per layar. Mulai dari menge
 
 Lafaz itu teman latihan. Kalau mau makin mantap, perdengarkan bacaanmu ke guru atau teman yang lancar.
 
-Status: prototype. Bagian Huruf Hijaiyah (9 unit, 44 lesson) sudah bisa dicoba. Data: Al-Fatihah dan juz 30.
+Status: prototype. Level Iqro (huruf hijaiyah sampai membaca Al-Fatihah) dan Level Tajwid (nun mati dan tanwin, mim mati, qalqalah, mad) sudah bisa dicoba. Data: Al-Fatihah dan juz 30.
 
 ## Menjalankan
 

@@ -51,7 +51,7 @@ Kode, nama file, dan variabel memakai bahasa Inggris. Teks tampilan dan docs mem
 | Glossary | Kode |
 |---|---|
 | Pelajar | `learner` |
-| Level | `level` (belum ada) |
+| Level | `level`, `LEVELS`, `LevelId` |
 | Bagian | `Section` |
 | Unit | `Unit` |
 | Lesson | `LessonNode`, `lessonKind` |
@@ -61,7 +61,7 @@ Kode, nama file, dan variabel memakai bahasa Inggris. Teks tampilan dan docs mem
 | Huruf Bandel | `troubleLetters` |
 | Contoh Kata | `letterExamples`, `WordExample` |
 | Rekaman Huruf | `recordings` |
-| Potongan Ayat | `clip` (belum ada) |
+| Potongan Ayat | `Clip` (`clips.ts`), `AudioSpan` |
 | Cek Suara | `speech`, `matchWords` |
 | Peta Ayat | `AyahMapScreen`, `ayahLetters` |
 | Momen Bisa Baca | soal `read`, `readAyahs` |
@@ -70,6 +70,8 @@ Kode, nama file, dan variabel memakai bahasa Inggris. Teks tampilan dan docs mem
 | Misi Harian | `quests` |
 | Peti | `ChestNode` |
 | Tes Matrikulasi | `placement`, `PLACEMENT_ID` |
+| Tes naik Level | `LEVEL_TEST_ID`, `levelTest` |
+| Hukum Tajwid (materi lesson) | `LessonRule`, `ruleGroups` (`tajweed-lessons.ts`) |
 | Rank | `rankFor` |
 | Latihan Ulang terjadwal | `reviews` (Leitner) |
 | Suku kata latihan | token di `syllables.ts` |

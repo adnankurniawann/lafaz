@@ -1,0 +1,179 @@
+{
+  "_note": "Materi Level Tajwid. Penjelasan hukum ditulis untuk pemula dan masih perlu dicek ustadz. Contoh ayat tidak ditulis di sini: dipilih otomatis oleh scripts/build-tajweed-examples.ts dari anotasi quran-tajweed, atau dideteksi dari Teks Utsmani (detected: true).",
+  "review": "perlu cek ustadz",
+  "groups": [
+    {
+      "id": "nun-mati",
+      "title": "Nun mati dan tanwin",
+      "intro": "Nun mati (نْ) dan tanwin dibaca berbeda tergantung huruf sesudahnya. Ada lima cara: izhar, idgham bighunnah, idgham bilaghunnah, iqlab, dan ikhfa.",
+      "rules": ["izhar-halqi", "idgham-bighunnah", "idgham-bilaghunnah", "iqlab", "ikhfa-haqiqi"]
+    },
+    {
+      "id": "mim-mati",
+      "title": "Mim mati",
+      "intro": "Mim mati (مْ) punya tiga cara baca, tergantung huruf sesudahnya: izhar syafawi, idgham mimi, dan ikhfa syafawi.",
+      "rules": ["izhar-syafawi", "idgham-mimi", "ikhfa-syafawi"]
+    },
+    {
+      "id": "qalqalah",
+      "title": "Qalqalah",
+      "intro": "Lima huruf qalqalah (ق ط ب ج د) yang mati dibaca memantul. Pantulannya ringan di tengah bacaan dan lebih kuat saat berhenti di akhir ayat.",
+      "rules": ["qalqalah-sughra", "qalqalah-kubra"]
+    },
+    {
+      "id": "mad",
+      "title": "Mad",
+      "intro": "Mad artinya memanjangkan bacaan. Panjangnya dihitung dalam harakat (ketukan), dan berbeda tergantung apa yang datang sesudah huruf mad.",
+      "rules": ["mad-thabii", "mad-wajib-jaiz", "mad-aridh", "mad-lazim"]
+    }
+  ],
+  "rules": [
+    {
+      "id": "izhar-halqi",
+      "name": "Izhar halqi",
+      "meaning": "jelas",
+      "letters": ["ء", "ه", "ع", "ح", "غ", "خ"],
+      "summary": "Nun mati atau tanwin bertemu salah satu huruf tenggorokan (halqi).",
+      "howTo": "Nun dibaca jelas lalu langsung pindah ke huruf berikutnya, tanpa dengung yang ditahan.",
+      "listenFor": "Bunyi \"n\" terdengar jelas dan pendek.",
+      "color": "#1c8fd6",
+      "detected": true
+    },
+    {
+      "id": "idgham-bighunnah",
+      "name": "Idgham bighunnah",
+      "meaning": "melebur dengan dengung",
+      "letters": ["ي", "ن", "م", "و"],
+      "summary": "Nun mati atau tanwin bertemu ي ن م و (يَنْمُو) di kata berikutnya.",
+      "howTo": "Nun dileburkan ke huruf sesudahnya, lalu didengungkan kira-kira dua harakat.",
+      "listenFor": "Bunyi \"n\" hilang, berganti dengung yang ditahan sebentar di huruf berikutnya.",
+      "color": "#13876a"
+    },
+    {
+      "id": "idgham-bilaghunnah",
+      "name": "Idgham bilaghunnah",
+      "meaning": "melebur tanpa dengung",
+      "letters": ["ل", "ر"],
+      "summary": "Nun mati atau tanwin bertemu ل atau ر di kata berikutnya.",
+      "howTo": "Nun dileburkan sepenuhnya ke lam atau ro, tanpa dengung.",
+      "listenFor": "Bunyi \"n\" hilang sama sekali, langsung terdengar lam atau ro yang ditekan.",
+      "color": "#5b8f00"
+    },
+    {
+      "id": "iqlab",
+      "name": "Iqlab",
+      "meaning": "mengganti",
+      "letters": ["ب"],
+      "summary": "Nun mati atau tanwin bertemu huruf ب.",
+      "howTo": "Bunyi nun diganti bunyi mim dengan bibir dirapatkan ringan, lalu didengungkan kira-kira dua harakat.",
+      "listenFor": "Bunyi \"n\" berubah jadi dengung \"m\" sebelum ba.",
+      "color": "#c2410c"
+    },
+    {
+      "id": "ikhfa-haqiqi",
+      "name": "Ikhfa haqiqi",
+      "meaning": "samar",
+      "letters": ["ت", "ث", "ج", "د", "ذ", "ز", "س", "ش", "ص", "ض", "ط", "ظ", "ف", "ق", "ك"],
+      "summary": "Nun mati atau tanwin bertemu salah satu dari 15 huruf sisanya.",
+      "howTo": "Nun dibaca samar, di antara jelas dan lebur, dengan dengung kira-kira dua harakat. Lidah bersiap ke huruf berikutnya.",
+      "listenFor": "Bunyi \"n\" tidak jelas, berganti dengung dari hidung sebelum huruf berikutnya.",
+      "color": "#8a00a3"
+    },
+    {
+      "id": "izhar-syafawi",
+      "name": "Izhar syafawi",
+      "meaning": "jelas di bibir",
+      "letters": [],
+      "summary": "Mim mati bertemu huruf selain م dan ب.",
+      "howTo": "Mim dibaca jelas: bibir dirapatkan sebentar lalu langsung pindah, tanpa dengung yang ditahan.",
+      "listenFor": "Bunyi \"m\" terdengar jelas dan pendek.",
+      "color": "#1c8fd6",
+      "detected": true
+    },
+    {
+      "id": "idgham-mimi",
+      "name": "Idgham mimi",
+      "meaning": "melebur ke mim",
+      "letters": ["م"],
+      "summary": "Mim mati bertemu huruf م.",
+      "howTo": "Dua mim dilebur jadi satu mim bertasydid, lalu didengungkan kira-kira dua harakat.",
+      "listenFor": "Satu \"m\" panjang yang berdengung.",
+      "color": "#4e9a00"
+    },
+    {
+      "id": "ikhfa-syafawi",
+      "name": "Ikhfa syafawi",
+      "meaning": "samar di bibir",
+      "letters": ["ب"],
+      "summary": "Mim mati bertemu huruf ب.",
+      "howTo": "Mim dibaca samar dengan bibir dirapatkan ringan dan dengung kira-kira dua harakat, lalu masuk ke ba.",
+      "listenFor": "Dengung \"m\" yang ditahan sebentar sebelum ba.",
+      "color": "#c2009f"
+    },
+    {
+      "id": "qalqalah-sughra",
+      "name": "Qalqalah sughra",
+      "meaning": "pantulan kecil",
+      "letters": ["ق", "ط", "ب", "ج", "د"],
+      "summary": "Huruf qalqalah yang mati di tengah bacaan.",
+      "howTo": "Huruf dibaca dengan pantulan ringan, seperti memantul sedikit, lalu lanjut ke huruf berikutnya.",
+      "listenFor": "Pantulan pendek di tengah kata.",
+      "color": "#d0021b",
+      "detected": true
+    },
+    {
+      "id": "qalqalah-kubra",
+      "name": "Qalqalah kubra",
+      "meaning": "pantulan besar",
+      "letters": ["ق", "ط", "ب", "ج", "د"],
+      "summary": "Huruf qalqalah di akhir ayat, saat bacaan berhenti di situ.",
+      "howTo": "Saat berhenti, huruf terakhir dimatikan lalu dipantulkan lebih jelas.",
+      "listenFor": "Pantulan yang terdengar jelas di ujung ayat.",
+      "color": "#9b1c1c",
+      "detected": true
+    },
+    {
+      "id": "mad-thabii",
+      "name": "Mad thabi'i",
+      "meaning": "panjang biasa",
+      "letters": ["ا", "و", "ي"],
+      "summary": "Huruf mad (alif sesudah fathah, wau mati sesudah dhammah, ya mati sesudah kasrah) tanpa hamzah atau sukun sesudahnya.",
+      "howTo": "Dipanjangkan dua harakat, kira-kira dua ketukan.",
+      "listenFor": "Panjang yang pendek dan rata.",
+      "color": "#3b6fe0",
+      "review": "Data sumber juga memakai tanda ini untuk mad shilah qashirah, contohnya di QS 112:4."
+    },
+    {
+      "id": "mad-wajib-jaiz",
+      "name": "Mad wajib / jaiz",
+      "meaning": "panjang karena hamzah",
+      "letters": ["ا", "و", "ي", "ء"],
+      "summary": "Huruf mad bertemu hamzah, di kata yang sama (wajib muttashil) atau di kata berikutnya (jaiz munfashil).",
+      "howTo": "Dipanjangkan empat sampai lima harakat.",
+      "listenFor": "Panjang yang jelas lebih lama dari mad thabi'i, sebelum bunyi hamzah.",
+      "color": "#2144c1",
+      "review": "Data sumber tidak membedakan wajib muttashil dan jaiz munfashil."
+    },
+    {
+      "id": "mad-aridh",
+      "name": "Mad 'aridh lissukun",
+      "meaning": "panjang karena berhenti",
+      "letters": ["ا", "و", "ي"],
+      "summary": "Huruf mad sebelum huruf terakhir ayat yang dimatikan karena berhenti.",
+      "howTo": "Boleh dipanjangkan dua, empat, atau enam harakat. Qari biasanya memilih yang panjang.",
+      "listenFor": "Panjang di ujung ayat, sebelum bacaan berhenti.",
+      "color": "#3341d6",
+      "review": "Data sumber juga memakai tanda ini untuk mad lin saat waqaf, contohnya di QS 106:1."
+    },
+    {
+      "id": "mad-lazim",
+      "name": "Mad lazim",
+      "meaning": "panjang yang tetap",
+      "letters": ["ا", "و", "ي"],
+      "summary": "Huruf mad bertemu huruf bertasydid atau sukun asli di kata yang sama.",
+      "howTo": "Selalu dipanjangkan enam harakat.",
+      "listenFor": "Panjang yang paling lama, lalu huruf yang ditekan.",
+      "color": "#1a237e"
+    }
+  ]
+}

@@ -10,6 +10,7 @@
     "check": "tsx scripts/check.ts",
     "fetch-quran": "NODE_OPTIONS=--network-family-autoselection-attempt-timeout=3000 tsx scripts/fetch-quran.ts",
     "build-reading-data": "tsx scripts/build-reading-data.ts",
+    "build-tajweed-examples": "tsx scripts/build-tajweed-examples.ts",
     "build-letter-examples": "NODE_OPTIONS=--network-family-autoselection-attempt-timeout=3000 tsx scripts/build-letter-examples.ts"
   },
   "dependencies": {

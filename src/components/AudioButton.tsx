@@ -1,16 +1,21 @@
 "use client";
 
 import { useEffect, useState, useSyncExternalStore } from "react";
-import { getPlayingSrc, onAudioChange, playAudio, playSequence } from "@/lib/audio";
+import { getPlayingSrc, onAudioChange, playAudio, playSequence, playSpan, playSpans, spanKey, type AudioSpan } from "@/lib/audio";
 import { useGame } from "@/lib/store";
 
-function usePlayingSrc() {
+export function usePlayingSrc() {
   return useSyncExternalStore(onAudioChange, getPlayingSrc, () => null);
 }
 
 type Props = {
   /** One URL, or several played one after another. */
-  src: string | string[];
+  src?: string | string[];
+  /** A Potongan Ayat, or several played one after another. */
+  span?: AudioSpan | AudioSpan[];
+  /** Playback speed for a span, e.g. 0.7 to listen slowly. */
+  rate?: number;
+  children?: React.ReactNode;
   size?: "sm" | "md" | "lg";
   autoPlay?: boolean;
   label?: string;
@@ -23,17 +28,25 @@ const SIZES = {
   lg: "size-24 text-4xl",
 };
 
-export function AudioButton({ src, size = "md", autoPlay = false, label = "Putar suara", className = "" }: Props) {
-  const srcs = Array.isArray(src) ? src : [src];
+export function AudioButton({ src, span, rate = 1, size = "md", autoPlay = false, label = "Putar suara", className = "", children }: Props) {
+  const srcs = src === undefined ? [] : Array.isArray(src) ? src : [src];
+  const spans = span === undefined ? [] : Array.isArray(span) ? span : [span];
+  const keys = spans.length ? spans.map(spanKey) : srcs;
   const playing = usePlayingSrc();
-  const isPlaying = playing !== null && srcs.includes(playing);
+  const isPlaying = playing !== null && keys.includes(playing);
   const questEvent = useGame((s) => s.questEvent);
-  const key = srcs.join("|");
+  const key = keys.join("|");
+
+  const start = () => {
+    if (spans.length === 1) void playSpan(spans[0], rate);
+    else if (spans.length > 1) void playSpans(spans);
+    else if (srcs.length === 1) void playAudio(srcs[0]);
+    else void playSequence(srcs);
+  };
 
   const play = () => {
     questEvent("listen");
-    if (srcs.length === 1) void playAudio(srcs[0]);
-    else void playSequence(srcs);
+    start();
   };
 
   // Play once when the exercise appears, like Duolingo's listening tasks.
@@ -43,8 +56,7 @@ export function AudioButton({ src, size = "md", autoPlay = false, label = "Putar
     const id = setTimeout(() => {
       setAutoPlayed(key);
       questEvent("listen");
-      if (srcs.length === 1) void playAudio(srcs[0]);
-      else void playSequence(srcs);
+      start();
     }, 300);
     return () => clearTimeout(id);
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -57,7 +69,7 @@ export function AudioButton({ src, size = "md", autoPlay = false, label = "Putar
       aria-label={label}
       className={`inline-flex shrink-0 items-center justify-center rounded-2xl border-b-4 border-blue-dark bg-blue text-white transition active:translate-y-[2px] active:border-b-2 ${SIZES[size]} ${isPlaying ? "brightness-110" : ""} ${className}`}
     >
-      <SpeakerIcon playing={isPlaying} />
+      {children ?? <SpeakerIcon playing={isPlaying} />}
     </button>
   );
 }

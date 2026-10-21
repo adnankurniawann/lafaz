@@ -7,13 +7,16 @@
 let current: HTMLAudioElement | null = null;
 let currentDone: (() => void) | null = null;
 const listeners = new Set<(playing: string | null) => void>();
-let playingSrc: string | null = null;
+let playingKey: string | null = null;
 // Bumped whenever playback is interrupted, so sequences know to stop.
 let generation = 0;
 
-function notify(src: string | null) {
-  playingSrc = src;
-  listeners.forEach((l) => l(src));
+/** Part of a longer recording, such as a Potongan Ayat cut from the full ayah audio. */
+export type AudioSpan = { src: string; startMs: number; endMs: number };
+
+function notify(key: string | null) {
+  playingKey = key;
+  listeners.forEach((l) => l(key));
 }
 
 export function onAudioChange(listener: (playing: string | null) => void) {
@@ -21,8 +24,13 @@ export function onAudioChange(listener: (playing: string | null) => void) {
   return () => listeners.delete(listener);
 }
 
+/** The src, or spanKey, of what is playing now. */
 export function getPlayingSrc() {
-  return playingSrc;
+  return playingKey;
+}
+
+export function spanKey(span: AudioSpan) {
+  return `${span.src}#${span.startMs}-${span.endMs}`;
 }
 
 export function stopAudio() {
@@ -37,42 +45,52 @@ export function stopAudio() {
   notify(null);
 }
 
-type PlayOptions = { startMs?: number; endMs?: number; rate?: number };
+type PlayOptions = { startMs?: number; endMs?: number; rate?: number; key?: string };
 
 /** Plays a URL and resolves when it ends, is stopped, or fails. */
-export function playAudio(src: string, { startMs, endMs, rate = 1 }: PlayOptions = {}): Promise<void> {
+export function playAudio(src: string, { startMs, endMs, rate = 1, key = src }: PlayOptions = {}): Promise<void> {
   stopAudio();
   const audio = new Audio(src);
-  audio.playbackRate = rate;
+  audio.preload = "auto";
   current = audio;
-  notify(src);
+  notify(key);
 
   return new Promise<void>((resolve) => {
     let finished = false;
+    let timer: ReturnType<typeof setInterval> | null = null;
     const finish = () => {
       if (finished) return;
       finished = true;
-      audio.removeEventListener("timeupdate", onTime);
+      if (timer) clearInterval(timer);
       if (current === audio) {
+        audio.pause();
         current = null;
         currentDone = null;
         notify(null);
       }
       resolve();
     };
-    const onTime = () => {
-      if (endMs !== undefined && audio.currentTime * 1000 >= endMs) {
-        audio.pause();
-        finish();
-      }
-    };
     currentDone = finish;
     audio.addEventListener("ended", finish);
     audio.addEventListener("error", finish);
-    audio.addEventListener("timeupdate", onTime);
-    if (startMs) audio.currentTime = startMs / 1000;
-    audio.play().catch(finish);
+
+    const start = () => {
+      if (finished) return;
+      if (startMs) audio.currentTime = startMs / 1000;
+      audio.playbackRate = rate;
+      // timeupdate fires only every ~250 ms, too late to stop between two words.
+      if (endMs !== undefined) timer = setInterval(() => audio.currentTime * 1000 >= endMs && finish(), 15);
+      audio.play().catch(finish);
+    };
+    // Seeking before the metadata is in can be ignored, so wait for it.
+    if (startMs && audio.readyState < HTMLMediaElement.HAVE_METADATA) audio.addEventListener("loadedmetadata", start, { once: true });
+    else start();
   });
+}
+
+/** Plays a Potongan Ayat. `rate` below 1 plays it slowly, at the same pitch. */
+export function playSpan(span: AudioSpan, rate = 1) {
+  return playAudio(span.src, { startMs: span.startMs, endMs: span.endMs, rate, key: spanKey(span) });
 }
 
 export async function playSequence(srcs: string[], gapMs = 250) {
@@ -81,6 +99,18 @@ export async function playSequence(srcs: string[], gapMs = 250) {
     const gen = generation;
     await playing;
     // Stop the chain if something else started or stopped playback.
+    if (generation !== gen) return;
+    await new Promise((r) => setTimeout(r, gapMs));
+    if (generation !== gen) return;
+  }
+}
+
+/** Plays spans one after another with a pause between, e.g. "A" then "B". */
+export async function playSpans(spans: AudioSpan[], gapMs = 700) {
+  for (const span of spans) {
+    const playing = playSpan(span);
+    const gen = generation;
+    await playing;
     if (generation !== gen) return;
     await new Promise((r) => setTimeout(r, gapMs));
     if (generation !== gen) return;

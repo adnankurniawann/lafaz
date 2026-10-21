@@ -1,4 +1,16 @@
-export type BadgeId = "kenal-huruf" | "lancar-harakat" | "ayat-pertama" | "bisa-fatihah" | "penakluk-bandel" | "streak-7" | "juara-tantangan";
+export type BadgeId =
+  | "kenal-huruf"
+  | "lancar-harakat"
+  | "ayat-pertama"
+  | "bisa-fatihah"
+  | "penakluk-bandel"
+  | "ahli-nun"
+  | "ahli-mim"
+  | "ahli-qalqalah"
+  | "ahli-mad"
+  | "telinga-tajwid"
+  | "streak-7"
+  | "juara-tantangan";
 
 export const BADGES: { id: BadgeId; icon: string; title: string; how: string }[] = [
   { id: "kenal-huruf", icon: "🔤", title: "Kenal semua huruf", how: "Kuasai 29 huruf hijaiyah" },
@@ -6,6 +18,11 @@ export const BADGES: { id: BadgeId; icon: string; title: string; how: string }[]
   { id: "ayat-pertama", icon: "🌙", title: "Ayat pertama", how: "Baca satu ayat utuh sendiri" },
   { id: "bisa-fatihah", icon: "📖", title: "Bisa baca Al-Fatihah", how: "Baca ketujuh ayat Al-Fatihah sendiri" },
   { id: "penakluk-bandel", icon: "🛡️", title: "Penakluk huruf bandel", how: "Kosongkan koleksi Huruf Bandel" },
+  { id: "ahli-nun", icon: "🎧", title: "Ahli nun mati & tanwin", how: "Selesaikan semua unit nun mati dan tanwin" },
+  { id: "ahli-mim", icon: "👄", title: "Ahli mim mati", how: "Selesaikan unit mim mati" },
+  { id: "ahli-qalqalah", icon: "🏀", title: "Ahli qalqalah", how: "Selesaikan unit qalqalah" },
+  { id: "ahli-mad", icon: "〰️", title: "Ahli mad", how: "Selesaikan unit mad" },
+  { id: "telinga-tajwid", icon: "👂", title: "Telinga tajwid", how: "Tebak 50 hukum dengan benar hanya dari suara" },
   { id: "streak-7", icon: "🔥", title: "Streak 7 hari", how: "Belajar 7 hari berturut-turut" },
   { id: "juara-tantangan", icon: "⚡", title: "Juara tantangan", how: "Selesaikan Mode Tantangan pertamamu" },
 ];

@@ -5,7 +5,7 @@ import { useState } from "react";
 import { AppGate } from "@/components/AppGate";
 import { Button } from "@/components/Button";
 import { Mascot, SpeechBubble } from "@/components/Mascot";
-import { PLACEMENT_ID } from "@/lib/course";
+import { PLACEMENT_ID, currentLessonId, type LevelId } from "@/lib/course";
 import { DAILY_GOALS, useGame } from "@/lib/store";
 
 const MOTIVATIONS = [
@@ -16,13 +16,15 @@ const MOTIVATIONS = [
   { id: "penasaran", icon: "🔍", label: "Penasaran dengan huruf Arab" },
 ];
 
-const EXPERIENCE = [
-  { id: "baru", label: "Saya baru mulai", note: "Belum kenal huruf hijaiyah" },
-  { id: "sebagian", label: "Kenal sebagian huruf", note: "Masih sering tertukar" },
-  { id: "lancar", label: "Sudah bisa membaca", note: "Ingin memperbaiki tajwid" },
+// "Mau mulai dari mana?" (ADR-0010). The choice is trusted without a test,
+// except "tes", which runs Tes Matrikulasi. Level Hafalan joins in Blok 5.
+const STARTS: { id: string; level: LevelId; experience: string; label: string; note: string }[] = [
+  { id: "iqro", level: "iqro", experience: "baru", label: "Dari huruf pertama", note: "Level Iqro: belum kenal huruf hijaiyah" },
+  { id: "tes", level: "iqro", experience: "sebagian", label: "Belum tahu, tes aku dulu", note: "Kenal sebagian huruf? Tes singkat, paling banyak 15 soal" },
+  { id: "tajwid", level: "tajwid", experience: "lancar", label: "Langsung Tajwid", note: "Level Tajwid: sudah bisa membaca, ingin memperbaiki bacaan" },
 ];
 
-const STEPS = ["sambutan", "tujuan", "kemampuan", "target", "talaqqi"] as const;
+const STEPS = ["sambutan", "tujuan", "mulai", "target", "talaqqi"] as const;
 
 export function OnboardingScreen() {
   return (
@@ -37,19 +39,18 @@ function Onboarding() {
   const finish = useGame((s) => s.finishOnboarding);
   const [step, setStep] = useState(0);
   const [motivation, setMotivation] = useState<string | null>(null);
-  const [experience, setExperience] = useState<string | null>(null);
+  const [start, setStart] = useState<(typeof STARTS)[number] | null>(null);
   const [goal, setGoal] = useState(20);
 
   const current = STEPS[step];
-  const canContinue = current === "tujuan" ? !!motivation : current === "kemampuan" ? !!experience : true;
+  const canContinue = current === "tujuan" ? !!motivation : current === "mulai" ? !!start : true;
+  const takesTest = start?.id === "tes";
 
   const next = () => {
     if (step + 1 < STEPS.length) return setStep(step + 1);
-    finish({ motivation: motivation!, experience: experience!, dailyGoal: goal });
-    // Learners who already know some letters take Tes Matrikulasi instead (ADR-0010).
-    router.replace(takesTest ? `/lesson/${PLACEMENT_ID}` : "/lesson/u1-1");
+    finish({ motivation: motivation!, experience: start!.experience, dailyGoal: goal, level: start!.level });
+    router.replace(takesTest ? `/lesson/${PLACEMENT_ID}` : `/lesson/${currentLessonId({}, start!.level)}`);
   };
-  const takesTest = experience === "sebagian" || experience === "lancar";
 
   return (
     <div className="flex min-h-dvh flex-col px-5 pb-6 pt-4">
@@ -85,19 +86,17 @@ function Onboarding() {
           </Question>
         )}
 
-        {current === "kemampuan" && (
-          <Question mascotText="Seberapa kenal kamu dengan huruf hijaiyah?">
-            {EXPERIENCE.map((e) => (
-              <Choice key={e.id} selected={experience === e.id} onClick={() => setExperience(e.id)}>
+        {current === "mulai" && (
+          <Question mascotText="Mau mulai dari mana?">
+            {STARTS.map((o) => (
+              <Choice key={o.id} selected={start?.id === o.id} onClick={() => setStart(o)}>
                 <span className="flex flex-col">
-                  {e.label}
-                  <span className="text-sm font-semibold text-muted">{e.note}</span>
+                  {o.label}
+                  <span className="text-sm font-semibold text-muted">{o.note}</span>
                 </span>
               </Choice>
             ))}
-            {(experience === "sebagian" || experience === "lancar") && (
-              <p className="text-sm text-muted">Nanti ada tes singkat, paling banyak 15 soal, supaya kamu bisa melompat ke bagian yang pas.</p>
-            )}
+            <p className="text-sm text-muted">Bisa pindah Level kapan saja nanti.</p>
           </Question>
         )}
 

@@ -1,11 +1,32 @@
 // The learning path: sections, units and the nodes on each unit's path.
 
 import type { MarkUnit } from "./syllables";
+import { getLessonRule, ruleGroups, type LessonRuleId } from "./tajweed-lessons";
+
+/** Level Iqro, then Level Tajwid. Level Hafalan comes in Blok 5 (ADR-0010). */
+export type LevelId = "iqro" | "tajwid";
+
+export const LEVELS: { id: LevelId; title: string; description: string }[] = [
+  { id: "iqro", title: "Iqro", description: "Dari huruf pertama sampai bisa membaca Al-Fatihah" },
+  { id: "tajwid", title: "Tajwid", description: "Hukum bacaan, belajar lewat mendengar Potongan Ayat" },
+];
 
 /** Units 11 to 15 cover the marks; finishing them earns Lancar harakat. */
 export const HARAKAT_UNITS = ["u11", "u12", "u13", "u14", "u15"];
 
-export type LessonKind = "kenalan" | "dengar" | "latihan" | "ucapkan" | "uji" | "bedakan";
+export type LessonKind =
+  | "kenalan"
+  | "dengar"
+  | "latihan"
+  | "ucapkan"
+  | "uji"
+  | "bedakan"
+  // Level Tajwid (FR-16); "ucapkan" and "uji" are shared.
+  | "kenali"
+  | "bandingkan"
+  | "tebak"
+  | "tebak-suara"
+  | "cari";
 
 /** What a Bagian Membaca unit teaches: a mark drill, the special signs, or Al-Fatihah itself. */
 export type ReadingTopic = MarkUnit | "khusus" | "fatihah";
@@ -23,6 +44,8 @@ export type LessonNode = {
   topic?: ReadingTopic;
   /** Al-Fatihah lessons: the ayah numbers to read. */
   ayahs?: number[];
+  /** Level Tajwid: the rules practised, the new ones first. */
+  rules?: LessonRuleId[];
 };
 
 export type ChestNode = { kind: "chest"; id: string; xp: number };
@@ -38,10 +61,12 @@ export type Unit = {
   letters: string[];
   /** Bagian Membaca units only. */
   topic?: ReadingTopic;
+  /** Level Tajwid units only: the rules taught. */
+  rules?: LessonRuleId[];
   nodes: PathNode[];
 };
 
-export type Section = { id: string; number: number; title: string; units: Unit[] };
+export type Section = { id: string; level: LevelId; number: number; title: string; units: Unit[] };
 
 export type UnitColor = "green" | "purple" | "blue" | "orange" | "pink" | "teal" | "red" | "gold";
 
@@ -187,19 +212,61 @@ const fatihahUnit: Unit = {
   ],
 };
 
+// Level Tajwid: one unit per rule of nun mati and tanwin, then a review that
+// mixes them. Mim mati, qalqalah and mad have few examples in juz 30, so each
+// is a single unit that teaches its rules together.
+const TAJWID_COLORS: UnitColor[] = ["teal", "blue", "green", "orange", "purple", "red", "pink", "gold", "blue"];
+
+function tajweedUnit(n: number, title: string, description: string, rules: LessonRuleId[], { guess = true, review = false } = {}): Unit {
+  const id = `t${n}`;
+  let k = 0;
+  const lesson = (title: string, lessonKind: LessonKind): LessonNode => ({ kind: "lesson", id: `${id}-${++k}`, title, lessonKind, letters: [], rules });
+  const nodes: PathNode[] = review
+    ? [lesson("Tebak dari suara", "tebak-suara"), lesson("Dengar dan bandingkan", "bandingkan")]
+    : [lesson("Kenali bunyinya", "kenali"), lesson("Dengar dan bandingkan", "bandingkan")];
+  nodes.push({ kind: "chest", id: `${id}-peti`, xp: 15 });
+  // A unit with one new rule and nothing before it has nothing to tell apart yet.
+  if (guess) nodes.push(lesson("Tebak hukumnya", "tebak"));
+  nodes.push(lesson("Cari di ayat", "cari"), lesson("Ucapkan potongan", "ucapkan"), lesson("Uji unit", "uji"));
+  return { id, number: n, title, description, color: TAJWID_COLORS[(n - 1) % TAJWID_COLORS.length], letters: [], rules, nodes };
+}
+
+const group = (id: string) => ruleGroups.find((g) => g.id === id)!;
+const nun = group("nun-mati");
+
+const tajweedSections: Section[] = [
+  {
+    id: nun.id,
+    level: "tajwid",
+    number: 1,
+    title: nun.title,
+    units: [
+      ...nun.rules.map((r, i) => tajweedUnit(i + 1, getLessonRule(r).name, getLessonRule(r).summary, [r], { guess: i > 0 })),
+      tajweedUnit(nun.rules.length + 1, "Ulasan nun mati dan tanwin", "Bedakan kelima hukum dari suaranya", nun.rules, { review: true }),
+    ],
+  },
+  ...["mim-mati", "qalqalah", "mad"].map((id, i): Section => {
+    const g = group(id);
+    return { id, level: "tajwid", number: i + 2, title: g.title, units: [tajweedUnit(nun.rules.length + 2 + i, g.title, g.intro, g.rules)] };
+  }),
+];
+
 export const sections: Section[] = [
   {
     id: "huruf",
+    level: "iqro",
     number: 1,
     title: "Huruf Hijaiyah",
     units: [...LETTER_UNITS.map((_, i) => letterUnit(i)), similarUnit],
   },
   {
     id: "membaca",
+    level: "iqro",
     number: 2,
     title: "Membaca",
     units: [...MARK_UNITS.map((_, i) => markUnit(i)), specialUnit, fatihahUnit],
   },
+  ...tajweedSections,
 ];
 
 export const units = sections.flatMap((s) => s.units);
@@ -211,6 +278,9 @@ export const PRACTICE_ID = "latihan";
 export const TROUBLE_ID = "taklukkan";
 /** Tes Matrikulasi for Level Iqro (ADR-0010). */
 export const PLACEMENT_ID = "matrikulasi";
+/** Tes naik Level to Tajwid: the final test of Level Iqro, reading Al-Fatihah (ADR-0010). */
+export const LEVEL_TEST_ID = "naik-tajwid";
+export const levelTest = (): LessonNode => unitTest(fatihahUnit);
 const CHALLENGE_PREFIX = "tantangan-";
 
 export const challengeId = (unit: Unit) => `${CHALLENGE_PREFIX}${unit.id}`;
@@ -238,6 +308,16 @@ export function unitOf(nodeId: string): Unit {
   return units.find((u) => u.nodes.some((n) => n.id === nodeId))!;
 }
 
+export function levelOf(unit: Unit): LevelId {
+  return sections.find((s) => s.units.includes(unit))!.level;
+}
+
+/** Rules taught in Level Tajwid up to and including the given unit. */
+export function rulesUpTo(unit: Unit): LessonRuleId[] {
+  const index = units.indexOf(unit);
+  return [...new Set(units.slice(0, index + 1).flatMap((u) => u.rules ?? []))];
+}
+
 /** Letters introduced up to and including the given unit. */
 export function lettersUpTo(unit: Unit): string[] {
   const index = units.indexOf(unit);
@@ -253,11 +333,14 @@ export function learnedLetters(done: Record<string, unknown>): string[] {
 
 export type NodeState = "done" | "current" | "locked";
 
-/** A node unlocks once every lesson before it is done. Chests never block. */
+/** A node unlocks once every lesson before it in its Level is done. Chests never block. */
 export function nodeStates(done: Record<string, unknown>, openedChests: string[]): Map<string, NodeState> {
   const states = new Map<string, NodeState>();
   let blocked = false;
+  // Every Level starts its own path; whether a Level is open is kept in the store.
+  const levelStarts = new Set(LEVELS.map((l) => sections.find((s) => s.level === l.id)!.units[0].nodes[0].id));
   for (const node of pathNodes) {
+    if (levelStarts.has(node.id)) blocked = false;
     if (node.kind === "chest") {
       states.set(node.id, openedChests.includes(node.id) ? "done" : blocked ? "locked" : "current");
       continue;
@@ -271,6 +354,6 @@ export function nodeStates(done: Record<string, unknown>, openedChests: string[]
   return states;
 }
 
-export function currentLessonId(done: Record<string, unknown>): string | undefined {
-  return lessonNodes.find((l) => !done[l.id])?.id;
+export function currentLessonId(done: Record<string, unknown>, level: LevelId = "iqro"): string | undefined {
+  return lessonNodes.find((l) => !done[l.id] && levelOf(unitOf(l.id)) === level)?.id;
 }

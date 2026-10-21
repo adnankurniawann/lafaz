@@ -16,7 +16,7 @@ import { rankFor } from "@/lib/rank";
 import { useGame, type LessonSummary } from "@/lib/store";
 
 type Summary = LessonSummary & { accuracy: number; seconds: number; perfect: boolean; challenge: boolean };
-type Step = "result" | "ayah" | "badges" | "rank" | "streak" | "goal" | "quests";
+type Step = "result" | "ayah" | "badges" | "level" | "rank" | "streak" | "goal" | "quests";
 
 const STREAK_MILESTONES = [7, 30, 100];
 
@@ -29,6 +29,7 @@ export function LessonEnd({ summary, backTo, ayah }: { summary: Summary; backTo:
     "result",
     ...(ayah ? (["ayah"] as const) : []),
     ...(summary.newBadges.length ? (["badges"] as const) : []),
+    ...(summary.newLevel ? (["level"] as const) : []),
     ...(rankUp ? (["rank"] as const) : []),
     ...(summary.streakIncreased ? (["streak"] as const) : []),
     "goal",
@@ -44,6 +45,7 @@ export function LessonEnd({ summary, backTo, ayah }: { summary: Summary; backTo:
         {current === "result" && <Result summary={summary} />}
         {current === "ayah" && ayah && <AyahStep ayah={ayah} />}
         {current === "badges" && <BadgeStep summary={summary} />}
+        {current === "level" && <LevelStep />}
         {current === "rank" && <RankStep totalXp={totalXp} />}
         {current === "streak" && <StreakStep summary={summary} />}
         {current === "goal" && <GoalStep summary={summary} />}
@@ -170,6 +172,17 @@ function BadgeStep({ summary }: { summary: Summary }) {
         })}
       </ul>
       <p className="mt-4 text-sm text-muted">Semua badge ada di Profil.</p>
+    </>
+  );
+}
+
+function LevelStep() {
+  return (
+    <>
+      <Confetti />
+      <Mascot mood="cheer" size={130} className="animate-pop-in" />
+      <h1 className="mt-4 text-2xl font-extrabold text-teal">Level Tajwid terbuka!</h1>
+      <p className="mt-2 text-muted">Kamu sudah bisa membaca Al-Fatihah sendiri. Sekarang belajar hukum bacaan lewat mendengar qari. Pilih Level di bar atas tab Belajar.</p>
     </>
   );
 }

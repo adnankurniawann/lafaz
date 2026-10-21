@@ -2,14 +2,14 @@ import { Suspense } from "react";
 import { AppGate } from "@/components/AppGate";
 import { LessonPlayer } from "@/components/lesson/LessonPlayer";
 import { bestAyah } from "@/lib/ayah-letters";
-import { PLACEMENT_ID, PRACTICE_ID, TROUBLE_ID, challengeId, challengeUnit, getLesson, lessonNodes, lettersUpTo, unitOf, unitTest, units } from "@/lib/course";
+import { LEVEL_TEST_ID, PLACEMENT_ID, PRACTICE_ID, TROUBLE_ID, challengeId, challengeUnit, getLesson, lessonNodes, lettersUpTo, levelTest, unitOf, unitTest, units } from "@/lib/course";
 import { allAyahLetters, getSurah } from "@/lib/quran";
 
 // Rendered on the client after saved progress is read; see the root layout.
 export const instant = false;
 
 export function generateStaticParams() {
-  return [...lessonNodes.map((l) => ({ id: l.id })), ...units.map((u) => ({ id: challengeId(u) })), ...[PRACTICE_ID, TROUBLE_ID, PLACEMENT_ID].map((id) => ({ id }))];
+  return [...lessonNodes.map((l) => ({ id: l.id })), ...units.map((u) => ({ id: challengeId(u) })), ...[PRACTICE_ID, TROUBLE_ID, PLACEMENT_ID, LEVEL_TEST_ID].map((id) => ({ id }))];
 }
 
 export default function LessonPage({ params }: PageProps<"/lesson/[id]">) {
@@ -24,12 +24,12 @@ export default function LessonPage({ params }: PageProps<"/lesson/[id]">) {
 
 async function LessonFromParams({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const lesson = getLesson(id) ?? (challengeUnit(id) && unitTest(challengeUnit(id)!));
+  const lesson = getLesson(id) ?? (challengeUnit(id) && unitTest(challengeUnit(id)!)) ?? (id === LEVEL_TEST_ID ? levelTest() : undefined);
   const unit = lesson && unitOf(lesson.id);
 
   // A letter unit's test carries an Al-Fatihah ayah for the letter highlight.
   const ayah =
-    unit?.letters.length && lesson === unitTest(unit) && !challengeUnit(id)
+    unit?.letters.length && lesson === unitTest(unit) && !challengeUnit(id) && id !== LEVEL_TEST_ID
       ? bestAyah((await allAyahLetters()).filter((a) => a.surah === 1), new Set(lettersUpTo(unit)), unit.letters)
       : undefined;
 

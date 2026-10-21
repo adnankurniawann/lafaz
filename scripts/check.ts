@@ -7,6 +7,10 @@ import { matchWords } from "../src/lib/speech-match";
 import { arabicOf, latinOf, variants } from "../src/lib/syllables";
 import { TROUBLE_EXIT, updateTrouble } from "../src/lib/trouble";
 import { LEVELS, wordLevel } from "./build-reading-data";
+import { detectIzharHalqi, detectIzharSyafawi, qalqalahKind } from "./build-tajweed-examples";
+import { getClip, getExampleAyah, isClean, marksIn } from "../src/lib/clips";
+import { lessonNodes, nodeStates, sections } from "../src/lib/course";
+import { buildLesson } from "../src/lib/exercises";
 
 // Huruf Bandel: a wrong answer adds the letter, TROUBLE_EXIT right answers in a row take it out.
 const wrong = (letter: string) => ({ letter, correct: false });
@@ -75,5 +79,44 @@ reviews = updateReviews(reviews, [{ key: "ba", correct: true }, { key: "ba", cor
 assert.deepEqual(reviews.ba, { box: 1, due: "2026-10-24" });
 assert.deepEqual(dueKeys(reviews, "2026-10-23"), []);
 assert.deepEqual(dueKeys(reviews, "2026-10-24"), ["ba"]);
+
+// Level Tajwid: izhar and qalqalah from the real Teks Utsmani (docs/DATA.md §3).
+const surah = (n: number) => JSON.parse(readFileSync(`data/quran/${String(n).padStart(3, "0")}.json`, "utf8"));
+const ayahText = (n: number, a: number) => surah(n).ayahs[a - 1].text as string;
+const spans = (text: string, found: { start: number; end: number }[]) => found.map((f) => text.slice(f.start, f.end));
+assert.deepEqual(spans(ayahText(1, 7), detectIzharHalqi(ayahText(1, 7))), ["نْع"], "nun sukun before 'ain in 1:7");
+assert.ok(spans(ayahText(112, 4), detectIzharHalqi(ayahText(112, 4))).includes("وًا أ"), "fathatan, silent alif, then hamzah in 112:4");
+assert.deepEqual(detectIzharHalqi(ayahText(112, 1)), [], "a tanwin at the end of the ayah is a stop, not izhar");
+assert.ok(spans(ayahText(1, 7), detectIzharSyafawi(ayahText(1, 7))).includes("مْ غ"), "mim sukun before ghain in 1:7");
+assert.equal(qalqalahKind(ayahText(112, 4), ayahText(112, 4).lastIndexOf("د") + 1), "qalqalah-kubra", "dal at the end of 112:4");
+assert.equal(qalqalahKind("يَقْ رَ", 3), "qalqalah-sughra");
+
+// Every Level starts its own path: the first Tajwid lesson is open with Iqro untouched.
+const states = nodeStates({}, []);
+assert.equal(states.get("u1-1"), "current");
+assert.equal(states.get("t1-1"), "current");
+assert.equal(states.get("t1-2"), "locked");
+
+// Tajwid questions: built for every lesson, and every answer holds up.
+for (const lesson of lessonNodes.filter((l) => l.rules)) {
+  for (let round = 0; round < 5; round++) {
+    const exercises = buildLesson(lesson, { hasSound: () => false });
+    assert.ok(exercises.length >= 6, `${lesson.id} has enough questions`);
+    for (const e of exercises) {
+      if (e.kind === "rule-compare") {
+        const [target, other] = [getClip(e.clips[e.answer]), getClip(e.clips[1 - e.answer])];
+        assert.equal(target.mark.rule, e.rule, `${lesson.id}: the answer clip has the rule`);
+        assert.ok(!marksIn(other).some((m) => m.rule === e.rule), `${lesson.id}: the other clip does not`);
+      }
+      if (e.kind === "rule-from-audio") assert.ok(isClean(getClip(e.clip)), `${lesson.id}: by ear only with one rule of the group`);
+      if (e.kind === "rule-from-text" || e.kind === "rule-from-audio") assert.ok(e.options.includes(getClip(e.clip).mark.rule) && e.options.length >= 2);
+      if (e.kind === "rule-find") {
+        assert.ok(e.answers.length > 0, `${lesson.id}: the ayah has the rule`);
+        assert.ok(e.answers.every((w) => w < getExampleAyah(e.ayah).words.length));
+      }
+    }
+  }
+}
+assert.ok(sections.filter((s) => s.level === "tajwid").length === 4, "nun mati, mim mati, qalqalah, mad");
 
 console.log("ok");

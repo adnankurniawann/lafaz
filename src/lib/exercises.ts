@@ -3,6 +3,8 @@ import { lettersUpTo, unitOf, type LessonNode } from "./course";
 import { examplesFor, getLetter, letters as allLetters, type WordExample } from "./letters";
 import { pick, shuffle } from "./random";
 import { DRILL_LETTERS, isLetter, latinOf, makeToken, variants, type MarkUnit } from "./syllables";
+import { buildTajweed } from "./tajweed-exercises";
+import type { LessonRuleId } from "./tajweed-lessons";
 
 // A "token" is a bare letter id (read with fathah) or a syllable from syllables.ts.
 // Letter exercises and Bagian Membaca drills share the same exercise kinds.
@@ -34,6 +36,19 @@ export type Exercise = (
   | { kind: "word-listen"; id: string; word: WordExample; options: WordExample[] }
   /** Momen Bisa Baca: read a real word or ayah yourself, then hear the qari. */
   | { kind: "read"; id: string; text: string; audio: string; ref: string; words: string[] }
+  // ---- Level Tajwid. Clips are Potongan Ayat ids from clips.ts. ----
+  /** Kenali bunyinya: what the rule is, with a few clips to hear. Not graded. */
+  | { kind: "rule-intro"; id: string; rule: LessonRuleId; clips: string[] }
+  /** Dengar dan bandingkan: two clips, pick the one with the rule. */
+  | { kind: "rule-compare"; id: string; rule: LessonRuleId; clips: [string, string]; answer: 0 | 1 }
+  /** Tebak dari Potongan Ayat: one part highlighted, pick the rule. */
+  | { kind: "rule-from-text"; id: string; clip: string; options: LessonRuleId[] }
+  /** Tebak dari suara: audio only, the text shows after answering. */
+  | { kind: "rule-from-audio"; id: string; clip: string; options: LessonRuleId[] }
+  /** Cari di ayat: tap a word that has the rule. Any word the rule touches counts. */
+  | { kind: "rule-find"; id: string; rule: LessonRuleId; ayah: string; answers: number[] }
+  /** Ucapkan potongan: record it, Cek Suara per word, Nilai Sendiri for the tajwid. */
+  | { kind: "clip-speak"; id: string; clip: string }
 ) & {
   /** Tes Matrikulasi: which stage the question belongs to. */
   stage?: number;
@@ -42,7 +57,20 @@ export type Exercise = (
 export type ExerciseKind = Exercise["kind"];
 
 /** Checked by the app. In Mode Tantangan these are timed and a wrong answer costs a life. */
-export const GRADED: ExerciseKind[] = ["listen-pick", "word-initial", "sound-pick", "name-pick", "sequence", "find-pick", "word-start", "word-listen"];
+export const GRADED: ExerciseKind[] = [
+  "listen-pick",
+  "word-initial",
+  "sound-pick",
+  "name-pick",
+  "sequence",
+  "find-pick",
+  "word-start",
+  "word-listen",
+  "rule-compare",
+  "rule-from-text",
+  "rule-from-audio",
+  "rule-find",
+];
 
 export type FatihahAyah = { number: number; text: string; audio: string; words: { text: string; audio: string }[] };
 
@@ -142,6 +170,7 @@ function mixed(focus: string[], pool: string[], ctx: BuildContext, count: number
 }
 
 export function buildLesson(lesson: LessonNode, ctx: BuildContext): Exercise[] {
+  if (lesson.rules) return buildTajweed(lesson);
   if (lesson.topic) return buildReading(lesson, ctx);
   const unit = unitOf(lesson.id);
   const focus = shuffle(lesson.letters);
@@ -176,7 +205,8 @@ export function buildLesson(lesson: LessonNode, ctx: BuildContext): Exercise[] {
     }
     case "uji":
       return shuffle([...mixed(shuffle(lesson.letters), pool, ctx, 9), sequence(pool, focus), sequence(pool, focus), match(focus)]).slice(0, 12);
-    case "bedakan": {
+    case "bedakan":
+    default: {
       // Options come only from inside each group of look-alikes or sound-alikes.
       const out: Exercise[] = [];
       for (const group of shuffle(lesson.groups ?? [])) {

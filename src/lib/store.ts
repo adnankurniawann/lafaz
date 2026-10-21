@@ -5,13 +5,16 @@ import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import { addDays, dayKey, daysBetween, weekKey } from "./dates";
 import type { BadgeId } from "./badges";
-import { HARAKAT_UNITS, lessonNodes, pathNodes, unitOf } from "./course";
+import { HARAKAT_UNITS, levelTest, lessonNodes, pathNodes, sections, unitOf, type LevelId } from "./course";
 import { letters } from "./letters";
 import { questsForDay, type Quest, type QuestKind } from "./quests";
 import { updateReviews, type Reviews } from "./review";
 import { updateTrouble, type TroubleLetters } from "./trouble";
 
 const FATIHAH_AYAHS = Array.from({ length: 7 }, (_, i) => `1:${i + 1}`);
+
+/** Correct "tebak dari suara" answers for the Telinga tajwid badge. */
+export const EAR_BADGE = 50;
 
 /** Mastery at which a letter counts as dikuasai. */
 export const MASTERED = 0.8;
@@ -44,6 +47,8 @@ export type LessonResult = {
   readAyahs: string[];
   /** Unit id when this was a passed Mode Tantangan. */
   challenge?: string;
+  /** Rules guessed right from the qari's voice alone. */
+  earRight?: number;
 };
 
 export type LessonSummary = {
@@ -59,6 +64,8 @@ export type LessonSummary = {
   troubleAdded: string[];
   troubleCleared: string[];
   newBadges: BadgeId[];
+  /** A Level that opened with this lesson. */
+  newLevel?: LevelId;
 };
 
 type GameState = {
@@ -83,9 +90,15 @@ type GameState = {
   /** Units whose Mode Tantangan has been passed. */
   challenges: string[];
   quests: { day: string; items: Quest[] } | null;
-  stats: { lessons: number; perfectLessons: number; bestCombo: number; recordings: number };
+  stats: { lessons: number; perfectLessons: number; bestCombo: number; recordings: number; earRight: number };
+  /** The Level shown on the Belajar tab. */
+  level: LevelId;
+  /** Levels the learner has opened. Once open, a Level stays open (ADR-0010). */
+  levels: LevelId[];
 
-  finishOnboarding: (input: { motivation: string; experience: string; dailyGoal: number }) => void;
+  finishOnboarding: (input: { motivation: string; experience: string; dailyGoal: number; level?: LevelId }) => void;
+  setLevel: (level: LevelId) => void;
+  openLevel: (level: LevelId) => void;
   setDailyGoal: (xp: number) => void;
   setSoundEffects: (on: boolean) => void;
   completeLesson: (result: LessonResult) => LessonSummary;
@@ -116,7 +129,9 @@ const initialState = {
   badges: {},
   challenges: [],
   quests: null,
-  stats: { lessons: 0, perfectLessons: 0, bestCombo: 0, recordings: 0 },
+  stats: { lessons: 0, perfectLessons: 0, bestCombo: 0, recordings: 0, earRight: 0 },
+  level: "iqro" as LevelId,
+  levels: ["iqro"] as LevelId[],
 };
 
 /** Streak as shown today. A missed day breaks it unless freezes cover the gap. */
@@ -148,8 +163,13 @@ export const useGame = create<GameState>()(
     (set, get) => ({
       ...initialState,
 
-      finishOnboarding: ({ motivation, experience, dailyGoal }) =>
-        set({ onboarded: true, motivation, experience, dailyGoal }),
+      // "Mau mulai dari mana?" is trusted without a test (ADR-0010).
+      finishOnboarding: ({ motivation, experience, dailyGoal, level = "iqro" }) =>
+        set({ onboarded: true, motivation, experience, dailyGoal, level, levels: level === "iqro" ? ["iqro"] : ["iqro", level] }),
+
+      setLevel: (level) => set((s) => (s.levels.includes(level) ? { level } : {})),
+
+      openLevel: (level) => set((s) => ({ level, levels: s.levels.includes(level) ? s.levels : [...s.levels, level] })),
 
       setDailyGoal: (xp) => set({ dailyGoal: xp }),
 
@@ -202,8 +222,13 @@ export const useGame = create<GameState>()(
               },
             };
 
+        // Finishing the last test of Level Iqro opens Level Tajwid.
+        const newLevel = !result.practice && result.lessonId === levelTest().id && !s.levels.includes("tajwid") ? "tajwid" : undefined;
+        const earRight = s.stats.earRight + (result.earRight ?? 0);
+
         // Badges count only lessons actually played, never ones skipped by Tes Matrikulasi.
         const played = (unitId: string) => lessonNodes.filter((l) => unitOf(l.id).id === unitId).every((l) => (lessons[l.id]?.times ?? 0) > 0);
+        const sectionPlayed = (id: string) => sections.find((x) => x.id === id)!.units.every((u) => played(u.id));
         const earned: BadgeId[] = [];
         if (letters.every((l) => (mastery[l.id] ?? 0) >= MASTERED)) earned.push("kenal-huruf");
         if (HARAKAT_UNITS.every(played)) earned.push("lancar-harakat");
@@ -212,6 +237,11 @@ export const useGame = create<GameState>()(
         if (trouble.cleared.length && !Object.keys(trouble.trouble).length) earned.push("penakluk-bandel");
         if (count >= 7) earned.push("streak-7");
         if (challenges.length) earned.push("juara-tantangan");
+        if (sectionPlayed("nun-mati")) earned.push("ahli-nun");
+        if (sectionPlayed("mim-mati")) earned.push("ahli-mim");
+        if (sectionPlayed("qalqalah")) earned.push("ahli-qalqalah");
+        if (sectionPlayed("mad")) earned.push("ahli-mad");
+        if (earRight >= EAR_BADGE) earned.push("telinga-tajwid");
         const newBadges = earned.filter((b) => !s.badges[b]);
 
         // Quests
@@ -233,8 +263,10 @@ export const useGame = create<GameState>()(
           challenges,
           lessons,
           quests: { day: today, items },
+          ...(newLevel ? { levels: [...s.levels, newLevel] } : {}),
           stats: {
             ...s.stats,
+            earRight,
             lessons: s.stats.lessons + 1,
             perfectLessons: s.stats.perfectLessons + (result.perfect ? 1 : 0),
             bestCombo: Math.max(s.stats.bestCombo, result.maxCombo),
@@ -254,6 +286,7 @@ export const useGame = create<GameState>()(
           troubleAdded: trouble.added,
           troubleCleared: trouble.cleared,
           newBadges,
+          newLevel,
         };
       },
 
@@ -306,14 +339,21 @@ export const useGame = create<GameState>()(
     }),
     {
       name: "lafaz-game",
-      version: 2,
-      // v2 drops hearts and gems (ADR-0004, 0006); today's quests are rolled again with XP rewards.
+      version: 3,
       migrate: (persisted, version) => {
         const state = { ...(persisted as Record<string, unknown>) };
+        // v2 drops hearts and gems (ADR-0004, 0006); today's quests are rolled again with XP rewards.
         if (version < 2) {
           delete state.hearts;
           delete state.gems;
           state.quests = null;
+        }
+        // v3 adds Levels. Whoever already passed the last Iqro test has Tajwid open.
+        if (version < 3) {
+          const lessons = (state.lessons ?? {}) as Record<string, unknown>;
+          state.level = "iqro";
+          state.levels = lessons[levelTest().id] ? ["iqro", "tajwid"] : ["iqro"];
+          state.stats = { earRight: 0, ...(state.stats as object) };
         }
         return state as GameState;
       },

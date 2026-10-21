@@ -8,10 +8,13 @@ import { ChestIcon, CheckIcon, BoltIcon, HeartIcon, LockIcon, StarIcon, TrophyIc
 import { LetterGuide } from "@/components/LetterGuide";
 import { Mascot } from "@/components/Mascot";
 import { Dialog, Sheet } from "@/components/Sheet";
-import { PLACEMENT_ID, challengeId, nodeStates, sections, unitDone, type ChestNode, type NodeState, type PathNode, type Unit } from "@/lib/course";
+import { AudioButton } from "@/components/AudioButton";
+import { clipParts, clipSpan, clipsFor } from "@/lib/clips";
+import { LEVEL_TEST_ID, PLACEMENT_ID, challengeId, nodeStates, sections, unitDone, type ChestNode, type NodeState, type PathNode, type Unit } from "@/lib/course";
 import { getLetter } from "@/lib/letters";
 import { sfx } from "@/lib/sfx";
 import { useGame } from "@/lib/store";
+import { getLessonRule, groupOf, tajweedLessonsReview, type LessonRuleId } from "@/lib/tajweed-lessons";
 import { UNIT_COLORS } from "./unitColors";
 
 const MARKS = harakat.marks as { id: string; explain: string }[];
@@ -28,17 +31,22 @@ export function LearnPath() {
   const [chest, setChest] = useState<ChestNode | null>(null);
   const [challenge, setChallenge] = useState<Unit | null>(null);
   const challenges = useGame((s) => s.challenges);
+  const levels = useGame((s) => s.levels);
+  const setLevel = useGame((s) => s.setLevel);
+  const level = useGame((s) => (s.levels.includes(s.level) ? s.level : "iqro"));
   const currentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     currentRef.current?.scrollIntoView({ block: "center" });
-  }, []);
+  }, [level]);
 
-  const currentLesson = [...states].find(([id, s]) => s === "current" && !id.endsWith("-peti"))?.[0];
+  const levelSections = sections.filter((s) => s.level === level);
+  const levelNodes = new Set(levelSections.flatMap((s) => s.units.flatMap((u) => u.nodes.map((n) => n.id))));
+  const currentLesson = [...states].find(([id, s]) => s === "current" && levelNodes.has(id) && !id.endsWith("-peti"))?.[0];
 
   return (
     <div className="pb-10">
-      {sections.map((section) => (
+      {levelSections.map((section) => (
         <section key={section.id}>
           <p className="px-4 pt-4 text-center text-xs font-extrabold uppercase tracking-widest text-muted">
             Bagian {section.number} · {section.title}
@@ -96,18 +104,41 @@ export function LearnPath() {
         </section>
       ))}
 
-      <p className="px-6 text-center text-sm text-muted">Bagian Tajwid lewat dengar menyusul di fase berikutnya.</p>
+      {level === "iqro" && (
+        <div className="mx-4 mt-2 rounded-2xl border-2 border-teal/40 bg-teal/5 p-4 text-center">
+          <p className="text-xs font-extrabold uppercase tracking-widest text-muted">Level berikutnya</p>
+          <p className="mt-1 text-lg font-extrabold">Level Tajwid</p>
+          {levels.includes("tajwid") ? (
+            <Button color="blue" className="mt-3" onClick={() => setLevel("tajwid")}>
+              Buka Level Tajwid
+            </Button>
+          ) : (
+            <>
+              <p className="mt-1 text-sm text-muted">Terbuka setelah Al-Fatihah selesai. Sudah bisa membaca? Coba tes naik level: baca Al-Fatihah sendiri.</p>
+              <ButtonLink href={`/lesson/${LEVEL_TEST_ID}`} color="blue" className="mt-3">
+                Tes naik level
+              </ButtonLink>
+            </>
+          )}
+        </div>
+      )}
 
       {guide && (
         <Sheet title={`Panduan Unit ${guide.number}`} onClose={() => setGuide(null)}>
-          <p className="mb-3 text-sm text-muted">{guide.description}. Baca dari kanan ke kiri.</p>
-          {guide.topic && <p className="rounded-2xl border-2 border-line p-4 leading-relaxed">{MARKS.find((m) => m.id === guide.topic)?.explain ?? "Baca ayat demi ayat. Dengarkan qari, lalu baca sendiri dan rekam."}</p>}
-          <div className="space-y-3">
-            {(guide.number === 9 ? [] : guide.letters).map((id) => (
-              <LetterGuide key={id} id={id} />
-            ))}
-            {guide.number === 9 && <SimilarGuide />}
-          </div>
+          {guide.rules ? (
+            <TajweedGuide rules={guide.rules} />
+          ) : (
+            <>
+              <p className="mb-3 text-sm text-muted">{guide.description}. Baca dari kanan ke kiri.</p>
+              {guide.topic && <p className="rounded-2xl border-2 border-line p-4 leading-relaxed">{MARKS.find((m) => m.id === guide.topic)?.explain ?? "Baca ayat demi ayat. Dengarkan qari, lalu baca sendiri dan rekam."}</p>}
+              <div className="space-y-3">
+                {(guide.id === "u9" ? [] : guide.letters).map((id) => (
+                  <LetterGuide key={id} id={id} />
+                ))}
+                {guide.id === "u9" && <SimilarGuide />}
+              </div>
+            </>
+          )}
         </Sheet>
       )}
 
@@ -124,7 +155,7 @@ function UnitBanner({ unit, onGuide }: { unit: Unit; onGuide: () => void }) {
       <div>
         <p className="text-xs font-extrabold uppercase tracking-wider opacity-80">Unit {unit.number}</p>
         <p className="text-lg font-extrabold leading-tight">{unit.title}</p>
-        {unit.number < 9 && (
+        {unit.letters.length > 0 && unit.id !== "u9" && (
           <p className="arabic-big mt-1 text-3xl leading-normal">{unit.letters.map((l) => getLetter(l).fathah).join("  ")}</p>
         )}
       </div>
@@ -271,6 +302,43 @@ function SimilarGuide() {
           </li>
         ))}
       </ul>
+    </div>
+  );
+}
+
+/** Unit guide for Level Tajwid: each rule in a few lines, with one clip of the qari. */
+function TajweedGuide({ rules }: { rules: LessonRuleId[] }) {
+  const group = groupOf(rules[0]);
+  return (
+    <div className="space-y-3">
+      <p className="text-sm text-muted">{group.intro}</p>
+      {rules.map((id) => {
+        const rule = getLessonRule(id);
+        const clip = clipsFor(id)[0];
+        return (
+          <div key={id} className="rounded-2xl border-2 border-line p-4 text-sm">
+            <p className="text-lg font-extrabold" style={{ color: rule.color }}>
+              {rule.name} <span className="text-sm font-semibold text-muted">· {rule.meaning}</span>
+            </p>
+            <p className="mt-1">{rule.summary}</p>
+            <p className="mt-1 text-muted">{rule.howTo}</p>
+            {clip && (
+              <div className="mt-2 flex items-center gap-3 rounded-xl bg-[#f7f7f7] px-3">
+                <AudioButton span={clipSpan(clip)} size="sm" label={`Dengar contoh ${rule.name}`} />
+                <p dir="rtl" lang="ar" className="arabic flex-1 text-2xl">
+                  {clipParts(clip).map((p, i) => (
+                    <span key={i} style={p.rule ? { color: rule.color } : undefined} className={p.rule ? "font-bold" : ""}>
+                      {p.text}
+                    </span>
+                  ))}
+                </p>
+              </div>
+            )}
+            {rule.review && <p className="mt-2 text-[11px] text-amber-700">{rule.review}</p>}
+          </div>
+        );
+      })}
+      <p className="text-[11px] text-amber-700">Materi ini {tajweedLessonsReview}.</p>
     </div>
   );
 }

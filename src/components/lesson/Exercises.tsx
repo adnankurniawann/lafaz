@@ -9,6 +9,7 @@ import { MicIcon } from "@/components/icons";
 import { LetterSound, useHasLetterSound } from "@/components/LetterSound";
 import { ShareCardButton } from "@/components/ShareCardButton";
 import { playAudio } from "@/lib/audio";
+import { ayahWords, getClip, getExampleAyah } from "@/lib/clips";
 import type { Exercise } from "@/lib/exercises";
 import { examplesFor, getLetter, muqattaahFor, refLabel, type WordExample } from "@/lib/letters";
 import { shuffle } from "@/lib/random";
@@ -18,6 +19,7 @@ import { transcribe, useSpeech } from "@/lib/speech";
 import { matchWords } from "@/lib/speech-match";
 import { useGame } from "@/lib/store";
 import { arabicOf, isLetter, latinOf, singleHarakat } from "@/lib/syllables";
+import { getLessonRule } from "@/lib/tajweed-lessons";
 import { useRecorder } from "@/lib/use-recorder";
 
 export type ChoiceState = { selected: string | null; checked: boolean };
@@ -54,11 +56,22 @@ export function correctValue(e: Exercise): string | null {
       return e.letter;
     case "word-listen":
       return e.word.ref;
+    case "rule-compare":
+      return String(e.answer);
+    case "rule-from-text":
+    case "rule-from-audio":
+      return getClip(e.clip).mark.rule;
     case "sequence":
       return String(e.options.findIndex((o) => o.join() === e.letters.join()));
     default:
       return null;
   }
+}
+
+/** Whether the selected value is right. "Cari di ayat" accepts any word that has the rule. */
+export function isCorrect(e: Exercise, selected: string | null): boolean {
+  if (e.kind === "rule-find") return selected !== null && e.answers.includes(Number(selected));
+  return selected === correctValue(e);
 }
 
 /** Shown in the red feedback panel after a wrong answer. */
@@ -81,16 +94,25 @@ export function correctAnswerText(e: Exercise) {
     }
     case "sequence":
       return { arabic: e.letters.map(arabicOf).join(" "), text: `dibaca "${e.letters.map(latinOf).join(" ")}"` };
+    case "rule-compare":
+      return { arabic: "", text: `Potongan ${e.answer === 0 ? "A" : "B"}` };
+    case "rule-from-text":
+    case "rule-from-audio":
+      return { arabic: "", text: getLessonRule(getClip(e.clip).mark.rule).name };
+    case "rule-find": {
+      const words = ayahWords(getExampleAyah(e.ayah));
+      return { arabic: e.answers.map((w) => words[w]).join(" · "), text: "" };
+    }
     default:
       return null;
   }
 }
 
-function Prompt({ children }: { children: React.ReactNode }) {
+export function Prompt({ children }: { children: React.ReactNode }) {
   return <h2 className="text-2xl font-extrabold leading-tight">{children}</h2>;
 }
 
-function optionClass(value: string, state: ChoiceState, correct: string | null) {
+export function optionClass(value: string, state: ChoiceState, correct: string | null) {
   const base = "rounded-2xl border-2 border-b-4 transition active:translate-y-[2px]";
   if (state.checked && value === correct) return `${base} border-green bg-green/10 text-green-dark`;
   if (state.checked && value === state.selected) return `${base} border-red bg-red/10 text-red-dark animate-shake`;

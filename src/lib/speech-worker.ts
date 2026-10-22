@@ -29,7 +29,9 @@ self.onmessage = async (e: MessageEvent<{ type: "load" } | { type: "transcribe";
       await load();
       postMessage({ type: "ready" });
     } else {
-      const output = await (await load())(msg.audio);
+      // Whisper hears 30 seconds at a time; a longer Tes hafalan recitation goes in overlapping pieces.
+      const long = msg.audio.length > 30 * 16000 ? { chunk_length_s: 30, stride_length_s: 5 } : {};
+      const output = await (await load())(msg.audio, long);
       postMessage({ type: "result", id: msg.id, text: output.text });
     }
   } catch (err) {

@@ -22,7 +22,8 @@ function boost(mic: MediaStream): MediaStream {
   track.stop = () => {
     stopOut();
     mic.getTracks().forEach((t) => t.stop());
-    void ctx.close();
+    // Stop can run twice (stop, then unmount); a second close only rejects.
+    ctx.close().catch(() => {});
   };
   return out.stream;
 }

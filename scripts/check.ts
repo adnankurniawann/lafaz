@@ -9,8 +9,9 @@ import { TROUBLE_EXIT, updateTrouble } from "../src/lib/trouble";
 import { LEVELS, wordLevel } from "./build-reading-data";
 import { detectIzharHalqi, detectIzharSyafawi, qalqalahKind } from "./build-tajweed-examples";
 import { getClip, getExampleAyah, isClean, marksIn } from "../src/lib/clips";
-import { lessonNodes, nodeStates, sections } from "../src/lib/course";
+import { ayahGroups, lessonNodes, nodeStates, sections } from "../src/lib/course";
 import { buildLesson } from "../src/lib/exercises";
+import { ayahStart, type SurahAyah } from "../src/lib/hafalan-exercises";
 
 // Huruf Bandel: a wrong answer adds the letter, TROUBLE_EXIT right answers in a row take it out.
 const wrong = (letter: string) => ({ letter, correct: false });
@@ -118,5 +119,40 @@ for (const lesson of lessonNodes.filter((l) => l.rules)) {
   }
 }
 assert.ok(sections.filter((s) => s.level === "tajwid").length === 4, "nun mati, mim mati, qalqalah, mad");
+
+// Level Hafalan: ayat in groups of 3, never a lone ayah at the end.
+assert.deepEqual(ayahGroups(3), [[1, 2, 3]]);
+assert.deepEqual(ayahGroups(4), [[1, 2, 3, 4]], "Al-Ikhlas is one group");
+assert.deepEqual(ayahGroups(6), [[1, 2, 3], [4, 5, 6]]);
+assert.deepEqual(ayahGroups(7), [[1, 2, 3], [4, 5, 6, 7]]);
+assert.deepEqual(ayahGroups(8), [[1, 2, 3], [4, 5, 6], [7, 8]]);
+assert.equal(states.get("h1-1"), "current", "Level Hafalan starts its own path");
+assert.equal(states.get("h114-1"), "locked");
+
+// Hafalan questions from the real surahs: every answer holds up, and options can be told apart.
+const surahAyahs = (n: number): SurahAyah[] =>
+  surah(n).ayahs.map((a: { number: number; text: string; translation: string; audio: string; words: { text: string }[] }) => ({ ref: `${n}:${a.number}`, text: a.text, translation: a.translation, audio: a.audio, words: a.words.map((w) => w.text) }));
+for (const lesson of lessonNodes.filter((l) => l.surah)) {
+  const all = surahAyahs(lesson.surah!);
+  for (let round = 0; round < 3; round++) {
+    const exercises = buildLesson(lesson, { hasSound: () => false, surah: all });
+    assert.ok(exercises.some((e) => e.kind === "recite"), `${lesson.id} recites`);
+    if (lesson.lessonKind === "uji") {
+      const tested = exercises.flatMap((e) => (e.kind === "recite" && e.test ? e.refs : []));
+      assert.deepEqual(tested, all.map((a) => a.ref), `${lesson.id}: Tes hafalan covers every ayah once, in order`);
+    }
+    for (const e of exercises) {
+      if (e.kind === "missing-word") assert.ok(e.options.includes(e.words[e.hidden]) && new Set(e.options).size === e.options.length, `${lesson.id}: missing word`);
+      if (e.kind === "next-ayah") {
+        const i = all.findIndex((a) => a.ref === e.ref);
+        assert.equal(e.answer, all[i + 1].ref, `${lesson.id}: the answer comes right after`);
+        assert.equal(new Set(e.options.map((o) => o.text)).size, e.options.length, `${lesson.id}: options start differently`);
+        assert.ok(e.options.length >= 2);
+      }
+    }
+  }
+}
+const kafirun = surahAyahs(109);
+assert.equal(ayahStart(kafirun[2]), ayahStart(kafirun[4]), "Al-Kafirun 3 and 5 start the same, the case the options guard against");
 
 console.log("ok");

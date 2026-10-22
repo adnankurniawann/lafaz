@@ -63,6 +63,10 @@ export function correctValue(e: Exercise): string | null {
       return getClip(e.clip).mark.rule;
     case "sequence":
       return String(e.options.findIndex((o) => o.join() === e.letters.join()));
+    case "missing-word":
+      return e.words[e.hidden];
+    case "next-ayah":
+      return e.answer;
     default:
       return null;
   }
@@ -103,6 +107,10 @@ export function correctAnswerText(e: Exercise) {
       const words = ayahWords(getExampleAyah(e.ayah));
       return { arabic: e.answers.map((w) => words[w]).join(" · "), text: "" };
     }
+    case "missing-word":
+      return { arabic: e.words[e.hidden], text: "" };
+    case "next-ayah":
+      return { arabic: e.options.find((o) => o.ref === e.answer)!.text, text: "" };
     default:
       return null;
   }
@@ -536,9 +544,13 @@ export function WordListenExercise({ exercise, state, onSelect }: ChoiceProps<"w
  * Momen Bisa Baca: read a real word or ayah yourself and record it. Cek Suara
  * checks it right away: every word heard means "bisa", a red word offers a retry.
  * Without the model it falls back to Nilai Sendiri. Never locks the learner out.
+ * Level Hafalan recites the same way, with the text hidden until it is recorded.
  */
-export function ReadExercise({ exercise, onDone }: { exercise: Extract<Exercise, { kind: "read" }>; onDone: (read: boolean) => void }) {
-  const isAyah = exercise.ref.split(":").length === 2;
+export function ReadExercise({ exercise, onDone }: { exercise: Extract<Exercise, { kind: "read" | "recite" }>; onDone: (read: boolean) => void }) {
+  const recite = exercise.kind === "recite";
+  const isAyah = recite || exercise.ref.split(":").length === 2;
+  // Peeking in Tes hafalan is fine, but then the ayat are not marked "sudah hafal" yet.
+  const [peeked, setPeeked] = useState(false);
   const speech = useSpeech();
   const questEvent = useGame((s) => s.questEvent);
   const [heard, setHeard] = useState<boolean[] | null>(null);
@@ -548,7 +560,7 @@ export function ReadExercise({ exercise, onDone }: { exercise: Extract<Exercise,
 
   const finish = (read: boolean) => {
     setFinished(true);
-    onDone(read);
+    onDone(read && !(recite && peeked));
   };
 
   const check = async (blob: Blob) => {
@@ -565,7 +577,7 @@ export function ReadExercise({ exercise, onDone }: { exercise: Extract<Exercise,
   };
 
   // Check as soon as the recording is in.
-  const recorder = useRecorder(isAyah ? 30000 : 6000, undefined, (blob) => {
+  const recorder = useRecorder(recite && exercise.refs.length > 1 ? 60000 : isAyah ? 30000 : 6000, undefined, (blob) => {
     if (useSpeech.getState().status === "ready") void check(blob);
   });
 
@@ -582,22 +594,47 @@ export function ReadExercise({ exercise, onDone }: { exercise: Extract<Exercise,
   const matched = heard?.filter(Boolean).length ?? 0;
   const allHeard = !!heard && matched === exercise.words.length;
   const selfAssess = speech.status !== "ready" || checkFailed;
-  const [surah, ayah] = exercise.ref.split(":").map(Number);
+  const ref = recite ? exercise.refs[0] : exercise.ref;
+  const [surah, ayah] = ref.split(":").map(Number);
+  const hidden = recite && exercise.hide && !peeked && recorder.state !== "done";
+  const label = recite ? `${refLabel(ref)}${exercise.refs.length > 1 ? `–${exercise.refs.at(-1)!.split(":")[1]}` : ""}` : refLabel(ref);
 
   return (
     <div className="flex flex-col gap-5">
-      <p className="text-sm font-extrabold uppercase tracking-wider text-gold">Momen Bisa Baca</p>
-      <Prompt>{isAyah ? "Ayat ini bisa kamu baca sendiri. Coba!" : "Kata Al-Qur'an ini bisa kamu baca sendiri. Coba!"}</Prompt>
+      <p className="text-sm font-extrabold uppercase tracking-wider text-gold">{recite ? (exercise.test ? "Tes hafalan" : "Tikrar") : "Momen Bisa Baca"}</p>
+      <Prompt>
+        {recite
+          ? exercise.hide
+            ? exercise.refs.length > 1
+              ? "Sambungkan ayat-ayat ini dari hafalan"
+              : "Baca ayat ini dari hafalan"
+            : "Baca sambil melihat teks"
+          : isAyah
+            ? "Ayat ini bisa kamu baca sendiri. Coba!"
+            : "Kata Al-Qur'an ini bisa kamu baca sendiri. Coba!"}
+      </Prompt>
       <div className="rounded-3xl border-2 border-gold/50 bg-gold/5 px-4 py-3">
-        <p dir="rtl" lang="ar" className={`arabic ${isAyah ? "" : "text-center! text-5xl!"}`}>
-          {exercise.words.map((w, i) => (
-            <span key={i} className={heard ? (heard[i] ? "text-green" : "text-red") : ""}>
-              {w}{" "}
-            </span>
-          ))}
-        </p>
-        <p className="text-xs font-bold text-muted">{refLabel(exercise.ref)}</p>
+        {hidden ? (
+          <div className="flex items-center justify-between gap-3">
+            <button type="button" onClick={() => setPeeked(true)} className="shrink-0 text-sm font-extrabold uppercase tracking-wide text-blue">
+              Intip ayat
+            </button>
+            <p dir="rtl" lang="ar" className="arabic">
+              {exercise.words[0]} …
+            </p>
+          </div>
+        ) : (
+          <p dir="rtl" lang="ar" className={`arabic ${isAyah ? "" : "text-center! text-5xl!"}`}>
+            {exercise.words.map((w, i) => (
+              <span key={i} className={heard ? (heard[i] ? "text-green" : "text-red") : ""}>
+                {w}{" "}
+              </span>
+            ))}
+          </p>
+        )}
+        <p className="text-xs font-bold text-muted">{label}</p>
       </div>
+      {recite && exercise.test && peeked && <p className="text-center text-xs text-muted">Kamu mengintip, jadi ayat ini belum ditandai hafal. Tidak apa-apa, ulangi lain kali.</p>}
 
       {recorder.state === "denied" && <p className="rounded-xl bg-red/10 p-3 text-sm text-red-dark">Mikrofon tidak diizinkan. Izinkan mikrofon di pengaturan browser, atau lewati dulu.</p>}
       {recorder.state === "unsupported" && <p className="rounded-xl bg-red/10 p-3 text-sm text-red-dark">Browser ini belum bisa merekam suara.</p>}
@@ -649,18 +686,19 @@ export function ReadExercise({ exercise, onDone }: { exercise: Extract<Exercise,
               </p>
             )
           )}
-          {isAyah && (allHeard || selfAssess) && <ShareCardButton surah={surah} ayah={ayah} text={exercise.words.join(" ")} />}
+          {!recite && isAyah && (allHeard || selfAssess) && <ShareCardButton surah={surah} ayah={ayah} text={exercise.words.join(" ")} />}
           {!finished && !checking && (heard || selfAssess) && (
             <div className="grid grid-cols-2 gap-3">
-              <Button color={heard ? "green" : "white"} onClick={retry}>
+              <Button color={heard && !recite ? "green" : "white"} onClick={retry}>
                 Ulangi
               </Button>
-              {heard ? (
+              {/* Hafalan: Cek Suara only helps; the learner still decides "sudah hafal". */}
+              {heard && !recite ? (
                 <Button color="white" onClick={() => finish(false)}>
                   Lanjut dulu
                 </Button>
               ) : (
-                <Button onClick={() => finish(true)}>Sudah bisa</Button>
+                <Button onClick={() => finish(true)}>{recite && exercise.hide ? "Sudah hafal" : "Sudah bisa"}</Button>
               )}
             </div>
           )}

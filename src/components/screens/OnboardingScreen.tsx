@@ -17,11 +17,12 @@ const MOTIVATIONS = [
 ];
 
 // "Mau mulai dari mana?" (ADR-0010). The choice is trusted without a test,
-// except "tes", which runs Tes Matrikulasi. Level Hafalan joins in Blok 5.
+// except "tes", which runs Tes Matrikulasi.
 const STARTS: { id: string; level: LevelId; experience: string; label: string; note: string }[] = [
   { id: "iqro", level: "iqro", experience: "baru", label: "Dari huruf pertama", note: "Level Iqro: belum kenal huruf hijaiyah" },
   { id: "tes", level: "iqro", experience: "sebagian", label: "Belum tahu, tes aku dulu", note: "Kenal sebagian huruf? Tes singkat, paling banyak 15 soal" },
   { id: "tajwid", level: "tajwid", experience: "lancar", label: "Langsung Tajwid", note: "Level Tajwid: sudah bisa membaca, ingin memperbaiki bacaan" },
+  { id: "hafalan", level: "hafalan", experience: "lancar", label: "Langsung Hafalan", note: "Level Hafalan: sudah bisa membaca, ingin menghafal juz amma" },
 ];
 
 const STEPS = ["sambutan", "tujuan", "mulai", "target", "talaqqi"] as const;

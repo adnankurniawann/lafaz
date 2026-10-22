@@ -39,5 +39,10 @@ async function LessonFromParams({ params }: { params: Promise<{ id: string }> })
       ? (await getSurah(1)).ayahs.map((a) => ({ number: a.number, text: a.text, audio: a.audio, words: a.words.map((w) => ({ text: w.text, audio: w.audio })) }))
       : undefined;
 
-  return <LessonPlayer lessonId={id} ayah={ayah} fatihah={fatihah} />;
+  // Level Hafalan reads the whole surah.
+  const surah = lesson?.surah
+    ? (await getSurah(lesson.surah)).ayahs.map((a) => ({ ref: `${lesson.surah}:${a.number}`, text: a.text, translation: a.translation, audio: a.audio, words: a.words.map((w) => w.text) }))
+    : undefined;
+
+  return <LessonPlayer lessonId={id} ayah={ayah} fatihah={fatihah} surah={surah} />;
 }

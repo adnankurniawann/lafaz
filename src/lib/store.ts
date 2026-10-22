@@ -5,13 +5,19 @@ import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import { addDays, dayKey, daysBetween, weekKey } from "./dates";
 import type { BadgeId } from "./badges";
-import { HARAKAT_UNITS, levelTest, lessonNodes, pathNodes, sections, unitOf, type LevelId } from "./course";
+import { HAFALAN_SURAHS, HARAKAT_UNITS, levelTest, lessonNodes, pathNodes, sections, unitOf, type LevelId } from "./course";
+import quranIndex from "../../data/quran/index.json";
 import { letters } from "./letters";
 import { questsForDay, type Quest, type QuestKind } from "./quests";
 import { updateReviews, type Reviews } from "./review";
 import { updateTrouble, type TroubleLetters } from "./trouble";
 
 const FATIHAH_AYAHS = Array.from({ length: 7 }, (_, i) => `1:${i + 1}`);
+
+/** Surahs whose every ayah is "sudah hafal". */
+export function memorizedSurahs(memorized: Record<string, string>): number[] {
+  return HAFALAN_SURAHS.filter((n) => Array.from({ length: quranIndex.surahs.find((s) => s.number === n)!.ayahCount }, (_, i) => `${n}:${i + 1}`).every((r) => memorized[r]));
+}
 
 /** Correct "tebak dari suara" answers for the Telinga tajwid badge. */
 export const EAR_BADGE = 50;
@@ -45,6 +51,8 @@ export type LessonResult = {
   itemResults: { key: string; correct: boolean }[];
   /** Ayat read in a Momen Bisa Baca, as "surah:ayah". */
   readAyahs: string[];
+  /** Ayat recited from memory in Tes hafalan, as "surah:ayah". */
+  memorizedAyahs?: string[];
   /** Unit id when this was a passed Mode Tantangan. */
   challenge?: string;
   /** Rules guessed right from the qari's voice alone. */
@@ -64,8 +72,8 @@ export type LessonSummary = {
   troubleAdded: string[];
   troubleCleared: string[];
   newBadges: BadgeId[];
-  /** A Level that opened with this lesson. */
-  newLevel?: LevelId;
+  /** Levels that opened with this lesson. */
+  newLevels: LevelId[];
 };
 
 type GameState = {
@@ -86,6 +94,8 @@ type GameState = {
   reviews: Reviews;
   /** Ayat the learner has read in a Momen Bisa Baca: "surah:ayah" -> day. */
   readAyahs: Record<string, string>;
+  /** Ayat recited from memory in Tes hafalan: "surah:ayah" -> day. */
+  memorized: Record<string, string>;
   badges: Partial<Record<BadgeId, string>>;
   /** Units whose Mode Tantangan has been passed. */
   challenges: string[];
@@ -126,6 +136,7 @@ const initialState = {
   troubleLetters: {},
   reviews: {},
   readAyahs: {},
+  memorized: {},
   badges: {},
   challenges: [],
   quests: null,
@@ -209,6 +220,8 @@ export const useGame = create<GameState>()(
         const trouble = updateTrouble(s.troubleLetters, result.letterResults);
         const challenges = result.challenge && !s.challenges.includes(result.challenge) ? [...s.challenges, result.challenge] : s.challenges;
         const readAyahs = { ...Object.fromEntries(result.readAyahs.map((r) => [r, today])), ...s.readAyahs };
+        const memorized = { ...Object.fromEntries((result.memorizedAyahs ?? []).map((r) => [r, today])), ...s.memorized };
+        const hafal = memorizedSurahs(memorized);
 
         const goalBefore = s.xpByDay[today] ?? 0;
         const lessons = result.practice
@@ -222,8 +235,8 @@ export const useGame = create<GameState>()(
               },
             };
 
-        // Finishing the last test of Level Iqro opens Level Tajwid.
-        const newLevel = !result.practice && result.lessonId === levelTest().id && !s.levels.includes("tajwid") ? "tajwid" : undefined;
+        // Finishing the last test of Level Iqro opens Level Tajwid and Level Hafalan.
+        const newLevels: LevelId[] = !result.practice && result.lessonId === levelTest().id ? (["tajwid", "hafalan"] as const).filter((l) => !s.levels.includes(l)) : [];
         const earRight = s.stats.earRight + (result.earRight ?? 0);
 
         // Badges count only lessons actually played, never ones skipped by Tes Matrikulasi.
@@ -242,6 +255,11 @@ export const useGame = create<GameState>()(
         if (sectionPlayed("qalqalah")) earned.push("ahli-qalqalah");
         if (sectionPlayed("mad")) earned.push("ahli-mad");
         if (earRight >= EAR_BADGE) earned.push("telinga-tajwid");
+        if (hafal.includes(1)) earned.push("hafal-fatihah");
+        if ([112, 113, 114].every((n) => hafal.includes(n))) earned.push("tiga-qul");
+        if (hafal.length >= 10) earned.push("hafal-10");
+        if (hafal.length >= 20) earned.push("hafal-20");
+        if (HAFALAN_SURAHS.slice(1).every((n) => hafal.includes(n))) earned.push("juz-amma");
         const newBadges = earned.filter((b) => !s.badges[b]);
 
         // Quests
@@ -259,11 +277,12 @@ export const useGame = create<GameState>()(
           troubleLetters: trouble.trouble,
           reviews: updateReviews(s.reviews, result.itemResults, today),
           readAyahs,
+          memorized,
           badges: { ...s.badges, ...Object.fromEntries(newBadges.map((b) => [b, today])) },
           challenges,
           lessons,
           quests: { day: today, items },
-          ...(newLevel ? { levels: [...s.levels, newLevel] } : {}),
+          levels: [...s.levels, ...newLevels],
           stats: {
             ...s.stats,
             earRight,
@@ -286,7 +305,7 @@ export const useGame = create<GameState>()(
           troubleAdded: trouble.added,
           troubleCleared: trouble.cleared,
           newBadges,
-          newLevel,
+          newLevels,
         };
       },
 
@@ -339,7 +358,7 @@ export const useGame = create<GameState>()(
     }),
     {
       name: "lafaz-game",
-      version: 3,
+      version: 4,
       migrate: (persisted, version) => {
         const state = { ...(persisted as Record<string, unknown>) };
         // v2 drops hearts and gems (ADR-0004, 0006); today's quests are rolled again with XP rewards.
@@ -354,6 +373,12 @@ export const useGame = create<GameState>()(
           state.level = "iqro";
           state.levels = lessons[levelTest().id] ? ["iqro", "tajwid"] : ["iqro"];
           state.stats = { earRight: 0, ...(state.stats as object) };
+        }
+        // v4 adds Level Hafalan, opened by the same test as Tajwid.
+        if (version < 4) {
+          const lessons = (state.lessons ?? {}) as Record<string, unknown>;
+          const levels = state.levels as LevelId[];
+          if (lessons[levelTest().id] && !levels.includes("hafalan")) state.levels = [...levels, "hafalan"];
         }
         return state as GameState;
       },

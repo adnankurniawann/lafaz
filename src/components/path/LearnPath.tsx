@@ -107,11 +107,21 @@ export function LearnPath() {
       {level === "iqro" && (
         <div className="mx-4 mt-2 rounded-2xl border-2 border-teal/40 bg-teal/5 p-4 text-center">
           <p className="text-xs font-extrabold uppercase tracking-widest text-muted">Level berikutnya</p>
-          <p className="mt-1 text-lg font-extrabold">Level Tajwid</p>
-          {levels.includes("tajwid") ? (
-            <Button color="blue" className="mt-3" onClick={() => setLevel("tajwid")}>
-              Buka Level Tajwid
-            </Button>
+          <p className="mt-1 text-lg font-extrabold">Level Tajwid dan Level Hafalan</p>
+          {levels.includes("tajwid") || levels.includes("hafalan") ? (
+            <div className="mt-3 space-y-3">
+              {(["tajwid", "hafalan"] as const).map((l) =>
+                levels.includes(l) ? (
+                  <Button key={l} color="blue" onClick={() => setLevel(l)}>
+                    Buka Level {l === "tajwid" ? "Tajwid" : "Hafalan"}
+                  </Button>
+                ) : (
+                  <ButtonLink key={l} href={`/lesson/${LEVEL_TEST_ID}`} color="white">
+                    Tes naik ke Level {l === "tajwid" ? "Tajwid" : "Hafalan"}
+                  </ButtonLink>
+                ),
+              )}
+            </div>
           ) : (
             <>
               <p className="mt-1 text-sm text-muted">Terbuka setelah Al-Fatihah selesai. Sudah bisa membaca? Coba tes naik level: baca Al-Fatihah sendiri.</p>
@@ -127,6 +137,10 @@ export function LearnPath() {
         <Sheet title={`Panduan Unit ${guide.number}`} onClose={() => setGuide(null)}>
           {guide.rules ? (
             <TajweedGuide rules={guide.rules} />
+          ) : guide.surah ? (
+            <p className="rounded-2xl border-2 border-line p-4 text-sm leading-relaxed">
+              {guide.title}, {guide.description}. Tiap lesson menghafal beberapa ayat dengan tikrar: dengar qari tiga kali sambil mengikuti teks, isi kata yang hilang, lalu baca dari hafalan. Ayat yang sudah hafal disambung dengan ayat sebelumnya. Tes hafalan di akhir unit menandai ayat &quot;sudah hafal&quot; di Peta Ayat.
+            </p>
           ) : (
             <>
               <p className="mb-3 text-sm text-muted">{guide.description}. Baca dari kanan ke kiri.</p>

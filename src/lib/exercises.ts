@@ -3,6 +3,7 @@ import { lettersUpTo, unitOf, type LessonNode } from "./course";
 import { examplesFor, getLetter, letters as allLetters, type WordExample } from "./letters";
 import { pick, shuffle } from "./random";
 import { DRILL_LETTERS, isLetter, latinOf, makeToken, variants, type MarkUnit } from "./syllables";
+import { buildHafalan, type SurahAyah } from "./hafalan-exercises";
 import { buildTajweed } from "./tajweed-exercises";
 import type { LessonRuleId } from "./tajweed-lessons";
 
@@ -49,6 +50,15 @@ export type Exercise = (
   | { kind: "rule-find"; id: string; rule: LessonRuleId; ayah: string; answers: number[] }
   /** Ucapkan potongan: record it, Cek Suara per word, Nilai Sendiri for the tajwid. */
   | { kind: "clip-speak"; id: string; clip: string }
+  // ---- Level Hafalan. Refs are "surah:ayah". ----
+  /** Tikrar: hear the qari read the ayah again and again, with its text and meaning. Not graded. */
+  | { kind: "ayah-listen"; id: string; ref: string; text: string; translation: string; audio: string }
+  /** One word of the ayah is hidden; pick it. */
+  | { kind: "missing-word"; id: string; ref: string; words: string[]; hidden: number; options: string[]; audio: string }
+  /** The ayah that comes after this one. */
+  | { kind: "next-ayah"; id: string; ref: string; text: string; audio: string; options: { ref: string; text: string }[]; answer: string }
+  /** Recite ayat, from memory when `hide` (only the first word shows). `test`: Tes hafalan, a pass marks them "sudah hafal". */
+  | { kind: "recite"; id: string; refs: string[]; words: string[]; audio: string[]; hide: boolean; test: boolean }
 ) & {
   /** Tes Matrikulasi: which stage the question belongs to. */
   stage?: number;
@@ -70,6 +80,8 @@ export const GRADED: ExerciseKind[] = [
   "rule-from-text",
   "rule-from-audio",
   "rule-find",
+  "missing-word",
+  "next-ayah",
 ];
 
 export type FatihahAyah = { number: number; text: string; audio: string; words: { text: string; audio: string }[] };
@@ -81,6 +93,8 @@ export type BuildContext = {
   mastery?: Record<string, number>;
   /** Al-Fatihah, for Bagian Membaca units 17 and 18. */
   fatihah?: FatihahAyah[];
+  /** Level Hafalan: every ayah of the lesson's surah. */
+  surah?: SurahAyah[];
 };
 
 let counter = 0;
@@ -171,6 +185,7 @@ function mixed(focus: string[], pool: string[], ctx: BuildContext, count: number
 
 export function buildLesson(lesson: LessonNode, ctx: BuildContext): Exercise[] {
   if (lesson.rules) return buildTajweed(lesson);
+  if (lesson.surah) return buildHafalan(lesson, ctx.surah ?? []);
   if (lesson.topic) return buildReading(lesson, ctx);
   const unit = unitOf(lesson.id);
   const focus = shuffle(lesson.letters);

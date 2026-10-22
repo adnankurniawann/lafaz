@@ -1,14 +1,16 @@
 // The learning path: sections, units and the nodes on each unit's path.
 
+import quranIndex from "../../data/quran/index.json";
 import type { MarkUnit } from "./syllables";
 import { getLessonRule, ruleGroups, type LessonRuleId } from "./tajweed-lessons";
 
-/** Level Iqro, then Level Tajwid. Level Hafalan comes in Blok 5 (ADR-0010). */
-export type LevelId = "iqro" | "tajwid";
+/** Level Iqro, then Level Tajwid and Level Hafalan side by side (ADR-0010). */
+export type LevelId = "iqro" | "tajwid" | "hafalan";
 
 export const LEVELS: { id: LevelId; title: string; description: string }[] = [
   { id: "iqro", title: "Iqro", description: "Dari huruf pertama sampai bisa membaca Al-Fatihah" },
   { id: "tajwid", title: "Tajwid", description: "Hukum bacaan, belajar lewat mendengar Potongan Ayat" },
+  { id: "hafalan", title: "Hafalan", description: "Al-Fatihah lalu juz amma, ayat demi ayat lewat tikrar" },
 ];
 
 /** Units 11 to 15 cover the marks; finishing them earns Lancar harakat. */
@@ -26,7 +28,9 @@ export type LessonKind =
   | "bandingkan"
   | "tebak"
   | "tebak-suara"
-  | "cari";
+  | "cari"
+  // Level Hafalan (FR-17); "uji" is Tes hafalan.
+  | "hafal";
 
 /** What a Bagian Membaca unit teaches: a mark drill, the special signs, or Al-Fatihah itself. */
 export type ReadingTopic = MarkUnit | "khusus" | "fatihah";
@@ -42,10 +46,12 @@ export type LessonNode = {
   groups?: string[][];
   /** Bagian Membaca: the topic of the lesson. */
   topic?: ReadingTopic;
-  /** Al-Fatihah lessons: the ayah numbers to read. */
+  /** Al-Fatihah and Level Hafalan lessons: the ayah numbers to read. */
   ayahs?: number[];
   /** Level Tajwid: the rules practised, the new ones first. */
   rules?: LessonRuleId[];
+  /** Level Hafalan: the surah memorized. */
+  surah?: number;
 };
 
 export type ChestNode = { kind: "chest"; id: string; xp: number };
@@ -63,6 +69,8 @@ export type Unit = {
   topic?: ReadingTopic;
   /** Level Tajwid units only: the rules taught. */
   rules?: LessonRuleId[];
+  /** Level Hafalan units only: the surah memorized. */
+  surah?: number;
   nodes: PathNode[];
 };
 
@@ -251,6 +259,41 @@ const tajweedSections: Section[] = [
   }),
 ];
 
+// Level Hafalan: Al-Fatihah, then juz amma from An-Nas back to An-Naba' (FR-17).
+// One unit per surah: a tikrar lesson per few ayat, then Tes hafalan.
+export const HAFALAN_SURAHS = [1, ...Array.from({ length: 37 }, (_, i) => 114 - i)];
+
+/** Ayat 1 to n in groups of 3; a lone last ayah joins the group before it. */
+export function ayahGroups(n: number): number[][] {
+  const groups: number[][] = [];
+  for (let a = 1; a <= n; a += 3) groups.push(Array.from({ length: Math.min(3, n - a + 1) }, (_, i) => a + i));
+  if (groups.length > 1 && groups.at(-1)!.length === 1) groups.at(-2)!.push(...groups.pop()!);
+  return groups;
+}
+
+const HAFALAN_COLORS: UnitColor[] = ["gold", "green", "blue", "purple", "teal", "orange", "pink", "red"];
+
+function hafalanUnit(surah: number, n: number): Unit {
+  const { englishName, ayahCount } = quranIndex.surahs.find((s) => s.number === surah)!;
+  const id = `h${surah}`;
+  const groups = ayahGroups(ayahCount);
+  const title = (g: number[]) => (g.length === 1 ? `Ayat ${g[0]}` : `Ayat ${g[0]} sampai ${g.at(-1)}`);
+  const all = Array.from({ length: ayahCount }, (_, i) => i + 1);
+  const nodes: PathNode[] = groups.map((g, i) => ({ kind: "lesson", id: `${id}-${i + 1}`, title: title(g), lessonKind: "hafal", letters: [], surah, ayahs: g }));
+  if (groups.length > 1) nodes.push({ kind: "chest", id: `${id}-peti`, xp: 15 });
+  nodes.push({ kind: "lesson", id: `${id}-tes`, title: "Tes hafalan", lessonKind: "uji", letters: [], surah, ayahs: all });
+  return { id, number: n, title: englishName, description: `${ayahCount} ayat, dihafal lewat tikrar`, color: HAFALAN_COLORS[(n - 1) % HAFALAN_COLORS.length], letters: [], surah, nodes };
+}
+
+const hafalanUnits = HAFALAN_SURAHS.map((s, i) => hafalanUnit(s, i + 1));
+const hafalanSections: Section[] = [hafalanUnits.slice(0, 1), hafalanUnits.slice(1, 11), hafalanUnits.slice(11, 21), hafalanUnits.slice(21, 31), hafalanUnits.slice(31)].map((list, i) => ({
+  id: `hafalan-${i + 1}`,
+  level: "hafalan",
+  number: i + 1,
+  title: list.length === 1 ? list[0].title : `${list[0].title} sampai ${list.at(-1)!.title}`,
+  units: list,
+}));
+
 export const sections: Section[] = [
   {
     id: "huruf",
@@ -267,6 +310,7 @@ export const sections: Section[] = [
     units: [...MARK_UNITS.map((_, i) => markUnit(i)), specialUnit, fatihahUnit],
   },
   ...tajweedSections,
+  ...hafalanSections,
 ];
 
 export const units = sections.flatMap((s) => s.units);
@@ -278,7 +322,7 @@ export const PRACTICE_ID = "latihan";
 export const TROUBLE_ID = "taklukkan";
 /** Tes Matrikulasi for Level Iqro (ADR-0010). */
 export const PLACEMENT_ID = "matrikulasi";
-/** Tes naik Level to Tajwid: the final test of Level Iqro, reading Al-Fatihah (ADR-0010). */
+/** Tes naik Level to Tajwid and Hafalan: the final test of Level Iqro, reading Al-Fatihah (ADR-0010). */
 export const LEVEL_TEST_ID = "naik-tajwid";
 export const levelTest = (): LessonNode => unitTest(fatihahUnit);
 const CHALLENGE_PREFIX = "tantangan-";

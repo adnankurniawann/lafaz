@@ -7,22 +7,25 @@ import { learnedLetters } from "@/lib/course";
 import { useGame } from "@/lib/store";
 import quranIndex from "../../../data/quran/index.json";
 
-// The three marks each ayah can earn. Sudah hafal comes with Level Hafalan.
+// The three marks each ayah can earn; a box shows the highest one.
 const MARKS = [
-  { label: "Hurufnya dikenal", className: "bg-green", ready: true },
-  { label: "Bisa dibaca", className: "bg-blue", ready: true },
-  { label: "Sudah hafal", className: "bg-gold", ready: false },
+  { label: "Hurufnya dikenal", className: "bg-green" },
+  { label: "Bisa dibaca", className: "bg-blue" },
+  { label: "Sudah hafal", className: "bg-gold" },
 ];
 
 export function AyahMapScreen({ ayahs }: { ayahs: AyahLetters[] }) {
   const lessons = useGame((s) => s.lessons);
   const readAyahs = useGame((s) => s.readAyahs);
+  const memorized = useGame((s) => s.memorized);
   const known = new Set(learnedLetters(lessons));
   const [open, setOpen] = useState<number | null>(null);
   const share = (a: AyahLetters) => knownCount(a, known) / a.letters.length;
   const isRead = (a: AyahLetters) => !!readAyahs[`${a.surah}:${a.ayah}`];
+  const isMemorized = (a: AyahLetters) => !!memorized[`${a.surah}:${a.ayah}`];
   const lit = ayahs.filter((a) => share(a) === 1).length;
   const read = Object.keys(readAyahs).length;
+  const hafal = Object.keys(memorized).length;
 
   return (
     <div className="px-4 pb-8 pt-5">
@@ -34,14 +37,14 @@ export function AyahMapScreen({ ayahs }: { ayahs: AyahLetters[] }) {
             ? `${lit} dari ${ayahs.length} ayat sudah kamu kenal semua hurufnya.`
             : `Kamu sudah kenal ${known.size} huruf. Ayat makin terang setiap huruf baru.`}
         {read > 0 && ` ${read} ayat sudah kamu baca sendiri.`}
+        {hafal > 0 && ` ${hafal} ayat sudah kamu hafal.`}
       </p>
 
       <div className="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs font-bold">
         {MARKS.map((m) => (
-          <span key={m.label} className={`flex items-center gap-1.5 ${m.ready ? "" : "text-muted"}`}>
-            <span className={`size-3 rounded-sm ${m.className} ${m.ready ? "" : "opacity-30"}`} />
+          <span key={m.label} className="flex items-center gap-1.5">
+            <span className={`size-3 rounded-sm ${m.className}`} />
             {m.label}
-            {!m.ready && " (segera)"}
           </span>
         ))}
       </div>
@@ -65,7 +68,9 @@ export function AyahMapScreen({ ayahs }: { ayahs: AyahLetters[] }) {
                 <span className="mt-2 flex flex-wrap gap-1" aria-hidden>
                   {list.map((a) => (
                     <span key={a.ayah} className="size-3.5 rounded-sm bg-line">
-                      {isRead(a) ? (
+                      {isMemorized(a) ? (
+                        <span className="block size-full rounded-sm bg-gold" />
+                      ) : isRead(a) ? (
                         <span className="block size-full rounded-sm bg-blue" />
                       ) : (
                         <span className="block size-full rounded-sm bg-green" style={{ opacity: share(a) === 1 ? 1 : share(a) * 0.8 }} />
@@ -82,6 +87,7 @@ export function AyahMapScreen({ ayahs }: { ayahs: AyahLetters[] }) {
                       <p className="text-xs font-bold text-muted">
                         Ayat {a.ayah} · kenal {knownCount(a, known)} dari {a.letters.length} huruf
                         {isRead(a) && <span className="text-blue"> · bisa dibaca</span>}
+                        {isMemorized(a) && <span className="text-gold"> · sudah hafal</span>}
                       </p>
                     </li>
                   ))}

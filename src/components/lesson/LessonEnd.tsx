@@ -8,7 +8,7 @@ import { BoltIcon, FlameIcon } from "@/components/icons";
 import { Mascot } from "@/components/Mascot";
 import { knownCount, type AyahLetters } from "@/lib/ayah-letters";
 import { getBadge } from "@/lib/badges";
-import { learnedLetters } from "@/lib/course";
+import { LEVELS, learnedLetters } from "@/lib/course";
 import { addDays, dayKey, WEEKDAYS } from "@/lib/dates";
 import { getLetter, refLabel } from "@/lib/letters";
 import { QUEST_ICON, questTitle } from "@/lib/quests";
@@ -29,7 +29,7 @@ export function LessonEnd({ summary, backTo, ayah }: { summary: Summary; backTo:
     "result",
     ...(ayah ? (["ayah"] as const) : []),
     ...(summary.newBadges.length ? (["badges"] as const) : []),
-    ...(summary.newLevel ? (["level"] as const) : []),
+    ...(summary.newLevels.length ? (["level"] as const) : []),
     ...(rankUp ? (["rank"] as const) : []),
     ...(summary.streakIncreased ? (["streak"] as const) : []),
     "goal",
@@ -45,7 +45,7 @@ export function LessonEnd({ summary, backTo, ayah }: { summary: Summary; backTo:
         {current === "result" && <Result summary={summary} />}
         {current === "ayah" && ayah && <AyahStep ayah={ayah} />}
         {current === "badges" && <BadgeStep summary={summary} />}
-        {current === "level" && <LevelStep />}
+        {current === "level" && <LevelStep summary={summary} />}
         {current === "rank" && <RankStep totalXp={totalXp} />}
         {current === "streak" && <StreakStep summary={summary} />}
         {current === "goal" && <GoalStep summary={summary} />}
@@ -176,13 +176,14 @@ function BadgeStep({ summary }: { summary: Summary }) {
   );
 }
 
-function LevelStep() {
+function LevelStep({ summary }: { summary: Summary }) {
+  const names = summary.newLevels.map((id) => LEVELS.find((l) => l.id === id)!.title).join(" dan ");
   return (
     <>
       <Confetti />
       <Mascot mood="cheer" size={130} className="animate-pop-in" />
-      <h1 className="mt-4 text-2xl font-extrabold text-teal">Level Tajwid terbuka!</h1>
-      <p className="mt-2 text-muted">Kamu sudah bisa membaca Al-Fatihah sendiri. Sekarang belajar hukum bacaan lewat mendengar qari. Pilih Level di bar atas tab Belajar.</p>
+      <h1 className="mt-4 text-2xl font-extrabold text-teal">Level {names} terbuka!</h1>
+      <p className="mt-2 text-muted">Kamu sudah bisa membaca Al-Fatihah sendiri. Sekarang belajar tajwid lewat mendengar qari, atau mulai menghafal juz amma. Pilih Level di bar atas tab Belajar.</p>
     </>
   );
 }

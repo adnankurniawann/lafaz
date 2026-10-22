@@ -9,6 +9,11 @@ export type BadgeId =
   | "ahli-qalqalah"
   | "ahli-mad"
   | "telinga-tajwid"
+  | "hafal-fatihah"
+  | "tiga-qul"
+  | "hafal-10"
+  | "hafal-20"
+  | "juz-amma"
   | "streak-7"
   | "juara-tantangan";
 
@@ -23,6 +28,11 @@ export const BADGES: { id: BadgeId; icon: string; title: string; how: string }[]
   { id: "ahli-qalqalah", icon: "🏀", title: "Ahli qalqalah", how: "Selesaikan unit qalqalah" },
   { id: "ahli-mad", icon: "〰️", title: "Ahli mad", how: "Selesaikan unit mad" },
   { id: "telinga-tajwid", icon: "👂", title: "Telinga tajwid", how: "Tebak 50 hukum dengan benar hanya dari suara" },
+  { id: "hafal-fatihah", icon: "🌱", title: "Hafal Al-Fatihah", how: "Lulus Tes hafalan Al-Fatihah" },
+  { id: "tiga-qul", icon: "🌿", title: "Tiga Qul", how: "Hafal Al-Ikhlas, Al-Falaq, dan An-Nas" },
+  { id: "hafal-10", icon: "🌳", title: "10 surah", how: "Hafal 10 surah" },
+  { id: "hafal-20", icon: "🏔️", title: "20 surah", how: "Hafal 20 surah" },
+  { id: "juz-amma", icon: "👑", title: "Juz amma lengkap", how: "Hafal ke-37 surah juz amma" },
   { id: "streak-7", icon: "🔥", title: "Streak 7 hari", how: "Belajar 7 hari berturut-turut" },
   { id: "juara-tantangan", icon: "⚡", title: "Juara tantangan", how: "Selesaikan Mode Tantangan pertamamu" },
 ];

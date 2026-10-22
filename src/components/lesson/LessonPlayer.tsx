@@ -22,6 +22,7 @@ import {
   type Exercise,
   type FatihahAyah,
 } from "@/lib/exercises";
+import type { SurahAyah } from "@/lib/hafalan-exercises";
 import { pick } from "@/lib/random";
 import { letterSoundUrl, useLetterAudio } from "@/lib/recordings";
 import { dueKeys } from "@/lib/review";
@@ -44,6 +45,7 @@ import {
   correctAnswerText,
   isCorrect,
 } from "./Exercises";
+import { AyahListenExercise, MissingWordExercise, NextAyahExercise } from "./HafalanExercises";
 import { LessonEnd } from "./LessonEnd";
 import { ClipSpeakExercise, RuleCompareExercise, RuleFindExercise, RuleFromAudioExercise, RuleFromTextExercise, RuleIntroExercise } from "./TajweedExercises";
 
@@ -61,9 +63,11 @@ type Props = {
   ayah?: AyahLetters;
   /** Al-Fatihah, for the Bagian Membaca units that read it. */
   fatihah?: FatihahAyah[];
+  /** Level Hafalan: every ayah of the surah. */
+  surah?: SurahAyah[];
 };
 
-export function LessonPlayer({ lessonId, ayah, fatihah }: Props) {
+export function LessonPlayer({ lessonId, ayah, fatihah, surah }: Props) {
   const audioReady = useLetterAudio((s) => s.ready);
   const [attempt, setAttempt] = useState(0);
   if (!audioReady) {
@@ -74,10 +78,10 @@ export function LessonPlayer({ lessonId, ayah, fatihah }: Props) {
     );
   }
   // A new key builds a fresh question set for "Coba lagi".
-  return <Lesson key={attempt} lessonId={lessonId} ayah={ayah} fatihah={fatihah} onRetry={() => setAttempt((a) => a + 1)} />;
+  return <Lesson key={attempt} lessonId={lessonId} ayah={ayah} fatihah={fatihah} surah={surah} onRetry={() => setAttempt((a) => a + 1)} />;
 }
 
-function Lesson({ lessonId, ayah, fatihah, onRetry }: Props & { onRetry: () => void }) {
+function Lesson({ lessonId, ayah, fatihah, surah, onRetry }: Props & { onRetry: () => void }) {
   const router = useRouter();
   const trouble = lessonId === TROUBLE_ID;
   const placement = lessonId === PLACEMENT_ID;
@@ -100,7 +104,7 @@ function Lesson({ lessonId, ayah, fatihah, onRetry }: Props & { onRetry: () => v
   const [items, setItems] = useState<Item[]>(() => {
     if (!lesson && !practice && !placement) return [];
     const state = useGame.getState();
-    const ctx = { hasSound: (l: string) => !!letterSoundUrl(urls, l), mastery: state.mastery, fatihah };
+    const ctx = { hasSound: (l: string) => !!letterSoundUrl(urls, l), mastery: state.mastery, fatihah, surah };
     const learned = learnedLetters(state.lessons);
     const pool = learned.length ? learned : ["alif", "ba", "ta", "tsa"];
     const exercises = placement
@@ -127,6 +131,7 @@ function Lesson({ lessonId, ayah, fatihah, onRetry }: Props & { onRetry: () => v
   const letterResults = useRef<{ letter: string; correct: boolean }[]>([]);
   const itemResults = useRef<{ key: string; correct: boolean }[]>([]);
   const readAyahs = useRef<string[]>([]);
+  const memorized = useRef<string[]>([]);
   const earRight = useRef(0);
   const answers = useRef({ right: 0, total: 0 });
   const [startedAt] = useState(() => Date.now());
@@ -225,6 +230,7 @@ function Lesson({ lessonId, ayah, fatihah, onRetry }: Props & { onRetry: () => v
       letterResults: letterResults.current,
       itemResults: itemResults.current,
       readAyahs: readAyahs.current,
+      memorizedAyahs: memorized.current,
       challenge: challenge?.id,
       earRight: earRight.current,
     });
@@ -292,6 +298,19 @@ function Lesson({ lessonId, ayah, fatihah, onRetry }: Props & { onRetry: () => v
         {exercise.kind === "rule-from-audio" && <RuleFromAudioExercise exercise={exercise} state={choiceState} onSelect={setSelected} />}
         {exercise.kind === "rule-find" && <RuleFindExercise exercise={exercise} state={choiceState} onSelect={setSelected} />}
         {exercise.kind === "clip-speak" && <ClipSpeakExercise exercise={exercise} onDone={(skipped) => selfDone(true, !skipped)} />}
+        {exercise.kind === "ayah-listen" && <AyahListenExercise exercise={exercise} />}
+        {exercise.kind === "missing-word" && <MissingWordExercise exercise={exercise} state={choiceState} onSelect={setSelected} />}
+        {exercise.kind === "next-ayah" && <NextAyahExercise exercise={exercise} state={choiceState} onSelect={setSelected} />}
+        {exercise.kind === "recite" && (
+          <ReadExercise
+            exercise={exercise}
+            onDone={(recited) => {
+              // Recited in Tes hafalan without peeking: "sudah hafal" on the Peta Ayat.
+              if (recited && exercise.test) memorized.current.push(...exercise.refs);
+              selfDone(true, false);
+            }}
+          />
+        )}
         {exercise.kind === "read" && (
           <ReadExercise
             exercise={exercise}
@@ -320,7 +339,7 @@ function Lesson({ lessonId, ayah, fatihah, onRetry }: Props & { onRetry: () => v
             {!feedback.correct && GRADED.includes(exercise.kind) && !practice && !challenge && !placement && <p className="text-sm">Soal ini akan muncul lagi di akhir.</p>}
           </div>
         )}
-        {(exercise.kind === "intro" || exercise.kind === "mark-intro" || exercise.kind === "rule-intro") && !feedback ? (
+        {(exercise.kind === "intro" || exercise.kind === "mark-intro" || exercise.kind === "rule-intro" || exercise.kind === "ayah-listen") && !feedback ? (
           <Button
             onClick={() => {
               setDone((d) => [...d, exercise.id]);
@@ -333,7 +352,7 @@ function Lesson({ lessonId, ayah, fatihah, onRetry }: Props & { onRetry: () => v
           <Button color={feedback.correct ? "green" : "red"} onClick={next}>
             Lanjut
           </Button>
-        ) : exercise.kind === "match" || exercise.kind === "speak" || exercise.kind === "read" || exercise.kind === "clip-speak" ? null : (
+        ) : exercise.kind === "match" || exercise.kind === "speak" || exercise.kind === "read" || exercise.kind === "recite" || exercise.kind === "clip-speak" ? null : (
           <Button disabled={selected === null} onClick={() => check()}>
             Periksa
           </Button>
@@ -401,41 +420,47 @@ function PlacementResult({ unitId }: { unitId: string }) {
 }
 
 /**
- * Result of Tes naik Level. Not passing only gives advice: "Tetap masuk" still
- * opens Level Tajwid, since the gate protects, it does not punish (ADR-0010).
+ * Result of Tes naik Level, which opens Tajwid and Hafalan side by side. Not
+ * passing only gives advice: "Tetap masuk" still opens the chosen Level, since
+ * the gate protects, it does not punish (ADR-0010).
  */
 function LevelTestResult({ read, total }: { read: number; total: number }) {
   const router = useRouter();
   const openLevel = useGame((s) => s.openLevel);
   const setLevel = useGame((s) => s.setLevel);
   const passed = read >= total;
-  const enter = () => {
-    openLevel("tajwid");
+  const enter = (level: "tajwid" | "hafalan") => {
+    if (passed) openLevel(level === "tajwid" ? "hafalan" : "tajwid");
+    openLevel(level);
     router.push("/");
   };
   return (
     <div className="flex min-h-dvh flex-col px-5 pb-6 pt-10">
       <div className="flex flex-1 flex-col items-center justify-center text-center">
         <Mascot mood={passed ? "cheer" : "think"} size={140} className="animate-pop-in" />
-        <h1 className="mt-4 text-2xl font-extrabold">{passed ? "Level Tajwid terbuka!" : "Hampir!"}</h1>
+        <h1 className="mt-4 text-2xl font-extrabold">{passed ? "Level Tajwid dan Hafalan terbuka!" : "Hampir!"}</h1>
         <p className="mt-3 text-muted">
           {passed
-            ? `Kamu membaca ${read} dari ${total} ayat Al-Fatihah. Sekarang saatnya belajar tajwid lewat mendengar.`
-            : `Kamu membaca ${read} dari ${total} ayat Al-Fatihah. Saran kami, selesaikan dulu Bagian Membaca di Level Iqro supaya tajwid lebih mudah diikuti.`}
+            ? `Kamu membaca ${read} dari ${total} ayat Al-Fatihah. Mau mulai dari mana: belajar tajwid lewat mendengar, atau menghafal juz amma?`
+            : `Kamu membaca ${read} dari ${total} ayat Al-Fatihah. Saran kami, selesaikan dulu Bagian Membaca di Level Iqro supaya lebih mudah diikuti.`}
         </p>
       </div>
       <div className="space-y-3">
-        <Button onClick={enter}>{passed ? "Mulai Tajwid" : "Tetap masuk"}</Button>
+        <Button onClick={() => enter("tajwid")}>{passed ? "Mulai Tajwid" : "Tetap masuk Tajwid"}</Button>
+        <Button color={passed ? "blue" : "white"} onClick={() => enter("hafalan")}>
+          {passed ? "Mulai Hafalan" : "Tetap masuk Hafalan"}
+        </Button>
         {!passed && (
-          <Button
-            color="white"
+          <button
+            type="button"
             onClick={() => {
               setLevel("iqro");
               router.push("/");
             }}
+            className="block w-full py-2 text-sm font-extrabold uppercase tracking-wide text-muted"
           >
             Kembali ke Iqro
-          </Button>
+          </button>
         )}
       </div>
     </div>

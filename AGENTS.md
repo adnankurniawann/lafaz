@@ -71,6 +71,8 @@ Kode, nama file, dan variabel memakai bahasa Inggris. Teks tampilan dan docs mem
 | Peti | `ChestNode` |
 | Tes Matrikulasi | `placement`, `PLACEMENT_ID` |
 | Tes naik Level | `LEVEL_TEST_ID`, `levelTest` |
+| Tikrar, Tes Hafalan | soal `ayah-listen`, `missing-word`, `next-ayah`, `recite` (`hafalan-exercises.ts`) |
+| Sudah hafal | `memorized`, `memorizedSurahs` |
 | Hukum Tajwid (materi lesson) | `LessonRule`, `ruleGroups` (`tajweed-lessons.ts`) |
 | Rank | `rankFor` |
 | Latihan Ulang terjadwal | `reviews` (Leitner) |

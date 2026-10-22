@@ -47,7 +47,7 @@ lafaz/
     │   ├── studio/
     │   └── debug/tajwid/   # cek hasil parser tajwid per surah
     ├── components/
-    │   ├── lesson/         # LessonPlayer, Exercises (tiap jenis soal), TajweedExercises (soal Level Tajwid), LessonEnd
+    │   ├── lesson/         # LessonPlayer, Exercises (tiap jenis soal), TajweedExercises (soal Level Tajwid), HafalanExercises (soal Level Hafalan), LessonEnd
     │   ├── path/           # LearnPath, unitColors
     │   ├── screens/        # Onboarding, Letters, Profile, Quests, Studio
     │   └── *.tsx           # AppGate, TopBar, BottomNav, AudioButton, LetterSound, TajweedText, Mascot, Sheet
@@ -55,6 +55,7 @@ lafaz/
         ├── course.ts       # Level, Bagian, unit, node path, aturan buka-kunci per Level, Huruf Mirip
         ├── exercises.ts    # tipe tiap jenis soal + penyusun soal per jenis lesson
         ├── tajweed-exercises.ts # penyusun soal Level Tajwid
+        ├── hafalan-exercises.ts # penyusun soal Level Hafalan: tikrar, sambung ayat, Tes hafalan
         ├── tajweed-lessons.ts   # materi hukum Level Tajwid dari JSON
         ├── clips.ts        # Potongan Ayat: contoh per hukum, sorotan, rentang audio
         ├── store.ts        # state game, persist ke localStorage
@@ -83,15 +84,16 @@ lafaz/
 2. `exercises.ts` menyusun soal dari `lessonKind` dan huruf lesson. Jenis soal: `intro`, `listen-pick`, `word-initial`, `sound-pick`, `name-pick`, `match`, `sequence`, `speak`. Yang dinilai app (`GRADED`): `listen-pick`, `word-initial`, `sound-pick`, `name-pick`, `sequence`.
 3. `LessonPlayer` memutar soal satu per satu, mengulang soal salah di akhir, lalu memanggil `store.completeLesson` dengan `LessonResult`.
 4. `LessonEnd` menampilkan rangkaian layar akhir dari `LessonSummary`: hasil, sorot huruf di ayat (hanya Uji unit pertama kali), badge baru, streak, Target Harian, Misi Harian.
-5. Id lesson khusus: `latihan` (Latihan Ulang), `taklukkan` (khusus Huruf Bandel), `tantangan-u1` dst. (Mode Tantangan, memakai soal Uji unit dengan 3 nyawa dan timer), `matrikulasi` (Tes Matrikulasi), `naik-tajwid` (tes naik Level: soal Uji unit Al-Fatihah, tanpa XP).
-6. **Level.** Tiap `Section` punya `level` (`iqro` atau `tajwid`). Path tab Belajar hanya menampilkan Level yang dipilih, dan buka-kunci berjalan terpisah per Level. Level yang terbuka disimpan di store (`levels`).
+5. Id lesson khusus: `latihan` (Latihan Ulang), `taklukkan` (khusus Huruf Bandel), `tantangan-u1` dst. (Mode Tantangan, memakai soal Uji unit dengan 3 nyawa dan timer), `matrikulasi` (Tes Matrikulasi), `naik-tajwid` (tes naik Level ke Tajwid dan Hafalan: soal Uji unit Al-Fatihah, tanpa XP).
+6. **Level.** Tiap `Section` punya `level` (`iqro`, `tajwid`, atau `hafalan`). Path tab Belajar hanya menampilkan Level yang dipilih, dan buka-kunci berjalan terpisah per Level. Level yang terbuka disimpan di store (`levels`).
 7. **Level Tajwid.** Unit t1–t5 satu hukum nun mati dan tanwin, t6 ulasan, t7 mim mati, t8 qalqalah, t9 mad. Lesson: Kenali bunyinya, Dengar dan bandingkan, peti, Tebak hukumnya (tidak ada di t1), Cari di ayat, Ucapkan potongan, Uji unit. Unit ulasan diawali Tebak dari suara. Jenis soal: `rule-intro`, `rule-compare`, `rule-from-text`, `rule-from-audio`, `rule-find`, `clip-speak`. Soal menyimpan id Potongan Ayat (`surah:ayat:indeks`), bukan teksnya. Tebak dari suara hanya memakai potongan yang tidak berisi hukum lain dari kelompok yang sama.
+8. **Level Hafalan.** Unit `h1` (Al-Fatihah), lalu `h114` mundur ke `h78`. Lesson `h114-1` dst. per kelompok ayat (`ayahGroups`), peti kalau lebih dari satu kelompok, lalu `h114-tes`. Halaman lesson memuat seluruh surah dari `data/quran/` dan meneruskannya sebagai `surah` ke `buildHafalan`. Jenis soal: `ayah-listen`, `missing-word`, `next-ayah`, `recite` (memakai `ReadExercise` dengan teks disembunyikan). `recite` dengan `test` yang selesai tanpa mengintip mengisi `memorized` di store.
 
 ## 5. State & Penyimpanan
 
 | Data | Di mana | Catatan |
 |---|---|---|
-| Progres (onboarding, XP per hari, streak, Penguasaan Huruf, Huruf Bandel, badge, tantangan, lesson selesai, misi, Level) | localStorage, zustand `persist` | Versi 2: hati dan gems dihapus (ADR-0004, 0006). Versi 3: `level` dan `levels`, Tajwid terbuka kalau Uji unit Al-Fatihah sudah lulus |
+| Progres (onboarding, XP per hari, streak, Penguasaan Huruf, Huruf Bandel, badge, tantangan, lesson selesai, misi, Level) | localStorage, zustand `persist` | Versi 2: hati dan gems dihapus (ADR-0004, 0006). Versi 3: `level` dan `levels`, Tajwid terbuka kalau Uji unit Al-Fatihah sudah lulus. Versi 4: Hafalan ikut terbuka dengan syarat yang sama; `memorized` ("surah:ayat" → hari) |
 | Rekaman Huruf dari Studio | IndexedDB | Tidak pernah dikirim ke mana pun |
 | Rekaman Pelajar di soal ucapkan | Memori saja, hilang setelah lesson | `src/lib/use-recorder.ts` |
 | Model Cek Suara | Cache browser | ±102 MB (encoder 23 + decoder 79), diunduh di latar belakang setelah onboarding, jalan di Web Worker |

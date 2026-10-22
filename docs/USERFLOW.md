@@ -6,7 +6,7 @@ Status: ✅ ada, ⏳ rencana.
 1. Pelajar baru diarahkan ke `/onboarding` oleh `AppGate`.
 2. Sambutan bersama maskot.
 3. **Tujuan**: kenapa ingin belajar.
-4. **Mau mulai dari mana?**: dari huruf pertama (Level Iqro), "belum tahu, tes aku dulu" (Tes Matrikulasi), atau langsung Tajwid. Pilihan dipercaya tanpa tes (ADR-0010). Pilihan Hafalan menyusul. ✅
+4. **Mau mulai dari mana?**: dari huruf pertama (Level Iqro), "belum tahu, tes aku dulu" (Tes Matrikulasi), langsung Tajwid, atau langsung Hafalan. Pilihan dipercaya tanpa tes (ADR-0010). ✅
 5. **Target Harian**: Santai, Biasa, Serius, Intens.
 6. **Talaqqi**: ajakan ramah untuk memperdengarkan bacaan ke guru atau teman yang lancar (ADR-0009). ✅
 7. Tombol "Mulai lesson pertama" langsung membuka lesson pertama Level yang dipilih, atau Tes Matrikulasi.
@@ -21,9 +21,9 @@ Status: ✅ ada, ⏳ rencana.
 
 ## 2a. Level ✅
 1. Bar atas tab Belajar menampilkan pemilih Level setelah ada lebih dari satu Level terbuka. Pindah Level kapan saja, progres tiap Level tetap.
-2. Di akhir path Iqro ada kartu "Level berikutnya". Kalau Tajwid belum terbuka: tombol "Tes naik level", yaitu membaca ketujuh ayat Al-Fatihah sendiri.
-3. Lulus: Level Tajwid terbuka. Belum lulus: saran untuk menyelesaikan Bagian Membaca dulu, dengan tombol "Tetap masuk" dan "Kembali ke Iqro".
-4. Lulus Uji unit Al-Fatihah di path juga membuka Level Tajwid, dengan layar "Level Tajwid terbuka!" di akhir lesson.
+2. Di akhir path Iqro ada kartu "Level berikutnya" untuk Tajwid dan Hafalan. Level yang belum terbuka punya tombol tes naik level, yaitu membaca ketujuh ayat Al-Fatihah sendiri.
+3. Lulus: Level Tajwid dan Hafalan terbuka, Pelajar memilih mulai dari mana. Belum lulus: saran untuk menyelesaikan Bagian Membaca dulu, dengan tombol "Tetap masuk Tajwid", "Tetap masuk Hafalan", dan "Kembali ke Iqro".
+4. Lulus Uji unit Al-Fatihah di path juga membuka kedua Level, dengan layar "Level Tajwid dan Hafalan terbuka!" di akhir lesson.
 
 ## 2b. Lesson Level Tajwid ✅
 1. **Kenali bunyinya**: kartu hukum (huruf, cara baca, yang didengar), lalu 3 Potongan Ayat dengan bagian hukumnya diwarnai. Tiap potongan bisa diputar normal atau pelan.
@@ -32,6 +32,14 @@ Status: ✅ ada, ⏳ rencana.
 4. **Tebak dari suara**: hanya suara qari, pilih hukumnya. Teks muncul setelah menjawab.
 5. **Cari di ayat**: ketuk kata yang ada hukumnya. Kata mana pun yang tersentuh hukum itu dihitung benar.
 6. **Ucapkan potongan**: rekam, Cek Suara menandai kata (kalau model siap), lalu Nilai Sendiri untuk tajwidnya.
+
+## 2c. Lesson Level Hafalan ✅
+1. Satu unit per surah: Al-Fatihah, lalu An-Nas mundur ke An-Naba'. Tiap lesson menghafal satu kelompok ayat (biasanya 3).
+2. **Tikrar**: qari membaca ayat 3 kali, Pelajar mengikuti teks dan membaca artinya.
+3. **Kata mana yang hilang?**: satu kata ayat dikosongkan, pilih kata yang tepat.
+4. **Baca dari hafalan**: hanya kata pertama tampil. Rekam, lalu teks muncul untuk dibandingkan. Cek Suara menandai kata kalau model siap. Bisa "Intip ayat".
+5. **Sambungkan**: ayat yang baru dihafal dibaca bersambung dengan ayat sebelumnya, dan "Ayat apa sesudahnya?".
+6. **Tes hafalan** di akhir unit: sambung ayat dan kata hilang, lalu seluruh surah dibaca dari hafalan per kelompok. Ayat yang dibaca tanpa mengintip mendapat tanda "sudah hafal" di Peta Ayat.
 
 ## 3. Satu Lesson ✅
 1. Atas: tombol keluar (dengan konfirmasi) dan progress bar.
@@ -48,7 +56,7 @@ Status: ✅ ada, ⏳ rencana.
 4. Ayat itu mendapat tanda kedua di Peta Ayat. Momen pertama memberi badge "Ayat pertama".
 
 ## 5. Peta Ayat 🔧
-Tab bekas Liga. Al-Fatihah dan juz amma ditampilkan per surah. Tiap ayat punya tiga tanda: hurufnya dikenal ✅, bisa dibaca ⏳, sudah hafal ⏳. Kotak ayat makin terang sesuai bagian hurufnya yang dikenal. Ketuk surah untuk melihat ayatnya dengan huruf yang dikenal menyala. Ketuk ayat untuk mendengar qari ⏳.
+Tab bekas Liga. Al-Fatihah dan juz amma ditampilkan per surah. Tiap ayat punya tiga tanda: hurufnya dikenal ✅, bisa dibaca ✅, sudah hafal ✅ (kotak emas). Kotak ayat makin terang sesuai bagian hurufnya yang dikenal. Ketuk surah untuk melihat ayatnya dengan huruf yang dikenal menyala. Ketuk ayat untuk mendengar qari ⏳.
 
 Setelah Uji unit pertama kali lulus, layar akhir lesson menampilkan satu ayat Al-Fatihah dengan huruf yang dikenal menyala dan "kamu sudah kenal X dari Y huruf di ayat ini" ✅.
 

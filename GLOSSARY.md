@@ -23,7 +23,7 @@ _Hindari_: setoran wajib, ujian guru
 ## Struktur Belajar
 
 **Level**:
-Tiga tahap besar Lafaz: **Level Iqro** (huruf sampai bisa membaca ayat), **Level Tajwid** (hukum bacaan lewat mendengar), **Level Hafalan** (juz amma). Setelah Iqro, Tajwid dan Hafalan sejajar. Naik Level lewat tes, turun bebas (ADR-0010). Level Hafalan belum ada di kode.
+Tiga tahap besar Lafaz: **Level Iqro** (huruf sampai bisa membaca ayat), **Level Tajwid** (hukum bacaan lewat mendengar), **Level Hafalan** (juz amma). Setelah Iqro, Tajwid dan Hafalan sejajar. Naik Level lewat tes, turun bebas (ADR-0010).
 _Hindari_: tingkat, tahap, course
 
 **Bagian**:
@@ -49,6 +49,14 @@ _Hindari_: pertanyaan, exercise, challenge
 **Uji Unit**:
 Lesson terakhir di tiap unit yang mencampur semua jenis soal dari unit itu. Tandanya piala di path.
 _Hindari_: ujian, final
+
+**Tikrar**:
+Cara menghafal di Level Hafalan: mendengar dan mengulang satu ayat berkali-kali, lalu menyambungnya dengan ayat sebelumnya.
+_Hindari_: drill, repetisi
+
+**Tes Hafalan**:
+Lesson terakhir tiap unit Level Hafalan: seluruh surah dibaca dari hafalan. Ayat yang dibaca tanpa mengintip mendapat tanda "sudah hafal".
+_Hindari_: ujian hafalan, setoran (setoran adalah ke guru, lihat talaqqi)
 
 **Latihan Ulang**:
 Lesson yang disusun dari huruf yang sudah dipelajari, tanpa membuka lesson baru. Nama lainnya muraja'ah.

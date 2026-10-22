@@ -89,8 +89,8 @@ Grid 29 huruf dengan bar Penguasaan Huruf, kartu penjelasan (makhraj dan Contoh 
 - Huruf yang sering salah masuk koleksi Huruf Bandel. Pelajar bisa berlatih khusus huruf itu.
 - Huruf keluar dari koleksi setelah dijawab benar beberapa kali berturut-turut. Koleksi kosong memberi badge.
 
-### FR-10 — Badge 🔧
-Sudah ada: semua badge Level Iqro (Kenal semua huruf, Lancar harakat, Ayat pertama, Bisa baca Al-Fatihah, Penakluk huruf bandel), semua badge Level Tajwid, plus Streak 7 hari dan Juara tantangan. Badge Hafalan menyusul bersama levelnya.
+### FR-10 — Badge ✅
+Sudah ada: semua badge di tabel ini.
 
 
 | Level Iqro | Level Tajwid | Level Hafalan |
@@ -110,7 +110,7 @@ Lintas level: **Juara tantangan** (Mode Tantangan pertama) dan **Streak 7 hari**
 ### FR-12 — Momen Bisa Baca & Peta Ayat ✅
 - Sejak unit 1: ayat asli tampil, huruf yang sudah dikenal menyala, "kamu sudah kenal X dari Y huruf di ayat ini" (ADR-0007). ✅
 - Setelah Iqro lanjutan: Pelajar membaca kata atau ayat asli, Cek Suara menandai per kata, lalu qari membacakannya.
-- Peta Ayat di tab bekas Liga: tiap ayat punya tiga tanda (hurufnya dikenal, bisa dibaca, sudah hafal). Tanda pertama dan kedua ✅, "sudah hafal" menunggu Level Hafalan.
+- Peta Ayat di tab bekas Liga: tiap ayat punya tiga tanda (hurufnya dikenal, bisa dibaca, sudah hafal). Ketiga tanda ✅.
 
 ### FR-13 — Kartu Pamer ✅
 Dari Momen Bisa Baca: gambar berisi ayat, nama surah dan nomor ayat, dan "Aku sekarang bisa baca ini". Dibagikan lewat Web Share atau disimpan. Hanya gambar dulu.
@@ -128,16 +128,19 @@ Harakat kasrah dan dhammah, tanwin, sukun, tasydid, mad dasar, bentuk huruf samb
 - Izhar dideteksi otomatis dari Teks Utsmani dan ditandai perlu cek ustadz. Qalqalah sughra dan kubra dibedakan dari posisinya, juga ditandai perlu cek.
 - Mim mati, qalqalah, dan mad masing-masing satu unit, karena contohnya di juz 30 sedikit.
 
-### FR-18 — Level, Tes Matrikulasi & Rank 🔧
-Sudah ada: Tes Matrikulasi di Iqro, Rank, pertanyaan "Mau mulai dari mana?" (Iqro, tes dulu, Tajwid), pemilih Level, tes naik Level ke Tajwid. Menyusul di Blok 5: pilihan Hafalan.
+### FR-18 — Level, Tes Matrikulasi & Rank ✅
+Sudah ada semua: Tes Matrikulasi di Iqro, Rank, pertanyaan "Mau mulai dari mana?", pemilih Level, tes naik Level ke Tajwid dan Hafalan.
 - Onboarding: "Mau mulai dari mana?" (Iqro, Tajwid, Hafalan, atau tes dulu). Pilihan dipercaya tanpa tes (ADR-0010).
 - Tes Matrikulasi ≤15 soal, bertahap, menaruh Pelajar di Bagian. Materi sebelumnya dihitung dilewati: membuka lesson dan Peta Ayat, tanpa XP dan badge.
 - Setelah Iqro, Tajwid dan Hafalan sejajar. Naik memakai ujian akhir Level di bawahnya. Gagal tes hanya memberi saran, ada "tetap masuk". Turun bebas, progres per Level disimpan.
 - Pemilih Level di bar atas tab Belajar, muncul setelah ada lebih dari satu Level.
 - Rank: gelar pribadi dari total XP, tidak pernah turun.
 
-### FR-17 — Hafalan Juz Amma ⏳
+### FR-17 — Hafalan Juz Amma ✅
 Al-Fatihah dulu, lalu juz amma dari surah terpendek: An-Nas, Al-Falaq, Al-Ikhlas, dan seterusnya mundur ke An-Naba'. Pola tikrar (mengulang per ayat lalu menyambung), tes hafalan, dan tanda "sudah hafal" di Peta Ayat.
+- Satu unit per surah. Ayat dikelompokkan per 3; tiap kelompok satu lesson.
+- Tikrar per ayat: dengar qari 3 kali bersama teks dan arti, isi kata yang hilang, baca dari hafalan, lalu sambung dengan ayat sebelumnya.
+- Tes hafalan: semua ayat dibaca dari hafalan per kelompok. Cek Suara membantu, Pelajar tetap menilai sendiri. Ayat yang diintip belum ditandai hafal.
 
 ## 5. Tujuan
 1. Pelajar baru sampai soal pertama dalam 60 detik sejak membuka app.
